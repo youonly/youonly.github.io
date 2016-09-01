@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AwesomeX</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <description>Awesome X page is all about providing viewers with Top 10 Best of all categories ,With some Information and some entertainment fulfill your daily dose of Awesomeness!
 </description>
     <link>localhost:4000/</link>
     <atom:link href="localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 31 Aug 2016 20:24:29 +0530</pubDate>
-    <lastBuildDate>Wed, 31 Aug 2016 20:24:29 +0530</lastBuildDate>
+    <pubDate>Thu, 01 Sep 2016 23:12:17 +0530</pubDate>
+    <lastBuildDate>Thu, 01 Sep 2016 23:12:17 +0530</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -75,9 +75,9 @@
     &lt;br /&gt;
 &lt;/div&gt;
 &lt;div class=&quot;w3-half w3-container&quot;&gt;
-&lt;div class=&quot;w3-display-container w3-card-4 w3-margin&quot;&gt;
+&lt;div class=&quot;w3-display-container w3-card-4 w3-margin w3-round&quot;&gt;
   &lt;img src=&quot;images/i3lft/9chan-10.jpg&quot; alt=&quot;Lights&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
-    &lt;div class=&quot;w3-display-bottommiddle w3-container w3-xlarge w3-black w3-round w3-expletus&quot; style=&quot;opacity:0.7&quot;&gt;10. Kochikame&lt;/div&gt;
+    &lt;div class=&quot;w3-display-bottommiddle w3-container w3-xlarge w3-black w3-round w3-expletus w3-hide-small&quot; style=&quot;opacity:0.7&quot;&gt;10. Kochikame&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
   &lt;h2&gt;10.Kochikame&lt;/h2&gt;
@@ -87,111 +87,112 @@
   &lt;/div&gt;
 
 &lt;br /&gt;
-  &lt;div class=&quot;w3-display-container w3-card-4 w3-margin&quot;&gt;
+  &lt;div class=&quot;w3-display-container w3-card-4 w3-margin w3-round&quot;&gt;
     &lt;img src=&quot;images/i3lft/9chan-9.jpg&quot; alt=&quot;Lights&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
-      &lt;div class=&quot;w3-display-bottommiddle w3-container w3-xlarge w3-black w3-round w3-expletus&quot; style=&quot;opacity:0.7&quot;&gt;10. Kochikame&lt;/div&gt;
+      &lt;div class=&quot;w3-display-bottommiddle w3-container w3-xlarge w3-black w3-round w3-expletus w3-hide-small&quot; style=&quot;opacity:0.7&quot;&gt;9. Shinchan&lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
-  &lt;h2&gt;10.Kochikame&lt;/h2&gt;
-&lt;p class=&quot;w3-code&quot;&gt;Kochikame ,is a Japanese comedy manga series written and illustrated by Osamu Akimoto and revolves around the misadventures of middle-aged cop Kankichi Ryotsu.&lt;/p&gt;
-&lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-red&quot;&gt;Since its inception on September 1976 it has over 1800 chapters collected into 199 tankobon volumes, making it the manga series with the highest number of volumes. The manga has been adapted into a television anime series two theatrical animated films, two live-action movies, several stage adaptations, and a live-action television series.&lt;/p&gt;
-  &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-blue&quot;&gt; TV Asahi named the anime &lt;strong&gt;number 36&lt;/strong&gt; on its list of the Top 100 Anime.&lt;/p&gt;
+  &lt;h2&gt;9.shinchan&lt;/h2&gt;
+&lt;p class=&quot;w3-code&quot;&gt;Laugh to hide your tears... He’s rude. He’s crass. He’s unbelievably obnoxious and he likes to take off clothes when dances, he is Shin Chan.&lt;/p&gt;
+&lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-red&quot;&gt;This anime is about a 6 years old cute kid name Shin-chan Nohara who lives with is mom , dad and his pet dog Shiro, and he loves watching Action Kamen.But don&#39;t go by the looks of this kid Shin Chan is a naughty boy who gives everyone trouble but at the same time he is too cute to be mad at. &lt;/p&gt;
+  &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-blue&quot;&gt;Shin Chan doesn&#39;t like &lt;strong&gt;Capsicum&lt;/strong&gt;&lt;/p&gt;
     &lt;/div&gt;
 
     &lt;br /&gt;
-      &lt;div class=&quot;w3-display-container w3-card-4 w3-margin&quot;&gt;
+      &lt;div class=&quot;w3-display-container w3-card-4 w3-margin w3-round&quot;&gt;
         &lt;img src=&quot;images/i3lft/9chan-8.jpg&quot; alt=&quot;Lights&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
-          &lt;div class=&quot;w3-display-bottommiddle w3-container w3-xlarge w3-black w3-round w3-expletus&quot; style=&quot;opacity:0.7&quot;&gt;10. Kochikame&lt;/div&gt;
+          &lt;div class=&quot;w3-display-bottommiddle w3-container w3-xlarge w3-black w3-round w3-expletus  w3-hide-small&quot; style=&quot;opacity:0.7&quot;&gt;8. Doraemon&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
-      &lt;h2&gt;10.Kochikame&lt;/h2&gt;
-    &lt;p class=&quot;w3-code&quot;&gt;Kochikame ,is a Japanese comedy manga series written and illustrated by Osamu Akimoto and revolves around the misadventures of middle-aged cop Kankichi Ryotsu.&lt;/p&gt;
-    &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-red&quot;&gt;Since its inception on September 1976 it has over 1800 chapters collected into 199 tankobon volumes, making it the manga series with the highest number of volumes. The manga has been adapted into a television anime series two theatrical animated films, two live-action movies, several stage adaptations, and a live-action television series.&lt;/p&gt;
-      &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-blue&quot;&gt; TV Asahi named the anime &lt;strong&gt;number 36&lt;/strong&gt; on its list of the Top 100 Anime.&lt;/p&gt;
+      &lt;h2&gt;8.Doraemon&lt;/h2&gt;
+    &lt;p class=&quot;w3-code&quot;&gt;Doraemon TV series is based on the manga by team Fujiko Fujio.First published in December 1969 this anime has been recognised as one of the most popular anime of all time.&lt;/p&gt;
+    &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-red&quot;&gt;Doraemon is about a futuristic robot cat who is there to help a pre-teen kid named Nobita.This anime is packed with futuristic gadgets,funny storyline and cool songs&lt;/p&gt;
+      &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-blue&quot;&gt;Doraemon had a &lt;b&gt;pair of ears&lt;/b&gt;, but lost it to rats that bit off them off&lt;/p&gt;
         &lt;/div&gt;
 
         &lt;br /&gt;
-          &lt;div class=&quot;w3-display-container w3-card-4 w3-margin&quot;&gt;
+          &lt;div class=&quot;w3-display-container w3-card-4 w3-margin w3-round&quot;&gt;
             &lt;img src=&quot;images/i3lft/9chan-7.jpg&quot; alt=&quot;Lights&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
-              &lt;div class=&quot;w3-display-bottommiddle w3-container w3-xlarge w3-black w3-round w3-expletus&quot; style=&quot;opacity:0.7&quot;&gt;10. Kochikame&lt;/div&gt;
+              &lt;div class=&quot;w3-display-bottommiddle w3-container w3-xlarge w3-black w3-round w3-expletus w3-hide-small&quot; style=&quot;opacity:0.7&quot;&gt;7.Ninja Hattori&lt;/div&gt;
           &lt;/div&gt;
           &lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
-          &lt;h2&gt;10.Kochikame&lt;/h2&gt;
-        &lt;p class=&quot;w3-code&quot;&gt;Kochikame ,is a Japanese comedy manga series written and illustrated by Osamu Akimoto and revolves around the misadventures of middle-aged cop Kankichi Ryotsu.&lt;/p&gt;
-        &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-red&quot;&gt;Since its inception on September 1976 it has over 1800 chapters collected into 199 tankobon volumes, making it the manga series with the highest number of volumes. The manga has been adapted into a television anime series two theatrical animated films, two live-action movies, several stage adaptations, and a live-action television series.&lt;/p&gt;
-          &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-blue&quot;&gt; TV Asahi named the anime &lt;strong&gt;number 36&lt;/strong&gt; on its list of the Top 100 Anime.&lt;/p&gt;
+          &lt;h2&gt;7.Ninja Hattori&lt;/h2&gt;
+        &lt;p class=&quot;w3-code&quot;&gt;Ninja Hattori-kun, known as Ninja Hattori in some countries, is a manga series created by Motoo Abiko, later adapted into a television drama, an anime series&lt;/p&gt;
+        &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-red&quot;&gt;Kenichi Mitsuba is an average kid who goes to secondary school and struggles with his studies, he is very stubborn and is very lazy but he takes the help of his ninja friend Hattori Kanzo to get out of any difficult situation.&lt;/p&gt;
+          &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-blue&quot;&gt;This anime was remade as a 2013 anime series as a joint venture between &lt;b&gt;India and Japan&lt;/b&gt; and is currently on the air in several Asian countries.&lt;/p&gt;
             &lt;/div&gt;
 
             &lt;br /&gt;
-              &lt;div class=&quot;w3-display-container w3-card-4 w3-margin&quot;&gt;
+              &lt;div class=&quot;w3-display-container w3-card-4 w3-margin w3-round&quot;&gt;
                 &lt;img src=&quot;images/i3lft/9chan-6.jpg&quot; alt=&quot;Lights&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
-                  &lt;div class=&quot;w3-display-bottommiddle w3-container w3-xlarge w3-black w3-round w3-expletus&quot; style=&quot;opacity:0.7&quot;&gt;10. Kochikame&lt;/div&gt;
+                  &lt;div class=&quot;w3-display-bottommiddle w3-container w3-xlarge w3-black w3-round w3-expletus w3-hide-small&quot; style=&quot;opacity:0.7&quot;&gt;6.Digimon&lt;/div&gt;
               &lt;/div&gt;
               &lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
-              &lt;h2&gt;10.Kochikame&lt;/h2&gt;
-            &lt;p class=&quot;w3-code&quot;&gt;Kochikame ,is a Japanese comedy manga series written and illustrated by Osamu Akimoto and revolves around the misadventures of middle-aged cop Kankichi Ryotsu.&lt;/p&gt;
-            &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-red&quot;&gt;Since its inception on September 1976 it has over 1800 chapters collected into 199 tankobon volumes, making it the manga series with the highest number of volumes. The manga has been adapted into a television anime series two theatrical animated films, two live-action movies, several stage adaptations, and a live-action television series.&lt;/p&gt;
-              &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-blue&quot;&gt; TV Asahi named the anime &lt;strong&gt;number 36&lt;/strong&gt; on its list of the Top 100 Anime.&lt;/p&gt;
+              &lt;h2&gt;6.Digimon&lt;/h2&gt;
+            &lt;p class=&quot;w3-code&quot;&gt;This franchise was first created in 1997 as a series of virtual pets(Digimon),which are monsters living in a &quot;Digital World, a parallel universe that originated from Earth&#39;s various communication networks.&lt;/p&gt;
+            &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-red&quot;&gt;A group of young teens is unexpectedly sent to the mysterious Digital World and paired up with their own powerful, morphing monster called the Digimon. Together the entire group set out on an adventure to fight evil and save the world.&lt;/p&gt;
+              &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-blue&quot;&gt;Almost all villains in Digimon Adventure &lt;b&gt;come back&lt;/b&gt; at least one more time after the presumed death. &lt;/p&gt;
                 &lt;/div&gt;
 
                 &lt;br /&gt;
-                  &lt;div class=&quot;w3-display-container w3-card-4 w3-margin&quot;&gt;
+                  &lt;div class=&quot;w3-display-container w3-card-4 w3-margin w3-round&quot;&gt;
                     &lt;img src=&quot;images/i3lft/9chan-5.jpg&quot; alt=&quot;Lights&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
-                      &lt;div class=&quot;w3-display-bottommiddle w3-container w3-xlarge w3-black w3-round w3-expletus&quot; style=&quot;opacity:0.7&quot;&gt;10. Kochikame&lt;/div&gt;
+                      &lt;div class=&quot;w3-display-bottommiddle w3-container w3-xlarge w3-black w3-round w3-expletus w3-hide-small&quot; style=&quot;opacity:0.7&quot;&gt;5.Yu-Gi-Oh&lt;/div&gt;
                   &lt;/div&gt;
                   &lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
-                  &lt;h2&gt;10.Kochikame&lt;/h2&gt;
-                &lt;p class=&quot;w3-code&quot;&gt;Kochikame ,is a Japanese comedy manga series written and illustrated by Osamu Akimoto and revolves around the misadventures of middle-aged cop Kankichi Ryotsu.&lt;/p&gt;
-                &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-red&quot;&gt;Since its inception on September 1976 it has over 1800 chapters collected into 199 tankobon volumes, making it the manga series with the highest number of volumes. The manga has been adapted into a television anime series two theatrical animated films, two live-action movies, several stage adaptations, and a live-action television series.&lt;/p&gt;
-                  &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-blue&quot;&gt; TV Asahi named the anime &lt;strong&gt;number 36&lt;/strong&gt; on its list of the Top 100 Anime.&lt;/p&gt;
+                  &lt;h2&gt;5.Yu-Gi-Oh&lt;/h2&gt;
+                &lt;p class=&quot;w3-code&quot;&gt;Yu-Gi-Oh! (1998) is the first anime adaptation of the popular manga by Kazuki Takahashi.&lt;/p&gt;
+                &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-red&quot;&gt;Yugi Mutou is a shy young boy who has finally completed his grandfather&#39;s Thousand-Year puzzle. Little does he realize that this puzzle unleashes an alter ego.Yu-Gi-Oh is on his way to to become the best dual master of monster cards and his alter ego and his friends help him on his way.&lt;/p&gt;
+                  &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-blue&quot;&gt;In Japanese, Yu-Gi-Oh means &lt;b&gt;King of Games&lt;/b&gt;.&lt;/p&gt;
                     &lt;/div&gt;
 
                     &lt;br /&gt;
-                      &lt;div class=&quot;w3-display-container w3-card-4 w3-margin&quot;&gt;
+                      &lt;div class=&quot;w3-display-container w3-card-4 w3-margin w3-round&quot;&gt;
                         &lt;img src=&quot;images/i3lft/9chan-4.jpg&quot; alt=&quot;Lights&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
-                          &lt;div class=&quot;w3-display-bottommiddle w3-container w3-xlarge w3-black w3-round w3-expletus&quot; style=&quot;opacity:0.7&quot;&gt;10. Kochikame&lt;/div&gt;
+                          &lt;div class=&quot;w3-display-bottommiddle w3-container w3-xlarge w3-black w3-round w3-expletus w3-hide-small&quot; style=&quot;opacity:0.7&quot;&gt;4.Naruto&lt;/div&gt;
                       &lt;/div&gt;
                       &lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
-                      &lt;h2&gt;10.Kochikame&lt;/h2&gt;
-                    &lt;p class=&quot;w3-code&quot;&gt;Kochikame ,is a Japanese comedy manga series written and illustrated by Osamu Akimoto and revolves around the misadventures of middle-aged cop Kankichi Ryotsu.&lt;/p&gt;
-                    &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-red&quot;&gt;Since its inception on September 1976 it has over 1800 chapters collected into 199 tankobon volumes, making it the manga series with the highest number of volumes. The manga has been adapted into a television anime series two theatrical animated films, two live-action movies, several stage adaptations, and a live-action television series.&lt;/p&gt;
-                      &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-blue&quot;&gt; TV Asahi named the anime &lt;strong&gt;number 36&lt;/strong&gt; on its list of the Top 100 Anime.&lt;/p&gt;
+                      &lt;h2&gt;4.Naruto&lt;/h2&gt;
+                    &lt;p class=&quot;w3-code&quot;&gt;The series is based on a one-shot manga by Kishimoto that was published in the August 1997 issue of Akamaru Jump.&lt;/p&gt;
+                    &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-red&quot;&gt;Follows the struggles of three young ninjas - Naruto Uzumaki, Sasuke Uchiha and Sakura Haruno - as they go through their training.Naruto has a sealed demon fox(nine tails) inside him, he grew up with no family, and the villagers hated him thinking that he himself was the demon fox. Naruto&#39;s dream is to become Hokage, and have the villagers acknowledge him.&lt;/p&gt;
+                      &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-blue&quot;&gt;The voice actors doing the voice of Naruto both in English and Japanese are both &lt;b&gt;female&lt;/b&gt;.
+&lt;/p&gt;
                         &lt;/div&gt;
 
                             &lt;br /&gt;
-                              &lt;div class=&quot;w3-display-container w3-card-4 w3-margin&quot;&gt;
+                              &lt;div class=&quot;w3-display-container w3-card-4 w3-margin w3-round&quot;&gt;
                                 &lt;img src=&quot;images/i3lft/9chan-3.jpg&quot; alt=&quot;Lights&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
-                                  &lt;div class=&quot;w3-display-bottommiddle w3-container w3-xlarge w3-black w3-round w3-expletus&quot; style=&quot;opacity:0.7&quot;&gt;10. Kochikame&lt;/div&gt;
+                                  &lt;div class=&quot;w3-display-bottommiddle w3-container w3-xlarge w3-black w3-round w3-expletus w3-hide-small&quot; style=&quot;opacity:0.7&quot;&gt;3.Dragonball-Z&lt;/div&gt;
                               &lt;/div&gt;
                               &lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
-                              &lt;h2&gt;10.Kochikame&lt;/h2&gt;
-                            &lt;p class=&quot;w3-code&quot;&gt;Kochikame ,is a Japanese comedy manga series written and illustrated by Osamu Akimoto and revolves around the misadventures of middle-aged cop Kankichi Ryotsu.&lt;/p&gt;
-                            &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-red&quot;&gt;Since its inception on September 1976 it has over 1800 chapters collected into 199 tankobon volumes, making it the manga series with the highest number of volumes. The manga has been adapted into a television anime series two theatrical animated films, two live-action movies, several stage adaptations, and a live-action television series.&lt;/p&gt;
-                              &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-blue&quot;&gt; TV Asahi named the anime &lt;strong&gt;number 36&lt;/strong&gt; on its list of the Top 100 Anime.&lt;/p&gt;
+                              &lt;h2&gt;3.Dragonball-Z&lt;/h2&gt;
+                            &lt;p class=&quot;w3-code&quot;&gt;Dragon Ball manga series was created by Akira Toriyama, that were published from 1988 to 1995 in Weekly Shonen Jump.&lt;/p&gt;
+                            &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-red&quot;&gt;After learning that he is from another planet, a warrior named Goku and his friends are prompted to defend it from an onslaught of extraterrestrial enemies.&lt;/p&gt;
+                              &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-blue&quot;&gt;Freeza and Goku&#39;s fight in Namek is the longest battle in anime history, with a duration of a little over &lt;b&gt;four hours&lt;/b&gt;&lt;/p&gt;
                                 &lt;/div&gt;
 
                                 &lt;br /&gt;
-                                  &lt;div class=&quot;w3-display-container w3-card-4 w3-margin&quot;&gt;
+                                  &lt;div class=&quot;w3-display-container w3-card-4 w3-margin w3-round&quot;&gt;
                                     &lt;img src=&quot;images/i3lft/9chan-2.jpg&quot; alt=&quot;Lights&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
-                                      &lt;div class=&quot;w3-display-bottommiddle w3-container w3-xlarge w3-black w3-round w3-expletus&quot; style=&quot;opacity:0.7&quot;&gt;10. Kochikame&lt;/div&gt;
+                                      &lt;div class=&quot;w3-display-bottommiddle w3-container w3-xlarge w3-black w3-round w3-expletus w3-hide-small&quot; style=&quot;opacity:0.7&quot;&gt;2.Beyblade&lt;/div&gt;
                                   &lt;/div&gt;
                                   &lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
-                                  &lt;h2&gt;10.Kochikame&lt;/h2&gt;
-                                &lt;p class=&quot;w3-code&quot;&gt;Kochikame ,is a Japanese comedy manga series written and illustrated by Osamu Akimoto and revolves around the misadventures of middle-aged cop Kankichi Ryotsu.&lt;/p&gt;
-                                &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-red&quot;&gt;Since its inception on September 1976 it has over 1800 chapters collected into 199 tankobon volumes, making it the manga series with the highest number of volumes. The manga has been adapted into a television anime series two theatrical animated films, two live-action movies, several stage adaptations, and a live-action television series.&lt;/p&gt;
-                                  &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-blue&quot;&gt; TV Asahi named the anime &lt;strong&gt;number 36&lt;/strong&gt; on its list of the Top 100 Anime.&lt;/p&gt;
+                                  &lt;h2&gt;2.Beyblade&lt;/h2&gt;
+                                &lt;p class=&quot;w3-code&quot;&gt;Four beybladers and their genius friend travel the world as team &#39;Bladebreakers&#39; to win a championship, realizing there&#39;s much more at stake on the go.&lt;/p&gt;
+                                &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-red&quot;&gt;In these battles, everyone has his/her special moves and have some special type of Beyblade like Tyson which has Dragoon type beyblade beast. Everyone wants to become best of all.What made it more interesting is that people could buy a beyblade have matches with friends and connect even more with the anime&lt;/p&gt;
+                                  &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-blue&quot;&gt;The Bladebreakers&#39; bit-beasts are based on the 4 Chinese Gods which are: Dragoon - Seriyu the Dragon, Dranzer - Suzaku the Phoenix, Draciel - Genbu the Turtle and Driger - Byako the Tiger&lt;/p&gt;
                                     &lt;/div&gt;
 
                                     &lt;br /&gt;
-                                      &lt;div class=&quot;w3-display-container w3-card-4 w3-margin&quot;&gt;
+                                      &lt;div class=&quot;w3-display-container w3-card-4 w3-margin w3-round&quot;&gt;
                                         &lt;img src=&quot;images/i3lft/9chan-1.jpg&quot; alt=&quot;Lights&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
-                                          &lt;div class=&quot;w3-display-bottommiddle w3-container w3-xlarge w3-black w3-round w3-expletus&quot; style=&quot;opacity:0.7&quot;&gt;10. Kochikame&lt;/div&gt;
+                                          &lt;div class=&quot;w3-display-bottommiddle w3-container w3-xlarge w3-black w3-round w3-expletus w3-hide-small&quot; style=&quot;opacity:0.7&quot;&gt;1.Pokemon&lt;/div&gt;
                                       &lt;/div&gt;
                                       &lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
-                                      &lt;h2&gt;10.Kochikame&lt;/h2&gt;
-                                    &lt;p class=&quot;w3-code&quot;&gt;Kochikame ,is a Japanese comedy manga series written and illustrated by Osamu Akimoto and revolves around the misadventures of middle-aged cop Kankichi Ryotsu.&lt;/p&gt;
-                                    &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-red&quot;&gt;Since its inception on September 1976 it has over 1800 chapters collected into 199 tankobon volumes, making it the manga series with the highest number of volumes. The manga has been adapted into a television anime series two theatrical animated films, two live-action movies, several stage adaptations, and a live-action television series.&lt;/p&gt;
-                                      &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-blue&quot;&gt; TV Asahi named the anime &lt;strong&gt;number 36&lt;/strong&gt; on its list of the Top 100 Anime.&lt;/p&gt;
+                                      &lt;h2&gt;1.Pokemon&lt;/h2&gt;
+                                    &lt;p class=&quot;w3-code&quot;&gt;The adventures of Ash Ketchum and his partner Pikachu, who travel across many regions in hopes of being regarded as a Pokemon master.&lt;/p&gt;
+                                    &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-red&quot;&gt;Ten-year-old Ash aspires to be the greatest Pokémon (pocket monster) trainer in the world. To do this, he enlists the help of two friends, Misty and Brock, and his own Pokémon, Pikachu. Together, they must search their world for all 150 Pokémon, while avoiding the likes of Team Rocket and their Pokémon, Meowth.&lt;/p&gt;
+                                      &lt;p class=&quot;w3-large w3-panel w3-leftbar w3-border-blue&quot;&gt;The names of two Pokemon, &lt;b&gt;Ekans and Arbok, are reversed words&lt;/b&gt;.&lt;/p&gt;
                                         &lt;/div&gt;
 
 
@@ -210,7 +211,131 @@
     
       <item>
         <title>10 Olympics</title>
-        <description>
+        <description>&lt;div class=&quot;w3-row&quot;&gt;
+&lt;div class=&quot;w3-quarter w3-container w3-light-grey w3-hide-small w3-card-4&quot;&gt;
+&lt;div class=&quot;w3-container w3-round w3-blue w3-margin&quot;&gt;Latest Posts&lt;/div&gt;
+
+    
+    &lt;br /&gt;
+      &lt;div class=&quot;w3-border w3-hover-border-blue&quot;&gt;
+        &lt;a href=&quot;/10-childhood-anime.html&quot; style=&quot;text-decoration:none&quot;&gt;
+      &lt;div class=&quot;w3-card-2&quot;&gt;
+      &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/childhood-anime.jpg&quot; alt=&quot;10 childhood anime&quot; style=&quot;width:100%;&quot; /&gt;
+      
+      
+      &lt;div class=&quot;w3-container w3-blue w3-round&quot;&gt;
+        
+      &lt;h5 class=&quot;w3-expletus w3-center&quot;&gt;10 Childhood Anime&lt;/h5&gt;
+
+      &lt;/div&gt;
+      &lt;/div&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+
+    
+    &lt;br /&gt;
+      &lt;div class=&quot;w3-border w3-hover-border-blue&quot;&gt;
+        &lt;a href=&quot;/10-Olympics.html&quot; style=&quot;text-decoration:none&quot;&gt;
+      &lt;div class=&quot;w3-card-2&quot;&gt;
+      &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/olytrue.jpg&quot; alt=&quot;10 awesome Olympic calorie burns&quot; style=&quot;width:100%;&quot; /&gt;
+      
+      
+      &lt;div class=&quot;w3-container w3-black w3-round&quot;&gt;
+        
+      &lt;h5 class=&quot;w3-expletus w3-center&quot;&gt;10 Olympics&lt;/h5&gt;
+
+      &lt;/div&gt;
+      &lt;/div&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+
+    
+    &lt;br /&gt;
+      &lt;div class=&quot;w3-border w3-hover-border-blue&quot;&gt;
+        &lt;a href=&quot;/10-popular-sports.html&quot; style=&quot;text-decoration:none&quot;&gt;
+      &lt;div class=&quot;w3-card-2&quot;&gt;
+      &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/sport.jpg&quot; alt=&quot;10 awesome sports&quot; style=&quot;width:100%;&quot; /&gt;
+      
+      
+      &lt;div class=&quot;w3-container w3-blue w3-round&quot;&gt;
+        
+      &lt;h5 class=&quot;w3-expletus w3-center&quot;&gt;10 Popular Sports&lt;/h5&gt;
+
+      &lt;/div&gt;
+      &lt;/div&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+
+    
+    &lt;br /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;w3-half w3-container&quot;&gt;
+
+&lt;img src=&quot;images/j3lfu/9-10.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round mySlides&quot; /&gt;
+&lt;img src=&quot;images/j3lfu/9-9.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round mySlides&quot; /&gt;
+&lt;img src=&quot;images/j3lfu/9-8.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round mySlides&quot; /&gt;
+&lt;img src=&quot;images/j3lfu/9-7.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round mySlides&quot; /&gt;
+&lt;img src=&quot;images/j3lfu/9-6.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round mySlides&quot; /&gt;
+&lt;img src=&quot;images/j3lfu/9-5.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round mySlides&quot; /&gt;
+&lt;img src=&quot;images/j3lfu/9-4.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round mySlides&quot; /&gt;
+&lt;img src=&quot;images/j3lfu/9-3.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round mySlides&quot; /&gt;
+&lt;img src=&quot;images/j3lfu/9-2.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round mySlides&quot; /&gt;
+&lt;img src=&quot;images/j3lfu/9-1.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round mySlides&quot; /&gt;
+
+
+
+&lt;div class=&quot;w3-center&quot;&gt;
+  &lt;div class=&quot;w3-section&quot;&gt;
+    &lt;button class=&quot;w3-btn&quot; onclick=&quot;plusDivs(-1)&quot;&gt;❮ Prev&lt;/button&gt;
+    &lt;button class=&quot;w3-btn&quot; onclick=&quot;plusDivs(1)&quot;&gt;Next ❯&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(1)&quot;&gt;10&lt;/button&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(2)&quot;&gt;9&lt;/button&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(3)&quot;&gt;8&lt;/button&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(4)&quot;&gt;7&lt;/button&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(5)&quot;&gt;6&lt;/button&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(6)&quot;&gt;5&lt;/button&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(7)&quot;&gt;4&lt;/button&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(8)&quot;&gt;3&lt;/button&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(9)&quot;&gt;2&lt;/button&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(10)&quot;&gt;1&lt;/button&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;div class=&quot;w3-quarter w3-container w3-light-grey&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName(&quot;mySlides&quot;);
+  var dots = document.getElementsByClassName(&quot;demo&quot;);
+  if (n &gt; x.length) {slideIndex = 1}
+  if (n &lt; 1) {slideIndex = x.length}
+  for (i = 0; i &lt; x.length; i++) {
+     x[i].style.display = &quot;none&quot;;
+  }
+  for (i = 0; i &lt; dots.length; i++) {
+     dots[i].className = dots[i].className.replace(&quot; w3-red&quot;, &quot;&quot;);
+  }
+  x[slideIndex-1].style.display = &quot;block&quot;;
+  dots[slideIndex-1].className += &quot; w3-red&quot;;
+}
+&lt;/script&gt;
+
 </description>
         <pubDate>Sat, 20 Aug 2016 00:00:00 +0530</pubDate>
         <link>localhost:4000/10-Olympics.html</link>
@@ -221,7 +346,210 @@
     
       <item>
         <title>10 Popular Sports</title>
-        <description>
+        <description>&lt;div class=&quot;w3-row&quot;&gt;
+&lt;div class=&quot;w3-quarter w3-container w3-light-grey w3-hide-small w3-card-4&quot;&gt;
+&lt;div class=&quot;w3-container w3-round w3-blue w3-margin&quot;&gt;Latest Posts&lt;/div&gt;
+
+    
+    &lt;br /&gt;
+      &lt;div class=&quot;w3-border w3-hover-border-blue&quot;&gt;
+        &lt;a href=&quot;/10-childhood-anime.html&quot; style=&quot;text-decoration:none&quot;&gt;
+      &lt;div class=&quot;w3-card-2&quot;&gt;
+      &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/childhood-anime.jpg&quot; alt=&quot;10 childhood anime&quot; style=&quot;width:100%;&quot; /&gt;
+      
+      
+      &lt;div class=&quot;w3-container w3-blue w3-round&quot;&gt;
+        
+      &lt;h5 class=&quot;w3-expletus w3-center&quot;&gt;10 Childhood Anime&lt;/h5&gt;
+
+      &lt;/div&gt;
+      &lt;/div&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+
+    
+    &lt;br /&gt;
+      &lt;div class=&quot;w3-border w3-hover-border-blue&quot;&gt;
+        &lt;a href=&quot;/10-Olympics.html&quot; style=&quot;text-decoration:none&quot;&gt;
+      &lt;div class=&quot;w3-card-2&quot;&gt;
+      &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/olytrue.jpg&quot; alt=&quot;10 awesome Olympic calorie burns&quot; style=&quot;width:100%;&quot; /&gt;
+      
+      
+      &lt;div class=&quot;w3-container w3-black w3-round&quot;&gt;
+        
+      &lt;h5 class=&quot;w3-expletus w3-center&quot;&gt;10 Olympics&lt;/h5&gt;
+
+      &lt;/div&gt;
+      &lt;/div&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+
+    
+    &lt;br /&gt;
+      &lt;div class=&quot;w3-border w3-hover-border-blue&quot;&gt;
+        &lt;a href=&quot;/10-popular-sports.html&quot; style=&quot;text-decoration:none&quot;&gt;
+      &lt;div class=&quot;w3-card-2&quot;&gt;
+      &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/sport.jpg&quot; alt=&quot;10 awesome sports&quot; style=&quot;width:100%;&quot; /&gt;
+      
+      
+      &lt;div class=&quot;w3-container w3-blue w3-round&quot;&gt;
+        
+      &lt;h5 class=&quot;w3-expletus w3-center&quot;&gt;10 Popular Sports&lt;/h5&gt;
+
+      &lt;/div&gt;
+      &lt;/div&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+
+    
+    &lt;br /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;w3-half w3-container&quot;&gt;
+
+&lt;div class=&quot;w3-display-container w3-card-4 w3-round mySlides&quot;&gt;
+&lt;img src=&quot;images/k4lfu/9-10.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
+&lt;br /&gt;
+&lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
+  &lt;h2 class=&quot;w3-blue&quot;&gt;10. American Football&lt;/h2&gt;
+&lt;p class=&quot;w3-code&quot;&gt;Estimated Fans  400 Million&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;w3-display-container w3-card-4 w3-round mySlides&quot;&gt;
+&lt;img src=&quot;images/k4lfu/9-9.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
+&lt;br /&gt;
+&lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
+  &lt;h2 class=&quot;w3-blue&quot;&gt;9. Basketball&lt;/h2&gt;
+&lt;p class=&quot;w3-code&quot;&gt;Estimated Fans  400 Million&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;w3-display-container w3-card-4 w3-round mySlides&quot;&gt;
+&lt;img src=&quot;images/k4lfu/9-8.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
+&lt;br /&gt;
+&lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
+  &lt;h2 class=&quot;w3-blue&quot;&gt;8. Golf&lt;/h2&gt;
+&lt;p class=&quot;w3-code&quot;&gt;Estimated fans	450 Million&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;w3-display-container w3-card-4 w3-round mySlides&quot;&gt;
+&lt;img src=&quot;images/k4lfu/9-7.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
+&lt;br /&gt;
+&lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
+  &lt;h2 class=&quot;w3-blue&quot;&gt;7. 	Baseball&lt;/h2&gt;
+&lt;p class=&quot;w3-code&quot;&gt;Estimated Fans  500 Million&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;w3-display-container w3-card-4 w3-round mySlides&quot;&gt;
+&lt;img src=&quot;images/k4lfu/9-6.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
+&lt;br /&gt;
+&lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
+  &lt;h2 class=&quot;w3-blue&quot;&gt;6. Table Tennis&lt;/h2&gt;
+&lt;p class=&quot;w3-code&quot;&gt;Estimated Fans  850 Million&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;w3-display-container w3-card-4 w3-round mySlides&quot;&gt;
+&lt;img src=&quot;images/k4lfu/9-5.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
+&lt;br /&gt;
+&lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
+  &lt;h2 class=&quot;w3-blue&quot;&gt;5. Volleyball&lt;/h2&gt;
+&lt;p class=&quot;w3-code&quot;&gt;Estimated Fans  900 Million&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;w3-display-container w3-card-4 w3-round mySlides&quot;&gt;
+&lt;img src=&quot;images/k4lfu/9-4.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
+&lt;br /&gt;
+&lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
+  &lt;h2 class=&quot;w3-blue&quot;&gt;4. 	Tennis&lt;/h2&gt;
+&lt;p class=&quot;w3-code&quot;&gt;Estimated Fans  1 Billion&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;w3-display-container w3-card-4 w3-round mySlides&quot;&gt;
+&lt;img src=&quot;images/k4lfu/9-3.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
+&lt;br /&gt;
+&lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
+  &lt;h2 class=&quot;w3-blue&quot;&gt;3. 	Field Hockey&lt;/h2&gt;
+&lt;p class=&quot;w3-code&quot;&gt;Estimated Fans  2 Billion&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;w3-display-container w3-card-4 w3-round mySlides&quot;&gt;
+&lt;img src=&quot;images/k4lfu/9-2.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
+&lt;br /&gt;
+&lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
+  &lt;h2 class=&quot;w3-blue&quot;&gt;2. Cricket&lt;/h2&gt;
+&lt;p class=&quot;w3-code&quot;&gt;Estimated Fans  2.5 Billion&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;w3-display-container w3-card-4 w3-round mySlides&quot;&gt;
+&lt;img src=&quot;images/k4lfu/9-1.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
+&lt;br /&gt;
+&lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
+  &lt;h2 class=&quot;w3-blue&quot;&gt;1. Football/Soccer&lt;/h2&gt;
+&lt;p class=&quot;w3-code&quot;&gt;Estimated Fans  3.5 Billion&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&quot;w3-center&quot;&gt;
+  &lt;div class=&quot;w3-section&quot;&gt;
+    &lt;button class=&quot;w3-btn&quot; onclick=&quot;plusDivs(-1)&quot;&gt;❮ Prev&lt;/button&gt;
+    &lt;button class=&quot;w3-btn&quot; onclick=&quot;plusDivs(1)&quot;&gt;Next ❯&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(1)&quot;&gt;10&lt;/button&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(2)&quot;&gt;9&lt;/button&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(3)&quot;&gt;8&lt;/button&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(4)&quot;&gt;7&lt;/button&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(5)&quot;&gt;6&lt;/button&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(6)&quot;&gt;5&lt;/button&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(7)&quot;&gt;4&lt;/button&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(8)&quot;&gt;3&lt;/button&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(9)&quot;&gt;2&lt;/button&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(10)&quot;&gt;1&lt;/button&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;div class=&quot;w3-quarter w3-container w3-light-grey&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName(&quot;mySlides&quot;);
+  var dots = document.getElementsByClassName(&quot;demo&quot;);
+  if (n &gt; x.length) {slideIndex = 1}
+  if (n &lt; 1) {slideIndex = x.length}
+  for (i = 0; i &lt; x.length; i++) {
+     x[i].style.display = &quot;none&quot;;
+  }
+  for (i = 0; i &lt; dots.length; i++) {
+     dots[i].className = dots[i].className.replace(&quot; w3-red&quot;, &quot;&quot;);
+  }
+  x[slideIndex-1].style.display = &quot;block&quot;;
+  dots[slideIndex-1].className += &quot; w3-red&quot;;
+}
+&lt;/script&gt;
+
 </description>
         <pubDate>Wed, 10 Aug 2016 00:00:00 +0530</pubDate>
         <link>localhost:4000/10-popular-sports.html</link>
