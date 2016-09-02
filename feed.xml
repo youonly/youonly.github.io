@@ -6,8 +6,8 @@
 </description>
     <link>localhost:4000/</link>
     <atom:link href="localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 01 Sep 2016 23:12:17 +0530</pubDate>
-    <lastBuildDate>Thu, 01 Sep 2016 23:12:17 +0530</lastBuildDate>
+    <pubDate>Fri, 02 Sep 2016 18:36:40 +0530</pubDate>
+    <lastBuildDate>Fri, 02 Sep 2016 18:36:40 +0530</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -18,7 +18,7 @@
 
 &lt;div class=&quot;w3-row&quot;&gt;
 &lt;div class=&quot;w3-quarter w3-container w3-light-grey w3-hide-small w3-card-4&quot;&gt;
-&lt;div class=&quot;w3-container w3-round w3-blue w3-margin&quot;&gt;Latest Posts&lt;/div&gt;
+&lt;div class=&quot;w3-large w3-section&quot;&gt;&lt;span class=&quot;w3-tag w3-xlarge&quot;&gt;Latest Posts&lt;/span&gt;&lt;/div&gt;
 
     
     &lt;br /&gt;
@@ -47,7 +47,7 @@
       
       &lt;div class=&quot;w3-container w3-black w3-round&quot;&gt;
         
-      &lt;h5 class=&quot;w3-expletus w3-center&quot;&gt;10 Olympics&lt;/h5&gt;
+      &lt;h5 class=&quot;w3-expletus w3-center&quot;&gt;10 Olympic Calorie Burning Sports&lt;/h5&gt;
 
       &lt;/div&gt;
       &lt;/div&gt;
@@ -210,10 +210,14 @@
       </item>
     
       <item>
-        <title>10 Olympics</title>
-        <description>&lt;div class=&quot;w3-row&quot;&gt;
+        <title>10 Olympic Calorie Burning Sports</title>
+        <description>&lt;div class=&quot;w3-container w3-center w3-round&quot;&gt;
+&lt;h3 class=&quot;w3-expletus&quot;&gt;Worlds top 10-Most awesome olympic calorie burning sports&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;w3-row&quot;&gt;
 &lt;div class=&quot;w3-quarter w3-container w3-light-grey w3-hide-small w3-card-4&quot;&gt;
-&lt;div class=&quot;w3-container w3-round w3-blue w3-margin&quot;&gt;Latest Posts&lt;/div&gt;
+&lt;div class=&quot;w3-large w3-section&quot;&gt;&lt;span class=&quot;w3-tag w3-xlarge&quot;&gt;Latest Posts&lt;/span&gt;&lt;/div&gt;
 
     
     &lt;br /&gt;
@@ -242,7 +246,7 @@
       
       &lt;div class=&quot;w3-container w3-black w3-round&quot;&gt;
         
-      &lt;h5 class=&quot;w3-expletus w3-center&quot;&gt;10 Olympics&lt;/h5&gt;
+      &lt;h5 class=&quot;w3-expletus w3-center&quot;&gt;10 Olympic Calorie Burning Sports&lt;/h5&gt;
 
       &lt;/div&gt;
       &lt;/div&gt;
@@ -334,6 +338,16 @@ function showDivs(n) {
   x[slideIndex-1].style.display = &quot;block&quot;;
   dots[slideIndex-1].className += &quot; w3-red&quot;;
 }
+
+document.onkeydown = function(e) {
+      e = e || window.event;
+      if (e.keyCode == &#39;37&#39;) {
+          plusDivs(-1) //left &lt;- show Prev image
+      } else if (e.keyCode == &#39;39&#39;) {
+          // right -&gt; show next image
+          plusDivs(1)
+      }
+  }
 &lt;/script&gt;
 
 </description>
@@ -346,9 +360,13 @@ function showDivs(n) {
     
       <item>
         <title>10 Popular Sports</title>
-        <description>&lt;div class=&quot;w3-row&quot;&gt;
+        <description>&lt;div class=&quot;w3-container w3-center w3-round&quot;&gt;
+&lt;h3 class=&quot;w3-expletus&quot;&gt;Worlds top 10-Most popular sports&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;w3-row&quot;&gt;
 &lt;div class=&quot;w3-quarter w3-container w3-light-grey w3-hide-small w3-card-4&quot;&gt;
-&lt;div class=&quot;w3-container w3-round w3-blue w3-margin&quot;&gt;Latest Posts&lt;/div&gt;
+&lt;div class=&quot;w3-large w3-section&quot;&gt;&lt;span class=&quot;w3-tag w3-xlarge&quot;&gt;Latest Posts&lt;/span&gt;&lt;/div&gt;
 
     
     &lt;br /&gt;
@@ -377,7 +395,7 @@ function showDivs(n) {
       
       &lt;div class=&quot;w3-container w3-black w3-round&quot;&gt;
         
-      &lt;h5 class=&quot;w3-expletus w3-center&quot;&gt;10 Olympics&lt;/h5&gt;
+      &lt;h5 class=&quot;w3-expletus w3-center&quot;&gt;10 Olympic Calorie Burning Sports&lt;/h5&gt;
 
       &lt;/div&gt;
       &lt;/div&gt;
@@ -404,94 +422,93 @@ function showDivs(n) {
     
     &lt;br /&gt;
 &lt;/div&gt;
-&lt;div class=&quot;w3-half w3-container&quot;&gt;
+&lt;div class=&quot;w3-half w3-container&quot; id=&quot;img&quot;&gt;
 
 &lt;div class=&quot;w3-display-container w3-card-4 w3-round mySlides&quot;&gt;
+    &lt;div class=&quot;w3-large w3-section&quot;&gt;&lt;span class=&quot;w3-tag w3-xlarge&quot;&gt;10. &lt;/span&gt;&lt;span class=&quot;w3-tag w3-blue w3-xlarge&quot;&gt;American Football&lt;/span&gt;&lt;/div&gt;
 &lt;img src=&quot;images/k4lfu/9-10.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
-&lt;br /&gt;
-&lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
-  &lt;h2 class=&quot;w3-blue&quot;&gt;10. American Football&lt;/h2&gt;
+&lt;div class=&quot;w3-display-container w3-light-grey w3-card-4&quot;&gt;
 &lt;p class=&quot;w3-code&quot;&gt;Estimated Fans  400 Million&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;w3-display-container w3-card-4 w3-round mySlides&quot;&gt;
+&lt;div class=&quot;w3-large w3-section&quot;&gt;&lt;span class=&quot;w3-tag w3-xlarge&quot;&gt;9. &lt;/span&gt;&lt;span class=&quot;w3-tag w3-blue w3-xlarge&quot;&gt;Basketball&lt;/span&gt;&lt;/div&gt;
 &lt;img src=&quot;images/k4lfu/9-9.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
 &lt;br /&gt;
-&lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
-  &lt;h2 class=&quot;w3-blue&quot;&gt;9. Basketball&lt;/h2&gt;
+&lt;div class=&quot;w3-display-container w3-light-grey w3-card-4&quot;&gt;
 &lt;p class=&quot;w3-code&quot;&gt;Estimated Fans  400 Million&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;w3-display-container w3-card-4 w3-round mySlides&quot;&gt;
+    &lt;div class=&quot;w3-large w3-section&quot;&gt;&lt;span class=&quot;w3-tag w3-xlarge&quot;&gt;8. &lt;/span&gt;&lt;span class=&quot;w3-tag w3-blue w3-xlarge&quot;&gt;Golf&lt;/span&gt;&lt;/div&gt;
 &lt;img src=&quot;images/k4lfu/9-8.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
 &lt;br /&gt;
-&lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
-  &lt;h2 class=&quot;w3-blue&quot;&gt;8. Golf&lt;/h2&gt;
+&lt;div class=&quot;w3-display-container w3-light-grey w3-card-4&quot;&gt;
 &lt;p class=&quot;w3-code&quot;&gt;Estimated fans	450 Million&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;w3-display-container w3-card-4 w3-round mySlides&quot;&gt;
+    &lt;div class=&quot;w3-large w3-section&quot;&gt;&lt;span class=&quot;w3-tag w3-xlarge&quot;&gt;7. &lt;/span&gt;&lt;span class=&quot;w3-tag w3-blue w3-xlarge&quot;&gt;Baseball&lt;/span&gt;&lt;/div&gt;
 &lt;img src=&quot;images/k4lfu/9-7.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
 &lt;br /&gt;
-&lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
-  &lt;h2 class=&quot;w3-blue&quot;&gt;7. 	Baseball&lt;/h2&gt;
+&lt;div class=&quot;w3-display-container w3-light-grey w3-card-4&quot;&gt;
 &lt;p class=&quot;w3-code&quot;&gt;Estimated Fans  500 Million&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;w3-display-container w3-card-4 w3-round mySlides&quot;&gt;
+    &lt;div class=&quot;w3-large w3-section&quot;&gt;&lt;span class=&quot;w3-tag w3-xlarge&quot;&gt;6. &lt;/span&gt;&lt;span class=&quot;w3-tag w3-blue w3-xlarge&quot;&gt;Table Tennis&lt;/span&gt;&lt;/div&gt;
 &lt;img src=&quot;images/k4lfu/9-6.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
 &lt;br /&gt;
-&lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
-  &lt;h2 class=&quot;w3-blue&quot;&gt;6. Table Tennis&lt;/h2&gt;
+&lt;div class=&quot;w3-display-container w3-light-grey w3-card-4&quot;&gt;
 &lt;p class=&quot;w3-code&quot;&gt;Estimated Fans  850 Million&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;w3-display-container w3-card-4 w3-round mySlides&quot;&gt;
+    &lt;div class=&quot;w3-large w3-section&quot;&gt;&lt;span class=&quot;w3-tag w3-xlarge&quot;&gt;5. &lt;/span&gt;&lt;span class=&quot;w3-tag w3-blue w3-xlarge&quot;&gt;Volleyball&lt;/span&gt;&lt;/div&gt;
 &lt;img src=&quot;images/k4lfu/9-5.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
 &lt;br /&gt;
-&lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
-  &lt;h2 class=&quot;w3-blue&quot;&gt;5. Volleyball&lt;/h2&gt;
+&lt;div class=&quot;w3-display-container w3-light-grey w3-card-4&quot;&gt;
 &lt;p class=&quot;w3-code&quot;&gt;Estimated Fans  900 Million&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;w3-display-container w3-card-4 w3-round mySlides&quot;&gt;
+    &lt;div class=&quot;w3-large w3-section&quot;&gt;&lt;span class=&quot;w3-tag w3-xlarge&quot;&gt;4. &lt;/span&gt;&lt;span class=&quot;w3-tag w3-blue w3-xlarge&quot;&gt;Tennis&lt;/span&gt;&lt;/div&gt;
 &lt;img src=&quot;images/k4lfu/9-4.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
 &lt;br /&gt;
-&lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
-  &lt;h2 class=&quot;w3-blue&quot;&gt;4. 	Tennis&lt;/h2&gt;
+&lt;div class=&quot;w3-display-container w3-light-grey w3-card-4&quot;&gt;
 &lt;p class=&quot;w3-code&quot;&gt;Estimated Fans  1 Billion&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;w3-display-container w3-card-4 w3-round mySlides&quot;&gt;
+    &lt;div class=&quot;w3-large w3-section&quot;&gt;&lt;span class=&quot;w3-tag w3-xlarge&quot;&gt;3. &lt;/span&gt;&lt;span class=&quot;w3-tag w3-blue w3-xlarge&quot;&gt;Field Hockey&lt;/span&gt;&lt;/div&gt;
 &lt;img src=&quot;images/k4lfu/9-3.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
 &lt;br /&gt;
-&lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
-  &lt;h2 class=&quot;w3-blue&quot;&gt;3. 	Field Hockey&lt;/h2&gt;
+&lt;div class=&quot;w3-display-container w3-light-grey w3-card-4&quot;&gt;
 &lt;p class=&quot;w3-code&quot;&gt;Estimated Fans  2 Billion&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;w3-display-container w3-card-4 w3-round mySlides&quot;&gt;
+    &lt;div class=&quot;w3-large w3-section&quot;&gt;&lt;span class=&quot;w3-tag w3-xlarge&quot;&gt;2. &lt;/span&gt;&lt;span class=&quot;w3-tag w3-blue w3-xlarge&quot;&gt;Cricket&lt;/span&gt;&lt;/div&gt;
 &lt;img src=&quot;images/k4lfu/9-2.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
 &lt;br /&gt;
-&lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
-  &lt;h2 class=&quot;w3-blue&quot;&gt;2. Cricket&lt;/h2&gt;
+&lt;div class=&quot;w3-display-container w3-light-grey w3-card-4&quot;&gt;
 &lt;p class=&quot;w3-code&quot;&gt;Estimated Fans  2.5 Billion&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;w3-display-container w3-card-4 w3-round mySlides&quot;&gt;
+    &lt;div class=&quot;w3-large w3-section&quot;&gt;&lt;span class=&quot;w3-tag w3-xlarge&quot;&gt;1. &lt;/span&gt;&lt;span class=&quot;w3-tag w3-blue w3-xlarge&quot;&gt;Football/Soccer&lt;/span&gt;&lt;/div&gt;
 &lt;img src=&quot;images/k4lfu/9-1.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; class=&quot;w3-round&quot; /&gt;
 &lt;br /&gt;
-&lt;div class=&quot;w3-display-container w3-white w3-card-4&quot;&gt;
-  &lt;h2 class=&quot;w3-blue&quot;&gt;1. Football/Soccer&lt;/h2&gt;
+&lt;div class=&quot;w3-display-container w3-light-grey w3-card-4&quot;&gt;
 &lt;p class=&quot;w3-code&quot;&gt;Estimated Fans  3.5 Billion&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -500,19 +517,19 @@ function showDivs(n) {
 
 &lt;div class=&quot;w3-center&quot;&gt;
   &lt;div class=&quot;w3-section&quot;&gt;
-    &lt;button class=&quot;w3-btn&quot; onclick=&quot;plusDivs(-1)&quot;&gt;❮ Prev&lt;/button&gt;
-    &lt;button class=&quot;w3-btn&quot; onclick=&quot;plusDivs(1)&quot;&gt;Next ❯&lt;/button&gt;
+    &lt;button class=&quot;w3-btn&quot; onclick=&quot;plusDivs(-1)&quot;&gt;&lt;a href=&quot;#img&quot; style=&quot;text-decoration: none;&quot;&gt;❮ Prev&lt;/a&gt;&lt;/button&gt;
+    &lt;button class=&quot;w3-btn&quot; onclick=&quot;plusDivs(1)&quot;&gt;&lt;a href=&quot;#img&quot; style=&quot;text-decoration: none;&quot;&gt;Next ❯&lt;/a&gt;&lt;/button&gt;
   &lt;/div&gt;
-  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(1)&quot;&gt;10&lt;/button&gt;
-  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(2)&quot;&gt;9&lt;/button&gt;
-  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(3)&quot;&gt;8&lt;/button&gt;
-  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(4)&quot;&gt;7&lt;/button&gt;
-  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(5)&quot;&gt;6&lt;/button&gt;
-  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(6)&quot;&gt;5&lt;/button&gt;
-  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(7)&quot;&gt;4&lt;/button&gt;
-  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(8)&quot;&gt;3&lt;/button&gt;
-  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(9)&quot;&gt;2&lt;/button&gt;
-  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(10)&quot;&gt;1&lt;/button&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(1)&quot;&gt;&lt;a href=&quot;#img&quot; style=&quot;text-decoration: none;&quot;&gt;10&lt;/a&gt;&lt;/button&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(2)&quot;&gt;&lt;a href=&quot;#img&quot; style=&quot;text-decoration: none;&quot;&gt;9&lt;/a&gt;&lt;/button&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(3)&quot;&gt;&lt;a href=&quot;#img&quot; style=&quot;text-decoration: none;&quot;&gt;8&lt;/a&gt;&lt;/button&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(4)&quot;&gt;&lt;a href=&quot;#img&quot; style=&quot;text-decoration: none;&quot;&gt;7&lt;/a&gt;&lt;/button&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(5)&quot;&gt;&lt;a href=&quot;#img&quot; style=&quot;text-decoration: none;&quot;&gt;6&lt;/a&gt;&lt;/button&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(6)&quot;&gt;&lt;a href=&quot;#img&quot; style=&quot;text-decoration: none;&quot;&gt;5&lt;/a&gt;&lt;/button&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(7)&quot;&gt;&lt;a href=&quot;#img&quot; style=&quot;text-decoration: none;&quot;&gt;4&lt;/a&gt;&lt;/button&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(8)&quot;&gt;&lt;a href=&quot;#img&quot; style=&quot;text-decoration: none;&quot;&gt;3&lt;/a&gt;&lt;/button&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(9)&quot;&gt;&lt;a href=&quot;#img&quot; style=&quot;text-decoration: none;&quot;&gt;2&lt;/a&gt;&lt;/button&gt;
+  &lt;button class=&quot;w3-btn demo&quot; onclick=&quot;currentDiv(10)&quot;&gt;&lt;a href=&quot;#img&quot; style=&quot;text-decoration: none;&quot;&gt;1&lt;/a&gt;&lt;/button&gt;
 &lt;/div&gt;
 
 
@@ -547,7 +564,23 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = &quot;block&quot;;
   dots[slideIndex-1].className += &quot; w3-red&quot;;
+
+  document.onkeydown = function(e) {
+        e = e || window.event;
+        if (e.keyCode == &#39;37&#39;) {
+            plusDivs(-1); //left &lt;- show Prev image
+            scroll(&quot;img&quot;);
+        } else if (e.keyCode == &#39;39&#39;) {
+            // right -&gt; show next image
+            plusDivs(1);
+            scroll(&quot;img&quot;);
+        }
+    }
 }
+
+function scroll(element){   
+var ele = document.getElementById(element);   
+window.scrollTo(ele.offsetLeft,ele.offsetTop); }
 &lt;/script&gt;
 
 </description>
