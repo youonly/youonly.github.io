@@ -6,8 +6,8 @@
 </description>
     <link>localhost:4000/</link>
     <atom:link href="localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 03 Sep 2016 22:04:46 +0530</pubDate>
-    <lastBuildDate>Sat, 03 Sep 2016 22:04:46 +0530</lastBuildDate>
+    <pubDate>Sun, 04 Sep 2016 13:40:33 +0530</pubDate>
+    <lastBuildDate>Sun, 04 Sep 2016 13:40:33 +0530</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -23,7 +23,7 @@
     
     &lt;br /&gt;
       &lt;div class=&quot;w3-border w3-hover-border-blue&quot;&gt;
-        &lt;a href=&quot;/10-Most-Powerful-Militaries.html&quot; style=&quot;text-decoration:none&quot;&gt;
+        &lt;a href=&quot;10-Most-Powerful-Militaries.html&quot; style=&quot;text-decoration:none&quot;&gt;
       &lt;div class=&quot;w3-card-2&quot;&gt;
       &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/military.jpg&quot; alt=&quot;10 Most powerful Militaries&quot; style=&quot;width:100%;&quot; /&gt;
       
@@ -40,14 +40,14 @@
     
     &lt;br /&gt;
       &lt;div class=&quot;w3-border w3-hover-border-blue&quot;&gt;
-        &lt;a href=&quot;/10-childhood-anime.html&quot; style=&quot;text-decoration:none&quot;&gt;
+        &lt;a href=&quot;10-childhood-anime.html&quot; style=&quot;text-decoration:none&quot;&gt;
       &lt;div class=&quot;w3-card-2&quot;&gt;
       &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/childhood-anime.jpg&quot; alt=&quot;10 childhood anime&quot; style=&quot;width:100%;&quot; /&gt;
       
       
       &lt;div class=&quot;w3-container w3-black w3-round&quot;&gt;
         
-      &lt;h5 class=&quot;w3-expletus w3-center&quot;&gt;10 Childhood Anime&lt;/h5&gt;
+      &lt;h5 class=&quot;w3-expletus w3-center&quot;&gt;10 Awesome Childhood Animes&lt;/h5&gt;
 
       &lt;/div&gt;
       &lt;/div&gt;
@@ -57,7 +57,7 @@
     
     &lt;br /&gt;
       &lt;div class=&quot;w3-border w3-hover-border-blue&quot;&gt;
-        &lt;a href=&quot;/10-Olympics.html&quot; style=&quot;text-decoration:none&quot;&gt;
+        &lt;a href=&quot;10-Olympics.html&quot; style=&quot;text-decoration:none&quot;&gt;
       &lt;div class=&quot;w3-card-2&quot;&gt;
       &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/olytrue.jpg&quot; alt=&quot;10 awesome Olympic calorie burns&quot; style=&quot;width:100%;&quot; /&gt;
       
@@ -249,16 +249,16 @@ window.scrollTo(ele.offsetLeft,ele.offsetTop); }
 
 </description>
         <pubDate>Sat, 03 Sep 2016 00:00:00 +0530</pubDate>
-        <link>localhost:4000/10-Most-Powerful-Militaries.html</link>
-        <guid isPermaLink="true">localhost:4000/10-Most-Powerful-Militaries.html</guid>
+        <link>localhost:400010-Most-Powerful-Militaries.html</link>
+        <guid isPermaLink="true">localhost:400010-Most-Powerful-Militaries.html</guid>
         
         
       </item>
     
       <item>
-        <title>10 Childhood Anime</title>
+        <title>10 Awesome Childhood Animes</title>
         <description>&lt;div class=&quot;w3-container w3-center w3-round&quot;&gt;
-&lt;h3 class=&quot;w3-expletus&quot;&gt;Awesome Childhood Animes&lt;/h3&gt;
+&lt;h3 class=&quot;w3-expletus&quot;&gt;10 Awesome Childhood Animes&lt;/h3&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;w3-row&quot;&gt;
@@ -268,7 +268,7 @@ window.scrollTo(ele.offsetLeft,ele.offsetTop); }
     
     &lt;br /&gt;
       &lt;div class=&quot;w3-border w3-hover-border-blue&quot;&gt;
-        &lt;a href=&quot;/10-Most-Powerful-Militaries.html&quot; style=&quot;text-decoration:none&quot;&gt;
+        &lt;a href=&quot;10-Most-Powerful-Militaries.html&quot; style=&quot;text-decoration:none&quot;&gt;
       &lt;div class=&quot;w3-card-2&quot;&gt;
       &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/military.jpg&quot; alt=&quot;10 Most powerful Militaries&quot; style=&quot;width:100%;&quot; /&gt;
       
@@ -285,14 +285,14 @@ window.scrollTo(ele.offsetLeft,ele.offsetTop); }
     
     &lt;br /&gt;
       &lt;div class=&quot;w3-border w3-hover-border-blue&quot;&gt;
-        &lt;a href=&quot;/10-childhood-anime.html&quot; style=&quot;text-decoration:none&quot;&gt;
+        &lt;a href=&quot;10-childhood-anime.html&quot; style=&quot;text-decoration:none&quot;&gt;
       &lt;div class=&quot;w3-card-2&quot;&gt;
       &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/childhood-anime.jpg&quot; alt=&quot;10 childhood anime&quot; style=&quot;width:100%;&quot; /&gt;
       
       
       &lt;div class=&quot;w3-container w3-black w3-round&quot;&gt;
         
-      &lt;h5 class=&quot;w3-expletus w3-center&quot;&gt;10 Childhood Anime&lt;/h5&gt;
+      &lt;h5 class=&quot;w3-expletus w3-center&quot;&gt;10 Awesome Childhood Animes&lt;/h5&gt;
 
       &lt;/div&gt;
       &lt;/div&gt;
@@ -302,7 +302,7 @@ window.scrollTo(ele.offsetLeft,ele.offsetTop); }
     
     &lt;br /&gt;
       &lt;div class=&quot;w3-border w3-hover-border-blue&quot;&gt;
-        &lt;a href=&quot;/10-Olympics.html&quot; style=&quot;text-decoration:none&quot;&gt;
+        &lt;a href=&quot;10-Olympics.html&quot; style=&quot;text-decoration:none&quot;&gt;
       &lt;div class=&quot;w3-card-2&quot;&gt;
       &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/olytrue.jpg&quot; alt=&quot;10 awesome Olympic calorie burns&quot; style=&quot;width:100%;&quot; /&gt;
       
@@ -460,8 +460,8 @@ window.scrollTo(ele.offsetLeft,ele.offsetTop); }
 &lt;/div&gt;
 </description>
         <pubDate>Sat, 20 Aug 2016 00:00:00 +0530</pubDate>
-        <link>localhost:4000/10-childhood-anime.html</link>
-        <guid isPermaLink="true">localhost:4000/10-childhood-anime.html</guid>
+        <link>localhost:400010-childhood-anime.html</link>
+        <guid isPermaLink="true">localhost:400010-childhood-anime.html</guid>
         
         
       </item>
@@ -479,7 +479,7 @@ window.scrollTo(ele.offsetLeft,ele.offsetTop); }
     
     &lt;br /&gt;
       &lt;div class=&quot;w3-border w3-hover-border-blue&quot;&gt;
-        &lt;a href=&quot;/10-Most-Powerful-Militaries.html&quot; style=&quot;text-decoration:none&quot;&gt;
+        &lt;a href=&quot;10-Most-Powerful-Militaries.html&quot; style=&quot;text-decoration:none&quot;&gt;
       &lt;div class=&quot;w3-card-2&quot;&gt;
       &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/military.jpg&quot; alt=&quot;10 Most powerful Militaries&quot; style=&quot;width:100%;&quot; /&gt;
       
@@ -496,14 +496,14 @@ window.scrollTo(ele.offsetLeft,ele.offsetTop); }
     
     &lt;br /&gt;
       &lt;div class=&quot;w3-border w3-hover-border-blue&quot;&gt;
-        &lt;a href=&quot;/10-childhood-anime.html&quot; style=&quot;text-decoration:none&quot;&gt;
+        &lt;a href=&quot;10-childhood-anime.html&quot; style=&quot;text-decoration:none&quot;&gt;
       &lt;div class=&quot;w3-card-2&quot;&gt;
       &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/childhood-anime.jpg&quot; alt=&quot;10 childhood anime&quot; style=&quot;width:100%;&quot; /&gt;
       
       
       &lt;div class=&quot;w3-container w3-black w3-round&quot;&gt;
         
-      &lt;h5 class=&quot;w3-expletus w3-center&quot;&gt;10 Childhood Anime&lt;/h5&gt;
+      &lt;h5 class=&quot;w3-expletus w3-center&quot;&gt;10 Awesome Childhood Animes&lt;/h5&gt;
 
       &lt;/div&gt;
       &lt;/div&gt;
@@ -513,7 +513,7 @@ window.scrollTo(ele.offsetLeft,ele.offsetTop); }
     
     &lt;br /&gt;
       &lt;div class=&quot;w3-border w3-hover-border-blue&quot;&gt;
-        &lt;a href=&quot;/10-Olympics.html&quot; style=&quot;text-decoration:none&quot;&gt;
+        &lt;a href=&quot;10-Olympics.html&quot; style=&quot;text-decoration:none&quot;&gt;
       &lt;div class=&quot;w3-card-2&quot;&gt;
       &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/olytrue.jpg&quot; alt=&quot;10 awesome Olympic calorie burns&quot; style=&quot;width:100%;&quot; /&gt;
       
@@ -621,8 +621,8 @@ document.onkeydown = function(e) {
 
 </description>
         <pubDate>Sat, 20 Aug 2016 00:00:00 +0530</pubDate>
-        <link>localhost:4000/10-Olympics.html</link>
-        <guid isPermaLink="true">localhost:4000/10-Olympics.html</guid>
+        <link>localhost:400010-Olympics.html</link>
+        <guid isPermaLink="true">localhost:400010-Olympics.html</guid>
         
         
       </item>
@@ -640,7 +640,7 @@ document.onkeydown = function(e) {
     
     &lt;br /&gt;
       &lt;div class=&quot;w3-border w3-hover-border-blue&quot;&gt;
-        &lt;a href=&quot;/10-Most-Powerful-Militaries.html&quot; style=&quot;text-decoration:none&quot;&gt;
+        &lt;a href=&quot;10-Most-Powerful-Militaries.html&quot; style=&quot;text-decoration:none&quot;&gt;
       &lt;div class=&quot;w3-card-2&quot;&gt;
       &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/military.jpg&quot; alt=&quot;10 Most powerful Militaries&quot; style=&quot;width:100%;&quot; /&gt;
       
@@ -657,14 +657,14 @@ document.onkeydown = function(e) {
     
     &lt;br /&gt;
       &lt;div class=&quot;w3-border w3-hover-border-blue&quot;&gt;
-        &lt;a href=&quot;/10-childhood-anime.html&quot; style=&quot;text-decoration:none&quot;&gt;
+        &lt;a href=&quot;10-childhood-anime.html&quot; style=&quot;text-decoration:none&quot;&gt;
       &lt;div class=&quot;w3-card-2&quot;&gt;
       &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/childhood-anime.jpg&quot; alt=&quot;10 childhood anime&quot; style=&quot;width:100%;&quot; /&gt;
       
       
       &lt;div class=&quot;w3-container w3-black w3-round&quot;&gt;
         
-      &lt;h5 class=&quot;w3-expletus w3-center&quot;&gt;10 Childhood Anime&lt;/h5&gt;
+      &lt;h5 class=&quot;w3-expletus w3-center&quot;&gt;10 Awesome Childhood Animes&lt;/h5&gt;
 
       &lt;/div&gt;
       &lt;/div&gt;
@@ -674,7 +674,7 @@ document.onkeydown = function(e) {
     
     &lt;br /&gt;
       &lt;div class=&quot;w3-border w3-hover-border-blue&quot;&gt;
-        &lt;a href=&quot;/10-Olympics.html&quot; style=&quot;text-decoration:none&quot;&gt;
+        &lt;a href=&quot;10-Olympics.html&quot; style=&quot;text-decoration:none&quot;&gt;
       &lt;div class=&quot;w3-card-2&quot;&gt;
       &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/olytrue.jpg&quot; alt=&quot;10 awesome Olympic calorie burns&quot; style=&quot;width:100%;&quot; /&gt;
       
@@ -866,8 +866,8 @@ window.scrollTo(ele.offsetLeft,ele.offsetTop); }
 
 </description>
         <pubDate>Wed, 10 Aug 2016 00:00:00 +0530</pubDate>
-        <link>localhost:4000/10-popular-sports.html</link>
-        <guid isPermaLink="true">localhost:4000/10-popular-sports.html</guid>
+        <link>localhost:400010-popular-sports.html</link>
+        <guid isPermaLink="true">localhost:400010-popular-sports.html</guid>
         
         
       </item>
