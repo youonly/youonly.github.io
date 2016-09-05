@@ -6,8 +6,8 @@
 </description>
     <link>localhost:4000/</link>
     <atom:link href="localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 04 Sep 2016 13:40:33 +0530</pubDate>
-    <lastBuildDate>Sun, 04 Sep 2016 13:40:33 +0530</lastBuildDate>
+    <pubDate>Mon, 05 Sep 2016 12:26:09 +0530</pubDate>
+    <lastBuildDate>Mon, 05 Sep 2016 12:26:09 +0530</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -202,50 +202,7 @@
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;script&gt;
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName(&quot;mySlides&quot;);
-  var dots = document.getElementsByClassName(&quot;demo&quot;);
-  if (n &gt; x.length) {slideIndex = 1}
-  if (n &lt; 1) {slideIndex = x.length}
-  for (i = 0; i &lt; x.length; i++) {
-     x[i].style.display = &quot;none&quot;;
-  }
-  for (i = 0; i &lt; dots.length; i++) {
-     dots[i].className = dots[i].className.replace(&quot; w3-red&quot;, &quot;&quot;);
-  }
-  x[slideIndex-1].style.display = &quot;block&quot;;
-  dots[slideIndex-1].className += &quot; w3-red&quot;;
-
-  document.onkeydown = function(e) {
-        e = e || window.event;
-        if (e.keyCode == &#39;37&#39;) {
-            plusDivs(-1); //left &lt;- show Prev image
-            scroll(&quot;img&quot;);
-        } else if (e.keyCode == &#39;39&#39;) {
-            // right -&gt; show next image
-            plusDivs(1);
-            scroll(&quot;img&quot;);
-        }
-    }
-}
-
-function scroll(element){   
-var ele = document.getElementById(element);   
-window.scrollTo(ele.offsetLeft,ele.offsetTop); }
-&lt;/script&gt;
+&lt;script async=&quot;&quot; src=&quot;./handler.js&quot;&gt;&lt;/script&gt;
 
 </description>
         <pubDate>Sat, 03 Sep 2016 00:00:00 +0530</pubDate>

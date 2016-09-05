@@ -8,9 +8,7 @@
 
   <title>10 Most powerful Militaries</title>
 
-  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-  <link href="https://fonts.googleapis.com/css?family=Stardos+Stencil" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Expletus+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="./w3.css">
   <link rel="icon" href="images/tab_logo.png" type="image/x-icon" />
   <style>
 .w3-stencil {
@@ -21,6 +19,21 @@ font-family: 'Stardos Stencil', cursive;
   font-family: 'Expletus Sans', cursive;
 }
 
+@font-face {
+  font-family: 'Stardos Stencil';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Stardos Stencil Regular'), local('StardosStencil-Regular'), url(https://fonts.gstatic.com/s/stardosstencil/v6/ygEOyTW9a6u4fi4OXEZeTHyjZGU_SYMIAZWjSGDHnGA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Expletus Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Expletus Sans'), local('ExpletusSans'), url(https://fonts.gstatic.com/s/expletussans/v9/gegTSDBDs5le3g6uxU1ZscmBRJoLbs7X6hY7yFEc97Q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
 </style>
   <link rel="canonical" href="localhost:4000">
   <meta name="description" content="World's Top 10 most powerful and best militaries in terms of Nucleaar capabilities,Airplanes,Submarines...">
@@ -255,50 +268,7 @@ font-family: 'Stardos Stencil', cursive;
 </div>
 </div>
 
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-red", "");
-  }
-  x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " w3-red";
-
-  document.onkeydown = function(e) {
-        e = e || window.event;
-        if (e.keyCode == '37') {
-            plusDivs(-1); //left <- show Prev image
-            scroll("img");
-        } else if (e.keyCode == '39') {
-            // right -> show next image
-            plusDivs(1);
-            scroll("img");
-        }
-    }
-}
-
-function scroll(element){   
-var ele = document.getElementById(element);   
-window.scrollTo(ele.offsetLeft,ele.offsetTop); }
-</script>
+<script async="" src="./handler.js"></script>
 
 
     </div>
@@ -309,7 +279,7 @@ window.scrollTo(ele.offsetLeft,ele.offsetTop); }
     <li><a class="w3-hover-red" href="http://www.awesomex.tk/index.html">Home</a></li>
     <li><a class="w3-hover-teal" href="http://www.awesomex.tk/privacypolicy.htm">Privacy Policy</a></li>
     <li><a class="w3-hover-green" href="http://www.awesomex.tk/about.html">About Us</a></li>
-    <li class="w3-right"><a class="w3-hover-blue" href="http://www.awesomex.tk">AwesomeX</a></li>
+    <li class="w3-right"><a class="w3-hover-blue" href="http://www.awesomex.tk">Awesome X</a></li>
   </ul>
 </footer>
 
