@@ -19,6 +19,10 @@ font-family: 'Stardos Stencil', cursive;
   font-family: 'Expletus Sans', cursive;
 }
 
+.w3-mandali{
+  font-family: 'Mandali', sans-serif;
+}
+
 @font-face {
   font-family: 'Stardos Stencil';
   font-style: normal;
@@ -34,6 +38,42 @@ font-family: 'Stardos Stencil', cursive;
   src: local('Expletus Sans'), local('ExpletusSans'), url(https://fonts.gstatic.com/s/expletussans/v9/gegTSDBDs5le3g6uxU1ZscmBRJoLbs7X6hY7yFEc97Q.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
+
+@font-face {
+  font-family: 'Mandali';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Mandali'), url(https://fonts.gstatic.com/s/mandali/v4/SC2nNkpbQk83rMQ8SlqC8A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+
+  margin: 100px auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+  } 50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+  } 100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+
 </style>
   <link rel="canonical" href="localhost:4000">
   <meta name="description" content="www.awesomex.tk website's privacy policy">
@@ -53,7 +93,7 @@ font-family: 'Stardos Stencil', cursive;
 </head>
 
 
-  <body class="w3-theme-l4">
+  <body>
 
     <header class="w3-section w3-border-blue w3-border-bottom w3-light-grey">
 
@@ -72,7 +112,6 @@ font-family: 'Stardos Stencil', cursive;
   </div>
 </a>
 </div>
-
 </header>
 
 
