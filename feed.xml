@@ -6,19 +6,33 @@
 </description>
     <link>localhost:4000/</link>
     <atom:link href="localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 07 Sep 2016 12:27:19 +0530</pubDate>
-    <lastBuildDate>Wed, 07 Sep 2016 12:27:19 +0530</lastBuildDate>
+    <pubDate>Wed, 07 Sep 2016 19:37:15 +0530</pubDate>
+    <lastBuildDate>Wed, 07 Sep 2016 19:37:15 +0530</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
-        <title>10 Bollywood Stars with Different Past</title>
+        <title>10  Best torrent websites</title>
         <description>&lt;div class=&quot;w3-container w3-center w3-round&quot;&gt;
-&lt;h3 class=&quot;w3-tag w3-mandali w3-round&quot;&gt;10 Bollywood Stars with Different Past&lt;/h3&gt;
+&lt;h3 class=&quot;w3-tag w3-mandali w3-round&quot;&gt;10 Best torrent websites&lt;/h3&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;w3-row&quot;&gt;
 &lt;div class=&quot;w3-quarter w3-container w3-light-grey w3-hide-small w3-border&quot;&gt;
 &lt;div class=&quot;w3-large w3-section&quot;&gt;&lt;span class=&quot;w3-tag w3-xlarge&quot;&gt;Latest Posts&lt;/span&gt;&lt;/div&gt;
+
+    
+    &lt;br /&gt;
+      &lt;div class=&quot;w3-border&quot;&gt;
+      &lt;a href=&quot;10-torrent-sites.html&quot; style=&quot;text-decoration:none&quot;&gt;
+    &lt;div class=&quot;w3-card-4&quot;&gt;
+    &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/torrent.jpg&quot; alt=&quot;Best torrent websites&quot; style=&quot;width:100%;&quot; /&gt;
+    &lt;div class=&quot;w3-container w3-round&quot;&gt;
+    &lt;h5 class=&quot;w3-mandali w3-center&quot;&gt;10  Best torrent websites&lt;/h5&gt;
+
+      &lt;/div&gt;
+      &lt;/div&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
 
     
     &lt;br /&gt;
@@ -50,12 +64,190 @@
 
     
     &lt;br /&gt;
+&lt;/div&gt;
+&lt;script&gt;
+function myFunction(inu)
+{
+  document.getElementsByClassName(&quot;spinner&quot;)[inu].className += &quot; w3-hide&quot;;
+  document.getElementsByClassName(&quot;imge&quot;)[inu].className =&quot;w3-round imge&quot;;
+}
+&lt;/script&gt;
+
+&lt;div class=&quot;w3-half w3-container&quot; id=&quot;img&quot;&gt;
+&lt;div class=&quot;w3-display-container w3-animate-opacity w3-round-large w3-text-black w3-large w3-padding&quot;&gt;&lt;i&gt;&lt;b&gt;Summary:-&lt;/b&gt;  Some people consider torrents to be bad while for some people it has became an integral part of their life.Whaterver might be the truth there is no denying the fact that they have had a huge impact on the society.Let&#39;s see list of top 10 websites offering torrents.&lt;/i&gt;&lt;/div&gt;
+
+&lt;div class=&quot;w3-display-container w3-card-4 w3-round w3-animate-opacity mySlides&quot;&gt;
+    &lt;div class=&quot;w3-large w3-section&quot;&gt;&lt;span class=&quot;w3-tag w3-xlarge&quot;&gt;10. &lt;/span&gt;&lt;span class=&quot;w3-tag w3-blue w3-xlarge&quot;&gt;IsoHunt&lt;/span&gt;&lt;/div&gt;
+&lt;img src=&quot;images/bxu0q/9-10.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; onload=&quot;myFunction(0)&quot; class=&quot;w3-round imge w3-hide&quot; /&gt;
+&lt;div class=&quot;spinner&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;w3-display-container w3-light-grey w3-card-4&quot;&gt;
+&lt;p class=&quot;w3-code&quot;&gt;&lt;b&gt;Summary:- &lt;/b&gt;IsoTorrent was taken down a few years ago due to copyright infrindgement but since then mirrors of the site have come up among which the most prominent one is isohunt.to . Isohunt indexes large number of torrents from all the caregories and its sleek design makes it more user friendly.&lt;br /&gt;&lt;b&gt;link:- &lt;/b&gt;&lt;a href=&quot;https://isohunt.to/&quot; target=&quot;_blank&quot; class=&quot;w3-text-blue&quot;&gt;IsoHunt&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;w3-display-container w3-card-4 w3-round w3-animate-opacity mySlides&quot;&gt;
+&lt;div class=&quot;w3-large w3-section&quot;&gt;&lt;span class=&quot;w3-tag w3-xlarge&quot;&gt;9. &lt;/span&gt;&lt;span class=&quot;w3-tag w3-blue w3-xlarge&quot;&gt;GloTorrents&lt;/span&gt;&lt;/div&gt;
+&lt;img src=&quot;images/bxu0q/9-9.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; onload=&quot;myFunction(1)&quot; class=&quot;w3-round imge w3-hide&quot; /&gt;
+&lt;div class=&quot;spinner&quot;&gt;&lt;/div&gt;
+&lt;br /&gt;
+&lt;div class=&quot;w3-display-container w3-light-grey w3-card-4&quot;&gt;
+&lt;p class=&quot;w3-code&quot;&gt;&lt;b&gt;Summary:- &lt;/b&gt;GloTorrents might not be as old as some of the other sites on this list, but it is surely rising up the ranks with very large amount of indexed torrents in a very short time and with a lot of Indian content as well.&lt;br /&gt;&lt;b&gt;link:- &lt;/b&gt;&lt;a href=&quot;https://glodls.to/&quot; target=&quot;_blank&quot; class=&quot;w3-text-blue&quot;&gt;GloTorrents&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;w3-display-container w3-card-4 w3-round w3-animate-opacity mySlides&quot;&gt;
+    &lt;div class=&quot;w3-large w3-section&quot;&gt;&lt;span class=&quot;w3-tag w3-xlarge&quot;&gt;8. &lt;/span&gt;&lt;span class=&quot;w3-tag w3-blue w3-xlarge&quot;&gt;ExtraTorrent&lt;/span&gt;&lt;/div&gt;
+&lt;img src=&quot;images/bxu0q/9-8.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; onload=&quot;myFunction(2)&quot; class=&quot;w3-round imge w3-hide&quot; /&gt;
+&lt;div class=&quot;spinner&quot;&gt;&lt;/div&gt;
+&lt;br /&gt;
+&lt;div class=&quot;w3-display-container w3-light-grey w3-card-4&quot;&gt;
+&lt;p class=&quot;w3-code&quot;&gt;&lt;b&gt;Summary:- &lt;/b&gt;ExtraTorrent is a nice site for downloading any type of torrent.But what makes it better than others is the growing community and forums which helps in getting the best torrent avaliable.&lt;br /&gt;&lt;b&gt;link:- &lt;/b&gt;&lt;a href=&quot;https://extratorrent.cc/&quot; target=&quot;_blank&quot; class=&quot;w3-text-blue&quot;&gt;ExtraTorrent&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;w3-display-container w3-card-4 w3-round w3-animate-opacity mySlides&quot;&gt;
+    &lt;div class=&quot;w3-large w3-section&quot;&gt;&lt;span class=&quot;w3-tag w3-xlarge&quot;&gt;7. &lt;/span&gt;&lt;span class=&quot;w3-tag w3-blue w3-xlarge&quot;&gt;TorLock&lt;/span&gt;&lt;/div&gt;
+&lt;img src=&quot;images/bxu0q/9-7.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; onload=&quot;myFunction(3)&quot; class=&quot;w3-round imge w3-hide&quot; /&gt;
+&lt;div class=&quot;spinner&quot;&gt;&lt;/div&gt;
+&lt;br /&gt;
+&lt;div class=&quot;w3-display-container w3-light-grey w3-card-4&quot;&gt;
+&lt;p class=&quot;w3-code&quot;&gt;&lt;b&gt;Summary:- &lt;/b&gt;TorLock has total 35 lakh verified torrents while publishing this article and updates 600-1000 torrents per day.It has a nice and user friendly design.&lt;br /&gt;&lt;b&gt;link:- &lt;/b&gt;&lt;a href=&quot;https://www.torlock.com/&quot; target=&quot;_blank&quot; class=&quot;w3-text-blue&quot;&gt;TorLock&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;w3-display-container w3-card-4 w3-round w3-animate-opacity mySlides&quot;&gt;
+    &lt;div class=&quot;w3-large w3-section&quot;&gt;&lt;span class=&quot;w3-tag w3-xlarge&quot;&gt;6. &lt;/span&gt;&lt;span class=&quot;w3-tag w3-blue w3-xlarge&quot;&gt;1337X&lt;/span&gt;&lt;/div&gt;
+&lt;img src=&quot;images/bxu0q/9-6.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; onload=&quot;myFunction(4)&quot; class=&quot;w3-round imge w3-hide&quot; /&gt;
+&lt;div class=&quot;spinner&quot;&gt;&lt;/div&gt;
+&lt;br /&gt;
+&lt;div class=&quot;w3-display-container w3-light-grey w3-card-4&quot;&gt;
+&lt;p class=&quot;w3-code&quot;&gt;&lt;b&gt;Summary:- &lt;/b&gt;while 1337X has a large database of torrents and a good interface it fails to have a good community or torrent verification thats why it sits on the 6th position on our list.&lt;br /&gt;&lt;b&gt;link:- &lt;/b&gt;&lt;a href=&quot;https://1337x.to/&quot; target=&quot;_blank&quot; class=&quot;w3-text-blue&quot;&gt;1337X&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;w3-display-container w3-card-4 w3-round w3-animate-opacity mySlides&quot;&gt;
+    &lt;div class=&quot;w3-large w3-section&quot;&gt;&lt;span class=&quot;w3-tag w3-xlarge&quot;&gt;5. &lt;/span&gt;&lt;span class=&quot;w3-tag w3-blue w3-xlarge&quot;&gt;TorrentZ&lt;/span&gt;&lt;/div&gt;
+&lt;img src=&quot;images/bxu0q/9-5.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; onload=&quot;myFunction(5)&quot; class=&quot;w3-round imge w3-hide&quot; /&gt;
+&lt;div class=&quot;spinner&quot;&gt;&lt;/div&gt;
+&lt;br /&gt;
+&lt;div class=&quot;w3-display-container w3-light-grey w3-card-4&quot;&gt;
+&lt;p class=&quot;w3-code&quot;&gt;&lt;b&gt;Summary:- &lt;/b&gt;While Torrentz is not a torrent hosting website it was a huge meta-search engine for torrent which compiled the torrents of all major websites and also sorted them.Until it went down in 2016.But don&#39;t worry ,mirrors of this website have come up to the rescue.&lt;br /&gt;&lt;b&gt;link:- &lt;/b&gt;&lt;a href=&quot;https://torrentz2.eu/my&quot; target=&quot;_blank&quot; class=&quot;w3-text-blue&quot;&gt;TorrentZ&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;w3-display-container w3-card-4 w3-round w3-animate-opacity mySlides&quot;&gt;
+    &lt;div class=&quot;w3-large w3-section&quot;&gt;&lt;span class=&quot;w3-tag w3-xlarge&quot;&gt;4. &lt;/span&gt;&lt;span class=&quot;w3-tag w3-blue w3-xlarge&quot;&gt;YTS(yify)&lt;/span&gt;&lt;/div&gt;
+&lt;img src=&quot;images/bxu0q/9-4.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; onload=&quot;myFunction(6)&quot; class=&quot;w3-round imge w3-hide&quot; /&gt;
+&lt;div class=&quot;spinner&quot;&gt;&lt;/div&gt;
+&lt;br /&gt;
+&lt;div class=&quot;w3-display-container w3-light-grey w3-card-4&quot;&gt;
+&lt;p class=&quot;w3-code&quot;&gt;&lt;b&gt;Summary:- &lt;/b&gt;Though yify went down some time ago due to copyright issues,It is and always will be a legendary website.It specialized in Movie torrents with all HD movies and that too with very low file size.Recently a mirror of this website popped up, while the quality remains the same ,major amount movies uploaded there are quite old and shitty I hope they look into that.&lt;br /&gt;&lt;b&gt;link:- &lt;/b&gt;&lt;a href=&quot;https://yts.ag/browse-movies&quot; target=&quot;_blank&quot; class=&quot;w3-text-blue&quot;&gt;YTS&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;w3-display-container w3-card-4 w3-round w3-animate-opacity mySlides&quot;&gt;
+    &lt;div class=&quot;w3-large w3-section&quot;&gt;&lt;span class=&quot;w3-tag w3-xlarge&quot;&gt;3. &lt;/span&gt;&lt;span class=&quot;w3-tag w3-blue w3-xlarge&quot;&gt;EZTV&lt;/span&gt;&lt;/div&gt;
+&lt;img src=&quot;images/bxu0q/9-3.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; onload=&quot;myFunction(7)&quot; class=&quot;w3-round imge w3-hide&quot; /&gt;
+&lt;div class=&quot;spinner&quot;&gt;&lt;/div&gt;
+&lt;br /&gt;
+&lt;div class=&quot;w3-display-container w3-light-grey w3-card-4&quot;&gt;
+&lt;p class=&quot;w3-code&quot;&gt;&lt;b&gt;Summary:- &lt;/b&gt;While this site remains unknown to many to is arguably the best site for TV Torrents.Since its inception it has made sure to be the first one to upload TV Torrents and has torrent for all types of TV shows.&lt;br /&gt;&lt;b&gt;link:- &lt;/b&gt;&lt;a href=&quot;https://eztv.ag/&quot; target=&quot;_blank&quot; class=&quot;w3-text-blue&quot;&gt;EZTV&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;w3-display-container w3-card-4 w3-round w3-animate-opacity mySlides&quot;&gt;
+    &lt;div class=&quot;w3-large w3-section&quot;&gt;&lt;span class=&quot;w3-tag w3-xlarge&quot;&gt;2. &lt;/span&gt;&lt;span class=&quot;w3-tag w3-blue w3-xlarge&quot;&gt;KickassTorrents&lt;/span&gt;&lt;/div&gt;
+&lt;img src=&quot;images/bxu0q/9-2.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; onload=&quot;myFunction(8)&quot; class=&quot;w3-round imge w3-hide&quot; /&gt;
+&lt;div class=&quot;spinner&quot;&gt;&lt;/div&gt;
+&lt;br /&gt;
+&lt;div class=&quot;w3-display-container w3-light-grey w3-card-4&quot;&gt;
+&lt;p class=&quot;w3-code&quot;&gt;&lt;b&gt;Summary:- &lt;/b&gt;KickassTorrents had a huge community and large amount of indexed torrents, any user can easily find any torrent they want very easily with its rating system and sorting tools.while it was shut down its mirrors are avaliable.&lt;br /&gt;&lt;b&gt;link:- &lt;/b&gt;&lt;a href=&quot;https://kat.al/&quot; target=&quot;_blank&quot; class=&quot;w3-text-blue&quot;&gt;KickassTorrents&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;w3-display-container w3-card-4 w3-round w3-animate-opacity mySlides&quot;&gt;
+    &lt;div class=&quot;w3-large w3-section&quot;&gt;&lt;span class=&quot;w3-tag w3-xlarge&quot;&gt;1. &lt;/span&gt;&lt;span class=&quot;w3-tag w3-blue w3-xlarge&quot;&gt;The Pirate Bay&lt;/span&gt;&lt;/div&gt;
+&lt;img src=&quot;images/bxu0q/9-1.jpg&quot; style=&quot;width:100%;max-height:400px;&quot; onload=&quot;myFunction(9)&quot; class=&quot;w3-round imge w3-hide&quot; /&gt;
+&lt;div class=&quot;spinner&quot;&gt;&lt;/div&gt;
+&lt;br /&gt;
+&lt;div class=&quot;w3-display-container w3-light-grey w3-card-4&quot;&gt;
+&lt;p class=&quot;w3-code&quot;&gt;&lt;b&gt;Summary:- &lt;/b&gt;Ranked 198 in Alexa Traffic Rank,One of the foremost websites to host a torrent, The Pirate Bay is a one stop place for all your torrents.If you are unable to find a torrent on any other site due to removal because of copyright infrindgement ,you can find that torrent here because of TPB&#39;s non compliance with DMCA.The authorities keep shutting down TPB but another mirror popsup instantly.&lt;br /&gt;&lt;b&gt;link:- &lt;/b&gt;&lt;a href=&quot;https://thepiratebay.org&quot; target=&quot;_blank&quot; class=&quot;w3-text-blue&quot;&gt;The Pirate Bay&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;/div&gt;
+&lt;div class=&quot;w3-quarter w3-container w3-light-grey&quot;&gt;
+&lt;div class=&quot;w3-section w3-border-top w3-center&quot;&gt;
+  &lt;br /&gt;
+  &lt;!-- AddToAny BEGIN --&gt;
+  &lt;div class=&quot;a2a_kit a2a_kit_size_32 a2a_default_style&quot;&gt;
+  &lt;a class=&quot;a2a_dd&quot; href=&quot;https://www.addtoany.com/share&quot;&gt;&lt;/a&gt;
+  &lt;a class=&quot;a2a_button_facebook&quot;&gt;&lt;/a&gt;
+  &lt;a class=&quot;a2a_button_twitter&quot;&gt;&lt;/a&gt;
+  &lt;a class=&quot;a2a_button_google_plus&quot;&gt;&lt;/a&gt;
+  &lt;a class=&quot;a2a_button_whatsapp&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+  &lt;script async=&quot;&quot; src=&quot;https://static.addtoany.com/menu/page.js&quot;&gt;&lt;/script&gt;
+  &lt;!-- AddToAny END --&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 07 Sep 2016 00:00:00 +0530</pubDate>
+        <link>localhost:400010-torrent-sites.html</link>
+        <guid isPermaLink="true">localhost:400010-torrent-sites.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>10 Bollywood Stars with Different Past</title>
+        <description>&lt;div class=&quot;w3-container w3-center w3-round&quot;&gt;
+&lt;h3 class=&quot;w3-tag w3-mandali w3-round&quot;&gt;10 Bollywood Stars with Different Past&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;w3-row&quot;&gt;
+&lt;div class=&quot;w3-quarter w3-container w3-light-grey w3-hide-small w3-border&quot;&gt;
+&lt;div class=&quot;w3-large w3-section&quot;&gt;&lt;span class=&quot;w3-tag w3-xlarge&quot;&gt;Latest Posts&lt;/span&gt;&lt;/div&gt;
+
+    
+    &lt;br /&gt;
       &lt;div class=&quot;w3-border&quot;&gt;
-      &lt;a href=&quot;10-Most-Powerful-Militaries.html&quot; style=&quot;text-decoration:none&quot;&gt;
+      &lt;a href=&quot;10-torrent-sites.html&quot; style=&quot;text-decoration:none&quot;&gt;
     &lt;div class=&quot;w3-card-4&quot;&gt;
-    &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/military.jpg&quot; alt=&quot;10 Most powerful Militaries&quot; style=&quot;width:100%;&quot; /&gt;
+    &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/torrent.jpg&quot; alt=&quot;Best torrent websites&quot; style=&quot;width:100%;&quot; /&gt;
     &lt;div class=&quot;w3-container w3-round&quot;&gt;
-    &lt;h5 class=&quot;w3-mandali w3-center&quot;&gt;10 Most powerful Militaries&lt;/h5&gt;
+    &lt;h5 class=&quot;w3-mandali w3-center&quot;&gt;10  Best torrent websites&lt;/h5&gt;
+
+      &lt;/div&gt;
+      &lt;/div&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+
+    
+    &lt;br /&gt;
+      &lt;div class=&quot;w3-border&quot;&gt;
+      &lt;a href=&quot;10-unknown-backgrounds-of-bollywood-stars.html&quot; style=&quot;text-decoration:none&quot;&gt;
+    &lt;div class=&quot;w3-card-4&quot;&gt;
+    &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/bolly.jpg&quot; alt=&quot;10 Bollywood Stars with Different Past&quot; style=&quot;width:100%;&quot; /&gt;
+    &lt;div class=&quot;w3-container w3-round&quot;&gt;
+    &lt;h5 class=&quot;w3-mandali w3-center&quot;&gt;10 Bollywood Stars with Different Past&lt;/h5&gt;
+
+      &lt;/div&gt;
+      &lt;/div&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+
+    
+    &lt;br /&gt;
+      &lt;div class=&quot;w3-border&quot;&gt;
+      &lt;a href=&quot;10-richest-indians.html&quot; style=&quot;text-decoration:none&quot;&gt;
+    &lt;div class=&quot;w3-card-4&quot;&gt;
+    &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/money.jpg&quot; alt=&quot;10 Richest Indians&quot; style=&quot;width:100%;&quot; /&gt;
+    &lt;div class=&quot;w3-container w3-round&quot;&gt;
+    &lt;h5 class=&quot;w3-mandali w3-center&quot;&gt;Top 10 Richest Indians(2016)&lt;/h5&gt;
 
       &lt;/div&gt;
       &lt;/div&gt;
@@ -215,6 +407,20 @@ function myFunction(inu)
     
     &lt;br /&gt;
       &lt;div class=&quot;w3-border&quot;&gt;
+      &lt;a href=&quot;10-torrent-sites.html&quot; style=&quot;text-decoration:none&quot;&gt;
+    &lt;div class=&quot;w3-card-4&quot;&gt;
+    &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/torrent.jpg&quot; alt=&quot;Best torrent websites&quot; style=&quot;width:100%;&quot; /&gt;
+    &lt;div class=&quot;w3-container w3-round&quot;&gt;
+    &lt;h5 class=&quot;w3-mandali w3-center&quot;&gt;10  Best torrent websites&lt;/h5&gt;
+
+      &lt;/div&gt;
+      &lt;/div&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+
+    
+    &lt;br /&gt;
+      &lt;div class=&quot;w3-border&quot;&gt;
       &lt;a href=&quot;10-unknown-backgrounds-of-bollywood-stars.html&quot; style=&quot;text-decoration:none&quot;&gt;
     &lt;div class=&quot;w3-card-4&quot;&gt;
     &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/bolly.jpg&quot; alt=&quot;10 Bollywood Stars with Different Past&quot; style=&quot;width:100%;&quot; /&gt;
@@ -234,20 +440,6 @@ function myFunction(inu)
     &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/money.jpg&quot; alt=&quot;10 Richest Indians&quot; style=&quot;width:100%;&quot; /&gt;
     &lt;div class=&quot;w3-container w3-round&quot;&gt;
     &lt;h5 class=&quot;w3-mandali w3-center&quot;&gt;Top 10 Richest Indians(2016)&lt;/h5&gt;
-
-      &lt;/div&gt;
-      &lt;/div&gt;
-        &lt;/a&gt;
-      &lt;/div&gt;
-
-    
-    &lt;br /&gt;
-      &lt;div class=&quot;w3-border&quot;&gt;
-      &lt;a href=&quot;10-Most-Powerful-Militaries.html&quot; style=&quot;text-decoration:none&quot;&gt;
-    &lt;div class=&quot;w3-card-4&quot;&gt;
-    &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/military.jpg&quot; alt=&quot;10 Most powerful Militaries&quot; style=&quot;width:100%;&quot; /&gt;
-    &lt;div class=&quot;w3-container w3-round&quot;&gt;
-    &lt;h5 class=&quot;w3-mandali w3-center&quot;&gt;10 Most powerful Militaries&lt;/h5&gt;
 
       &lt;/div&gt;
       &lt;/div&gt;
@@ -408,6 +600,20 @@ function myFunction(inu)
     
     &lt;br /&gt;
       &lt;div class=&quot;w3-border&quot;&gt;
+      &lt;a href=&quot;10-torrent-sites.html&quot; style=&quot;text-decoration:none&quot;&gt;
+    &lt;div class=&quot;w3-card-4&quot;&gt;
+    &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/torrent.jpg&quot; alt=&quot;Best torrent websites&quot; style=&quot;width:100%;&quot; /&gt;
+    &lt;div class=&quot;w3-container w3-round&quot;&gt;
+    &lt;h5 class=&quot;w3-mandali w3-center&quot;&gt;10  Best torrent websites&lt;/h5&gt;
+
+      &lt;/div&gt;
+      &lt;/div&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+
+    
+    &lt;br /&gt;
+      &lt;div class=&quot;w3-border&quot;&gt;
       &lt;a href=&quot;10-unknown-backgrounds-of-bollywood-stars.html&quot; style=&quot;text-decoration:none&quot;&gt;
     &lt;div class=&quot;w3-card-4&quot;&gt;
     &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/bolly.jpg&quot; alt=&quot;10 Bollywood Stars with Different Past&quot; style=&quot;width:100%;&quot; /&gt;
@@ -427,20 +633,6 @@ function myFunction(inu)
     &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/money.jpg&quot; alt=&quot;10 Richest Indians&quot; style=&quot;width:100%;&quot; /&gt;
     &lt;div class=&quot;w3-container w3-round&quot;&gt;
     &lt;h5 class=&quot;w3-mandali w3-center&quot;&gt;Top 10 Richest Indians(2016)&lt;/h5&gt;
-
-      &lt;/div&gt;
-      &lt;/div&gt;
-        &lt;/a&gt;
-      &lt;/div&gt;
-
-    
-    &lt;br /&gt;
-      &lt;div class=&quot;w3-border&quot;&gt;
-      &lt;a href=&quot;10-Most-Powerful-Militaries.html&quot; style=&quot;text-decoration:none&quot;&gt;
-    &lt;div class=&quot;w3-card-4&quot;&gt;
-    &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/military.jpg&quot; alt=&quot;10 Most powerful Militaries&quot; style=&quot;width:100%;&quot; /&gt;
-    &lt;div class=&quot;w3-container w3-round&quot;&gt;
-    &lt;h5 class=&quot;w3-mandali w3-center&quot;&gt;10 Most powerful Militaries&lt;/h5&gt;
 
       &lt;/div&gt;
       &lt;/div&gt;
@@ -601,6 +793,20 @@ function myFunction(inu)
     
     &lt;br /&gt;
       &lt;div class=&quot;w3-border&quot;&gt;
+      &lt;a href=&quot;10-torrent-sites.html&quot; style=&quot;text-decoration:none&quot;&gt;
+    &lt;div class=&quot;w3-card-4&quot;&gt;
+    &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/torrent.jpg&quot; alt=&quot;Best torrent websites&quot; style=&quot;width:100%;&quot; /&gt;
+    &lt;div class=&quot;w3-container w3-round&quot;&gt;
+    &lt;h5 class=&quot;w3-mandali w3-center&quot;&gt;10  Best torrent websites&lt;/h5&gt;
+
+      &lt;/div&gt;
+      &lt;/div&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+
+    
+    &lt;br /&gt;
+      &lt;div class=&quot;w3-border&quot;&gt;
       &lt;a href=&quot;10-unknown-backgrounds-of-bollywood-stars.html&quot; style=&quot;text-decoration:none&quot;&gt;
     &lt;div class=&quot;w3-card-4&quot;&gt;
     &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/bolly.jpg&quot; alt=&quot;10 Bollywood Stars with Different Past&quot; style=&quot;width:100%;&quot; /&gt;
@@ -620,20 +826,6 @@ function myFunction(inu)
     &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/money.jpg&quot; alt=&quot;10 Richest Indians&quot; style=&quot;width:100%;&quot; /&gt;
     &lt;div class=&quot;w3-container w3-round&quot;&gt;
     &lt;h5 class=&quot;w3-mandali w3-center&quot;&gt;Top 10 Richest Indians(2016)&lt;/h5&gt;
-
-      &lt;/div&gt;
-      &lt;/div&gt;
-        &lt;/a&gt;
-      &lt;/div&gt;
-
-    
-    &lt;br /&gt;
-      &lt;div class=&quot;w3-border&quot;&gt;
-      &lt;a href=&quot;10-Most-Powerful-Militaries.html&quot; style=&quot;text-decoration:none&quot;&gt;
-    &lt;div class=&quot;w3-card-4&quot;&gt;
-    &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/military.jpg&quot; alt=&quot;10 Most powerful Militaries&quot; style=&quot;width:100%;&quot; /&gt;
-    &lt;div class=&quot;w3-container w3-round&quot;&gt;
-    &lt;h5 class=&quot;w3-mandali w3-center&quot;&gt;10 Most powerful Militaries&lt;/h5&gt;
 
       &lt;/div&gt;
       &lt;/div&gt;
@@ -806,6 +998,20 @@ function myFunction(inu)
     
     &lt;br /&gt;
       &lt;div class=&quot;w3-border&quot;&gt;
+      &lt;a href=&quot;10-torrent-sites.html&quot; style=&quot;text-decoration:none&quot;&gt;
+    &lt;div class=&quot;w3-card-4&quot;&gt;
+    &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/torrent.jpg&quot; alt=&quot;Best torrent websites&quot; style=&quot;width:100%;&quot; /&gt;
+    &lt;div class=&quot;w3-container w3-round&quot;&gt;
+    &lt;h5 class=&quot;w3-mandali w3-center&quot;&gt;10  Best torrent websites&lt;/h5&gt;
+
+      &lt;/div&gt;
+      &lt;/div&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+
+    
+    &lt;br /&gt;
+      &lt;div class=&quot;w3-border&quot;&gt;
       &lt;a href=&quot;10-unknown-backgrounds-of-bollywood-stars.html&quot; style=&quot;text-decoration:none&quot;&gt;
     &lt;div class=&quot;w3-card-4&quot;&gt;
     &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/bolly.jpg&quot; alt=&quot;10 Bollywood Stars with Different Past&quot; style=&quot;width:100%;&quot; /&gt;
@@ -825,20 +1031,6 @@ function myFunction(inu)
     &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/money.jpg&quot; alt=&quot;10 Richest Indians&quot; style=&quot;width:100%;&quot; /&gt;
     &lt;div class=&quot;w3-container w3-round&quot;&gt;
     &lt;h5 class=&quot;w3-mandali w3-center&quot;&gt;Top 10 Richest Indians(2016)&lt;/h5&gt;
-
-      &lt;/div&gt;
-      &lt;/div&gt;
-        &lt;/a&gt;
-      &lt;/div&gt;
-
-    
-    &lt;br /&gt;
-      &lt;div class=&quot;w3-border&quot;&gt;
-      &lt;a href=&quot;10-Most-Powerful-Militaries.html&quot; style=&quot;text-decoration:none&quot;&gt;
-    &lt;div class=&quot;w3-card-4&quot;&gt;
-    &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/military.jpg&quot; alt=&quot;10 Most powerful Militaries&quot; style=&quot;width:100%;&quot; /&gt;
-    &lt;div class=&quot;w3-container w3-round&quot;&gt;
-    &lt;h5 class=&quot;w3-mandali w3-center&quot;&gt;10 Most powerful Militaries&lt;/h5&gt;
 
       &lt;/div&gt;
       &lt;/div&gt;
@@ -960,6 +1152,20 @@ document.onkeydown = function(e) {
     
     &lt;br /&gt;
       &lt;div class=&quot;w3-border&quot;&gt;
+      &lt;a href=&quot;10-torrent-sites.html&quot; style=&quot;text-decoration:none&quot;&gt;
+    &lt;div class=&quot;w3-card-4&quot;&gt;
+    &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/torrent.jpg&quot; alt=&quot;Best torrent websites&quot; style=&quot;width:100%;&quot; /&gt;
+    &lt;div class=&quot;w3-container w3-round&quot;&gt;
+    &lt;h5 class=&quot;w3-mandali w3-center&quot;&gt;10  Best torrent websites&lt;/h5&gt;
+
+      &lt;/div&gt;
+      &lt;/div&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+
+    
+    &lt;br /&gt;
+      &lt;div class=&quot;w3-border&quot;&gt;
       &lt;a href=&quot;10-unknown-backgrounds-of-bollywood-stars.html&quot; style=&quot;text-decoration:none&quot;&gt;
     &lt;div class=&quot;w3-card-4&quot;&gt;
     &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/bolly.jpg&quot; alt=&quot;10 Bollywood Stars with Different Past&quot; style=&quot;width:100%;&quot; /&gt;
@@ -979,20 +1185,6 @@ document.onkeydown = function(e) {
     &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/money.jpg&quot; alt=&quot;10 Richest Indians&quot; style=&quot;width:100%;&quot; /&gt;
     &lt;div class=&quot;w3-container w3-round&quot;&gt;
     &lt;h5 class=&quot;w3-mandali w3-center&quot;&gt;Top 10 Richest Indians(2016)&lt;/h5&gt;
-
-      &lt;/div&gt;
-      &lt;/div&gt;
-        &lt;/a&gt;
-      &lt;/div&gt;
-
-    
-    &lt;br /&gt;
-      &lt;div class=&quot;w3-border&quot;&gt;
-      &lt;a href=&quot;10-Most-Powerful-Militaries.html&quot; style=&quot;text-decoration:none&quot;&gt;
-    &lt;div class=&quot;w3-card-4&quot;&gt;
-    &lt;img class=&quot;w3-animate-zoom w3-round w3-hover-opacity&quot; src=&quot;images/military.jpg&quot; alt=&quot;10 Most powerful Militaries&quot; style=&quot;width:100%;&quot; /&gt;
-    &lt;div class=&quot;w3-container w3-round&quot;&gt;
-    &lt;h5 class=&quot;w3-mandali w3-center&quot;&gt;10 Most powerful Militaries&lt;/h5&gt;
 
       &lt;/div&gt;
       &lt;/div&gt;
