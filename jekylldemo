@@ -1,11 +1,11 @@
-#---
+<!-- ---
 layout: post
 title: AwesomeX
 image: "images/site.png"
 keywords: "awesomex,top 10,worlds best,best,most,top,10,best"
 date: "2016-08-10T11:00:00+05:30"
 type: "website"
-#---
+---
 <script>
 function myFunction(inu)
 {
@@ -38,4 +38,4 @@ document.getElementsByClassName("imge")[inu].className ="w3-animate-zoom w3-roun
       {% endif %}
       {% endfor %}
 
-</div>
+</div> -->
