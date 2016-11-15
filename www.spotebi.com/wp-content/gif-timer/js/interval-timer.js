@@ -1,4 +1,8 @@
-
+if (ua.iOS) {
+alert("hello");
+}else{
+alert("hi");
+}
 var inputIncrementTimer;
 var restartClicked = false;
 $( document ).ready(function( ){
@@ -602,6 +606,4 @@ function forios(source) {
 	//}
 }
 
-if (ua.iOS) {
-alert("hello");
-}
+
