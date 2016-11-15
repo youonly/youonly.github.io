@@ -604,4 +604,4 @@ function forios(source) {
 
 if (ua.iOS) {
 alert("hello");
-                                                }
+}
