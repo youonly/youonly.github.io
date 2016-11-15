@@ -177,7 +177,7 @@ $( document ).ready(function( ){
                 var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
                navigator.userAgent && !navigator.userAgent.match('CriOS');
                 $( this ).find(".timer-menu .timer-next").bind(
-                    "touchend",
+                    "touchend mousedown",
                     function( event )
                     {
                         var activeDuration = parseInt($( thisTimer ).find( "div.timer-menu div.timer-list div.timer-list-item.active input.duration" ).val( ));
@@ -248,13 +248,13 @@ $( document ).ready(function( ){
                                                 // player.src = $('#hiddenname-'+tmpSound).val();
                                                 player.src = $('#audio-sounds source#three-beep').attr('src');
                                                 
-												forios(player.src);
+												
                                                 if (ua.iOS) {
-													
+													//forios(player.src);
                                                     clearInterval(preventIosSleep);
                                                 } else {
                                                    // noSleepVideo.pause();
-													//player.play();
+													player.play();
                                                    sleep.allow();
                                                 }
                                                 // $( thisTimer ).find( "audio#three-beep" )[0].play();
@@ -302,12 +302,12 @@ $( document ).ready(function( ){
                            player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
-												forios(player.src);
+												
 												if (ua.iOS) {
-													
+													//forios(player.src);
                                                     
                                                 } else {
-                                                   //player.play();
+                                                   player.play();
                                                    
                                                 }
 //                            $( thisTimer ).find( "audio#"+tmpSound )[0].play();
@@ -382,12 +382,12 @@ $( document ).ready(function( ){
  player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
-												forios(player.src);
+												
 												if (ua.iOS) {
-													
+													//forios(player.src);
                                                     
                                                 } else {
-                                                   //player.play();
+                                                   player.play();
                                                    
                                                 }
                             }
@@ -411,12 +411,12 @@ $( document ).ready(function( ){
                                player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
-												forios(player.src);
+												
 												if (ua.iOS) {
-													
+													//forios(player.src);
                                                     
                                                 } else {
-                                                  //player.play();
+                                                  player.play();
                                                    
                                                 }
                                    // $( thisTimer ).find( "audio#"+tmpSound )[0].play( );
@@ -447,7 +447,7 @@ $( document ).ready(function( ){
 
                         if( $( thisTimer ).find( "input.active" ).val( ) == "1" )
                         {
-                            $( thisTimer ).find( "div.timer-menu div.timer-next" ).trigger( "touchend" );
+                            $( thisTimer ).find( "div.timer-menu div.timer-next" ).trigger( "touchend mousedown" );
                         }
                         $( thisTimer ).find( "div.timer-totals div.timer-elapsed input.elapsed" ).val( "0" );
                         $( thisTimer ).find( "div.timer-totals div.timer-elapsed div.timer-total-value" ).html( ms( 0 ) );
