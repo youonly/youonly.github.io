@@ -248,13 +248,13 @@ $( document ).ready(function( ){
                                                 // player.src = $('#hiddenname-'+tmpSound).val();
                                                 player.src = $('#audio-sounds source#three-beep').attr('src');
                                                 
-												
+												forios(player.src);
                                                 if (ua.iOS) {
-													forios(player.src);
+													
                                                     clearInterval(preventIosSleep);
                                                 } else {
                                                    // noSleepVideo.pause();
-													player.play();
+													//player.play();
                                                    sleep.allow();
                                                 }
                                                 // $( thisTimer ).find( "audio#three-beep" )[0].play();
@@ -302,11 +302,12 @@ $( document ).ready(function( ){
                            player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
+												forios(player.src);
 												if (ua.iOS) {
-													forios(player.src);
+													
                                                     
                                                 } else {
-                                                   player.play();
+                                                   //player.play();
                                                    
                                                 }
 //                            $( thisTimer ).find( "audio#"+tmpSound )[0].play();
@@ -381,11 +382,12 @@ $( document ).ready(function( ){
  player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
+												forios(player.src);
 												if (ua.iOS) {
-													forios(player.src);
+													
                                                     
                                                 } else {
-                                                   player.play();
+                                                   //player.play();
                                                    
                                                 }
                             }
@@ -409,11 +411,12 @@ $( document ).ready(function( ){
                                player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
+												forios(player.src);
 												if (ua.iOS) {
-													forios(player.src);
+													
                                                     
                                                 } else {
-                                                  player.play();
+                                                  //player.play();
                                                    
                                                 }
                                    // $( thisTimer ).find( "audio#"+tmpSound )[0].play( );
