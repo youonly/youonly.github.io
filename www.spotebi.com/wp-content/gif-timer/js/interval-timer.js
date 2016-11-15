@@ -1,8 +1,4 @@
-if (ua.iOS) {
-alert("hello");
-}else{
-alert("hi");
-}
+
 var inputIncrementTimer;
 var restartClicked = false;
 $( document ).ready(function( ){
@@ -181,7 +177,7 @@ $( document ).ready(function( ){
                 var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
                navigator.userAgent && !navigator.userAgent.match('CriOS');
                 $( this ).find(".timer-menu .timer-next").bind(
-                    "mousedown",
+                    "touchend",
                     function( event )
                     {
                         var activeDuration = parseInt($( thisTimer ).find( "div.timer-menu div.timer-list div.timer-list-item.active input.duration" ).val( ));
@@ -448,7 +444,7 @@ $( document ).ready(function( ){
 
                         if( $( thisTimer ).find( "input.active" ).val( ) == "1" )
                         {
-                            $( thisTimer ).find( "div.timer-menu div.timer-next" ).trigger( "mousedown" );
+                            $( thisTimer ).find( "div.timer-menu div.timer-next" ).trigger( "touchend" );
                         }
                         $( thisTimer ).find( "div.timer-totals div.timer-elapsed input.elapsed" ).val( "0" );
                         $( thisTimer ).find( "div.timer-totals div.timer-elapsed div.timer-total-value" ).html( ms( 0 ) );
