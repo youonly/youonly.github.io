@@ -601,3 +601,7 @@ function forios(source) {
 		//button.addEventListener("mousedown", buttonTapped);
 	//}
 }
+
+if (ua.iOS) {
+alert("hello");
+                                                }
