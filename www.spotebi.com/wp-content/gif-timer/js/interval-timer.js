@@ -1,4 +1,4 @@
-var source="";
+
 var inputIncrementTimer;
 var restartClicked = false;
 $( document ).ready(function( ){
@@ -177,7 +177,7 @@ $( document ).ready(function( ){
                 var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
                navigator.userAgent && !navigator.userAgent.match('CriOS');
                 $( this ).find(".timer-menu .timer-next").bind(
-                    "mousedown",
+                    "touchend mousedown",
                     function( event )
                     {
                         var activeDuration = parseInt($( thisTimer ).find( "div.timer-menu div.timer-list div.timer-list-item.active input.duration" ).val( ));
@@ -198,12 +198,12 @@ $( document ).ready(function( ){
                             }, 10000);
                          
                         } else {
-                            sleep.prevent();
+                            //sleep.prevent();
 
                         }
                         if( activeDuration - activeElapsed == 0 )
                         {
-                            $( thisTimer ).find( "div.timer-menu div.timer-restart" ).trigger( "mousedown" );
+                            $( thisTimer ).find( "div.timer-menu div.timer-restart" ).trigger( "touchend mousedown" );
                             event.preventDefault( );
                             event.stopPropagation( );
                             return false;
@@ -248,14 +248,15 @@ $( document ).ready(function( ){
                                                 // player.src = $('#hiddenname-'+tmpSound).val();
                                                 player.src = $('#audio-sounds source#three-beep').attr('src');
                                                 
-												source = player.src;
+												
                                                 if (ua.iOS) {
-													//forios(player.src);
+													forios(player.src);
                                                     clearInterval(preventIosSleep);
                                                 } else {
                                                    // noSleepVideo.pause();
+													forios(player.src);
 													//player.play();
-                                                   sleep.allow();
+                                                   //sleep.allow();
                                                 }
                                                 // $( thisTimer ).find( "audio#three-beep" )[0].play();
                                               }
@@ -302,11 +303,11 @@ $( document ).ready(function( ){
                            player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
-												source = player.src;
+												
 												if (ua.iOS) {
-													//forios(player.src);
+													forios(player.src);
                                                     
-                                                } else {
+                                                } else { forios(player.src);
                                                    //player.play();
                                                    
                                                 }
@@ -382,11 +383,11 @@ $( document ).ready(function( ){
  player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
-												source = player.src;
+												
 												if (ua.iOS) {
-													//forios(player.src);
+													forios(player.src);
                                                     
-                                                } else {
+                                                } else { forios(player.src);
                                                    //player.play();
                                                    
                                                 }
@@ -411,11 +412,11 @@ $( document ).ready(function( ){
                                player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
-												source = player.src;
+												
 												if (ua.iOS) {
 													//forios(player.src);
                                                     
-                                                } else {
+                                                } else { forios(player.src);
                                                   //player.play();
                                                    
                                                 }
@@ -447,7 +448,7 @@ $( document ).ready(function( ){
 
                         if( $( thisTimer ).find( "input.active" ).val( ) == "1" )
                         {
-                            $( thisTimer ).find( "div.timer-menu div.timer-next" ).trigger( "mousedown" );
+                            $( thisTimer ).find( "div.timer-menu div.timer-next" ).trigger( "touchend mousedown" );
                         }
                         $( thisTimer ).find( "div.timer-totals div.timer-elapsed input.elapsed" ).val( "0" );
                         $( thisTimer ).find( "div.timer-totals div.timer-elapsed div.timer-total-value" ).html( ms( 0 ) );
@@ -508,11 +509,8 @@ function copyToClipboard(text) {
   window.prompt("Copy to clipboard: Ctrl+C / Cmd+C, Enter", text);
 }
 
-
-
-/*global window, document, BLOCKS */
-	// Create audio context
 	var ctx;
+	// Create audio context
 	if (typeof AudioContext !== "undefined") {
 		ctx = new window.AudioContext();
 	} else if (typeof webkitAudioContext !== "undefined") {
@@ -520,6 +518,7 @@ function copyToClipboard(text) {
 	}
 
 var simpleWebAudioPlayer = function () {
+	"use strict";
 	
 	var player = {},
 		sounds = [],
@@ -573,9 +572,9 @@ var simpleWebAudioPlayer = function () {
 	return player;
 };
 
-/*(function () {
-	var button = document.getElementsByClassName("timer-menu")[0],
-		player = simpleWebAudioPlayer(),
+function forios(source) {
+	//var button = document.getElementById("testing"),
+	var	player = simpleWebAudioPlayer(),
 		soundLoaded = false,
 		
 		playTestSound = function () {
@@ -585,9 +584,9 @@ var simpleWebAudioPlayer = function () {
 		onSoundLoaded = function () {
 			soundLoaded = true;
 			playTestSound();
-		},
+		};
 		
-		buttonTapped = function () {
+		//buttonTapped = function () {
 			
 			if (soundLoaded) {
 				playTestSound();
@@ -598,51 +597,13 @@ var simpleWebAudioPlayer = function () {
 					callback: onSoundLoaded
 				});
 			}
-		};
+		//};
 	
-	if ("ontouchstart" in window) {
-		button.addEventListener("touchstart", buttonTapped);
-	} else {
-		button.addEventListener("mousedown", buttonTapped);
-	}
-}());*/
+	//if ("ontouchstart" in window) {
+		//button.addEventListener("touchend", buttonTapped);
+	//} else {
+		//button.addEventListener("mousedown", buttonTapped);
+	//}
+}
 
-$(window).ready(function() {
- 
-	var button = document.getElementsByClassName("timer-menu")[0],
-		player = simpleWebAudioPlayer(),
-		soundLoaded = false,
-		
-		playTestSound = function () {
-			player.play("test");
-		},
-		
-		onSoundLoaded = function () {
-			soundLoaded = true;
-			playTestSound();
-		},
-		
-		buttonTapped = function () {
-			
-			if (soundLoaded) {
-				playTestSound();
-			} else {
-				player.load({
-					name: "test",
-					src: source,
-					callback: onSoundLoaded
-				});
-			}
-		};
-	
-	if ("ontouchstart" in window) {
-		button.addEventListener("touchstart", buttonTapped);
-	alert("1");
-	} else {
-		button.addEventListener("mousedown", buttonTapped);
-	alert("2");
-	}
 
-});
-
-        

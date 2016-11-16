@@ -23,7 +23,7 @@
      sleep.prevent()
      sleep.allow()
 
- */
+*/
 var sleep = {
     prevent: function() {
         if (!this._video) {
@@ -62,4 +62,4 @@ var sleep = {
         document.body.appendChild(this._video);
     },
     _video: null
-}
+} 
