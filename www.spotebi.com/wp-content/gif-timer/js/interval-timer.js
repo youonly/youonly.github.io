@@ -1,3 +1,67 @@
+var source="";
+
+/*global window, document, BLOCKS */
+	// Create audio context
+	var ctx;
+	if (typeof AudioContext !== "undefined") {
+		ctx = new window.AudioContext();
+	} else if (typeof webkitAudioContext !== "undefined") {
+		ctx = new window.webkitAudioContext();
+	}
+
+var simpleWebAudioPlayer = function () {
+	
+	var player = {},
+		sounds = [],
+		masterGain;
+	
+	player.load = function (sound, callback) {
+		
+		var request;
+		
+		// Load the sound
+		request = new window.XMLHttpRequest();
+		request.open("get", sound.src, true);
+		request.responseType = "arraybuffer";
+		request.onload = function() {
+			ctx.decodeAudioData(request.response, function(buffer) {
+				
+				sounds[sound.name] = sound;
+				
+				sounds[sound.name].buffer = buffer;
+				// Invoke a function if a callback is specified
+				if (sounds[sound.name].callback) {
+					sounds[sound.name].callback();
+				}
+
+			});
+		};
+		request.send();
+	};
+	
+	player.play = function (name) {
+		
+		var inst = {};
+		
+		if (sounds[name]) {	
+			// Create a new source for this sound instance
+			inst.source = ctx.createBufferSource();
+			inst.source.buffer = sounds[name].buffer;
+			inst.source.connect(masterGain);
+						
+			// Play the sound
+			inst.source.start(0);
+		}
+	};
+	
+
+	// Create the master gain node
+	masterGain = (ctx.createGain) ? ctx.createGain() : ctx.createGainNode();
+	// Connect the master gain node to the context's output
+	masterGain.connect(ctx.destination);
+
+	return player;
+};
 
 var inputIncrementTimer;
 var restartClicked = false;
@@ -203,7 +267,7 @@ $( document ).ready(function( ){
                         }
                         if( activeDuration - activeElapsed == 0 )
                         {
-                            $( thisTimer ).find( "div.timer-menu div.timer-restart" ).trigger( "touchend mousedown" );
+                            $( thisTimer ).find( "div.timer-menu div.timer-restart" ).trigger( "mousedown" );
                             event.preventDefault( );
                             event.stopPropagation( );
                             return false;
@@ -248,13 +312,38 @@ $( document ).ready(function( ){
                                                 // player.src = $('#hiddenname-'+tmpSound).val();
                                                 player.src = $('#audio-sounds source#three-beep').attr('src');
                                                 
-												
+												source = player.src;
+
+var button = document.getElementsByClassName("timer-menu")[0],
+		player = simpleWebAudioPlayer(),
+		soundLoaded = false,
+		
+		playTestSound = function () {
+			player.play("test");
+		},
+		
+		onSoundLoaded = function () {
+			soundLoaded = true;
+			playTestSound();
+		};
+		
+		//buttonTapped = function () {
+			
+			if (soundLoaded) {
+				playTestSound();
+			} else {
+				player.load({
+					name: "test",
+					src: source,
+					callback: onSoundLoaded
+				});
+			}
+		//};
                                                 if (ua.iOS) {
-													forios(player.src);
+													//forios(player.src);
                                                     clearInterval(preventIosSleep);
                                                 } else {
                                                    // noSleepVideo.pause();
-													forios(player.src);
 													//player.play();
                                                    //sleep.allow();
                                                 }
@@ -303,11 +392,38 @@ $( document ).ready(function( ){
                            player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
-												
+												source = player.src;
+
+
+var button = document.getElementsByClassName("timer-menu")[0],
+		player = simpleWebAudioPlayer(),
+		soundLoaded = false,
+		
+		playTestSound = function () {
+			player.play("test");
+		},
+		
+		onSoundLoaded = function () {
+			soundLoaded = true;
+			playTestSound();
+		};
+		
+		//buttonTapped = function () {
+			
+			if (soundLoaded) {
+				playTestSound();
+			} else {
+				player.load({
+					name: "test",
+					src: source,
+					callback: onSoundLoaded
+				});
+			}
+		//};
 												if (ua.iOS) {
-													forios(player.src);
+													//forios(player.src);
                                                     
-                                                } else { forios(player.src);
+                                                } else {
                                                    //player.play();
                                                    
                                                 }
@@ -383,11 +499,37 @@ $( document ).ready(function( ){
  player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
-												
+												source = player.src;
+
+var button = document.getElementsByClassName("timer-menu")[0],
+		player = simpleWebAudioPlayer(),
+		soundLoaded = false,
+		
+		playTestSound = function () {
+			player.play("test");
+		},
+		
+		onSoundLoaded = function () {
+			soundLoaded = true;
+			playTestSound();
+		};
+		
+		//buttonTapped = function () {
+			
+			if (soundLoaded) {
+				playTestSound();
+			} else {
+				player.load({
+					name: "test",
+					src: source,
+					callback: onSoundLoaded
+				});
+			}
+		//};
 												if (ua.iOS) {
-													forios(player.src);
+													//forios(player.src);
                                                     
-                                                } else { forios(player.src);
+                                                } else {
                                                    //player.play();
                                                    
                                                 }
@@ -412,11 +554,39 @@ $( document ).ready(function( ){
                                player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
-												
+												source = player.src;
+
+
+var button = document.getElementsByClassName("timer-menu")[0],
+		player = simpleWebAudioPlayer(),
+		soundLoaded = false,
+		
+		playTestSound = function () {
+			player.play("test");
+		},
+		
+		onSoundLoaded = function () {
+			soundLoaded = true;
+			playTestSound();
+		};
+		
+		//buttonTapped = function () {
+			
+			if (soundLoaded) {
+				playTestSound();
+			} else {
+				player.load({
+					name: "test",
+					src: source,
+					callback: onSoundLoaded
+				});
+			}
+		//};
+
 												if (ua.iOS) {
 													//forios(player.src);
                                                     
-                                                } else { forios(player.src);
+                                                } else {
                                                   //player.play();
                                                    
                                                 }
@@ -448,11 +618,11 @@ $( document ).ready(function( ){
 
                         if( $( thisTimer ).find( "input.active" ).val( ) == "1" )
                         {
-                            $( thisTimer ).find( "div.timer-menu div.timer-next" ).trigger( "touchend mousedown" );
+                            $( thisTimer ).find( "div.timer-menu div.timer-next" ).trigger( "mousedown" );
                         }
                         $( thisTimer ).find( "div.timer-totals div.timer-elapsed input.elapsed" ).val( "0" );
                         $( thisTimer ).find( "div.timer-totals div.timer-elapsed div.timer-total-value" ).html( ms( 0 ) );
-                        $( $( thisTimer ).find( "div.timer-menu div.timer-list-item" )[0] ).attr( "class","timer-list-item active" ).trigger( "mousedown");
+                        $( $( thisTimer ).find( "div.timer-menu div.timer-list-item" )[0] ).attr( "class","timer-list-item active" ).trigger( "touchend mousedown");
 
                         event.preventDefault( );
                         event.stopPropagation( );
@@ -509,72 +679,13 @@ function copyToClipboard(text) {
   window.prompt("Copy to clipboard: Ctrl+C / Cmd+C, Enter", text);
 }
 
-	var ctx;
-	// Create audio context
-	if (typeof AudioContext !== "undefined") {
-		ctx = new window.AudioContext();
-	} else if (typeof webkitAudioContext !== "undefined") {
-		ctx = new window.webkitAudioContext();
-	}
 
-var simpleWebAudioPlayer = function () {
-	"use strict";
-	
-	var player = {},
-		sounds = [],
-		masterGain;
-	
-	player.load = function (sound, callback) {
-		
-		var request;
-		
-		// Load the sound
-		request = new window.XMLHttpRequest();
-		request.open("get", sound.src, true);
-		request.responseType = "arraybuffer";
-		request.onload = function() {
-			ctx.decodeAudioData(request.response, function(buffer) {
-				
-				sounds[sound.name] = sound;
-				
-				sounds[sound.name].buffer = buffer;
-				// Invoke a function if a callback is specified
-				if (sounds[sound.name].callback) {
-					sounds[sound.name].callback();
-				}
 
-			});
-		};
-		request.send();
-	};
-	
-	player.play = function (name) {
-		
-		var inst = {};
-		
-		if (sounds[name]) {	
-			// Create a new source for this sound instance
-			inst.source = ctx.createBufferSource();
-			inst.source.buffer = sounds[name].buffer;
-			inst.source.connect(masterGain);
-						
-			// Play the sound
-			inst.source.start(0);
-		}
-	};
-	
 
-	// Create the master gain node
-	masterGain = (ctx.createGain) ? ctx.createGain() : ctx.createGainNode();
-	// Connect the master gain node to the context's output
-	masterGain.connect(ctx.destination);
 
-	return player;
-};
-
-function forios(source) {
-	//var button = document.getElementById("testing"),
-	var	player = simpleWebAudioPlayer(),
+/*(function () {
+	var button = document.getElementsByClassName("timer-menu")[0],
+		player = simpleWebAudioPlayer(),
 		soundLoaded = false,
 		
 		playTestSound = function () {
@@ -584,9 +695,9 @@ function forios(source) {
 		onSoundLoaded = function () {
 			soundLoaded = true;
 			playTestSound();
-		};
+		},
 		
-		//buttonTapped = function () {
+		buttonTapped = function () {
 			
 			if (soundLoaded) {
 				playTestSound();
@@ -597,13 +708,51 @@ function forios(source) {
 					callback: onSoundLoaded
 				});
 			}
-		//};
+		};
 	
-	//if ("ontouchstart" in window) {
-		//button.addEventListener("touchend", buttonTapped);
-	//} else {
-		//button.addEventListener("mousedown", buttonTapped);
-	//}
-}
+	if ("ontouchstart" in window) {
+		button.addEventListener("touchstart", buttonTapped);
+	} else {
+		button.addEventListener("mousedown", buttonTapped);
+	}
+}());*/
 
+/*$(window).ready(function() {
+ 
+	var button = document.getElementsByClassName("timer-menu")[0],
+		player = simpleWebAudioPlayer(),
+		soundLoaded = false,
+		
+		playTestSound = function () {
+			player.play("test");
+		},
+		
+		onSoundLoaded = function () {
+			soundLoaded = true;
+			playTestSound();
+		},
+		
+		buttonTapped = function () {
+			
+			if (soundLoaded) {
+				playTestSound();
+			} else {
+				player.load({
+					name: "test",
+					src: source,
+					callback: onSoundLoaded
+				});
+			}
+		};
+	
+	if ("ontouchstart" in window) {
+		button.addEventListener("touchstart", buttonTapped);
+	alert("1");
+	} else {
+		button.addEventListener("mousedown", buttonTapped);
+	alert("2");
+	}
 
+});*/
+
+        
