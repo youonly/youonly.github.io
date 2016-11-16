@@ -1,4 +1,4 @@
-
+var source="";
 var inputIncrementTimer;
 var restartClicked = false;
 $( document ).ready(function( ){
@@ -177,7 +177,7 @@ $( document ).ready(function( ){
                 var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
                navigator.userAgent && !navigator.userAgent.match('CriOS');
                 $( this ).find(".timer-menu .timer-next").bind(
-                    "touchend mousedown",
+                    "mousedown",
                     function( event )
                     {
                         var activeDuration = parseInt($( thisTimer ).find( "div.timer-menu div.timer-list div.timer-list-item.active input.duration" ).val( ));
@@ -248,13 +248,13 @@ $( document ).ready(function( ){
                                                 // player.src = $('#hiddenname-'+tmpSound).val();
                                                 player.src = $('#audio-sounds source#three-beep').attr('src');
                                                 
-												
+												source = player.src;
                                                 if (ua.iOS) {
 													//forios(player.src);
                                                     clearInterval(preventIosSleep);
                                                 } else {
                                                    // noSleepVideo.pause();
-													player.play();
+													//player.play();
                                                    sleep.allow();
                                                 }
                                                 // $( thisTimer ).find( "audio#three-beep" )[0].play();
@@ -302,12 +302,12 @@ $( document ).ready(function( ){
                            player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
-												
+												source = player.src;
 												if (ua.iOS) {
 													//forios(player.src);
                                                     
                                                 } else {
-                                                   player.play();
+                                                   //player.play();
                                                    
                                                 }
 //                            $( thisTimer ).find( "audio#"+tmpSound )[0].play();
@@ -382,12 +382,12 @@ $( document ).ready(function( ){
  player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
-												
+												source = player.src;
 												if (ua.iOS) {
 													//forios(player.src);
                                                     
                                                 } else {
-                                                   player.play();
+                                                   //player.play();
                                                    
                                                 }
                             }
@@ -411,12 +411,12 @@ $( document ).ready(function( ){
                                player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
-												
+												source = player.src;
 												if (ua.iOS) {
 													//forios(player.src);
                                                     
                                                 } else {
-                                                  player.play();
+                                                  //player.play();
                                                    
                                                 }
                                    // $( thisTimer ).find( "audio#"+tmpSound )[0].play( );
@@ -447,7 +447,7 @@ $( document ).ready(function( ){
 
                         if( $( thisTimer ).find( "input.active" ).val( ) == "1" )
                         {
-                            $( thisTimer ).find( "div.timer-menu div.timer-next" ).trigger( "touchend mousedown" );
+                            $( thisTimer ).find( "div.timer-menu div.timer-next" ).trigger( "mousedown" );
                         }
                         $( thisTimer ).find( "div.timer-totals div.timer-elapsed input.elapsed" ).val( "0" );
                         $( thisTimer ).find( "div.timer-totals div.timer-elapsed div.timer-total-value" ).html( ms( 0 ) );
@@ -510,12 +510,19 @@ function copyToClipboard(text) {
 
 
 
+/*global window, document, BLOCKS */
+	// Create audio context
+	var ctx;
+	if (typeof AudioContext !== "undefined") {
+		ctx = new window.AudioContext();
+	} else if (typeof webkitAudioContext !== "undefined") {
+		ctx = new window.webkitAudioContext();
+	}
+
 var simpleWebAudioPlayer = function () {
-	"use strict";
 	
 	var player = {},
 		sounds = [],
-		ctx,
 		masterGain;
 	
 	player.load = function (sound, callback) {
@@ -557,12 +564,7 @@ var simpleWebAudioPlayer = function () {
 		}
 	};
 	
-	// Create audio context
-	if (typeof AudioContext !== "undefined") {
-		ctx = new window.AudioContext();
-	} else if (typeof webkitAudioContext !== "undefined") {
-		ctx = new window.webkitAudioContext();
-	}
+
 	// Create the master gain node
 	masterGain = (ctx.createGain) ? ctx.createGain() : ctx.createGainNode();
 	// Connect the master gain node to the context's output
@@ -571,9 +573,9 @@ var simpleWebAudioPlayer = function () {
 	return player;
 };
 
-function forios(source) {
-	//var button = document.getElementById("testing"),
-	var	player = simpleWebAudioPlayer(),
+/*(function () {
+	var button = document.getElementsByClassName("timer-menu")[0],
+		player = simpleWebAudioPlayer(),
 		soundLoaded = false,
 		
 		playTestSound = function () {
@@ -583,9 +585,9 @@ function forios(source) {
 		onSoundLoaded = function () {
 			soundLoaded = true;
 			playTestSound();
-		};
+		},
 		
-		//buttonTapped = function () {
+		buttonTapped = function () {
 			
 			if (soundLoaded) {
 				playTestSound();
@@ -596,13 +598,51 @@ function forios(source) {
 					callback: onSoundLoaded
 				});
 			}
-		//};
+		};
 	
-	//if ("ontouchstart" in window) {
-		//button.addEventListener("touchend", buttonTapped);
-	//} else {
-		//button.addEventListener("mousedown", buttonTapped);
-	//}
-}
+	if ("ontouchstart" in window) {
+		button.addEventListener("touchstart", buttonTapped);
+	} else {
+		button.addEventListener("mousedown", buttonTapped);
+	}
+}());*/
 
+$(window).ready(function() {
+ 
+	var button = document.getElementsByClassName("timer-menu")[0],
+		player = simpleWebAudioPlayer(),
+		soundLoaded = false,
+		
+		playTestSound = function () {
+			player.play("test");
+		},
+		
+		onSoundLoaded = function () {
+			soundLoaded = true;
+			playTestSound();
+		},
+		
+		buttonTapped = function () {
+			
+			if (soundLoaded) {
+				playTestSound();
+			} else {
+				player.load({
+					name: "test",
+					src: source,
+					callback: onSoundLoaded
+				});
+			}
+		};
+	
+	if ("ontouchstart" in window) {
+		button.addEventListener("touchstart", buttonTapped);
+	alert("1");
+	} else {
+		button.addEventListener("mousedown", buttonTapped);
+	alert("2");
+	}
 
+});
+
+        
