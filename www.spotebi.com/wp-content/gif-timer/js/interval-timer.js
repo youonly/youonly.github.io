@@ -508,14 +508,19 @@ function copyToClipboard(text) {
   window.prompt("Copy to clipboard: Ctrl+C / Cmd+C, Enter", text);
 }
 
-
+var ctx;
+// Create audio context
+	if (typeof AudioContext !== "undefined") {
+		ctx = new window.AudioContext();
+	} else if (typeof webkitAudioContext !== "undefined") {
+		ctx = new window.webkitAudioContext();
+	}
 
 var simpleWebAudioPlayer = function () {
 	"use strict";
 	
 	var player = {},
 		sounds = [],
-		ctx,
 		masterGain;
 	
 	player.load = function (sound, callback) {
@@ -557,12 +562,7 @@ var simpleWebAudioPlayer = function () {
 		}
 	};
 	
-	// Create audio context
-	if (typeof AudioContext !== "undefined") {
-		ctx = new window.AudioContext();
-	} else if (typeof webkitAudioContext !== "undefined") {
-		ctx = new window.webkitAudioContext();
-	}
+	
 	// Create the master gain node
 	masterGain = (ctx.createGain) ? ctx.createGain() : ctx.createGainNode();
 	// Connect the master gain node to the context's output
