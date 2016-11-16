@@ -126,7 +126,7 @@ $( document ).ready(function( ){
             }
         );
 
-        $( document ).on( "mousedown", "div.timer-input-box div.box-body div.timer-number div.timer-number-increment div.up",
+        $( document ).on( "touchend", "div.timer-input-box div.box-body div.timer-number div.timer-number-increment div.up",
             function( event )
             {
                 var thisElem = this;
@@ -142,11 +142,11 @@ $( document ).ready(function( ){
                 ,200);
 
                 $( window ).bind(
-                    "mouseup",
+                    "touchend",
                     function( )
                     {
                         clearInterval( inputIncrementTimer );
-                        $( window ).unbind("mouseup");
+                        $( window ).unbind("touchend");
                     }
                 );
 
@@ -156,7 +156,7 @@ $( document ).ready(function( ){
             }
         );
 
-        $( document ).on( "mousedown", "div.timer-input-box div.box-body div.timer-number div.timer-number-increment div.down",
+        $( document ).on( "touchend", "div.timer-input-box div.box-body div.timer-number div.timer-number-increment div.down",
             function( event )
             {
                 var thisElem = this;
@@ -178,11 +178,11 @@ $( document ).ready(function( ){
                 ,200);
 
                 $( window ).bind(
-                    "mouseup",
+                    "touchend",
                     function( )
                     {
                         clearInterval( inputIncrementTimer );
-                        $( window ).unbind("mouseup");
+                        $( window ).unbind("touchend");
                     }
                 );
                 event.preventDefault( );
@@ -241,7 +241,7 @@ $( document ).ready(function( ){
                 var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
                navigator.userAgent && !navigator.userAgent.match('CriOS');
                 $( this ).find(".timer-menu .timer-next").bind(
-                    "touchend mousedown",
+                    "touchend",
                     function( event )
                     {
                         var activeDuration = parseInt($( thisTimer ).find( "div.timer-menu div.timer-list div.timer-list-item.active input.duration" ).val( ));
@@ -267,7 +267,7 @@ $( document ).ready(function( ){
                         }
                         if( activeDuration - activeElapsed == 0 )
                         {
-                            $( thisTimer ).find( "div.timer-menu div.timer-restart" ).trigger( "mousedown" );
+                            $( thisTimer ).find( "div.timer-menu div.timer-restart" ).trigger( "touchend" );
                             event.preventDefault( );
                             event.stopPropagation( );
                             return false;
@@ -359,7 +359,7 @@ var button = document.getElementsByClassName("timer-menu")[0],
                                         else
                                         {
                                             threeBeep = true;
-                                            $( thisTimer ).find("div.timer-menu div.timer-list div.timer-list-item.active").next( ).trigger("mousedown");
+                                            $( thisTimer ).find("div.timer-menu div.timer-list div.timer-list-item.active").next( ).trigger("touchend");
                                         }
                                     }
 
@@ -436,7 +436,7 @@ var button = document.getElementsByClassName("timer-menu")[0],
                     }
                 );
                 $( this ).find( "div.timer-menu div.timer-list-item" ).bind(
-                    "mousedown",
+                    "touchend",
                     function( event )
                     {
                         var allIntervals = $( thisTimer ).find( "div.timer-menu div.timer-list-item" );
@@ -600,7 +600,7 @@ var button = document.getElementsByClassName("timer-menu")[0],
                     }
                 );
                 $( this ).find( "div.timer-menu div.timer-restart" ).bind(
-                    "mousedown",
+                    "touchend",
                     function( event )
                     {
                         restartClicked = true;
@@ -618,11 +618,11 @@ var button = document.getElementsByClassName("timer-menu")[0],
 
                         if( $( thisTimer ).find( "input.active" ).val( ) == "1" )
                         {
-                            $( thisTimer ).find( "div.timer-menu div.timer-next" ).trigger( "mousedown" );
+                            $( thisTimer ).find( "div.timer-menu div.timer-next" ).trigger( "touchend" );
                         }
                         $( thisTimer ).find( "div.timer-totals div.timer-elapsed input.elapsed" ).val( "0" );
                         $( thisTimer ).find( "div.timer-totals div.timer-elapsed div.timer-total-value" ).html( ms( 0 ) );
-                        $( $( thisTimer ).find( "div.timer-menu div.timer-list-item" )[0] ).attr( "class","timer-list-item active" ).trigger( "touchend mousedown");
+                        $( $( thisTimer ).find( "div.timer-menu div.timer-list-item" )[0] ).attr( "class","timer-list-item active" ).trigger( "touchend");
 
                         event.preventDefault( );
                         event.stopPropagation( );
