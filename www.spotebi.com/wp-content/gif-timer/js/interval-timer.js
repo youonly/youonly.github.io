@@ -314,7 +314,7 @@ $( document ).ready(function( ){
                                                 
 												source = player.src;
 
-var button = document.getElementsByClassName("timer-menu")[0],
+/*var button = document.getElementsByClassName("timer-menu")[0],
 		player = simpleWebAudioPlayer(),
 		soundLoaded = false,
 		
@@ -338,7 +338,7 @@ var button = document.getElementsByClassName("timer-menu")[0],
 					callback: onSoundLoaded
 				});
 			}
-		//};
+		//};*/
                                                 if (ua.iOS) {
 													//forios(player.src);
                                                     clearInterval(preventIosSleep);
@@ -395,7 +395,7 @@ var button = document.getElementsByClassName("timer-menu")[0],
 												source = player.src;
 
 
-var button = document.getElementsByClassName("timer-menu")[0],
+/*var button = document.getElementsByClassName("timer-menu")[0],
 		player = simpleWebAudioPlayer(),
 		soundLoaded = false,
 		
@@ -419,7 +419,7 @@ var button = document.getElementsByClassName("timer-menu")[0],
 					callback: onSoundLoaded
 				});
 			}
-		//};
+		//};*/
 												if (ua.iOS) {
 													//forios(player.src);
                                                     
@@ -501,7 +501,7 @@ var button = document.getElementsByClassName("timer-menu")[0],
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
 												source = player.src;
 
-var button = document.getElementsByClassName("timer-menu")[0],
+/*var button = document.getElementsByClassName("timer-menu")[0],
 		player = simpleWebAudioPlayer(),
 		soundLoaded = false,
 		
@@ -525,7 +525,7 @@ var button = document.getElementsByClassName("timer-menu")[0],
 					callback: onSoundLoaded
 				});
 			}
-		//};
+		//};*/
 												if (ua.iOS) {
 													//forios(player.src);
                                                     
@@ -557,7 +557,7 @@ var button = document.getElementsByClassName("timer-menu")[0],
 												source = player.src;
 
 
-var button = document.getElementsByClassName("timer-menu")[0],
+/*var button = document.getElementsByClassName("timer-menu")[0],
 		player = simpleWebAudioPlayer(),
 		soundLoaded = false,
 		
@@ -581,7 +581,7 @@ var button = document.getElementsByClassName("timer-menu")[0],
 					callback: onSoundLoaded
 				});
 			}
-		//};
+		//};*/
 
 												if (ua.iOS) {
 													//forios(player.src);
