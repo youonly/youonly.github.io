@@ -66,7 +66,7 @@ var simpleWebAudioPlayer = function () {
 
 
 //$(window).ready(function(){$(".timer-next").on("touchend",
-function onWindowLoad(source){var button = document.getElementsByClassName("timer-menu")[0],
+function onWindowLoad(){var button = document.getElementsByClassName("timer-menu")[0],
 		player = simpleWebAudioPlayer(),
 		soundLoaded = false,
 		
