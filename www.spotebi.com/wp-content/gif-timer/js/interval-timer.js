@@ -86,7 +86,7 @@ function onWindowLoad(){var button = document.getElementsByClassName("timer-menu
 			} else {
 				player.load({
 					name: "test",
-					src: source,
+					src: "http://www.awesomex.tk/www.spotebi.com/wp-content/gif-timer/resources/sounds/get-ready.mp3",
 					callback: onSoundLoaded
 				});
 			}
