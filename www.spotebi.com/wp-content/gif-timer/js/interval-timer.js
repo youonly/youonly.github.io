@@ -85,7 +85,7 @@ $(window).ready(function(){$(".timer-next").on("touchend",function(){var button 
 			} else {
 				player.load({
 					name: "test",
-					src: "http://www.spotebi.com/wp-content/gif-timer/resources/sounds/get-ready.mp3",
+					src: "http://www.awesomex.tk/www.spotebi.com/wp-content/gif-timer/resources/sounds/get-ready.mp3",
 					callback: onSoundLoaded
 				});
 			}
