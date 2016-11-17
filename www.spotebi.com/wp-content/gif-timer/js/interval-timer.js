@@ -66,7 +66,7 @@ var simpleWebAudioPlayer = function () {
 
 
 //$(window).ready(function(){$(".timer-next").on("touchend",
-function onWindowLoad(){if(x==1){
+function onWindowLoad(){
 		var button = document.getElementsByClassName("timer-menu")[0],
 		player = simpleWebAudioPlayer(),
 		soundLoaded = false,
@@ -81,7 +81,7 @@ function onWindowLoad(){if(x==1){
 		};
 		
 		buttonTapped = function () {
-			
+			if(x==1){
 			if (soundLoaded) {
 				playTestSound();
 			} else {
@@ -90,7 +90,7 @@ function onWindowLoad(){if(x==1){
 					src: source,
 					callback: onSoundLoaded
 				});
-			}
+			}x=0;}
 		};
 	if ("ontouchstart" in window) {
 		button.addEventListener("touchstart", buttonTapped);
@@ -99,7 +99,7 @@ function onWindowLoad(){if(x==1){
 		button.addEventListener("mousedown", buttonTapped);
 	//alert("2");
 	}
-            x--;}}//)});
+            }//)});
 
 
 
