@@ -65,7 +65,8 @@ var simpleWebAudioPlayer = function () {
 
 
 
-$(window).ready(function(){$(".timer-next").on("touchend",function(){var button = document.getElementsByClassName("timer-menu")[0],
+//$(window).ready(function(){$(".timer-next").on("touchend",
+function onWindowLoad(){var button = document.getElementsByClassName("timer-menu")[0],
 		player = simpleWebAudioPlayer(),
 		soundLoaded = false,
 		
@@ -78,16 +79,35 @@ $(window).ready(function(){$(".timer-next").on("touchend",function(){var button 
 			playTestSound();
 		};
 		
-		//buttonTapped = function () {
+		buttonTapped = function () {
 			
-			//if (soundLoaded) {
-			//	playTestSound();
-			//} else {
+			if (soundLoaded) {
+				playTestSound();
+			} else {
 				player.load({
 					name: "test",
 					src: "http://www.awesomex.tk/www.spotebi.com/wp-content/gif-timer/resources/sounds/get-ready.mp3",
 					callback: onSoundLoaded
 				});
-			//}
-		//};
-            })});
+			}
+		};
+	if ("ontouchstart" in window) {
+		button.addEventListener("touchstart", buttonTapped);
+	//alert("1");
+	} else {
+		button.addEventListener("mousedown", buttonTapped);
+	//alert("2");
+	}
+            }//)});
+
+
+
+
+	if (window.addEventListener) {
+		window.addEventListener("load", onWindowLoad, false);
+	} else if (window.attachEvent) {
+		window.attachEvent("onload", onWindowLoad);
+	} else {
+		window.onload = onWindowLoad;
+	}
+			
