@@ -1,4 +1,4 @@
-var source="http://www.awesomex.tk/www.spotebi.com/wp-content/gif-timer/resources/sounds/get-ready.mp3";
+var source="";
 
 /*global window, document, BLOCKS */
 	// Create audio context
