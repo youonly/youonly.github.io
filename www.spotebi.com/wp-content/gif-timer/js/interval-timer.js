@@ -1,4 +1,4 @@
-var source="";
+var source="http://www.awesomex.tk/www.spotebi.com/wp-content/gif-timer/resources/sounds/get-ready.mp3";
 
 /*global window, document, BLOCKS */
 	// Create audio context
@@ -66,7 +66,7 @@ var simpleWebAudioPlayer = function () {
 
 
 //$(window).ready(function(){$(".timer-next").on("touchend",
-function onWindowLoad(){var button = document.getElementsByClassName("timer-menu")[0],
+function onWindowLoad(source){var button = document.getElementsByClassName("timer-menu")[0],
 		player = simpleWebAudioPlayer(),
 		soundLoaded = false,
 		
@@ -86,7 +86,7 @@ function onWindowLoad(){var button = document.getElementsByClassName("timer-menu
 			} else {
 				player.load({
 					name: "test",
-					src: "http://www.awesomex.tk/www.spotebi.com/wp-content/gif-timer/resources/sounds/get-ready.mp3",
+					src: source,
 					callback: onSoundLoaded
 				});
 			}
