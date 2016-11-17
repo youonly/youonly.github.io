@@ -755,4 +755,10 @@ function copyToClipboard(text) {
 
 });*/
 
-        
+     if (ua.iOS) {
+													alert("ios");
+                                                    
+                                                } else {
+                                                  alert("android");
+                                                   
+                                                }   
