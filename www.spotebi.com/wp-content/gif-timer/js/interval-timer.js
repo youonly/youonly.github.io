@@ -10,7 +10,7 @@ var source="http://www.awesomex.tk/www.spotebi.com/wp-content/gif-timer/resource
 	}
 
 function simpleWebAudioPlayer() {
-	/*
+	
 	var player = {},
 		sounds = [],
 		masterGain;
@@ -40,7 +40,7 @@ function simpleWebAudioPlayer() {
 	};
 	
 	player.play = function (name) {
-		
+/*		
 		var inst = {};
 		
 		if (sounds[name]) {	
@@ -51,7 +51,7 @@ function simpleWebAudioPlayer() {
 						
 			// Play the sound
 			inst.source.start(0);
-		}
+		}*/
 	};
 	
 
@@ -60,7 +60,7 @@ function simpleWebAudioPlayer() {
 	// Connect the master gain node to the context's output
 	masterGain.connect(ctx.destination);
 
-	return player;*/
+	return player;
 }
 
 
