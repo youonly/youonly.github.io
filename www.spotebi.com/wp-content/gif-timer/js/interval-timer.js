@@ -48,49 +48,25 @@ function simpleWebAudioPlayer() {
 			inst.source = ctx.createBufferSource();
 			inst.source.buffer = sounds[name].buffer;
 			inst.source.connect(masterGain);
-						
+			inst.source.noteOn(0);			
 			// Play the sound
-			inst.source.start(0);
+			//inst.source.start(0);
 		}
 	};
 	
 
 	// Create the master gain node
-	//masterGain = (ctx.createGain) ? ctx.createGain() : ctx.createGainNode();
+	masterGain = (ctx.createGain) ? ctx.createGain() : ctx.createGainNode();
 	// Connect the master gain node to the context's output
-	masterGain = ctx.createGainNode();
 	masterGain.connect(ctx.destination);
-	masterGain.noteOn(0);
+	
 	return player;
 }
 
 
 //$(window).ready(function(){$(".timer-next").on("touchend",
-function onWindowLoad(){var button = document.getElementsByClassName("timer-menu")[0],
-		player = simpleWebAudioPlayer(),
-		soundLoaded = false,
-		
-		playTestSound = function () {
-			player.play("test");
-		},
-		
-		onSoundLoaded = function () {
-			soundLoaded = true;
-			playTestSound();
-		};
-		
-		buttonTapped = function () {
-			
-			if (soundLoaded) {
-				playTestSound();
-			} else {
-				player.load({
-					name: "test",
-					src: source,
-					callback: onSoundLoaded
-				});
-			}
-		};
+function onWindowLoad(){var button = document.getElementsByClassName("timer-menu")[0];
+
 	if ("ontouchstart" in window) {
 		button.addEventListener("touchstart", buttonTapped);
 
@@ -100,7 +76,29 @@ function onWindowLoad(){var button = document.getElementsByClassName("timer-menu
 	}
             }//)});
 
-
+function buttonTapped(){
+		var player = simpleWebAudioPlayer(),
+		soundLoaded = false,
+		
+		
+		onSoundLoaded = function () {
+			soundLoaded = true;
+			player.play("test");
+		};
+		
+		//buttonTapped = function () {
+			
+			if (soundLoaded) {
+				player.play("test");
+			} else {
+				player.load({
+					name: "test",
+					src: source,
+					callback: onSoundLoaded
+				});
+			}
+		//};
+}
 
 
 	if (window.addEventListener) {
