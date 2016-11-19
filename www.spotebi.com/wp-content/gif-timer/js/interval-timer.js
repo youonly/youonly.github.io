@@ -16,7 +16,7 @@ function simpleWebAudioPlayer() {
 		masterGain;
 	
 	player.load = function (sound, callback) {
-	/*	
+		
 		var request;
 		
 		// Load the sound
@@ -36,7 +36,7 @@ function simpleWebAudioPlayer() {
 
 			});
 		};
-		request.send();*/
+		request.send();
 	};
 	
 	player.play = function (name) {
@@ -56,11 +56,11 @@ function simpleWebAudioPlayer() {
 	
 
 	// Create the master gain node
-	masterGain = (ctx.createGain) ? ctx.createGain() : ctx.createGainNode();
+	//masterGain = (ctx.createGain) ? ctx.createGain() : ctx.createGainNode();
 	// Connect the master gain node to the context's output
-	masterGain.connect(ctx.destination);
+	//masterGain.connect(ctx.destination);
 
-	return player;
+	//return player;
 }
 
 
