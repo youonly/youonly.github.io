@@ -3,11 +3,11 @@ var source="http://www.awesomex.tk/www.spotebi.com/wp-content/gif-timer/resource
 /*global window, document, BLOCKS */
 	// Create audio context
 	var ctx;
-	if (typeof AudioContext !== "undefined") {
-		ctx = new window.AudioContext();
-	} else if (typeof webkitAudioContext !== "undefined") {
+	if (typeof webkitAudioContext !== "undefined") {
 		ctx = new window.webkitAudioContext();
-	}
+	} else if (typeof AudioContext !== "undefined") {
+		ctx = new window.AudioContext();
+	} 
 
 function simpleWebAudioPlayer() {
 	
@@ -56,11 +56,11 @@ function simpleWebAudioPlayer() {
 	
 
 	// Create the master gain node
-	//masterGain = (ctx.createGain) ? ctx.createGain() : ctx.createGainNode();
+	masterGain = (ctx.createGain) ? ctx.createGain() : ctx.createGainNode();
 	// Connect the master gain node to the context's output
-	//masterGain.connect(ctx.destination);
+	masterGain.connect(ctx.destination);
 
-	//return player;
+	return player;
 }
 
 
