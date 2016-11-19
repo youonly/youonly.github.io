@@ -48,9 +48,9 @@ function simpleWebAudioPlayer() {
 			inst.source = ctx.createBufferSource();
 			inst.source.buffer = sounds[name].buffer;
 			inst.source.connect(masterGain);
-			inst.source.noteOn(0);			
+			//inst.source.noteOn(0);			
 			// Play the sound
-			//inst.source.start(0);
+			inst.source.start(0);
 		}
 	};
 	
