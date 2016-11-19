@@ -16,7 +16,7 @@ function simpleWebAudioPlayer() {
 		masterGain;
 	
 	player.load = function (sound, callback) {
-		
+	/*	
 		var request;
 		
 		// Load the sound
@@ -36,11 +36,11 @@ function simpleWebAudioPlayer() {
 
 			});
 		};
-		request.send();
+		request.send();*/
 	};
 	
 	player.play = function (name) {
-/*		
+		
 		var inst = {};
 		
 		if (sounds[name]) {	
@@ -51,7 +51,7 @@ function simpleWebAudioPlayer() {
 						
 			// Play the sound
 			inst.source.start(0);
-		}*/
+		}
 	};
 	
 
