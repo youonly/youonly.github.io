@@ -9,7 +9,7 @@ var source="http://www.awesomex.tk/www.spotebi.com/wp-content/gif-timer/resource
 		ctx = new window.webkitAudioContext();
 	}
 
-var simpleWebAudioPlayer = function () {
+function simpleWebAudioPlayer() {
 	
 	var player = {},
 		sounds = [],
@@ -67,11 +67,11 @@ var simpleWebAudioPlayer = function () {
 
 //$(window).ready(function(){$(".timer-next").on("touchend",
 function onWindowLoad(){var button = document.getElementsByClassName("timer-menu")[0],
-		//player = simpleWebAudioPlayer(),
+		player = simpleWebAudioPlayer(),
 		soundLoaded = false,
 		
 		playTestSound = function () {
-			//player.play("test");
+			player.play("test");
 		},
 		
 		onSoundLoaded = function () {
@@ -84,11 +84,11 @@ function onWindowLoad(){var button = document.getElementsByClassName("timer-menu
 			if (soundLoaded) {
 				playTestSound();
 			} else {
-				//player.load({
-				//	name: "test",
-				//	src: source,
-				//	callback: onSoundLoaded
-				//});
+				player.load({
+					name: "test",
+					src: source,
+					callback: onSoundLoaded
+				});
 			}
 		};
 	if ("ontouchstart" in window) {
