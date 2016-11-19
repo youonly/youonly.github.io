@@ -99,31 +99,7 @@ function onWindowLoad(){var button = document.getElementsByClassName("timer-menu
 
 	}
             }//)});
-function hello(){var button = document.getElementsByClassName("timer-menu")[0],
-		player = simpleWebAudioPlayer(),
-		soundLoaded = false,
-		
-		playTestSound = function () {
-			player.play("test");
-		},
-		
-		onSoundLoaded = function () {
-			soundLoaded = true;
-			playTestSound();
-		};
-		
-		buttonTapped = function () {
-			
-			if (soundLoaded) {
-				playTestSound();
-			} else {
-				player.load({
-					name: "test",
-					src: source,
-					callback: onSoundLoaded
-				});
-			}
-		};}
+function hello(){alert("hello");}
 
 
 
