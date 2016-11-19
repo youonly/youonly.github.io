@@ -71,7 +71,7 @@ function onWindowLoad(){var button = document.getElementsByClassName("timer-menu
 		soundLoaded = false,
 		
 		playTestSound = function () {
-			player.play("test");
+			//player.play("test");
 		},
 		
 		onSoundLoaded = function () {
@@ -99,15 +99,15 @@ function onWindowLoad(){var button = document.getElementsByClassName("timer-menu
 
 	}
             }//)});
-function hello(){alert("hello");}
+
 
 
 
 	if (window.addEventListener) {
-		window.addEventListener("load", hello, false);
+		window.addEventListener("load", onWindowLoad, false);
 	} else if (window.attachEvent) {
-		window.attachEvent("onload", hello);
+		window.attachEvent("onload", onWindowLoad);
 	} else {
-		window.onload = hello;
+		window.onload = onWindowLoad;
 	}
 			
