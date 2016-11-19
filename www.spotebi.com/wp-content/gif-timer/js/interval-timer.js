@@ -10,7 +10,7 @@ var source="http://www.awesomex.tk/www.spotebi.com/wp-content/gif-timer/resource
 	}
 
 function simpleWebAudioPlayer() {
-	
+	/*
 	var player = {},
 		sounds = [],
 		masterGain;
@@ -60,9 +60,8 @@ function simpleWebAudioPlayer() {
 	// Connect the master gain node to the context's output
 	masterGain.connect(ctx.destination);
 
-	return player;
-};
-
+	return player;*/
+}
 
 
 //$(window).ready(function(){$(".timer-next").on("touchend",
