@@ -1,13 +1,7 @@
 var source="http://www.awesomex.tk/www.spotebi.com/wp-content/gif-timer/resources/sounds/get-ready.mp3";
 
 /*global window, document, BLOCKS */
-	// Create audio context
-	var ctx;
-	if (typeof AudioContext !== "undefined") {
-		ctx = new window.AudioContext();
-	} else if (typeof webkitAudioContext !== "undefined") {
-		ctx = new window.webkitAudioContext();
-	}
+
 
 var simpleWebAudioPlayer = function () {
 	
@@ -54,7 +48,13 @@ var simpleWebAudioPlayer = function () {
 		}
 	};
 	
-
+	// Create audio context
+	var ctx;
+	if (typeof AudioContext !== "undefined") {
+		ctx = new window.AudioContext();
+	} else if (typeof webkitAudioContext !== "undefined") {
+		ctx = new window.webkitAudioContext();
+	}
 	// Create the master gain node
 	masterGain = (ctx.createGain) ? ctx.createGain() : ctx.createGainNode();
 	// Connect the master gain node to the context's output
