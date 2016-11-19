@@ -67,11 +67,11 @@ var simpleWebAudioPlayer = function () {
 
 //$(window).ready(function(){$(".timer-next").on("touchend",
 function onWindowLoad(){var button = document.getElementsByClassName("timer-menu")[0],
-		player = simpleWebAudioPlayer(),
-		soundLoaded = false;//,
+		//player = simpleWebAudioPlayer(),
+		soundLoaded = false,
 		
-		/*playTestSound = function () {
-			player.play("test");
+		playTestSound = function () {
+			//player.play("test");
 		},
 		
 		onSoundLoaded = function () {
@@ -84,13 +84,13 @@ function onWindowLoad(){var button = document.getElementsByClassName("timer-menu
 			if (soundLoaded) {
 				playTestSound();
 			} else {
-				player.load({
-					name: "test",
-					src: source,
-					callback: onSoundLoaded
-				});
+				//player.load({
+				//	name: "test",
+				//	src: source,
+				//	callback: onSoundLoaded
+				//});
 			}
-		};*/
+		};
 	if ("ontouchstart" in window) {
 		button.addEventListener("touchstart", buttonTapped);
 
