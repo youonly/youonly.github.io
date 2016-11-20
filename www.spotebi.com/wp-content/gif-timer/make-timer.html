@@ -1,23 +1,12 @@
-<html><head>
+
+<!DOCTYPE html>
+<html>
+<head>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="css/interval-timer.css">
-        
-        <script type="text/javascript" src="js/sleep.js"></script>
-        <script type="text/javascript">
-
-            var ua = {
-                Android: /Android/ig.test(navigator.userAgent),
-                // iOS: /AppleWebKit/.test(navigator.userAgent) && /Mobile\/\w+/.test(navigator.userAgent)
-                iOS:/iPhone|iPad|iPod/i.test(navigator.userAgent)
-
-
-     };
-
-        </script>
+        <link rel="stylesheet" type="text/css" href="css/interval-timer.css" />
         <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
         <script type="text/javascript" src="js/interval-timer.js"></script>
-        
    </head>
 <body>
 <!-- 
@@ -28,20 +17,22 @@
 </div> -->
 <div class="interval-timer">
     <div class="gif-contain">
-        <div class="curr-gif" style="background:url(resources/jpg/get-ready.jpg); background-size:cover;"></div>
-      <!--   <img height="300" width="400" class="curr-gif" src=resources/jpg/get-ready.jpg /><br/> -->
+        <div class="curr-gif" style="background:url(resources/jpg/1.jpg); background-size:cover;"></div>
+      <!--   <img height="300" width="400" class="curr-gif" src=resources/jpg/1.jpg /><br/> -->
     </div>
-    <!-- <input type="hidden" class="initImg" value="get-ready.jpg"><audio id="audio-sounds" preload="none"><source id="hiddenex-1" src="resources/sounds/run-in-place.mp3" type="audio/mpeg"><source id="hiddenex-2" src="resources/sounds/butt-kicks.mp3" type="audio/mpeg"><source id="hiddenex-3" src="resources/sounds/jumping-jacks.mp3" type="audio/mpeg"><source id="hiddenex-4" src="resources/sounds/mountain-climbers.mp3" type="audio/mpeg"><source id="hiddenex-5" src="resources/sounds/high-kicks.mp3" type="audio/mpeg"><source id="hiddenex-6" src="resources/sounds/lunge-twist.mp3" type="audio/mpeg"><source id="hiddenex-7" src="resources/sounds/side-to-side-squats.mp3" type="audio/mpeg"><source id="hiddenex-8" src="resources/sounds/inchworm.mp3" type="audio/mpeg"><source id="hiddenex-9" src="resources/sounds/bent-over-twist.mp3" type="audio/mpeg"><source id="hiddenex-10" src="resources/sounds/hip-circles.mp3" type="audio/mpeg"><source id="hiddenex-11" src="resources/sounds/hip-circles.mp3" type="audio/mpeg"><source id="hiddenoth-1" src="resources/sounds/get-ready.mp3" type="audio/mpeg"><source id="hiddenoth-2" src="resources/sounds/" type="audio/mpeg"><source id="hiddenoth-3" src="resources/sounds/" type="audio/mpeg"><source id="hiddenoth-4" src="resources/sounds/rest.mp3" type="audio/mpeg">       <source id="hiddenbeep-hidden" src="resources/sounds/beep.mp3" type="audio/mpeg">
-           <source id="three-beep" src="resources/sounds/threebeep.mp3" type="audio/mpeg">
-        
-        </audio> -->
-            <input type="hidden" class="active" value="0">
-        <div class="timer-countdown" style="font-size: 200px;">
-        00:05        <input type="hidden" class="elapsed" value="0">
+    <input type="hidden" class="initImg" value="1.jpg" /><audio id="ex-1" ><source src="resources/sounds/beep.mp3" type="audio/mpeg"></audio><audio id="oth-1" ><source src="resources/sounds/beep.mp3" type="audio/mpeg"></audio><input type="hidden" class="playList" value="PLZ_XmsOVJfospVVLu0WERxX1YJneADIsT" /><input type="hidden" class="initSong" value="1" />    <input type="hidden" class="active" value="0" />
+    <audio id="beep">
+        <source src="resources/sounds/beep.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="three-beep">
+        <source src="resources/sounds/threebeep.mp3" type="audio/mpeg">
+    </audio>
+    <div class="timer-countdown">
+        00:10        <input type="hidden" class="elapsed" value="0" />
     </div>
     <div class="timer-totals">
         <div class="timer-elapsed">
-            <input type="hidden" class="elapsed" value="0">
+            <input type="hidden" class="elapsed" value="0" />
             <div class="timer-total-label">
                 Elapsed
             </div>
@@ -54,28 +45,204 @@
                 Intervals
             </div>
             <div class="timer-total-value">
-                1&nbsp;/&nbsp;45            </div>
+                1&nbsp;/&nbsp;23            </div>
         </div>
         <div class="timer-remaining">
-            <input type="hidden" class="elapsed" value="725">
+            <input type="hidden" class="elapsed" value="140" />
             <div class="timer-total-label">
                 Remaining
             </div>
             <div class="timer-total-value">
-                12:05            </div>
+                02:20            </div>
         </div>
     </div>
     <div class="timer-menu">
         <div class="timer-restart">
-            ↻
+            &#8635;
         </div>
         <div class="timer-list">
-<div class="timer-list-item active">get ready<input type="hidden" class="duration" value="5"><input type="hidden" class="gif" value="get-ready.gif"><input type="hidden" class="sound" name="oth-1" value="get-ready.mp3"></div><div class="timer-list-item">run in place<input type="hidden" class="gif" value="run-in-place.gif"><input type="hidden" class="sound" value="run-in-place.mp3" name="ex-1"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">butt kicks<input type="hidden" class="gif" value="butt-kicks.gif"><input type="hidden" class="sound" value="butt-kicks.mp3" name="ex-2"><input type="hidden" class="duration" value="90"></div><div class="timer-list-item">jumping jacks<input type="hidden" class="gif" value="jumping-jacks.gif"><input type="hidden" class="sound" value="jumping-jacks.mp3" name="ex-3"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">mountain climbers<input type="hidden" class="gif" value="mountain-climbers.gif"><input type="hidden" class="sound" value="mountain-climbers.mp3" name="ex-4"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">high kicks<input type="hidden" class="gif" value="high-kicks.gif"><input type="hidden" class="sound" value="high-kicks.mp3" name="ex-5"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">lunge twist<input type="hidden" class="gif" value="lunge-twist.gif"><input type="hidden" class="sound" value="lunge-twist.mp3" name="ex-6"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">side squats<input type="hidden" class="gif" value="side-to-side-squats.gif"><input type="hidden" class="sound" value="side-to-side-squats.mp3" name="ex-7"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">inchworm<input type="hidden" class="gif" value="inchworm.gif"><input type="hidden" class="sound" value="inchworm.mp3" name="ex-8"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">bent over twist<input type="hidden" class="gif" value="bent-over-twist.gif"><input type="hidden" class="sound" value="bent-over-twist.mp3" name="ex-9"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">hip circles<input type="hidden" class="gif" value="hip-circles.gif"><input type="hidden" class="sound" value="hip-circles.mp3" name="ex-10"><input type="hidden" class="duration" value="5"></div><div class="timer-list-item">hip circles<input type="hidden" class="gif" value="hip-circles-2.gif"><input type="hidden" class="sound" value="hip-circles.mp3" name="ex-11"><input type="hidden" class="duration" value="5"></div><div class="timer-list-item">run in place<input type="hidden" class="gif" value="run-in-place.gif"><input type="hidden" class="sound" value="run-in-place.mp3" name="ex-1"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">butt kicks<input type="hidden" class="gif" value="butt-kicks.gif"><input type="hidden" class="sound" value="butt-kicks.mp3" name="ex-2"><input type="hidden" class="duration" value="90"></div><div class="timer-list-item">jumping jacks<input type="hidden" class="gif" value="jumping-jacks.gif"><input type="hidden" class="sound" value="jumping-jacks.mp3" name="ex-3"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">mountain climbers<input type="hidden" class="gif" value="mountain-climbers.gif"><input type="hidden" class="sound" value="mountain-climbers.mp3" name="ex-4"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">high kicks<input type="hidden" class="gif" value="high-kicks.gif"><input type="hidden" class="sound" value="high-kicks.mp3" name="ex-5"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">lunge twist<input type="hidden" class="gif" value="lunge-twist.gif"><input type="hidden" class="sound" value="lunge-twist.mp3" name="ex-6"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">side squats<input type="hidden" class="gif" value="side-to-side-squats.gif"><input type="hidden" class="sound" value="side-to-side-squats.mp3" name="ex-7"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">inchworm<input type="hidden" class="gif" value="inchworm.gif"><input type="hidden" class="sound" value="inchworm.mp3" name="ex-8"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">bent over twist<input type="hidden" class="gif" value="bent-over-twist.gif"><input type="hidden" class="sound" value="bent-over-twist.mp3" name="ex-9"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">hip circles<input type="hidden" class="gif" value="hip-circles.gif"><input type="hidden" class="sound" value="hip-circles.mp3" name="ex-10"><input type="hidden" class="duration" value="5"></div><div class="timer-list-item">hip circles<input type="hidden" class="gif" value="hip-circles-2.gif"><input type="hidden" class="sound" value="hip-circles.mp3" name="ex-11"><input type="hidden" class="duration" value="5"></div><div class="timer-list-item">run in place<input type="hidden" class="gif" value="run-in-place.gif"><input type="hidden" class="sound" value="run-in-place.mp3" name="ex-1"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">butt kicks<input type="hidden" class="gif" value="butt-kicks.gif"><input type="hidden" class="sound" value="butt-kicks.mp3" name="ex-2"><input type="hidden" class="duration" value="90"></div><div class="timer-list-item">jumping jacks<input type="hidden" class="gif" value="jumping-jacks.gif"><input type="hidden" class="sound" value="jumping-jacks.mp3" name="ex-3"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">mountain climbers<input type="hidden" class="gif" value="mountain-climbers.gif"><input type="hidden" class="sound" value="mountain-climbers.mp3" name="ex-4"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">high kicks<input type="hidden" class="gif" value="high-kicks.gif"><input type="hidden" class="sound" value="high-kicks.mp3" name="ex-5"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">lunge twist<input type="hidden" class="gif" value="lunge-twist.gif"><input type="hidden" class="sound" value="lunge-twist.mp3" name="ex-6"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">side squats<input type="hidden" class="gif" value="side-to-side-squats.gif"><input type="hidden" class="sound" value="side-to-side-squats.mp3" name="ex-7"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">inchworm<input type="hidden" class="gif" value="inchworm.gif"><input type="hidden" class="sound" value="inchworm.mp3" name="ex-8"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">bent over twist<input type="hidden" class="gif" value="bent-over-twist.gif"><input type="hidden" class="sound" value="bent-over-twist.mp3" name="ex-9"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">hip circles<input type="hidden" class="gif" value="hip-circles.gif"><input type="hidden" class="sound" value="hip-circles.mp3" name="ex-10"><input type="hidden" class="duration" value="5"></div><div class="timer-list-item">hip circles<input type="hidden" class="gif" value="hip-circles-2.gif"><input type="hidden" class="sound" value="hip-circles.mp3" name="ex-11"><input type="hidden" class="duration" value="5"></div><div class="timer-list-item">run in place<input type="hidden" class="gif" value="run-in-place.gif"><input type="hidden" class="sound" value="run-in-place.mp3" name="ex-1"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">butt kicks<input type="hidden" class="gif" value="butt-kicks.gif"><input type="hidden" class="sound" value="butt-kicks.mp3" name="ex-2"><input type="hidden" class="duration" value="90"></div><div class="timer-list-item">jumping jacks<input type="hidden" class="gif" value="jumping-jacks.gif"><input type="hidden" class="sound" value="jumping-jacks.mp3" name="ex-3"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">mountain climbers<input type="hidden" class="gif" value="mountain-climbers.gif"><input type="hidden" class="sound" value="mountain-climbers.mp3" name="ex-4"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">high kicks<input type="hidden" class="gif" value="high-kicks.gif"><input type="hidden" class="sound" value="high-kicks.mp3" name="ex-5"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">lunge twist<input type="hidden" class="gif" value="lunge-twist.gif"><input type="hidden" class="sound" value="lunge-twist.mp3" name="ex-6"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">side squats<input type="hidden" class="gif" value="side-to-side-squats.gif"><input type="hidden" class="sound" value="side-to-side-squats.mp3" name="ex-7"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">inchworm<input type="hidden" class="gif" value="inchworm.gif"><input type="hidden" class="sound" value="inchworm.mp3" name="ex-8"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">bent over twist<input type="hidden" class="gif" value="bent-over-twist.gif"><input type="hidden" class="sound" value="bent-over-twist.mp3" name="ex-9"><input type="hidden" class="duration" value="10"></div><div class="timer-list-item">hip circles<input type="hidden" class="gif" value="hip-circles.gif"><input type="hidden" class="sound" value="hip-circles.mp3" name="ex-10"><input type="hidden" class="duration" value="5"></div><div class="timer-list-item">hip circles<input type="hidden" class="gif" value="hip-circles-2.gif"><input type="hidden" class="sound" value="hip-circles.mp3" name="ex-11"><input type="hidden" class="duration" value="5"></div>        </div>
+<div class="timer-list-item active">Warmup<input type="hidden" class="duration" value="10" /><input type="hidden" class="gif" value="1.gif" /><input type="hidden" class="sound" name="oth-1" value="beep.mp3" /></div><div class="timer-list-item">run in place<input type="hidden" class="gif" value="4.gif" /><input type="hidden" class="sound" value="beep.mp3" name="ex-1" /><input type="hidden" class="duration" value="20" /></div><br />
+<b>Notice</b>:  Undefined offset: 2 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>255</b><br />
+<div class="timer-list-item">Rest<input type="hidden" class="duration" value="10" /><input type="hidden" class="gif" value="3.gif" /><input type="hidden" class="sound" name="oth-3" value="" /></div><br />
+<b>Notice</b>:  Undefined offset: 1 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<br />
+<b>Notice</b>:  Undefined offset: 1 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<br />
+<b>Notice</b>:  Undefined offset: 1 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<div class="timer-list-item">butt kicks<input type="hidden" class="gif" value="" /><input type="hidden" class="sound" value="" name="ex-2" /><input type="hidden" class="duration" value="" /></div><br />
+<b>Notice</b>:  Undefined offset: 2 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>255</b><br />
+<div class="timer-list-item">Rest<input type="hidden" class="duration" value="10" /><input type="hidden" class="gif" value="3.gif" /><input type="hidden" class="sound" name="oth-3" value="" /></div><br />
+<b>Notice</b>:  Undefined offset: 2 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<br />
+<b>Notice</b>:  Undefined offset: 2 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<br />
+<b>Notice</b>:  Undefined offset: 2 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<div class="timer-list-item">jumping jacks<input type="hidden" class="gif" value="" /><input type="hidden" class="sound" value="" name="ex-3" /><input type="hidden" class="duration" value="" /></div><br />
+<b>Notice</b>:  Undefined offset: 2 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>255</b><br />
+<div class="timer-list-item">Rest<input type="hidden" class="duration" value="10" /><input type="hidden" class="gif" value="3.gif" /><input type="hidden" class="sound" name="oth-3" value="" /></div><br />
+<b>Notice</b>:  Undefined offset: 3 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<br />
+<b>Notice</b>:  Undefined offset: 3 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<br />
+<b>Notice</b>:  Undefined offset: 3 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<div class="timer-list-item">mountain climbers<input type="hidden" class="gif" value="" /><input type="hidden" class="sound" value="" name="ex-4" /><input type="hidden" class="duration" value="" /></div><br />
+<b>Notice</b>:  Undefined offset: 2 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>255</b><br />
+<div class="timer-list-item">Rest<input type="hidden" class="duration" value="10" /><input type="hidden" class="gif" value="3.gif" /><input type="hidden" class="sound" name="oth-3" value="" /></div><br />
+<b>Notice</b>:  Undefined offset: 4 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<br />
+<b>Notice</b>:  Undefined offset: 4 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<br />
+<b>Notice</b>:  Undefined offset: 4 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<div class="timer-list-item">high kicks<input type="hidden" class="gif" value="" /><input type="hidden" class="sound" value="" name="ex-5" /><input type="hidden" class="duration" value="" /></div><br />
+<b>Notice</b>:  Undefined offset: 2 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>255</b><br />
+<div class="timer-list-item">Rest<input type="hidden" class="duration" value="10" /><input type="hidden" class="gif" value="3.gif" /><input type="hidden" class="sound" name="oth-3" value="" /></div><br />
+<b>Notice</b>:  Undefined offset: 5 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<br />
+<b>Notice</b>:  Undefined offset: 5 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<br />
+<b>Notice</b>:  Undefined offset: 5 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<div class="timer-list-item">lunge twist<input type="hidden" class="gif" value="" /><input type="hidden" class="sound" value="" name="ex-6" /><input type="hidden" class="duration" value="" /></div><br />
+<b>Notice</b>:  Undefined offset: 2 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>255</b><br />
+<div class="timer-list-item">Rest<input type="hidden" class="duration" value="10" /><input type="hidden" class="gif" value="3.gif" /><input type="hidden" class="sound" name="oth-3" value="" /></div><br />
+<b>Notice</b>:  Undefined offset: 6 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<br />
+<b>Notice</b>:  Undefined offset: 6 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<br />
+<b>Notice</b>:  Undefined offset: 6 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<div class="timer-list-item">side squats<input type="hidden" class="gif" value="" /><input type="hidden" class="sound" value="" name="ex-7" /><input type="hidden" class="duration" value="" /></div><br />
+<b>Notice</b>:  Undefined offset: 2 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>255</b><br />
+<div class="timer-list-item">Rest<input type="hidden" class="duration" value="10" /><input type="hidden" class="gif" value="3.gif" /><input type="hidden" class="sound" name="oth-3" value="" /></div><br />
+<b>Notice</b>:  Undefined offset: 7 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<br />
+<b>Notice</b>:  Undefined offset: 7 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<br />
+<b>Notice</b>:  Undefined offset: 7 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<div class="timer-list-item">inchworm<input type="hidden" class="gif" value="" /><input type="hidden" class="sound" value="" name="ex-8" /><input type="hidden" class="duration" value="" /></div><br />
+<b>Notice</b>:  Undefined offset: 2 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>255</b><br />
+<div class="timer-list-item">Rest<input type="hidden" class="duration" value="10" /><input type="hidden" class="gif" value="3.gif" /><input type="hidden" class="sound" name="oth-3" value="" /></div><br />
+<b>Notice</b>:  Undefined offset: 8 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<br />
+<b>Notice</b>:  Undefined offset: 8 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<br />
+<b>Notice</b>:  Undefined offset: 8 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<div class="timer-list-item">bent over twist<input type="hidden" class="gif" value="" /><input type="hidden" class="sound" value="" name="ex-9" /><input type="hidden" class="duration" value="" /></div><br />
+<b>Notice</b>:  Undefined offset: 2 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>255</b><br />
+<div class="timer-list-item">Rest<input type="hidden" class="duration" value="10" /><input type="hidden" class="gif" value="3.gif" /><input type="hidden" class="sound" name="oth-3" value="" /></div><br />
+<b>Notice</b>:  Undefined offset: 9 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<br />
+<b>Notice</b>:  Undefined offset: 9 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<br />
+<b>Notice</b>:  Undefined offset: 9 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<div class="timer-list-item">hip circles<input type="hidden" class="gif" value="" /><input type="hidden" class="sound" value="" name="ex-10" /><input type="hidden" class="duration" value="" /></div><br />
+<b>Notice</b>:  Undefined offset: 2 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>255</b><br />
+<div class="timer-list-item">Rest<input type="hidden" class="duration" value="10" /><input type="hidden" class="gif" value="3.gif" /><input type="hidden" class="sound" name="oth-3" value="" /></div><br />
+<b>Notice</b>:  Undefined offset: 10 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<br />
+<b>Notice</b>:  Undefined offset: 10 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<br />
+<b>Notice</b>:  Undefined offset: 10 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>248</b><br />
+<div class="timer-list-item">hip circles<input type="hidden" class="gif" value="" /><input type="hidden" class="sound" value="" name="ex-11" /><input type="hidden" class="duration" value="" /></div><br />
+<b>Notice</b>:  Undefined offset: 1 in <b>/var/www/html/www.spotebi.com/wp-content/gif-timer/make-timer.php</b> on line <b>269</b><br />
+<div class="timer-list-item">Cooldown<input type="hidden" class="duration" value="10" /><input type="hidden" class="gif" value="2.gif" /><input type="hidden" class="sound" name="oth-2" value="" /></div>        </div>
         <div class="timer-next">
-            ►
+            &#x25Ba;
         </div>
     </div>
+    <style type="text/css">
+        .yt-frame{
+            width: 100%;
+        }
+        .spinner-overlay{
+            position: relative;
+            top: -35px;
+            width: 30px;
+            height:30px;
+            margin: 0 auto;
+            background: black;
+            opacity: 0;
+        }
+        .mob-text{
+            font-family: sans-serif;
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+    <div id="player"></div>
+    <div class="spinner-overlay">
+    </div>
 </div>
+<audio controls loop>
+  <source src="resources/sounds/get-ready.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
+<script type="text/javascript">
+    function mobileAndTabletcheck() { 
+        if( navigator.userAgent.match(/Android/i)
+             || navigator.userAgent.match(/webOS/i)
+             || navigator.userAgent.match(/iPhone/i)
+             || navigator.userAgent.match(/iPad/i)
+             || navigator.userAgent.match(/iPod/i)
+             || navigator.userAgent.match(/BlackBerry/i)
+             || navigator.userAgent.match(/Windows Phone/i)
+            ){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    var isMobile = mobileAndTabletcheck();
+    if(isMobile){
+        $(".spinner-overlay").css("display", "none");
+        $(".interval-timer").append('<div class="mob-text">Start the timer, tap the playlist & go!</div>');   
+    }; 
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        height:'45',
+        width:'100%',
+        playerVars: {
+            'controls' : 1,
+            'showinfo' : 0
+        },
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange' : onPlayerStateChange
+        }
+      });
+    }
+    var done = false;
+    function onPlayerStateChange(event) {
+        var state = event.target.getPlayerState();
+        console.log(state);
+        if(state == -1 || state == 3){
+            $(".spinner-overlay").css("opacity", 1);
+            if(!isMobile)
+                player.pauseVideo();
+        }
+        if(state == 5){
+            $(".spinner-overlay").css("opacity", 0);
+            if(!isMobile)
+                player.playVideo();
+        }
+        if(state == 1){
+            $(".spinner-overlay").css("opacity", 0);
+        }
+    }
+    function onPlayerReady(event) {
+        console.log("loaded");
+        var playList = $(".playList").val();
+        var initSong = $(".initSong").val();
+        player.cuePlaylist({
+            list: playList, 
+            index: initSong,
+            startSeconds:0,
+            suggestedQuality:'720p'
+        });
+    }
+</script>
+</body>
+</html>
 
-
-</body></html>
