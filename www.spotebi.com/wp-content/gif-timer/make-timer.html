@@ -222,7 +222,7 @@ Your browser does not support the audio element.
     }
     var done = false;
     function onPlayerStateChange(event) {
-        var state = event.target.getPlayerState();
+        var state = player.getPlayerState();
         console.log("the state is:-"+state);
         /*if(state == -1 || state == 3){
             $(".spinner-overlay").css("opacity", 1);
@@ -239,7 +239,7 @@ Your browser does not support the audio element.
 			player.playVideo();
         }*/
 		if(state == 0){player.nextVideo();}
-		player.playVideo();
+		if(state != 1 ){player.playVideo();}
     }
     function onPlayerReady(event) {
         console.log("loaded");
@@ -251,6 +251,7 @@ Your browser does not support the audio element.
             startSeconds:0,
             suggestedQuality:'144p'
         });
+	setInterval(onPlayerStateChange, 3000);
     }
 </script>
 </body>
