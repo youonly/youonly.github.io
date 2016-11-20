@@ -223,11 +223,11 @@ Your browser does not support the audio element.
     var done = false;
     function onPlayerStateChange(event) {
         var state = event.target.getPlayerState();
-        console.log(state);
+        console.log("the state is:-"+state);
         if(state == -1 || state == 3){
             $(".spinner-overlay").css("opacity", 1);
             if(!isMobile)
-                player.pauseVideo();
+                player.playVideo();
         }
         if(state == 5){
             $(".spinner-overlay").css("opacity", 0);
@@ -236,7 +236,9 @@ Your browser does not support the audio element.
         }
         if(state == 1){
             $(".spinner-overlay").css("opacity", 0);
+			player.playVideo();
         }
+		//player.playVideo();
     }
     function onPlayerReady(event) {
         console.log("loaded");
