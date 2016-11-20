@@ -224,7 +224,7 @@ Your browser does not support the audio element.
     function onPlayerStateChange(event) {
         var state = event.target.getPlayerState();
         console.log("the state is:-"+state);
-        if(state == -1 || state == 3){
+        /*if(state == -1 || state == 3){
             $(".spinner-overlay").css("opacity", 1);
             if(!isMobile)
                 player.playVideo();
@@ -237,7 +237,8 @@ Your browser does not support the audio element.
         if(state == 1){
             $(".spinner-overlay").css("opacity", 0);
 			player.playVideo();
-        }
+        }*/
+		if(state == 0){player.nextVideo();}
 		player.playVideo();
     }
     function onPlayerReady(event) {
