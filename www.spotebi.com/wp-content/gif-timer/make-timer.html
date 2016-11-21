@@ -2,7 +2,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="css/interval-timer.css">
-          <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+          <!--<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <link href="Content/sc-controls.min.css" rel="stylesheet" />
     <style>
         #soundcloudControls {
@@ -11,7 +11,7 @@
             border: 1px;
             background-color: #ece9e9;
         }
-    </style>
+    </style> -->
         <script type="text/javascript" src="js/sleep.js"></script>
         <script type="text/javascript">
 
@@ -29,21 +29,21 @@
         <script src="http://w.soundcloud.com/player/api.js"></script>
 
   <script>
-   //$(document).ready(function() {
-    // var widget = SC.Widget(document.getElementById('soundcloud'));
-    // widget.bind(SC.Widget.Events.READY, function() {
-     //  console.log('Ready...');
-    // });
+   $(document).ready(function() {
+     var widget = SC.Widget(document.getElementById('soundcloud'));
+     widget.bind(SC.Widget.Events.READY, function() {
+       console.log('Ready...');
+     });
      //$('button').click(function() {
-      // widget.toggle();
+       //widget.toggle();
      //});
-//var volumeControl = document.getElementById('vol-control');
-//widget.setVolume(7.5);
-//var setVolumne = function() { widget.setVolume((this.value)/10); console.log(this.value);};
+var volumeControl = document.getElementById('vol-control');
+widget.setVolume(7.5);
+var setVolumne = function() { widget.setVolume((this.value)/10); console.log(this.value);};
 
-//volumeControl.addEventListener('change', setVolumne);
-//volumeControl.addEventListener('input', setVolumne);
-  // });
+volumeControl.addEventListener('change', setVolumne);
+volumeControl.addEventListener('input', setVolumne);
+   });
   </script>
    </head>
 <body>
@@ -108,12 +108,12 @@
       width="50%"
       height="400px"
 	  scrolling="no"
-      frameborder="no"></iframe><br/><!--<span>Volume:-</span><input id="vol-control" type="range" min="0" max="10" step="0.1" value="7.5"></input> --><div id="soundcloudControls"></div></center>
+      frameborder="no"></iframe><br/><span>Volume:-</span><input id="vol-control" type="range" min="0" max="10" step="0.1" value="7.5"></input></center> <!--<div id="soundcloudControls"></div>
 	
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
     <script src="js/sc-controls.min.js"></script>
     <script>
-        $("#soundcloudControls").soundCloudControls("soundcloud", "#9C5857");
-    </script>
+        //$("#soundcloudControls").soundCloudControls("soundcloud", "#9C5857");
+    </script> -->
 
 </body></html>
