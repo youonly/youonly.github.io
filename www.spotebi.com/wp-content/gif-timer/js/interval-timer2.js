@@ -1,14 +1,13 @@
-
 var inputIncrementTimer;
 var restartClicked = false;
 $( document ).ready(function( ){
         function IsAttrSupported(strTagName, strAttrName) {
-            var blnVal = false;
-            var elemInput = document.createElement(strTagName);
+            var blnVal = false;    
+            var elemInput = document.createElement(strTagName);   
             if (strAttrName in elemInput) {
                 blnVal = true;
-            }
-            delete elemInput;
+            }    
+            delete elemInput;    
             return blnVal;
         }
 
@@ -32,11 +31,11 @@ $( document ).ready(function( ){
                 sounds = sounds.substring(0, sounds.length - 1);
                 exercises = exercises.substring(0, exercises.length - 1);
                 durations = durations.substring(0, durations.length - 1);
-                var intervals =   $( "div.timer-input-box#timer-warmup div.timer-number input#timer-duration" ).val( ) + ","
+                var intervals =   $( "div.timer-input-box#timer-warmup div.timer-number input#timer-duration" ).val( ) + "," 
                                 + $( "div.timer-input-box#timer-cooldown div.timer-number input#timer-duration" ).val( ) + ","
                                 + $( "div.timer-input-box#interval-rest div.timer-number input#timer-duration" ).val( ) + ","
                                 + $( "div.timer-input-box#set-rest div.timer-number input#timer-duration" ).val( );
-
+                
                 var intervalNames =   encodeURIComponent( $( "div.timer-input-box#timer-warmup input#exercise-name" ).val( ) ) + ","
                                     + encodeURIComponent( $( "div.timer-input-box#timer-cooldown input#exercise-name" ).val( ) ) + ","
                                     + encodeURIComponent( $( "div.timer-input-box#interval-rest input#exercise-name" ).val( ) ) + ","
@@ -51,24 +50,23 @@ $( document ).ready(function( ){
                                     + encodeURIComponent( $( "div.timer-input-box#timer-cooldown input#timer-sound" ).val( ) ) + ","
                                     + encodeURIComponent( $( "div.timer-input-box#interval-rest input#timer-sound" ).val( ) ) + ","
                                     + encodeURIComponent( $( "div.timer-input-box#set-rest input#timer-sound" ).val( ) );
-
-                /*var initSong =   encodeURIComponent( $( "div.timer-input-box#timer-playlist input#timer-song-no" ).val( ) ) ;
-                var playlist =   encodeURIComponent( $( "div.timer-input-box#timer-playlist input#timer-playlist" ).val( ) ) ;*/
+                
+                var initSong =   encodeURIComponent( $( "div.timer-input-box#timer-playlist input#timer-song-no" ).val( ) ) ;
+                var playlist =   encodeURIComponent( $( "div.timer-input-box#timer-playlist input#timer-playlist" ).val( ) ) ;
                 var sets = $( "div.timer-input-box#timer-title div.timer-number input#timer-sets" ).val( );
                 var initImg = encodeURIComponent( $( "div.timer-input-box#timer-warmup input#timer-image-initial" ).val() );
-                var args = "exercises=" + exercises + "&durations=" + durations + "&intervals=" + intervals + "&intervalNames=" + intervalNames + "&intervalImages=" + intervalImages + "&intervalSounds=" + intervalSounds + "&sets=" + sets + "&gifs=" + gifs + "&sounds=" + sounds + "&initImg=" + initImg;
-                /* + "&playlist=" + playlist + "&initSong=" + initSong;*/
-                copyToClipboard("<iframe style=\"width: 1px; min-width: 100%;\" src = \"http://www.spotebi.com/wp-content/themes/Pretty Chic/gif-timer/make-timer.php?"+args+"\" height=\"700\" frameborder=\"0\" scrolling=\"no\"></iframe>");
+                var args = "exercises=" + exercises + "&durations=" + durations + "&intervals=" + intervals + "&intervalNames=" + intervalNames + "&intervalImages=" + intervalImages + "&intervalSounds=" + intervalSounds + "&sets=" + sets + "&gifs=" + gifs + "&sounds=" + sounds + "&initImg=" + initImg + "&playlist=" + playlist + "&initSong=" + initSong;
+                copyToClipboard("<iframe style=\"width: 1px; min-width: 100%;\" src = \"http://www.spotebi.com/wp-content/themes/Pretty%20Chic/timer-youtube/make-timer.php?"+args+"\" height=\"700\" frameborder=\"0\" scrolling=\"no\"></iframe>");
             }
         );
-
+                
         $( document ).on( "mousedown", "div.timer-input-box div.box-body div.timer-number div.timer-number-increment div.up",
             function( event )
             {
                 var thisElem = this;
                 var currNum = parseInt( $( this ).parent( ).parent( ).find( "input" ).val( ) );
                 $( this ).parent( ).parent( ).find( "input" ).val( ++currNum );
-
+                
                 inputIncrementTimer = setInterval(
                     function( )
                     {
@@ -76,7 +74,7 @@ $( document ).ready(function( ){
                         $( thisElem ).parent( ).parent( ).find( "input" ).val( ++currNum );
                     }
                 ,200);
-
+                
                 $( window ).bind(
                     "mouseup",
                     function( )
@@ -84,14 +82,14 @@ $( document ).ready(function( ){
                         clearInterval( inputIncrementTimer );
                         $( window ).unbind("mouseup");
                     }
-                );
+                );                
 
                 event.preventDefault( );
                 event.stopPropagation( );
                 return false;
             }
         );
-
+                
         $( document ).on( "mousedown", "div.timer-input-box div.box-body div.timer-number div.timer-number-increment div.down",
             function( event )
             {
@@ -101,7 +99,7 @@ $( document ).ready(function( ){
                 {
                     $( this ).parent( ).parent( ).find( "input" ).val( --currNum );
                 }
-
+                
                 inputIncrementTimer = setInterval(
                     function( )
                     {
@@ -112,7 +110,7 @@ $( document ).ready(function( ){
                         }
                     }
                 ,200);
-
+                
                 $( window ).bind(
                     "mouseup",
                     function( )
@@ -120,14 +118,14 @@ $( document ).ready(function( ){
                         clearInterval( inputIncrementTimer );
                         $( window ).unbind("mouseup");
                     }
-                );
+                );                
                 event.preventDefault( );
                 event.stopPropagation( );
                 return false;
             }
         );
-
-        $( document ).on( "click", "input#add-exercise",
+                
+        $( document ).on( "click", "input#add-exercise", 
             function( )
             {
                 var hiddenElem = $( "div.hidden" );
@@ -174,33 +172,13 @@ $( document ).ready(function( ){
                 var totalTimer, intervalTimer, startTime, functionalElapsed;
                 var threeBeep = false;
                 var thisTimer = this;
-                var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
-               navigator.userAgent && !navigator.userAgent.match('CriOS');
                 $( this ).find(".timer-menu .timer-next").bind(
                     "mousedown",
                     function( event )
                     {
                         var activeDuration = parseInt($( thisTimer ).find( "div.timer-menu div.timer-list div.timer-list-item.active input.duration" ).val( ));
                         var activeElapsed = parseInt($( thisTimer ).find("div.timer-countdown input.elapsed" ).val( ));
-
-                        if (ua.iOS) {
-                            preventIosSleep = setInterval(function(){
-                                window.top.location.href = '/';
-                                console.log('refreshing');
-                                setTimeout(function(){
-                                    try {
-                                            window.top.stop();
-                                        } catch (exception) {
-                                            document.execCommand('Stop');
-                                        }
-
-                                }, 0);
-                            }, 10000);
-                         
-                        } else {
-                            sleep.prevent();
-
-                        }
+                        
                         if( activeDuration - activeElapsed == 0 )
                         {
                             $( thisTimer ).find( "div.timer-menu div.timer-restart" ).trigger( "mousedown" );
@@ -208,7 +186,7 @@ $( document ).ready(function( ){
                             event.stopPropagation( );
                             return false;
                         }
-
+                        
                         if ( $( thisTimer ).find("input.active").val( ) == 0 )
                         {
                              startTime = new Date();
@@ -218,13 +196,13 @@ $( document ).ready(function( ){
                              {
                                     var now = new Date();
                                     var totalDifference = Math.round( ( now - startTime ) / 1000);
-
+                                    
                                     difference = totalDifference - functionalDifference;
                                     functionalDifference = difference + functionalDifference;
-
+                                    
                                     var activeDuration = parseInt($( thisTimer ).find( "div.timer-menu div.timer-list div.timer-list-item.active input.duration" ).val( ));
                                     var activeElapsed = parseInt($( thisTimer ).find("div.timer-countdown input.elapsed").val( ));
-
+                                    
                                     $( thisTimer ).find("div.timer-countdown").html(ms(activeDuration-( activeElapsed + 1))+"<input type=\"hidden\" class=\"elapsed\" value=\""+(activeElapsed+difference)+"\" />");
 
                                     var totalElapsed = parseInt($( thisTimer ).find("div.timer-totals div.timer-elapsed input.elapsed").val( )) + difference;
@@ -242,21 +220,11 @@ $( document ).ready(function( ){
                                         var thisInterval = allIntervals.index( $( thisTimer ).find( "div.timer-menu div.timer-list-item.active" ) ) + 1;
                                         if( thisInterval == totalIntervals )
                                         {
-                                           
+
                                             if(IsAttrSupported("audio", "autoplay")){
-                                                 player = $( thisTimer ).find('#audio-sounds')[0];
-                                                // player.src = $('#hiddenname-'+tmpSound).val();
-                                                player.src = $('#audio-sounds source#three-beep').attr('src');
-                                                player.play();
-                                                if (ua.iOS) {
-                                                    clearInterval(preventIosSleep);
-                                                } else {
-                                                   // noSleepVideo.pause();
-                                                   sleep.allow();
-                                                }
-                                                // $( thisTimer ).find( "audio#three-beep" )[0].play();
+                                                 $( thisTimer ).find( "audio#three-beep" )[0].play( );
                                               }
-                                            $(".curr-gif").attr("src", "");
+                                            $(".curr-gif").attr("src", "");                                
                                             var initImg = $(".initImg").val();
                                             $(".curr-gif").attr("src", "resources/jpg/"+initImg);
                                             clearInterval( intervalTimer );
@@ -269,7 +237,7 @@ $( document ).ready(function( ){
                                             $( thisTimer ).find("div.timer-menu div.timer-list div.timer-list-item.active").next( ).trigger("mousedown");
                                         }
                                     }
-
+                                    
                              },1000
                             );
                             $( thisTimer ).find("input.active").val("1");
@@ -282,27 +250,19 @@ $( document ).ready(function( ){
                             $( thisTimer ).find("input.active").val("0");
                         }
                         var tmpImg = $("div.active").find(".gif").val();
-                       $(".curr-gif").css("background", "none");
+                       $(".curr-gif").css("background", "none");                                
                         if(!(typeof tmpImg === "undefined")){
-                            $(".curr-gif").css({"background":"url(resources/gifs/"+tmpImg+") no-repeat", "background-size":"cover"});
+                            $(".curr-gif").css({"background":"url(resources/gifs/"+tmpImg+") no-repeat", "background-size":"cover"}); 
                         }else{
                             var initImg = $(".initImg").val();
                             $(".curr-gif").css("background", "resources/jpg/"+initImg);
                         }
-                        var tmpSound = "beep-hidden";
+                        var tmpSound = "beep";
                         if(!(typeof $("div.active").find(".sound")[0] === "undefined") && $( thisTimer ).find("input.active").val() == "1"){
                             tmpSound = $("div.active").find(".sound")[0].name;
                         }
-                       
                         if(IsAttrSupported("audio", "autoplay")){
-                            
-                           player = $( thisTimer ).find('#audio-sounds')[0];
-                            // player.src = $('#hiddenname-'+tmpSound).val();
-                            player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
-                           player.play();
-
-//                            $( thisTimer ).find( "audio#"+tmpSound )[0].play();
-//                            $( thisTimer ).find( "audio #"+tmpSound )[0].play();
+                            $( thisTimer ).find( "audio#"+tmpSound )[0].play( );
                         }
                         event.preventDefault( );
                         event.stopPropagation( );
@@ -311,10 +271,10 @@ $( document ).ready(function( ){
                 );
                 $( this ).find( "div.timer-menu div.timer-list-item" ).bind(
                     "mousedown",
-                    function( event )
+                    function( event )  
                     {
                         var allIntervals = $( thisTimer ).find( "div.timer-menu div.timer-list-item" );
-                        var totalIntervals = allIntervals.length;
+                        var totalIntervals = allIntervals.length
                         var thisInterval = allIntervals.index( this ) + 1;
                         var thisDuration = $( allIntervals[ thisInterval - 1 ] ).find( "input.duration" ).val( );
                         var totalDuration = 0;
@@ -322,13 +282,13 @@ $( document ).ready(function( ){
                         for( var i = thisInterval - 1; i < totalIntervals; i++ )
                         {
                             totalDuration += parseInt( $( allIntervals[i] ).find( "input.duration" ).val( ) );
-                        }
-
+                        }                    
+                
                         $( thisTimer ).find( "div.timer-totals div.timer-remaining div.timer-total-value" ).html( ms( totalDuration ) );
                         $( thisTimer ).find( "div.timer-totals div.timer-remaining input.elapsed" ).val( totalDuration );
                         $( thisTimer ).find( "div.timer-totals div.timer-intervals div.timer-total-value" ).html( thisInterval+"&nbsp;/&nbsp;"+totalIntervals );
-                        $( thisTimer ).find( "div.timer-countdown" ).html( ms( thisDuration ) + "<input type=\"hidden\" class=\"elapsed\" value=\"0\" />");
-
+                        $( thisTimer ).find( "div.timer-countdown" ).html( ms( thisDuration ) + "<input type=\"hidden\" class=\"elapsed\" value=\"0\" />");   
+                                               
 
                         if( !( $( this ).hasClass( "active" ) ) && ( thisInterval != totalIntervals ) )
                         {
@@ -356,47 +316,38 @@ $( document ).ready(function( ){
                         {
                             console.log($( allIntervals[ thisInterval - 1 ] ));
                             var tmpImg = $("div.active").find(".gif").val();
-                            $(".curr-gif").css("background", "none");
+                            $(".curr-gif").css("background", "none");                                
                             if(!(typeof tmpImg === "undefined")){
-                                $(".curr-gif").css({"background":"url(resources/gifs/"+tmpImg+") no-repeat", "background-size":"cover"});
+                                $(".curr-gif").css({"background":"url(resources/gifs/"+tmpImg+") no-repeat", "background-size":"cover"});                          
                             }else{
                                 var initImg = $(".initImg").val();
                                 $(".curr-gif").css("background", "resources/jpg/"+initImg);
                             }
-                            var tmpSound = "beep-hidden";
+                            var tmpSound = "beep";
                             if(!(typeof $("div.active").find(".sound")[0] === "undefined") && $( thisTimer ).find("input.active").val() == "1"){
                                 tmpSound = $("div.active").find(".sound")[0].name;
                             }
-                            
                             if(IsAttrSupported("audio", "autoplay")){
-//                                $( thisTimer ).find( "audio#"+tmpSound )[0].play();
- player = $( thisTimer ).find('#audio-sounds')[0];
-                            // player.src = $('#hiddenname-'+tmpSound).val();
-                            player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
-                           player.play();
+                                $( thisTimer ).find( "audio#"+tmpSound )[0].play( );
                             }
                             threeBeep = false;
                         }
                         else
                         {
                             var tmpImg = $("div.active").find(".gif").val();
-                            $(".curr-gif").css("background", "none");
+                            $(".curr-gif").css("background", "none");                                
                             if(!(typeof tmpImg === "undefined") && !restartClicked){
-                                $(".curr-gif").css({"background":"url(resources/gifs/"+tmpImg+") no-repeat", "background-size":"cover"});
+                                $(".curr-gif").css({"background":"url(resources/gifs/"+tmpImg+") no-repeat", "background-size":"cover"});                                 
                             }else{
                                 var initImg = $(".initImg").val();
                                 $(".curr-gif").css({"background":"url(resources/jpg/"+initImg+") no-repeat", "background-size":"cover"});
                             }
-                            var tmpSound = "beep-hidden";
+                            var tmpSound = "beep";
                             if(!(typeof $("div.active").find(".sound")[0] === "undefined")  && !restartClicked){
                                 tmpSound = $("div.active").find(".sound")[0].name;
                             }
                             if(IsAttrSupported("audio", "autoplay")){
-                               player = $( thisTimer ).find('#audio-sounds')[0];
-                            // player.src = $('#hiddenname-'+tmpSound).val();
-                            player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
-                           player.play();
-                                   // $( thisTimer ).find( "audio#"+tmpSound )[0].play( );
+                                    $( thisTimer ).find( "audio#"+tmpSound )[0].play( );
                             }
                             restartClicked = false;
                         }
@@ -418,10 +369,10 @@ $( document ).ready(function( ){
                                         "width" : "50%"
                                     },
                                     500
-                                );
+                                );                        
                             }
                         );
-
+                        
                         if( $( thisTimer ).find( "input.active" ).val( ) == "1" )
                         {
                             $( thisTimer ).find( "div.timer-menu div.timer-next" ).trigger( "mousedown" );
@@ -429,7 +380,7 @@ $( document ).ready(function( ){
                         $( thisTimer ).find( "div.timer-totals div.timer-elapsed input.elapsed" ).val( "0" );
                         $( thisTimer ).find( "div.timer-totals div.timer-elapsed div.timer-total-value" ).html( ms( 0 ) );
                         $( $( thisTimer ).find( "div.timer-menu div.timer-list-item" )[0] ).attr( "class","timer-list-item active" ).trigger( "mousedown");
-
+                        
                         event.preventDefault( );
                         event.stopPropagation( );
                         return false;
@@ -484,5 +435,3 @@ function ms( seconds )
 function copyToClipboard(text) {
   window.prompt("Copy to clipboard: Ctrl+C / Cmd+C, Enter", text);
 }
-
-
