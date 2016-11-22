@@ -34,8 +34,8 @@
      widget.bind(SC.Widget.Events.READY, function() {
        console.log('Ready...');
 	 var volumeControl = document.getElementById('vol-control');
-	widget.setVolume(7.5);
-	var setVolumne = function() { widget.setVolume((this.value)/10); console.log(this.value);};
+	widget.setVolume(0.75);
+	var setVolumne = function() { widget.setVolume((this.value)/10); console.log(this.value/10);};
 
 	volumeControl.addEventListener('change', setVolumne);
 	volumeControl.addEventListener('input', setVolumne);
