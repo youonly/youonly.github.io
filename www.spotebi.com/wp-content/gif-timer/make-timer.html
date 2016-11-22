@@ -34,7 +34,7 @@
      widget.bind(SC.Widget.Events.READY, function() {
        console.log('Ready...');
 	 var volumeControl = document.getElementById('vol-control');
-	widget.setVolume(0.4);
+	widget.setVolume(0.2);
 	var setVolumne = function() { widget.setVolume((this.value)/10); console.log(this.value/10);};
 	var iframe = SC.Widget(document.getElementsByTagName('iframe')[0]);	
 	iframe.contentWindow.postMessage('{"method":"setVolume", "value":0}','*');
