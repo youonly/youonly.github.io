@@ -34,9 +34,10 @@
      widget.bind(SC.Widget.Events.READY, function() {
        console.log('Ready...');
 	 var volumeControl = document.getElementById('vol-control');
-	widget.setVolume(0.75);
+	widget.setVolume(0.4);
 	var setVolumne = function() { widget.setVolume((this.value)/10); console.log(this.value/10);};
-
+	var iframe = SC.Widget(document.getElementsByTagName('iframe')[0]);	
+	iframe.contentWindow.postMessage('{"method":"setVolume", "value":0}','*');
 	volumeControl.addEventListener('change', setVolumne);
 	volumeControl.addEventListener('input', setVolumne);
      });
@@ -105,7 +106,7 @@
     </div>
 </div><center>
 <iframe id="soundcloud"
-      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/274903216&amp;color=000000&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/274903216&amp;color=000000&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;volume_level=0"
       width="50%"
       height="400px"
 	  scrolling="no"
