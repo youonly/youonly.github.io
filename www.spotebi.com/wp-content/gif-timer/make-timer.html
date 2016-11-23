@@ -57,7 +57,7 @@
 </div> -->
     <div id="player"></div>
 	<div id="player2" style="display: none;"></div>
-
+	<input type=button value="loading..." id="enable-button">
 <div class="interval-timer">
     <div class="gif-contain">
         <div class="curr-gif" style="background:url(resources/jpg/get-ready.jpg); background-size:cover;"></div>
@@ -161,7 +161,7 @@
         $(".spinner-overlay").css("display", "none");
         $(".interval-timer").append('<div class="mob-text">Start the timer, tap the playlist & go!</div>');   
     }; 
-    var player,player2;
+    var player,player2;var count = 2;
     function onYouTubeIframeAPIReady() {
       player = new YT.Player('player', {
         height:'45',
@@ -175,7 +175,7 @@
 			'rel' : 0,
 			'html5' : 1,
 			'loop' : 1,
-			'autoplay' : 1,
+			//'autoplay' : 1,
 			'autohide' : 0
         },
         events: {
@@ -223,8 +223,8 @@
             $(".spinner-overlay").css("opacity", 0);
 			player.playVideo();
         }*/
-		if(state == 0){player.nextVideo();}
-		if(state != 1 ){player.playVideo();}
+		//if(state == 0){player.nextVideo();}
+		//if(state != 1 ){player.playVideo();}
     }
 
 
@@ -239,8 +239,13 @@
             suggestedQuality:'144p'
         });
 	setInterval(onPlayerStateChange, 3000);*/
-	event.target.playVideo();
+	//event.target.playVideo();
+	count--;
+	if(count == 0){var m = document.getElementById("enable-button");m.value = "Play";m.addEventListener("click", enable);}
     }
+	
+	function enable(){player.playVideo();}
+	
 </script>
 
 
