@@ -1,3 +1,4 @@
+
 var inputIncrementTimer;
 var restartClicked = false;
 $( document ).ready(function( ){
@@ -483,3 +484,5 @@ function ms( seconds )
 function copyToClipboard(text) {
   window.prompt("Copy to clipboard: Ctrl+C / Cmd+C, Enter", text);
 }
+
+

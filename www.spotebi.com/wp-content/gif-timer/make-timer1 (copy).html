@@ -26,10 +26,10 @@
         </script>
         <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
         <script type="text/javascript" src="js/interval-timer.js"></script>
-        <!-- <script src="http://w.soundcloud.com/player/api.js"></script> -->
+        <script src="http://w.soundcloud.com/player/api.js"></script>
 
   <script>
-  /* $(document).ready(function() {
+   $(document).ready(function() {
      var widget = SC.Widget(document.getElementById('soundcloud'));
      widget.bind(SC.Widget.Events.READY, function() {
        console.log('Ready...');
@@ -45,7 +45,7 @@
        //widget.toggle();
      //});
 
-   });*/
+   });
   </script>
    </head>
 <body>
@@ -55,9 +55,6 @@
         Let's Begin!
     </h2>
 </div> -->
-    <div id="player"></div>
-	<div id="player2" style="display: none;"></div>
-
 <div class="interval-timer">
     <div class="gif-contain">
         <div class="curr-gif" style="background:url(resources/jpg/get-ready.jpg); background-size:cover;"></div>
@@ -108,150 +105,12 @@
         </div>
     </div>
 </div><center>
-
-
-
-<input type="hidden" class="playList" value="PLZ_XmsOVJfospVVLu0WERxX1YJneADIsT" />
-
-
-    <style type="text/css">
-        .yt-frame{
-            width: 100%;
-        }
-        .spinner-overlay{
-            position: relative;
-            top: -35px;
-            width: 30px;
-            height:30px;
-            margin: 0 auto;
-            background: black;
-            opacity: 0;
-        }
-        .mob-text{
-            font-family: sans-serif;
-            width: 100%;
-            text-align: center;
-            font-size: 14px;
-        }
-    </style>
-
-    <div class="spinner-overlay">
-    </div>
-</div>
-
-<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
-<script type="text/javascript">
-    function mobileAndTabletcheck() { 
-        if( navigator.userAgent.match(/Android/i)
-             || navigator.userAgent.match(/webOS/i)
-             || navigator.userAgent.match(/iPhone/i)
-             || navigator.userAgent.match(/iPad/i)
-             || navigator.userAgent.match(/iPod/i)
-             || navigator.userAgent.match(/BlackBerry/i)
-             || navigator.userAgent.match(/Windows Phone/i)
-            ){
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
-    var isMobile = mobileAndTabletcheck();
-    if(isMobile){
-        $(".spinner-overlay").css("display", "none");
-        $(".interval-timer").append('<div class="mob-text">Start the timer, tap the playlist & go!</div>');   
-    }; 
-    var player,player2;
-    function onYouTubeIframeAPIReady() {
-      player = new YT.Player('player', {
-        height:'45',
-        width:'100%',
-		videoId: 'M7lc1UVf-VE',
-        playerVars: {
-            'controls' : 1,
-            'showinfo' : 0,
-			'playsinline' : 1,
-			'modestbranding' : 1,
-			'rel' : 0,
-			'html5' : 1,
-			'loop' : 1,
-			'autoplay' : 1,
-			'autohide' : 0
-        },
-        events: {
-          'onReady': onPlayerReady,
-          'onStateChange' : onPlayerStateChange
-        }
-      });
-		
-		player2 = new YT.Player('player2', {
-        height:'45',
-        width:'100%',
-		videoId: 'C1CjEKtlfS8',
-        playerVars: {
-            'controls' : 1,
-            'showinfo' : 0,
-			'playsinline' : 1,
-			'modestbranding' : 1,
-			'rel' : 0,
-			'html5' : 1,
-			'loop' : 1,
-			'autoplay' : 1,
-			'autohide' : 0
-        },
-		events: {
-          'onReady': onPlayerReady,
-          'onStateChange' : onPlayerStateChange
-        }
-      });
-    }
-    var done = false;
-    function onPlayerStateChange(event) {
-        var state = player.getPlayerState();
-        console.log("the state is:-"+state);
-        /*if(state == -1 || state == 3){
-            $(".spinner-overlay").css("opacity", 1);
-            if(!isMobile)
-                player.playVideo();
-        }
-        if(state == 5){
-            $(".spinner-overlay").css("opacity", 0);
-            if(!isMobile)
-                player.playVideo();
-        }
-        if(state == 1){
-            $(".spinner-overlay").css("opacity", 0);
-			player.playVideo();
-        }*/
-		if(state == 0){player.nextVideo();}
-		if(state != 1 ){player.playVideo();}
-    }
-
-
-    function onPlayerReady(event) {
-        console.log("loaded");
-        /*var playList = $(".playList").val();
-        var initSong = $(".initSong").val();
-        player.cuePlaylist({
-            list: playList, 
-            index: initSong,
-            startSeconds:0,
-            suggestedQuality:'144p'
-        });
-	setInterval(onPlayerStateChange, 3000);*/
-	event.target.playVideo();
-    }
-</script>
-
-
-
-
-<!--<iframe id="soundcloud"
+<iframe id="soundcloud"
       src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/274903216&amp;color=000000&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;volume_level=0"
       width="50%"
       height="400px"
 	  scrolling="no"
-      frameborder="no"></iframe><br/><span>Volume:-</span><input id="vol-control" type="range" min="0" max="10" step="0.1" value="7.5"></input></center> --> <!--<div id="soundcloudControls"></div>
+      frameborder="no"></iframe><br/><span>Volume:-</span><input id="vol-control" type="range" min="0" max="10" step="0.1" value="7.5"></input></center> <!--<div id="soundcloudControls"></div>
 	
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
     <script src="js/sc-controls.js"></script>
