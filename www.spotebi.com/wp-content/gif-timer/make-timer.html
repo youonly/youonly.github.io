@@ -161,7 +161,7 @@
         $(".spinner-overlay").css("display", "none");
         $(".interval-timer").append('<div class="mob-text">Start the timer, tap the playlist & go!</div>');   
     }; 
-    var player,player2;var count = 2;
+    var player,player2;var count = 2;var allow = 0;
     function onYouTubeIframeAPIReady() {
       player = new YT.Player('player', {
         height:'45',
@@ -174,7 +174,7 @@
 			'modestbranding' : 1,
 			'rel' : 0,
 			'html5' : 1,
-			'loop' : 1,
+			//'loop' : 1,
 			//'autoplay' : 1,
 			'autohide' : 0
         },
@@ -195,8 +195,8 @@
 			'modestbranding' : 1,
 			'rel' : 0,
 			'html5' : 1,
-			'loop' : 1,
-			'autoplay' : 1,
+			//'loop' : 1,
+			//'autoplay' : 1,
 			'autohide' : 0
         },
 		events: {
@@ -208,7 +208,16 @@
     var done = false;
     function onPlayerStateChange(event) {
         var state = player.getPlayerState();
+		var state2 = player2.getPlayerState();
         console.log("the state is:-"+state);
+/** states:-
+-1 – unstarted
+0 – ended
+1 – playing
+2 – paused
+3 – buffering
+5 – video cued
+*/
         /*if(state == -1 || state == 3){
             $(".spinner-overlay").css("opacity", 1);
             if(!isMobile)
@@ -225,6 +234,8 @@
         }*/
 		//if(state == 0){player.nextVideo();}
 		//if(state != 1 ){player.playVideo();}
+		if(state == 0){document.getElementById("player").style.display = "none";document.getElementById("player2").style.display = "block";player2.playVideo();}
+		if(state2 == 1 && allow != 1){player2.pauseVideo();}
     }
 
 
@@ -244,7 +255,7 @@
 	if(count == 0){var m = document.getElementById("enable-button");m.value = "Play";m.addEventListener("click", enable);}
     }
 	
-	function enable(){player.playVideo();}
+	function enable(){document.getElementById("enable-button").style.display = "none";player.playVideo();player2.playVideo();}
 	
 </script>
 
