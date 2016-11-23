@@ -235,7 +235,7 @@
 		//if(state == 0){player.nextVideo();}
 		//if(state != 1 ){player.playVideo();}
 		if(state == 0){document.getElementById("player").style.display = "none";document.getElementById("player2").style.display = "block";player2.playVideo();}
-		if(state2 == 1 && allow != 1){player2.pauseVideo();}
+		if(state2 == 1 && allow != 1){player2.pauseVideo();allow = 1;}
     }
 
 
