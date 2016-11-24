@@ -163,7 +163,7 @@
         $(".spinner-overlay").css("display", "none");
         $(".interval-timer").append('<div class="mob-text">Start the timer, tap the playlist & go!</div>');   
     }; 
-    var player,player2;var count = 2;var allow = 0;
+    var player,player2;var count = 2;var allow = 0;var jto=0;
     function onYouTubeIframeAPIReady() {
       player = new YT.Player('player', {
         height:'45',
@@ -236,8 +236,8 @@
         }*/
 		//if(state == 0){player.nextVideo();}
 		//if(state != 1 ){player.playVideo();}
-		if(state == 0){document.getElementById("player").style.display = "none";document.getElementById("player2").style.display = "block";
-		player2.seekTo(0,true);player2.playVideo();player2.unMute();console.log("player1 gone 2 started and unmuted at 0");//player2.playVideo();
+		if(state == 0 && jto==0){document.getElementById("player").style.display = "none";document.getElementById("player2").style.display = "block";
+		player2.seekTo(0,true);player2.playVideo();player2.unMute();console.log("player1 gone 2 started and unmuted at 0");jto++;//player2.playVideo();
 		}
 		//if(state2 == 1 && allow != 1){player2.pauseVideo();allow = 1;}
     }
@@ -255,7 +255,7 @@
         });
 	setInterval(onPlayerStateChange, 3000);*/
 	//event.target.playVideo();
-	count--;
+	count--;console.log("new");
 	if(count == 0){var m = document.getElementById("enable-button");m.value = "Play";m.addEventListener("click", enable);}
     }
 	
