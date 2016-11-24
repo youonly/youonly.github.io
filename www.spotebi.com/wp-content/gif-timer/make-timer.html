@@ -57,7 +57,9 @@
 </div> -->
     <div id="player" style="display: none;"></div>
 	<div id="player2" style="display: none;"></div>
-	<center><input type=button value="loading..." id="enable-button"></center>
+	<center><input type=button value="loading..." id="enable-button">
+	<br/><span>Volume:-</span><input id="vol-control" type="range" min="0" max="100" step="1" value="100"></input>
+	</center>
 <div class="interval-timer">
     <div class="gif-contain">
         <div class="curr-gif" style="background:url(resources/jpg/get-ready.jpg); background-size:cover;"></div>
@@ -256,6 +258,22 @@
     }
 	
 	function enable(){document.getElementById("enable-button").style.display = "none";document.getElementById("player").style.display = "block";player.playVideo();player2.playVideo();}
+
+$(document).ready(function() {
+     
+	 var volumeControl = document.getElementById('vol-control');
+	//widget.setVolume(0.2);
+	var setVolumne = function() { player.setVolume((this.value));player2.setVolume((this.value)); console.log(this.value);};
+	
+	
+	volumeControl.addEventListener('change', setVolumne);
+	volumeControl.addEventListener('input', setVolumne);
+
+     //$('button').click(function() {
+       //widget.toggle();
+     //});
+
+   });
 	
 </script>
 
