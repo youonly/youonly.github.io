@@ -168,7 +168,7 @@
       player = new YT.Player('player', {
         height:'45',
         width:'100%',
-		videoId: 'OxPv8mSTv9U',
+		videoId: 'C1CjEKtlfS8',
         playerVars: {
             'controls' : 1,
             'showinfo' : 0,
@@ -189,7 +189,7 @@
 		player2 = new YT.Player('player2', {
         height:'45',
         width:'100%',
-		videoId: 'C1CjEKtlfS8',
+		videoId: 'OxPv8mSTv9U',
         playerVars: {
             'controls' : 1,
             'showinfo' : 0,
@@ -236,8 +236,10 @@
         }*/
 		//if(state == 0){player.nextVideo();}
 		//if(state != 1 ){player.playVideo();}
-		if(state == 0){document.getElementById("player").style.display = "none";document.getElementById("player2").style.display = "block";player2.playVideo();}
-		if(state2 == 1 && allow != 1){player2.pauseVideo();allow = 1;}
+		if(state == 0){document.getElementById("player").style.display = "none";document.getElementById("player2").style.display = "block";
+		player2.seekTo(0,false);player2.unMute();//player2.playVideo();
+		}
+		//if(state2 == 1 && allow != 1){player2.pauseVideo();allow = 1;}
     }
 
 
@@ -257,7 +259,7 @@
 	if(count == 0){var m = document.getElementById("enable-button");m.value = "Play";m.addEventListener("click", enable);}
     }
 	
-	function enable(){document.getElementById("enable-button").style.display = "none";document.getElementById("player").style.display = "block";player.playVideo();player2.playVideo();}
+	function enable(){document.getElementById("enable-button").style.display = "none";document.getElementById("player").style.display = "block";player.playVideo();player2.playVideo();player2.mute();}
 
 $(document).ready(function() {
      
