@@ -237,7 +237,7 @@
 		//if(state == 0){player.nextVideo();}
 		//if(state != 1 ){player.playVideo();}
 		if(state == 0){document.getElementById("player").style.display = "none";document.getElementById("player2").style.display = "block";
-		player2.seekTo(0,false);player2.unMute();//player2.playVideo();
+		player2.seekTo(0,true);player2.playVideo();player2.unMute();console.log("player1 gone 2 started and unmuted at 0");//player2.playVideo();
 		}
 		//if(state2 == 1 && allow != 1){player2.pauseVideo();allow = 1;}
     }
@@ -259,7 +259,7 @@
 	if(count == 0){var m = document.getElementById("enable-button");m.value = "Play";m.addEventListener("click", enable);}
     }
 	
-	function enable(){document.getElementById("enable-button").style.display = "none";document.getElementById("player").style.display = "block";player.playVideo();player2.playVideo();player2.mute();}
+	function enable(){document.getElementById("enable-button").style.display = "none";document.getElementById("player").style.display = "block";player.playVideo();player2.playVideo();player2.mute();console.log("both plaer started and player2 muted.");}
 
 $(document).ready(function() {
      
