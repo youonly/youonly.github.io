@@ -292,7 +292,7 @@ $(document).ready(function() {
 	volumeControl.addEventListener('change', setVolumne);
 	volumeControl.addEventListener('input', setVolumne);*/
 	$("#audio-sounds").bind('playing', function(){
-    if(isPlayerStarted == 1){widget.pause();setTimeout(function(){ if(isPlayerStarted == 0){widget.play();} }, 1400);}
+    if(isPlayerStarted == 1){widget.pause();setTimeout(function(){ if(isPlayerStarted == 0){widget.play();} }, 1000);}
 	});
      });
      //$('button').click(function() {
