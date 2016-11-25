@@ -22,31 +22,13 @@
 
 
      };
-
+			var isPlayerStarted = 0;
         </script>
         <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
         <script type="text/javascript" src="js/interval-timer.js"></script>
-        <!-- <script src="http://w.soundcloud.com/player/api.js"></script> -->
+        <script src="http://w.soundcloud.com/player/api.js"></script>
 
-  <script>
-  /* $(document).ready(function() {
-     var widget = SC.Widget(document.getElementById('soundcloud'));
-     widget.bind(SC.Widget.Events.READY, function() {
-       console.log('Ready...');
-	 var volumeControl = document.getElementById('vol-control');
-	widget.setVolume(0.2);
-	var setVolumne = function() { widget.setVolume((this.value)/10); console.log(this.value/10);};
-	var iframe = SC.Widget(document.getElementsByTagName('iframe')[0]);	
-	iframe.contentWindow.postMessage('{"method":"setVolume", "value":0}','*');
-	volumeControl.addEventListener('change', setVolumne);
-	volumeControl.addEventListener('input', setVolumne);
-     });
-     //$('button').click(function() {
-       //widget.toggle();
-     //});
 
-   });*/
-  </script>
    </head>
 <body>
 <!-- 
@@ -55,11 +37,18 @@
         Let's Begin!
     </h2>
 </div> -->
-    <div id="player" style="display: none;"></div>
+    <!-- <div id="player" style="display: none;"></div>
 	<div id="player2" style="display: none;"></div>
 	<center><input type=button value="loading..." id="enable-button">
 	<br/><span>Volume:-</span><input id="vol-control" type="range" min="0" max="100" step="1" value="100"></input>
-	</center>
+	</center> -->
+
+<iframe id="soundcloud"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/274903216&amp;color=000000&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;volume_level=0"
+      width="50%"
+      height="400px"
+	  scrolling="no"
+      frameborder="no"></iframe><br/></center>
 <div class="interval-timer">
     <div class="gif-contain">
         <div class="curr-gif" style="background:url(resources/jpg/get-ready.jpg); background-size:cover;"></div>
@@ -113,7 +102,7 @@
 
 
 
-<input type="hidden" class="playList" value="PLZ_XmsOVJfospVVLu0WERxX1YJneADIsT" />
+<!-- <input type="hidden" class="playList" value="PLZ_XmsOVJfospVVLu0WERxX1YJneADIsT" />
 
 
     <style type="text/css">
@@ -277,22 +266,52 @@ $(document).ready(function() {
 
    });
 	
-</script>
+</script> -->
 
 
 
 
-<!--<iframe id="soundcloud"
-      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/274903216&amp;color=000000&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;volume_level=0"
-      width="50%"
-      height="400px"
-	  scrolling="no"
-      frameborder="no"></iframe><br/><span>Volume:-</span><input id="vol-control" type="range" min="0" max="10" step="0.1" value="7.5"></input></center> --> <!--<div id="soundcloudControls"></div>
+<!-- <span>Volume:-</span><input id="vol-control" type="range" min="0" max="10" step="0.1" value="7.5"></input> <div id="soundcloudControls"></div>
 	
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
     <script src="js/sc-controls.js"></script>
     <script>
         //$("#soundcloudControls").soundCloudControls("soundcloud", "#9C5857");
     </script> -->
+
+  <script>
+   $(document).ready(function() {
+     var widget = SC.Widget(document.getElementById('soundcloud'));
+     widget.bind(SC.Widget.Events.READY, function() {
+       console.log('Ready...');
+	 /*var volumeControl = document.getElementById('vol-control');
+	widget.setVolume(0.2);
+	var setVolumne = function() { widget.setVolume((this.value)/10); console.log(this.value/10);};
+	var iframe = SC.Widget(document.getElementsByTagName('iframe')[0]);	
+	iframe.contentWindow.postMessage('{"method":"setVolume", "value":0}','*');
+	volumeControl.addEventListener('change', setVolumne);
+	volumeControl.addEventListener('input', setVolumne);*/
+	$("#audio-sounds").bind('play', function(){
+    if(isPlayerStarted == 1){widget.pause();setTimeout(function(){ if(isPlayerStarted == 0){widget.play();} }, 1400);}
+	});
+     });
+     //$('button').click(function() {
+       //widget.toggle();
+     //});
+	widget.bind(SC.Widget.Events.PLAY, function() {
+	isPlayerStarted = 1;
+	});
+	widget.bind(SC.Widget.Events.PAUSE, function() {
+	isPlayerStarted = 0;
+	});
+   });
+  </script>
+
+
+<script>$("#audio-sounds").bind('play', function(){
+    // done playing
+    console.log("Player stopped");
+});
+</script>
 
 </body></html>
