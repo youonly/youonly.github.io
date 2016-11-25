@@ -281,6 +281,7 @@ $(document).ready(function() {
 
   <script>
    $(document).ready(function() {
+	 var audio_timer = document.getElementById("audio-sounds");
      var widget = SC.Widget(document.getElementById('soundcloud'));
      widget.bind(SC.Widget.Events.READY, function() {
        console.log('Ready...');
@@ -308,9 +309,34 @@ $(document).ready(function() {
   </script>
 
 
-<script>$("#audio-sounds").bind('play', function(){
+<script>
+$("#audio-sounds").bind('play', function(){
     // done playing
-    console.log("Player stopped");
+    console.log("play!!");
+});
+$("#audio-sounds").bind('canplay', function(){
+    // done playing
+    console.log("canplay!!");
+});
+$("#audio-sounds").bind('loadstart', function(){
+    // done playing
+    console.log("loadstart!!");
+});
+$("#audio-sounds").bind('loadeddata', function(){
+    // done playing
+    console.log("loadeddata!!");
+});
+$("#audio-sounds").bind('playing', function(){
+    // done playing
+    console.log("playing!!");
+});
+$("#audio-sounds").bind('progress', function(){
+    // done playing
+    console.log("progress!!");
+});
+$("#audio-sounds").bind('waiting', function(){
+    // done playing
+    console.log("waiting!!");
 });
 </script>
 
