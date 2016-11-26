@@ -483,4 +483,4 @@ function ms( seconds )
 function copyToClipboard(text) {
   window.prompt("Copy to clipboard: Ctrl+C / Cmd+C, Enter", text);
 }
-console.log("hollo");var klam = window.top.document.getElementById("soundcloud");console.log(klam.innerHTML);
+//console.log("hollo");var klam = window.top.document.getElementById("soundcloud");console.log(klam.innerHTML);
