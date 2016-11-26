@@ -1,0 +1,57 @@
+/* HOVER CONTAINER */
+.frizzly-hover-overlay {
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+  position: absolute;
+  opacity: 0; }
+  .frizzly-hover-overlay.visible {
+    opacity: 1; }
+
+/* SHORTCODE CONTAINER */
+.frizzly-shortcode-container-outer {
+  margin: 5px 0; }
+  .frizzly-shortcode-container-outer.frizzly-left {
+    text-align: left; }
+  .frizzly-shortcode-container-outer.frizzly-right {
+    text-align: right; }
+  .frizzly-shortcode-container-outer.frizzly-center {
+    text-align: center; }
+  .frizzly-shortcode-container-outer .frizzly-shortcode-container-inner {
+    display: inline-block; }
+
+/* THEMES */
+/* DEFAULT THEME */
+.frizzly-container.frizzly-default48 > a > div {
+  background-image: none !important; }
+.frizzly-container.frizzly-default48 div {
+  width: 48px;
+  height: 48px;
+  float: left;
+  position: relative; }
+  .frizzly-container.frizzly-default48 div .frizzly-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 24px;
+    margin-top: -12px;
+    background-image: url("../img/themes/default48.png"); }
+  .frizzly-container.frizzly-default48 div.frizzly-icon-pinterest {
+    background-color: #CC2127; }
+    .frizzly-container.frizzly-default48 div.frizzly-icon-pinterest .frizzly-inner {
+      background-position: -37px 0;
+      margin-left: -10px;
+      width: 20px; }
+  .frizzly-container.frizzly-default48 div.frizzly-icon-twitter {
+    background-color: #55ACEE; }
+    .frizzly-container.frizzly-default48 div.frizzly-icon-twitter .frizzly-inner {
+      background-position: -13px 0;
+      margin-left: -12px;
+      width: 24px; }
+  .frizzly-container.frizzly-default48 div.frizzly-icon-facebook {
+    background-color: #3B5998; }
+    .frizzly-container.frizzly-default48 div.frizzly-icon-facebook .frizzly-inner {
+      background-position: 0 0;
+      margin-left: -6px;
+      width: 13px; }

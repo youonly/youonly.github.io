@@ -27,19 +27,20 @@ my_elem.parentNode.insertBefore(divx, my_elem.nextSibling);
 $("#soundcloudControls").soundCloudControls("soundcloud", "#32336A");
 
 
-   $(document).ready(function() {
-	 var audio_timer = document.getElementById("audio-sounds");
-     var widget = SC.Widget(document.getElementById('soundcloud'));
-     widget.bind(SC.Widget.Events.READY, function() {
-       console.log('Ready...');
-	if(ua.Android){$("#audio-sounds").bind('progress', function(){
-    if(isPlayerStarted == 1){widget.pause();setTimeout(function(){ if(isPlayerStarted == 0){widget.play();} }, 1000);}
-	});}else{console.log("android");}
-     });
-	widget.bind(SC.Widget.Events.PLAY, function() {
-	isPlayerStarted = 1;
-	});
-	widget.bind(SC.Widget.Events.PAUSE, function() {
-	isPlayerStarted = 0;
-	});
-   });
+$(document).ready(function() {
+var audio_timer = document.getElementById("audio-sounds");
+  var widget = SC.Widget(document.getElementById('soundcloud'));
+  widget.bind(SC.Widget.Events.READY, function() {
+    console.log('Ready...');
+if(ua.iOS){console.log("checkpt1");
+$("#audio-sounds").bind('progress', function(){
+ if(isPlayerStarted == 1){widget.pause();setTimeout(function(){ if(isPlayerStarted == 0){widget.play();} }, 1000);}
+});}else{console.log("android");}
+  });
+widget.bind(SC.Widget.Events.PLAY, function() {
+isPlayerStarted = 1;
+});
+widget.bind(SC.Widget.Events.PAUSE, function() {
+isPlayerStarted = 0;
+});
+});

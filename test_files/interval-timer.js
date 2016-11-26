@@ -195,7 +195,7 @@ $( document ).ready(function( ){
 
                                 }, 0);
                             }, 10000);
-
+                         
                         } else {
                             sleep.prevent();
 
@@ -241,7 +241,7 @@ $( document ).ready(function( ){
                                         var thisInterval = allIntervals.index( $( thisTimer ).find( "div.timer-menu div.timer-list-item.active" ) ) + 1;
                                         if( thisInterval == totalIntervals )
                                         {
-
+                                           
                                             if(IsAttrSupported("audio", "autoplay")){
                                                  player = $( thisTimer ).find('#audio-sounds')[0];
                                                 // player.src = $('#hiddenname-'+tmpSound).val();
@@ -292,9 +292,9 @@ $( document ).ready(function( ){
                         if(!(typeof $("div.active").find(".sound")[0] === "undefined") && $( thisTimer ).find("input.active").val() == "1"){
                             tmpSound = $("div.active").find(".sound")[0].name;
                         }
-
+                       
                         if(IsAttrSupported("audio", "autoplay")){
-
+                            
                            player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
@@ -366,7 +366,7 @@ $( document ).ready(function( ){
                             if(!(typeof $("div.active").find(".sound")[0] === "undefined") && $( thisTimer ).find("input.active").val() == "1"){
                                 tmpSound = $("div.active").find(".sound")[0].name;
                             }
-
+                            
                             if(IsAttrSupported("audio", "autoplay")){
 //                                $( thisTimer ).find( "audio#"+tmpSound )[0].play();
  player = $( thisTimer ).find('#audio-sounds')[0];
@@ -483,4 +483,3 @@ function ms( seconds )
 function copyToClipboard(text) {
   window.prompt("Copy to clipboard: Ctrl+C / Cmd+C, Enter", text);
 }
-console.log("hollo");var klam = window.top.document.getElementById("soundcloud");console.log(klam.innerHTML);
