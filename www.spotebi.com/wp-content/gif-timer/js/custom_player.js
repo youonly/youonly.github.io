@@ -39,7 +39,7 @@ var audio_timer = document.getElementById("audio-sounds");
   console.log("2 -->"+document.getElementById("soundcloudControls").innerHTML);
   widget.bind(SC.Widget.Events.READY, function() {
     console.log('Ready...');
-    document.getElementById("can_hide").style.display = none;
+    document.getElementById("can_hide").style.display = "none";
     console.log("3 -->"+document.getElementById("soundcloudControls").innerHTML);
 
 if(ua.iOS){console.log("checkpt1");
