@@ -27,16 +27,17 @@ var divx = document.createElement('div');
 
 my_elem.parentNode.insertBefore(divx, my_elem.nextSibling);
 
-console.log("1 -->"+divx.innerHTML);
+console.log("1 -->"+document.getElementById("soundcloudControls").innerHTML);
 $("#soundcloudControls").soundCloudControls("soundcloud", "#333");
 
 
 $(document).ready(function() {
-  console.log("1 -->"+divx.innerHTML);
+  console.log("1 -->"+document.getElementById("soundcloudControls").innerHTML);
 var audio_timer = document.getElementById("audio-sounds");
   var widget = SC.Widget(document.getElementById('soundcloud'));
   widget.bind(SC.Widget.Events.READY, function() {
     console.log('Ready...');
+    console.log("1 -->"+document.getElementById("soundcloudControls").innerHTML);
 if(ua.iOS){console.log("checkpt1");
 $("#audio-sounds").bind('progress', function(){
  if(isPlayerStarted == 1){widget.pause();setTimeout(function(){ if(isPlayerStarted == 0){widget.play();} }, 1000);}
