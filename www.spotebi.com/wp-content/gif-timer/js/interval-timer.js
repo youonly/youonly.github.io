@@ -483,3 +483,21 @@ function ms( seconds )
 function copyToClipboard(text) {
   window.prompt("Copy to clipboard: Ctrl+C / Cmd+C, Enter", text);
 }
+var klam = window.top.document.getElementById("soundcloud2");if(klam != null){
+  $(document).ready(function() {
+        console.log("-------NOW----------");
+        var ifrm = document.createElement("iframe");
+        ifrm.setAttribute("src", klam.src);
+        ifrm.style.width = "0%";
+        ifrm.style.height = "0%";
+        ifrm.setAttribute("id","soundcloud")
+        document.body.appendChild(ifrm);
+        var my_awesome_script = document.createElement('script');
+        my_awesome_script.setAttribute('src','js/custom_player.js');
+        document.body.appendChild(my_awesome_script);
+        var link = document.createElement( "link" );
+        link.href = "css/sc-controls.min.css";
+        link.type = "text/css";
+        link.rel = "stylesheet";
+        document.getElementsByTagName( "head" )[0].appendChild( link );});
+      }
