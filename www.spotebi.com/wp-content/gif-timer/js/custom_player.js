@@ -27,7 +27,7 @@ var divx = document.createElement('div');
 
 my_elem.parentNode.insertBefore(divx, my_elem.nextSibling);
 
-console.log("1 -->"+document.getElementById("soundcloudControls").innerHTML);
+document.getElementById("soundcloudControls").innerHTML = '<div class="playControls__controls"><button class="skipControl playControls__icon sc-ir skipControl__previous">Skip to previous</button><button class="playControl playControls__icon sc-ir">Play current</button><button class="skipControl playControls__icon sc-ir skipControl__next">Skip to next</button><button class="volume__button volume__speakerIcon sc-ir" data-level="10">Toggle mute</button><div class="slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 100%; background: rgb(51, 51, 51);"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 100%;"></span></div></div>';
 $("#soundcloudControls").soundCloudControls("soundcloud", "#333");
 
 
