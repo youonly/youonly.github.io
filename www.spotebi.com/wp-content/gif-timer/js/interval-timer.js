@@ -486,7 +486,7 @@ function copyToClipboard(text) {
 var klam = window.top.document.getElementById("soundcloud2");if(klam != null){
   $(document).ready(function() {
         //console.log("-------NOW----------");
-        var ifrm = document.createElement("embed");
+        var ifrm = document.createElement("iframe");
         ifrm.setAttribute("src", klam.src);
         ifrm.style.width = "0%";
         ifrm.style.height = "0%";
