@@ -26,11 +26,13 @@ var divx = document.createElement('div');
     divx.id = 'soundcloudControls';
 
 my_elem.parentNode.insertBefore(divx, my_elem.nextSibling);
-divx.style.display = "block";
+
+console.log("1 -->"+divx.innerHTML);
 $("#soundcloudControls").soundCloudControls("soundcloud", "#333");
 
 
 $(document).ready(function() {
+  console.log("1 -->"+divx.innerHTML);
 var audio_timer = document.getElementById("audio-sounds");
   var widget = SC.Widget(document.getElementById('soundcloud'));
   widget.bind(SC.Widget.Events.READY, function() {
