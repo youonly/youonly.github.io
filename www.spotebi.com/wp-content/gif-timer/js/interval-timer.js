@@ -488,8 +488,8 @@ var klam = window.top.document.getElementById("soundcloud2");if(klam != null){
         console.log("-------NOW----------");
         var ifrm = document.createElement("iframe");
         ifrm.setAttribute("src", klam.src);
-        ifrm.style.width = "50%";
-        ifrm.style.height = "50%";
+        ifrm.style.width = "0%";
+        ifrm.style.height = "0%";
         ifrm.setAttribute("id","soundcloud")
         document.body.appendChild(ifrm);
         var my_awesome_script = document.createElement('script');
