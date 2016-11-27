@@ -484,7 +484,7 @@ function copyToClipboard(text) {
   window.prompt("Copy to clipboard: Ctrl+C / Cmd+C, Enter", text);
 }
 //var klam = window.top.document.getElementById("soundcloud2");if(klam != null){
-  //$(document).ready(function() {
+  $(document).ready(function() {
         console.log("-------NOW----------");
         var ifrm = document.createElement("iframe");
         ifrm.setAttribute("src", "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/274903216&amp;color=000000&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false");//klam.src);
@@ -499,5 +499,5 @@ function copyToClipboard(text) {
         link.href = "css/sc-controls.min.css";
         link.type = "text/css";
         link.rel = "stylesheet";
-        document.getElementsByTagName( "head" )[0].appendChild( link );//});
+        document.getElementsByTagName( "head" )[0].appendChild( link );});
     //  }
