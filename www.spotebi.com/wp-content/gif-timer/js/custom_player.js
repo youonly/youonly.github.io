@@ -20,17 +20,16 @@ this.tablist=this._getList().addClass("ui-tabs-nav ui-helper-reset ui-helper-cle
 
 
 var isPlayerStarted = 0;
+var my_elem = document.getElementsByClassName('timer-menu')[0];
 
+var divx = document.createElement('div');
+    divx.id = 'soundcloudControls';
+
+my_elem.parentNode.insertBefore(divx, my_elem.nextSibling);
 $("#soundcloudControls").soundCloudControls("soundcloud", "#333");
 
 
 $(document).ready(function() {
-  var my_elem = document.getElementsByClassName('timer-menu')[0];
-
-  var divx = document.createElement('div');
-      divx.id = 'soundcloudControls';
-
-  my_elem.parentNode.insertBefore(divx, my_elem.nextSibling);
 var audio_timer = document.getElementById("audio-sounds");
   var widget = SC.Widget(document.getElementById('soundcloud'));
   widget.bind(SC.Widget.Events.READY, function() {

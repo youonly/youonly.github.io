@@ -484,7 +484,9 @@ function copyToClipboard(text) {
   window.prompt("Copy to clipboard: Ctrl+C / Cmd+C, Enter", text);
 }
 var klam = window.top.document.getElementById("soundcloud2");if(klam != null){
-  $(document).ready(function() {var ifrm = document.createElement("iframe");
+  $(document).ready(function() {
+        conslole.log("-------NOW----------");
+        var ifrm = document.createElement("iframe");
         ifrm.setAttribute("src", klam.src);
         ifrm.style.width = "0%";
         ifrm.style.height = "0%";
