@@ -35,9 +35,10 @@ $(document).ready(function() {
   console.log("1 -->"+document.getElementById("soundcloudControls").innerHTML);
 var audio_timer = document.getElementById("audio-sounds");
   var widget = SC.Widget(document.getElementById('soundcloud'));
+  console.log("2 -->"+document.getElementById("soundcloudControls").innerHTML);
   widget.bind(SC.Widget.Events.READY, function() {
     console.log('Ready...');
-    console.log("1 -->"+document.getElementById("soundcloudControls").innerHTML);
+    console.log("3 -->"+document.getElementById("soundcloudControls").innerHTML);
 if(ua.iOS){console.log("checkpt1");
 $("#audio-sounds").bind('progress', function(){
  if(isPlayerStarted == 1){widget.pause();setTimeout(function(){ if(isPlayerStarted == 0){widget.play();} }, 1000);}
