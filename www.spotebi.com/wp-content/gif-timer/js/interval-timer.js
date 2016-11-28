@@ -483,14 +483,14 @@ function ms( seconds )
 function copyToClipboard(text) {
   window.prompt("Copy to clipboard: Ctrl+C / Cmd+C, Enter", text);
 }
-var pass = 0;
+//var pass = 0;
 var nth = 1;
 function enableDownloads(){
   var aud = document.getElementById("preloader");
-  if(pass == 0){
+  //if(pass == 0){
   aud.addEventListener("load", enableDownloads);
-  pass++;
-  }
+  //pass++;
+  //}
   var x = document.getElementsByTagName('source');
   if(nth <= x.length){
   aud.src = x[nth].src;
