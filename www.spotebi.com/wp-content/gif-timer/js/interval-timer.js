@@ -483,6 +483,20 @@ function ms( seconds )
 function copyToClipboard(text) {
   window.prompt("Copy to clipboard: Ctrl+C / Cmd+C, Enter", text);
 }
+var pass = 0;
+var nth = 1;
+function enableDownloads(){
+  if(pass == 0){
+  aud.addEventListener("load", enableDownloads);
+  pass++;
+  }
+  var x = document.getElementsByTagName('source');
+  if(nth <= x.length){
+  aud.src = x[n].src;
+  n++;
+  }
+}
+
 var klam = window.top.document.getElementById("soundcloud2");if(klam != null){
   $(document).ready(function() {
         //console.log("-------NOW----------");
@@ -492,6 +506,7 @@ var klam = window.top.document.getElementById("soundcloud2");if(klam != null){
         document.body.appendChild(aud);
         aud.src = "resources/sounds/get-ready.mp3";
         console.log("now here!!!!!!!!!");
+        document.getElementsByClassName('timer-next')[0].addEventListener("click",enableDownloads);
         var ifrm = document.createElement("iframe");
         ifrm.setAttribute("src", klam.src);
         ifrm.style.width = "0%";
