@@ -261,7 +261,7 @@ $( document ).ready(function( ){
                                                 if(nth < document.getElementsByTagName('source').length){
                                                 aud.src = document.getElementsByTagName('source')[nth].src;
                                                 nth++;console.log("down");
-                                                }
+                                                }else{nth=0;}
                                                 if (ua.iOS) {
                                                     clearInterval(preventIosSleep);
                                                 } else {
@@ -317,7 +317,7 @@ $( document ).ready(function( ){
                            if(nth < document.getElementsByTagName('source').length){
                            aud.src = document.getElementsByTagName('source')[nth].src;
                            nth++;console.log("down");
-                           }
+                         }else{nth=0;}
 
 //                            $( thisTimer ).find( "audio#"+tmpSound )[0].play();
 //                            $( thisTimer ).find( "audio #"+tmpSound )[0].play();
@@ -395,7 +395,7 @@ $( document ).ready(function( ){
                            if(nth < document.getElementsByTagName('source').length){
                            aud.src = document.getElementsByTagName('source')[nth].src;
                            nth++;console.log("down");
-                           }
+                           }else{nth=0;}
                             }
                             threeBeep = false;
                         }
@@ -421,7 +421,7 @@ $( document ).ready(function( ){
                            if(nth < document.getElementsByTagName('source').length){
                            aud.src = document.getElementsByTagName('source')[nth].src;
                            nth++;console.log("down");
-                           }
+                           }else{nth=0;}
                                    // $( thisTimer ).find( "audio#"+tmpSound )[0].play( );
                             }
                             restartClicked = false;
@@ -510,20 +510,9 @@ function ms( seconds )
 function copyToClipboard(text) {
   window.prompt("Copy to clipboard: Ctrl+C / Cmd+C, Enter", text);
 }
-//var pass = 0;
 
-function enableDownloads(){
-  var aud = document.getElementById("preloader");
-  //if(pass == 0){
-  aud.addEventListener("load", enableDownloads);
-  //pass++;
-  //}
 
-  if(nth <= document.getElementsByTagName('source').length){
-  aud.src = x[nth].src;
-  nth++;console.log("down");
-  }
-}
+
 
 var klam = window.top.document.getElementById("soundcloud2");if(klam != null){
   $(document).ready(function() {
