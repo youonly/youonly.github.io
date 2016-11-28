@@ -1,5 +1,16 @@
 var inputIncrementTimer;
 var restartClicked = false;
+
+var aud = document.createElement("audio");
+aud.setAttribute("id", "preloader");
+aud.style.display = "none";
+var nth = 1;
+$(document).ready(function(){
+  document.body.appendChild(aud);
+aud.src = "resources/sounds/get-ready.mp3";
+console.log("now here!!!!!!!!!");
+});
+
 $( document ).ready(function( ){
         function IsAttrSupported(strTagName, strAttrName) {
             var blnVal = false;
@@ -247,6 +258,10 @@ $( document ).ready(function( ){
                                                 // player.src = $('#hiddenname-'+tmpSound).val();
                                                 player.src = $('#audio-sounds source#three-beep').attr('src');
                                                 player.play();console.log("1st");
+                                                if(nth < document.getElementsByTagName('source').length){
+                                                aud.src = document.getElementsByTagName('source')[nth].src;
+                                                nth++;console.log("down");
+                                                }
                                                 if (ua.iOS) {
                                                     clearInterval(preventIosSleep);
                                                 } else {
@@ -299,6 +314,10 @@ $( document ).ready(function( ){
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
                            player.play();console.log("2nd");
+                           if(nth < document.getElementsByTagName('source').length){
+                           aud.src = document.getElementsByTagName('source')[nth].src;
+                           nth++;console.log("down");
+                           }
 
 //                            $( thisTimer ).find( "audio#"+tmpSound )[0].play();
 //                            $( thisTimer ).find( "audio #"+tmpSound )[0].play();
@@ -373,6 +392,10 @@ $( document ).ready(function( ){
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
                            player.play();console.log("3rd");
+                           if(nth < document.getElementsByTagName('source').length){
+                           aud.src = document.getElementsByTagName('source')[nth].src;
+                           nth++;console.log("down");
+                           }
                             }
                             threeBeep = false;
                         }
@@ -395,6 +418,10 @@ $( document ).ready(function( ){
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
                            player.play();console.log("4th");
+                           if(nth < document.getElementsByTagName('source').length){
+                           aud.src = document.getElementsByTagName('source')[nth].src;
+                           nth++;console.log("down");
+                           }
                                    // $( thisTimer ).find( "audio#"+tmpSound )[0].play( );
                             }
                             restartClicked = false;
@@ -484,15 +511,15 @@ function copyToClipboard(text) {
   window.prompt("Copy to clipboard: Ctrl+C / Cmd+C, Enter", text);
 }
 //var pass = 0;
-var nth = 1;
+
 function enableDownloads(){
   var aud = document.getElementById("preloader");
   //if(pass == 0){
   aud.addEventListener("load", enableDownloads);
   //pass++;
   //}
-  var x = document.getElementsByTagName('source');
-  if(nth <= x.length){
+
+  if(nth <= document.getElementsByTagName('source').length){
   aud.src = x[nth].src;
   nth++;console.log("down");
   }
@@ -501,12 +528,7 @@ function enableDownloads(){
 var klam = window.top.document.getElementById("soundcloud2");if(klam != null){
   $(document).ready(function() {
         //console.log("-------NOW----------");
-        var aud = document.createElement("audio");
-        aud.setAttribute("id", "preloader");
-        aud.style.display = "none";
-        document.body.appendChild(aud);
-        aud.src = "resources/sounds/get-ready.mp3";
-        console.log("now here!!!!!!!!!");
+
         document.getElementsByClassName('timer-next')[0].addEventListener("click",enableDownloads);
         var ifrm = document.createElement("iframe");
         ifrm.setAttribute("src", klam.src);
