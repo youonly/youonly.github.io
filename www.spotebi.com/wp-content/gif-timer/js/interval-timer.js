@@ -381,11 +381,11 @@ $( document ).ready(function( ){
                                 var initImg = $(".initImg").val();
                                 $(".curr-gif").css("background", "resources/jpg/"+initImg);
                             }
-                            var tmpSound = "beep-hidden";
+                            var tmpSound = "beep-hidden";var t="";
                             if(!(typeof $("div.active").find(".sound")[0] === "undefined") && $( thisTimer ).find("input.active").val() == "1"){
                                 tmpSound = $("div.active").find(".sound")[0].name;
                                 console.log(tmpSound)
-                                var t = $("div.active").next().find(".sound")[0].name;
+                                t = $("div.active").next().find(".sound")[0].name;
                                 console.log(t);
                             }
 
@@ -395,10 +395,11 @@ $( document ).ready(function( ){
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
                            player.play();console.log("3rd");
-                           if(nth < document.getElementsByTagName('source').length){
-                           aud.src = document.getElementsByTagName('source')[nth].src;
-                           nth++;console.log("down");
-                           }else{nth=0;}
+                           player.src = $('#audio-sounds source#hidden'+t).attr('src');
+                           //if(nth < document.getElementsByTagName('source').length){
+                           //aud.src = document.getElementsByTagName('source')[nth].src;
+                           //nth++;console.log("down");
+                           //}else{nth=0;}
                             }
                             threeBeep = false;
                         }
