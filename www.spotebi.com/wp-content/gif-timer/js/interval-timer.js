@@ -395,11 +395,10 @@ $( document ).ready(function( ){
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
                            player.play();console.log("3rd");
-                           player.src = $('#audio-sounds source#hidden'+t).attr('src');
-                           //if(nth < document.getElementsByTagName('source').length){
-                           //aud.src = document.getElementsByTagName('source')[nth].src;
-                           //nth++;console.log("down");
-                           //}else{nth=0;}
+                           if(nth < document.getElementsByTagName('source').length){
+                           aud.src = $('#audio-sounds source#hidden'+t).attr('src');
+                           nth++;console.log("down");
+                           }else{nth=0;}
                             }
                             threeBeep = false;
                         }
@@ -521,8 +520,6 @@ function copyToClipboard(text) {
 var klam = window.top.document.getElementById("soundcloud2");if(klam != null){
   $(document).ready(function() {
         //console.log("-------NOW----------");
-
-        document.getElementsByClassName('timer-next')[0].addEventListener("click",enableDownloads);
         var ifrm = document.createElement("iframe");
         ifrm.setAttribute("src", klam.src);
         ifrm.style.width = "0%";
