@@ -386,7 +386,8 @@ $( document ).ready(function( ){
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
                            player.play();console.log("3rd");
-                           aud.src = $('#audio-sounds source#hidden'+t).attr('src');
+                           player.onended = function() {player.src = $('#audio-sounds source#hidden'+t).attr('src');console.log("done");};
+                           //aud.src = $('#audio-sounds source#hidden'+t).attr('src');
 
                             }
                             threeBeep = false;
