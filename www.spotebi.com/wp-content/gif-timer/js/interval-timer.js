@@ -493,8 +493,8 @@ function enableDownloads(){
   }
   var x = document.getElementsByTagName('source');
   if(nth <= x.length){
-  aud.src = x[n].src;
-  n++;
+  aud.src = x[nth].src;
+  nth++;console.log("down");
   }
 }
 
