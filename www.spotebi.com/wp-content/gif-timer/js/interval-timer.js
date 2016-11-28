@@ -486,8 +486,8 @@ function copyToClipboard(text) {
 var pass = 0;
 var nth = 1;
 function enableDownloads(){
-  if(pass == 0){
-    var aud = getElementById("preloader");
+  var aud = getElementById("preloader");
+  if(pass == 0){    
   aud.addEventListener("load", enableDownloads);
   pass++;
   }
