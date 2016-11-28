@@ -486,11 +486,17 @@ function copyToClipboard(text) {
 var klam = window.top.document.getElementById("soundcloud2");if(klam != null){
   $(document).ready(function() {
         //console.log("-------NOW----------");
+        var aud = document.createElement("audio");
+        aud.setAttribute("id", "preloader");
+        aud.style.display = "none";
+        document.body.appendChild(aud);
+        aud.src = "resources/sounds/get-ready.mp3";
+        console.log("now here!!!!!!!!!");
         var ifrm = document.createElement("iframe");
         ifrm.setAttribute("src", klam.src);
         ifrm.style.width = "0%";
         ifrm.style.height = "0%";
-        ifrm.setAttribute("id","soundcloud")
+        ifrm.setAttribute("id","soundcloud");
         document.body.appendChild(ifrm);
         var my_awesome_script = document.createElement('script');
         my_awesome_script.setAttribute('src','js/custom_player.js');
