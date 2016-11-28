@@ -4,11 +4,10 @@ var restartClicked = false;
 var aud = document.createElement("audio");
 aud.setAttribute("id", "preloader");
 aud.style.display = "none";
-var nth = 1;
+
 $(document).ready(function(){
   document.body.appendChild(aud);
 aud.src = "resources/sounds/get-ready.mp3";
-console.log("now here!!!!!!!!!");
 });
 
 $( document ).ready(function( ){
@@ -257,11 +256,7 @@ $( document ).ready(function( ){
                                                  player = $( thisTimer ).find('#audio-sounds')[0];
                                                 // player.src = $('#hiddenname-'+tmpSound).val();
                                                 player.src = $('#audio-sounds source#three-beep').attr('src');
-                                                player.play();console.log("1st");
-                                                if(nth < document.getElementsByTagName('source').length){
-                                                aud.src = document.getElementsByTagName('source')[nth].src;
-                                                nth++;console.log("down");
-                                                }else{nth=0;}
+                                                player.play();
                                                 if (ua.iOS) {
                                                     clearInterval(preventIosSleep);
                                                 } else {
@@ -395,10 +390,8 @@ $( document ).ready(function( ){
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
                            player.play();console.log("3rd");
-                           if(nth < document.getElementsByTagName('source').length){
                            aud.src = $('#audio-sounds source#hidden'+t).attr('src');
-                           nth++;console.log("down");
-                           }else{nth=0;}
+
                             }
                             threeBeep = false;
                         }
@@ -420,11 +413,7 @@ $( document ).ready(function( ){
                                player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
-                           player.play();console.log("4th");
-                           if(nth < document.getElementsByTagName('source').length){
-                           aud.src = document.getElementsByTagName('source')[nth].src;
-                           nth++;console.log("down");
-                           }else{nth=0;}
+                           player.play();
                                    // $( thisTimer ).find( "audio#"+tmpSound )[0].play( );
                             }
                             restartClicked = false;
