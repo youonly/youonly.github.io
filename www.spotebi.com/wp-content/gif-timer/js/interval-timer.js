@@ -308,11 +308,7 @@ $( document ).ready(function( ){
                            player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
-                           player.play();console.log("2nd");
-                           if(nth < document.getElementsByTagName('source').length){
-                           aud.src = document.getElementsByTagName('source')[nth].src;
-                           nth++;console.log("down");
-                         }else{nth=0;}
+                           player.play();
 
 //                            $( thisTimer ).find( "audio#"+tmpSound )[0].play();
 //                            $( thisTimer ).find( "audio #"+tmpSound )[0].play();
@@ -381,7 +377,7 @@ $( document ).ready(function( ){
                                 tmpSound = $("div.active").find(".sound")[0].name;
                                 console.log(tmpSound)
                                 t = $("div.active").next().find(".sound")[0].name;
-                                console.log(t);
+                                console.log(t+"update");
                             }
 
                             if(IsAttrSupported("audio", "autoplay")){
