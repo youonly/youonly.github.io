@@ -246,7 +246,7 @@ $( document ).ready(function( ){
                                                  player = $( thisTimer ).find('#audio-sounds')[0];
                                                 // player.src = $('#hiddenname-'+tmpSound).val();
                                                 player.src = $('#audio-sounds source#three-beep').attr('src');
-                                                player.play();
+                                                player.play();console.log("1st");
                                                 if (ua.iOS) {
                                                     clearInterval(preventIosSleep);
                                                 } else {
@@ -298,7 +298,7 @@ $( document ).ready(function( ){
                            player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
-                           player.play();
+                           player.play();console.log("2nd");
 
 //                            $( thisTimer ).find( "audio#"+tmpSound )[0].play();
 //                            $( thisTimer ).find( "audio #"+tmpSound )[0].play();
@@ -372,7 +372,7 @@ $( document ).ready(function( ){
  player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
-                           player.play();
+                           player.play();console.log("3rd");
                             }
                             threeBeep = false;
                         }
@@ -394,7 +394,7 @@ $( document ).ready(function( ){
                                player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
-                           player.play();
+                           player.play();console.log("4th");
                                    // $( thisTimer ).find( "audio#"+tmpSound )[0].play( );
                             }
                             restartClicked = false;
