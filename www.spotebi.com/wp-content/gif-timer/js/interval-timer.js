@@ -385,7 +385,8 @@ $( document ).ready(function( ){
                             if(!(typeof $("div.active").find(".sound")[0] === "undefined") && $( thisTimer ).find("input.active").val() == "1"){
                                 tmpSound = $("div.active").find(".sound")[0].name;
                                 console.log(tmpSound)
-                                var t = $("div.active").find(".sound")[1].name;
+                                var t = $("div.active").next().find(".sound")[0].name;
+                                console.log(t);
                             }
 
                             if(IsAttrSupported("audio", "autoplay")){
