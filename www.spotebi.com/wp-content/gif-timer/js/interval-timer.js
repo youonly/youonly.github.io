@@ -11,7 +11,7 @@ $( document ).ready(function( ){
             return blnVal;
         }
 
-        $( document ).on( "click", "input#create-timer",
+        $( document ).on( "click touchstart", "input#create-timer",
             function( event )
             {
                 var exercises = "";
@@ -126,7 +126,7 @@ $( document ).ready(function( ){
             }
         );
 
-        $( document ).on( "click", "input#add-exercise",
+        $( document ).on( "click touchstart", "input#add-exercise",
             function( )
             {
                 var hiddenElem = $( "div.hidden" );
@@ -137,7 +137,7 @@ $( document ).ready(function( ){
             }
         );
 
-        $( document ).on( "click", "div.timer-input-box div.box-title span.remove",
+        $( document ).on( "click touchstart", "div.timer-input-box div.box-title span.remove",
             function( )
             {
                 $( this ).parent( ).parent( ).remove();
