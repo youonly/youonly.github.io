@@ -44,7 +44,7 @@ var audio_timer = document.getElementById("audio-sounds");
 
 if(!ua.iOS){//console.log("checkpt1");
 $("#audio-sounds").bind('progress', function(){
- if(isPlayerStarted == 1 && !audio_timer.mute){widget.pause();setTimeout(function(){ if(isPlayerStarted == 0){widget.play();} }, 1000);}
+ if(isPlayerStarted == 1 && !audio_timer.muted){widget.pause();setTimeout(function(){ if(isPlayerStarted == 0){widget.play();} }, 1000);}
 });}else{
   //console.log("android");
 }

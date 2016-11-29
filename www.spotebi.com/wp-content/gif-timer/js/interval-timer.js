@@ -376,12 +376,12 @@ $( document ).ready(function( ){
                            player.onended = function() {
                              t = $("div.active").next().find(".sound")[0].name;
                              player.src = $('#audio-sounds source#hidden'+t).attr('src');
-                             if(!player.mute)
+                             if(!player.muted)
                              {
-                               player.mute = true;
+                               player.muted = true;
                                player.play();
                              }else {
-                               player.mute = false;
+                               player.muted = false;
                              }
                              console.log("ended");
                            };
