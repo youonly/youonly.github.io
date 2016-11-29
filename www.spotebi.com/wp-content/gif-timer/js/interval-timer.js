@@ -372,7 +372,36 @@ $( document ).ready(function( ){
  player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
-                           player.play();
+                           player.play();console.log("3");
+
+                           player.oncanplay = function() {
+                             console.log("canplay");
+                           };
+                           player.oncanplaythrough = function() {
+                             console.log("canplaythrough");
+                           };
+                           player.onloadeddata = function() {
+                             console.log("loadeddata");
+                           };
+                           player.onloadstart = function() {
+                             console.log("loadstart");
+                           };
+                           player.onplay = function() {
+                             console.log("onplay");
+                           };
+                           player.onplaying = function() {
+                             console.log("playing");
+                           };
+                           player.onprogress = function() {
+                             console.log("progress");
+                           };
+                           player.onsuspend = function() {
+                             console.log("suspend");
+                           };
+                           player.onwaiting = function() {
+                             console.log("waiting");
+                           };
+
                             }
                             threeBeep = false;
                         }
