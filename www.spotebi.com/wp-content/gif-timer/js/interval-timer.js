@@ -373,7 +373,12 @@ $( document ).ready(function( ){
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
                            player.play();console.log("3");
-
+                           player.onended = function() {
+                             t = $("div.active").next().find(".sound")[0].name;
+                             player.src = $('#audio-sounds source#hidden'+t).attr('src');
+                             player.load();
+                             console.log("ended");
+                           };
                            player.oncanplay = function() {
                              console.log("canplay");
                            };
