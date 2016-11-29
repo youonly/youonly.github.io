@@ -1,6 +1,6 @@
 var inputIncrementTimer;
 var restartClicked = false;
-var t="";
+var t="";var l=false;
 var aud = document.createElement("audio");
 aud.setAttribute("id", "preloader");
 aud.style.display = "none";
@@ -372,7 +372,7 @@ $( document ).ready(function( ){
                                 var initImg = $(".initImg").val();
                                 $(".curr-gif").css("background", "resources/jpg/"+initImg);
                             }
-                            var tmpSound = "beep-hidden";var l=false;
+                            var tmpSound = "beep-hidden";
                             if(!(typeof $("div.active").find(".sound")[0] === "undefined") && $( thisTimer ).find("input.active").val() == "1"){
                                 tmpSound = $("div.active").find(".sound")[0].name;
                                 console.log(tmpSound)
