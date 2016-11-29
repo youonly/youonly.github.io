@@ -384,9 +384,11 @@ $( document ).ready(function( ){
                               //$( thisTimer ).find( "audio#"+tmpSound )[0].play();
                               player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
+                            var somevar = $('#audio-sounds source#hidden'+tmpSound).attr('src');
+                            if(player.src != somevar){l=false;}
                             if(!l){player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');console.log("defadone");}
                            player.play();console.log("3rd");
-                           player.onended = function() {player.src = $('#audio-sounds source#hidden'+t).attr('src');console.log("done");l=true;};
+                           player.onended = function() {player.preload = 'auto';player.src = $('#audio-sounds source#hidden'+t).attr('src');player.load();console.log("done");l=true;};
                            //aud.src = $('#audio-sounds source#hidden'+t).attr('src');
 
                             }
