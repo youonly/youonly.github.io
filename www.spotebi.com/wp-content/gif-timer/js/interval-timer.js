@@ -372,7 +372,7 @@ $( document ).ready(function( ){
                                 var initImg = $(".initImg").val();
                                 $(".curr-gif").css("background", "resources/jpg/"+initImg);
                             }
-                            var tmpSound = "beep-hidden";
+                            var tmpSound = "beep-hidden";var l=false;
                             if(!(typeof $("div.active").find(".sound")[0] === "undefined") && $( thisTimer ).find("input.active").val() == "1"){
                                 tmpSound = $("div.active").find(".sound")[0].name;
                                 console.log(tmpSound)
@@ -384,9 +384,9 @@ $( document ).ready(function( ){
                               //$( thisTimer ).find( "audio#"+tmpSound )[0].play();
                               player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
-                            player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
+                            if(!l){player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');}
                            player.play();console.log("3rd");
-                           player.onended = function() {player.src = $('#audio-sounds source#hidden'+t).attr('src');console.log("done");};
+                           player.onended = function() {player.src = $('#audio-sounds source#hidden'+t).attr('src');console.log("done");l=true;};
                            //aud.src = $('#audio-sounds source#hidden'+t).attr('src');
 
                             }
