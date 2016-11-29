@@ -376,7 +376,13 @@ $( document ).ready(function( ){
                            player.onended = function() {
                              t = $("div.active").next().find(".sound")[0].name;
                              player.src = $('#audio-sounds source#hidden'+t).attr('src');
-                             player.play();
+                             if(!player.mute)
+                             {
+                               player.mute = true;
+                               player.play();
+                             }else {
+                               player.mute = false;
+                             }
                              console.log("ended");
                            };
                            player.oncanplay = function() {
