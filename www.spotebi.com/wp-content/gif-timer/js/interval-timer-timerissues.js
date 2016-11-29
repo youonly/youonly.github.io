@@ -1,5 +1,15 @@
 var inputIncrementTimer;
 var restartClicked = false;
+var t="";var l=false;
+var aud = document.createElement("audio");
+aud.setAttribute("id", "preloader");
+aud.style.display = "none";
+
+$(document).ready(function(){
+  document.body.appendChild(aud);
+aud.src = "resources/sounds/get-ready.mp3";
+});
+
 $( document ).ready(function( ){
         function IsAttrSupported(strTagName, strAttrName) {
             var blnVal = false;
@@ -365,14 +375,22 @@ $( document ).ready(function( ){
                             var tmpSound = "beep-hidden";
                             if(!(typeof $("div.active").find(".sound")[0] === "undefined") && $( thisTimer ).find("input.active").val() == "1"){
                                 tmpSound = $("div.active").find(".sound")[0].name;
+                                console.log(tmpSound)
+                                t = $("div.active").next().find(".sound")[0].name;
+                                console.log(t+"update");
                             }
 
                             if(IsAttrSupported("audio", "autoplay")){
-//                                $( thisTimer ).find( "audio#"+tmpSound )[0].play();
- player = $( thisTimer ).find('#audio-sounds')[0];
+                              //$( thisTimer ).find( "audio#"+tmpSound )[0].play();
+                              player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
-                            player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
-                           player.play();
+                            var somevar = $('#audio-sounds source#hidden'+tmpSound).attr('src');
+                            if(player.src === somevar){l=true;}else{l=false;}
+                            if(!l){player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');console.log("defadone");}
+                           player.play();console.log("3rd");
+                           player.onended = function() {player.preload = 'auto';player.src = $('#audio-sounds source#hidden'+t).attr('src');player.load();console.log("done");l=true;};
+                           //aud.src = $('#audio-sounds source#hidden'+t).attr('src');
+
                             }
                             threeBeep = false;
                         }
@@ -483,6 +501,10 @@ function ms( seconds )
 function copyToClipboard(text) {
   window.prompt("Copy to clipboard: Ctrl+C / Cmd+C, Enter", text);
 }
+
+
+
+
 var klam = window.top.document.getElementById("soundcloud2");if(klam != null){
   $(document).ready(function() {
         //console.log("-------NOW----------");
@@ -490,7 +512,7 @@ var klam = window.top.document.getElementById("soundcloud2");if(klam != null){
         ifrm.setAttribute("src", klam.src);
         ifrm.style.width = "0%";
         ifrm.style.height = "0%";
-        ifrm.setAttribute("id","soundcloud")
+        ifrm.setAttribute("id","soundcloud");
         document.body.appendChild(ifrm);
         var my_awesome_script = document.createElement('script');
         my_awesome_script.setAttribute('src','js/custom_player.js');
