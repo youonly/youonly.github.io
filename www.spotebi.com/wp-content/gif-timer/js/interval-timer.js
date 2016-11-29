@@ -376,7 +376,7 @@ $( document ).ready(function( ){
                            player.onended = function() {
                              t = $("div.active").next().find(".sound")[0].name;
                              player.src = $('#audio-sounds source#hidden'+t).attr('src');
-                             player.load();
+                             player.play();
                              console.log("ended");
                            };
                            player.oncanplay = function() {
