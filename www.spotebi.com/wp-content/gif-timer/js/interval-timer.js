@@ -389,10 +389,10 @@ $( document ).ready(function( ){
                              player.src = $('#audio-sounds source#hidden'+t).attr('src');
                              if(tog)
                              {
+                               tog = false;
                                player.muted = true;
                                player.play();
                                player.pause();
-                               tog = false;
                                console.log("toggled sound");
                              }
                              console.log("ended");
