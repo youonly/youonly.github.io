@@ -386,7 +386,7 @@ $( document ).ready(function( ){
                             }
 
                            player.onended = function() {
-                             if(ua.iOS){
+                             if(!ua.iOS){
                                t = $("div.active").next().find(".sound")[0].name;
                                player.src = $('#audio-sounds source#hidden'+t).attr('src');
                                if(tog)
