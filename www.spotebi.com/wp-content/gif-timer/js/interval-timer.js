@@ -377,7 +377,7 @@ $( document ).ready(function( ){
                             var ipsum = $('#audio-sounds source#hidden'+tmpSound).attr('src');
                             player.muted = false;
                             console.log("ps="+lorem+" ss="+ipsum);
-                            if(lorem.toString() == ipsum.toString()) {
+                            if(lorem.indexOf(ipsum) != -1) {
                               player.play();console.log("played from cache");
                             } else {
                               player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
