@@ -1,5 +1,6 @@
 var inputIncrementTimer;
 var restartClicked = false;
+var tog = true;
 $( document ).ready(function( ){
         function IsAttrSupported(strTagName, strAttrName) {
             var blnVal = false;
@@ -11,7 +12,7 @@ $( document ).ready(function( ){
             return blnVal;
         }
 
-        $( document ).on( "click touchstart", "input#create-timer",
+        $( document ).on( "click", "input#create-timer",
             function( event )
             {
                 var exercises = "";
@@ -126,7 +127,7 @@ $( document ).ready(function( ){
             }
         );
 
-        $( document ).on( "click touchstart", "input#add-exercise",
+        $( document ).on( "click", "input#add-exercise",
             function( )
             {
                 var hiddenElem = $( "div.hidden" );
@@ -137,7 +138,7 @@ $( document ).ready(function( ){
             }
         );
 
-        $( document ).on( "click touchstart", "div.timer-input-box div.box-title span.remove",
+        $( document ).on( "click", "div.timer-input-box div.box-title span.remove",
             function( )
             {
                 $( this ).parent( ).parent( ).remove();
@@ -371,20 +372,30 @@ $( document ).ready(function( ){
 //                                $( thisTimer ).find( "audio#"+tmpSound )[0].play();
  player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
-                            player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
+                            tog = true;
+                            var lorem = player.src;
+                            var ipsum = $('#audio-sounds source#hidden'+tmpSound).attr('src');
+
+                            if(lorem === ipsum) {
+                              player.play();console.log("played from cache");
+                            } else {
+                              player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
+                              player.play();console.log("played from new source");
+                            }
                            player.play();console.log("3");
+
                            player.onended = function() {
                              t = $("div.active").next().find(".sound")[0].name;
                              player.src = $('#audio-sounds source#hidden'+t).attr('src');
-                             if(!player.muted)
+                             if(tog)
                              {
-                               player.muted = true;
                                player.play();
-                             }else {
-                               player.muted = false;
+                               player.pause();
+                               tog = false;
                              }
                              console.log("ended");
                            };
+
                            player.oncanplay = function() {
                              console.log("canplay");
                            };
