@@ -379,24 +379,26 @@ $( document ).ready(function( ){
                             player.muted = false;
                             console.log("ps="+lorem+" ss="+ipsum);
                             if(lorem.indexOf(ipsum) != -1) {
-                              player.play();console.log("played from cache");sx = false;
+                              player.play();console.log("played from cache");
                             } else {
                               player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
-                              player.play();console.log("played from new source");sx = true;
+                              player.play();console.log("played from new source");
                             }
 
                            player.onended = function() {
-                             t = $("div.active").next().find(".sound")[0].name;
-                             player.src = $('#audio-sounds source#hidden'+t).attr('src');
-                             if(tog)
-                             {
-                               tog = false;
-                               if(sx){player.muted = true;}
-                               player.play();
-                               player.pause();
-                               console.log("toggled sound");
-                             }
-                             console.log("ended");
+                             if(ua.iOS){
+                               t = $("div.active").next().find(".sound")[0].name;
+                               player.src = $('#audio-sounds source#hidden'+t).attr('src');
+                               if(tog)
+                               {
+                                 tog = false;
+                                 player.muted = true;
+                                 player.play();
+                                 player.pause();
+                                console.log("toggled sound");
+                              }
+                              console.log("ended");
+                            }
                            };
 
                            player.oncanplay = function() {
