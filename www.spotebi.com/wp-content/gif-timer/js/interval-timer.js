@@ -1,5 +1,6 @@
 var inputIncrementTimer;
 var restartClicked = false;
+var sx = true;
 var tog = true;
 $( document ).ready(function( ){
         function IsAttrSupported(strTagName, strAttrName) {
@@ -378,10 +379,10 @@ $( document ).ready(function( ){
                             player.muted = false;
                             console.log("ps="+lorem+" ss="+ipsum);
                             if(lorem.indexOf(ipsum) != -1) {
-                              player.play();console.log("played from cache");
+                              player.play();console.log("played from cache");sx = false;
                             } else {
                               player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
-                              player.play();console.log("played from new source");
+                              player.play();console.log("played from new source");sx = true;
                             }
 
                            player.onended = function() {
@@ -390,7 +391,7 @@ $( document ).ready(function( ){
                              if(tog)
                              {
                                tog = false;
-                               player.muted = true;
+                               if(sx){player.muted = true;}
                                player.play();
                                player.pause();
                                console.log("toggled sound");
