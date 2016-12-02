@@ -382,6 +382,7 @@ $( document ).ready(function( ){
                             console.log("ps="+lorem+" ss="+ipsum);
                             if(lorem.indexOf(ipsum) != -1) {
                               forcache = true;
+                              sx = false;
                               player.play();console.log("played from cache");
                             } else {
                               forcache = false;
