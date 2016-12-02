@@ -2,6 +2,7 @@ var inputIncrementTimer;
 var restartClicked = false;
 var sx = true;
 var tog = true;
+var forcache = false;
 $( document ).ready(function( ){
         function IsAttrSupported(strTagName, strAttrName) {
             var blnVal = false;
@@ -379,8 +380,10 @@ $( document ).ready(function( ){
                             player.muted = false;
                             console.log("ps="+lorem+" ss="+ipsum);
                             if(lorem.indexOf(ipsum) != -1) {
+                              forcache = true;
                               player.play();console.log("played from cache");
                             } else {
+                              forcache = false;
                               player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
                               player.play();console.log("played from new source");
                             }
