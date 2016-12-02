@@ -45,11 +45,11 @@ var audio_timer = document.getElementById("audio-sounds");
 if(!ua.iOS){//console.log("checkpt1");
 $("#audio-sounds").bind('progress', function(){
   console.log("second_page = "+isPlayerStarted+" "+audio_timer.muted.toString());
- if(isPlayerStarted == 1 && !audio_timer.muted && !forcache){widget.pause();setTimeout(function(){ if(isPlayerStarted == 0){widget.play();} }, 1000);}
+ if(isPlayerStarted == 1 && !audio_timer.muted && !forcache && sx){sx = false;widget.pause();setTimeout(function(){ if(isPlayerStarted == 0){widget.play();} }, 1000);}
 });
 $("#audio-sounds").bind('playing', function(){
   console.log("second_page = "+isPlayerStarted+" "+audio_timer.muted.toString());
- if(isPlayerStarted == 1 && forcache){widget.pause();setTimeout(function(){ if(isPlayerStarted == 0){widget.play();} }, 1000);}
+ if(isPlayerStarted == 1 && forcache){forcache = false;widget.pause();setTimeout(function(){ if(isPlayerStarted == 0){widget.play();} }, 1000);}
 });
 
 }else{

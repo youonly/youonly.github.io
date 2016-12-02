@@ -375,6 +375,7 @@ $( document ).ready(function( ){
  player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             tog = true;
+                            sx = false;
                             var lorem = player.src;
                             var ipsum = $('#audio-sounds source#hidden'+tmpSound).attr('src');
                             player.muted = false;
@@ -384,6 +385,7 @@ $( document ).ready(function( ){
                               player.play();console.log("played from cache");
                             } else {
                               forcache = false;
+                              sx = true;
                               player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
                               player.play();console.log("played from new source");
                             }
