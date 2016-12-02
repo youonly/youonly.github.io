@@ -248,6 +248,9 @@ $( document ).ready(function( ){
                                             if(IsAttrSupported("audio", "autoplay")){
                                                  player = $( thisTimer ).find('#audio-sounds')[0];
                                                 // player.src = $('#hiddenname-'+tmpSound).val();
+                                                player.muted = false;
+                                                forcache = false;
+                                                sx = true;
                                                 player.src = $('#audio-sounds source#three-beep').attr('src');
                                                 player.play();
                                                 if (ua.iOS) {
@@ -300,6 +303,9 @@ $( document ).ready(function( ){
 
                            player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
+                            player.muted = false;
+                            forcache = false;
+                            sx = true;
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
                            player.play();
 
@@ -455,6 +461,9 @@ $( document ).ready(function( ){
                             if(IsAttrSupported("audio", "autoplay")){
                                player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
+                            player.muted = false;
+                            forcache = false;
+                            sx = true;
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
                            player.play();
                                    // $( thisTimer ).find( "audio#"+tmpSound )[0].play( );
