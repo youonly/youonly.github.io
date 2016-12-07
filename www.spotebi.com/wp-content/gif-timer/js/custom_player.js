@@ -42,7 +42,7 @@ var audio_timer = document.getElementById("audio-sounds");
     //document.getElementById("can_hide").style.display = "none";
     //console.log("3 -->"+document.getElementById("soundcloudControls").innerHTML);
 
-if(!ua.iOS){//console.log("checkpt1");
+if(ua.iOS){//console.log("checkpt1");
 $("#audio-sounds").bind('progress', function(){
   console.log("second_page = "+isPlayerStarted+" "+audio_timer.muted.toString());
  if(isPlayerStarted == 1 && !audio_timer.muted && sx){sx = false;widget.pause();setTimeout(function(){ if(isPlayerStarted == 0){widget.play();} }, 1000);}
