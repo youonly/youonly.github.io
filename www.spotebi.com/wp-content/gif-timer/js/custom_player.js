@@ -45,10 +45,13 @@ var audio_timer = document.getElementById("audio-sounds");
 if(!ua.iOS){//console.log("checkpt1");
 $("#audio-sounds").bind('progress', function(){
   console.log("second_page = "+isPlayerStarted+" "+audio_timer.muted.toString());
- if(isPlayerStarted == 1 && !audio_timer.muted){widget.pause();setTimeout(function(){ if(isPlayerStarted == 0){widget.play();} }, 1000);}
+ if(isPlayerStarted == 1 && !audio_timer.muted && sx){widget.pause();setTimeout(function(){ if(isPlayerStarted == 0){widget.play();} }, 2000);}
 });}else{
   //console.log("android");
 }
+window.togExtra = function(){
+  widget.pause();setTimeout(function(){ if(isPlayerStarted == 0){widget.play();} }, 2000);
+};
   });
 widget.bind(SC.Widget.Events.PLAY, function() {
 isPlayerStarted = 1;

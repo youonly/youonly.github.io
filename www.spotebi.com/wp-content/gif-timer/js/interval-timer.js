@@ -374,13 +374,17 @@ $( document ).ready(function( ){
  player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             tog = true;
+                            sx = false;
                             var lorem = player.src;
                             var ipsum = $('#audio-sounds source#hidden'+tmpSound).attr('src');
                             player.muted = false;
                             console.log("ps="+lorem+" ss="+ipsum);
                             if(lorem.indexOf(ipsum) != -1) {
+                              sx = false;
                               player.play();console.log("played from cache");
+                              togExtra();
                             } else {
+                              sx = true;
                               player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
                               player.play();console.log("played from new source");
                             }
