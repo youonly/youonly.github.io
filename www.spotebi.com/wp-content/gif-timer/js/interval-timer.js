@@ -2,7 +2,6 @@ var inputIncrementTimer;
 var restartClicked = false;
 var sx = true;
 var tog = true;
-var forcache = false;
 $( document ).ready(function( ){
         function IsAttrSupported(strTagName, strAttrName) {
             var blnVal = false;
@@ -248,9 +247,6 @@ $( document ).ready(function( ){
                                             if(IsAttrSupported("audio", "autoplay")){
                                                  player = $( thisTimer ).find('#audio-sounds')[0];
                                                 // player.src = $('#hiddenname-'+tmpSound).val();
-                                                player.muted = false;
-                                                forcache = false;
-                                                sx = true;
                                                 player.src = $('#audio-sounds source#three-beep').attr('src');
                                                 player.play();
                                                 if (ua.iOS) {
@@ -303,9 +299,6 @@ $( document ).ready(function( ){
 
                            player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
-                            player.muted = false;
-                            forcache = false;
-                            sx = true;
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
                            player.play();
 
@@ -381,18 +374,13 @@ $( document ).ready(function( ){
  player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
                             tog = true;
-                            sx = false;
                             var lorem = player.src;
                             var ipsum = $('#audio-sounds source#hidden'+tmpSound).attr('src');
                             player.muted = false;
                             console.log("ps="+lorem+" ss="+ipsum);
                             if(lorem.indexOf(ipsum) != -1) {
-                              forcache = true;
-                              sx = false;
                               player.play();console.log("played from cache");
                             } else {
-                              forcache = false;
-                              sx = true;
                               player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
                               player.play();console.log("played from new source");
                             }
@@ -461,9 +449,6 @@ $( document ).ready(function( ){
                             if(IsAttrSupported("audio", "autoplay")){
                                player = $( thisTimer ).find('#audio-sounds')[0];
                             // player.src = $('#hiddenname-'+tmpSound).val();
-                            player.muted = false;
-                            forcache = false;
-                            sx = true;
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
                            player.play();
                                    // $( thisTimer ).find( "audio#"+tmpSound )[0].play( );
