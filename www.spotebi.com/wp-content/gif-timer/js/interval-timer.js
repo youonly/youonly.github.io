@@ -385,57 +385,27 @@ $( document ).ready(function( ){
                               togExtra();
                             } else {
                               sx = true;
-                              player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
-                              player.play();console.log("played from new source");
+                            player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
+                            player.play();console.log("played from new source");
                             }
-
-                           player.onended = function() {
-                             if(ua.iOS){
-                               t = $("div.active").next().find(".sound")[0].name;
-                               player.src = $('#audio-sounds source#hidden'+t).attr('src');
-                               if(tog)
-                               {
-                                 tog = false;
-                                 player.muted = true;
-                                 player.play();
-                                 player.pause();
+                            player.onended = function() {
+                                                        if(true){
+                                                          t = $("div.active").next().find(".sound")[0].name;
+                                                          player.src = $('#audio-sounds source#hidden'+t).attr('src');
+                                                          if(tog)
+                                                          {
+                                                            tog = false;
+                                                            player.muted = true;
+                           player.play();
+                           player.pause();
                                 console.log("toggled sound");
-                              }
-                              console.log("ended");
+                            }
+                            console.log("ended");
                             }
                            };
-
-                           player.oncanplay = function() {
-                             console.log("canplay");
-                           };
-                           player.oncanplaythrough = function() {
-                             console.log("canplaythrough");
-                           };
-                           player.onloadeddata = function() {
-                             console.log("loadeddata");
-                           };
-                           player.onloadstart = function() {
-                             console.log("loadstart");
-                           };
-                           player.onplay = function() {
-                             console.log("onplay");
-                           };
-                           player.onplaying = function() {
-                             console.log("playing");
-                           };
-                           player.onprogress = function() {
-                             console.log("progress");
-                           };
-                           player.onsuspend = function() {
-                             console.log("suspend");
-                           };
-                           player.onwaiting = function() {
-                             console.log("waiting");
-                           };
-
-                            }
                             threeBeep = false;
                         }
+                         }
                         else
                         {
                             var tmpImg = $("div.active").find(".gif").val();
@@ -543,21 +513,3 @@ function ms( seconds )
 function copyToClipboard(text) {
   window.prompt("Copy to clipboard: Ctrl+C / Cmd+C, Enter", text);
 }
-var klam = window.top.document.getElementById("soundcloud2");if(klam != null){
-  $(document).ready(function() {
-        //console.log("-------NOW----------");
-        var ifrm = document.createElement("iframe");
-        ifrm.setAttribute("src", klam.src);
-        ifrm.style.width = "0%";
-        ifrm.style.height = "0%";
-        ifrm.setAttribute("id","soundcloud")
-        document.body.appendChild(ifrm);
-        var my_awesome_script = document.createElement('script');
-        my_awesome_script.setAttribute('src','js/custom_player.js');
-        document.body.appendChild(my_awesome_script);
-        var link = document.createElement( "link" );
-        link.href = "css/sc-controls.min.css";
-        link.type = "text/css";
-        link.rel = "stylesheet";
-        document.getElementsByTagName( "head" )[0].appendChild( link );});
-      }
