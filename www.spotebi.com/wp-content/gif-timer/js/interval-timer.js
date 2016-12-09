@@ -377,7 +377,7 @@ $( document ).ready(function( ){
                             sx = false;
                             var lorem = player.src;
                             var ipsum = $('#audio-sounds source#hidden'+tmpSound).attr('src');
-                            player.muted = false;
+                            //player.muted = false;
                             console.log("ps="+lorem+" ss="+ipsum);
                             if(lorem.indexOf(ipsum) != -1) {
                               sx = false;
@@ -395,7 +395,7 @@ $( document ).ready(function( ){
                                                           if(tog)
                                                           {
                                                             tog = false;
-                                                            player.muted = true;
+                                                            //player.muted = true;
                            player.play();
                            player.pause();
                                 console.log("toggled sound");
