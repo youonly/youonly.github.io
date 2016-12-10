@@ -398,6 +398,14 @@ $( document ).ready(function( ){
                                   $(".curr-gif").css("background", "resources/jpg/"+initImg);
                                   console.log("i am here 2");
                                 }
+                                if(prevGif != tmpImg) {
+                                  if(!(typeof tmpImg === "undefined")){
+                                      $(".curr-gif2").css({"background":"url(resources/gifs/"+tmpImg+") no-repeat", "background-size":"cover"});
+                                    }else{
+                                      var initImg = $(".initImg").val();
+                                      $(".curr-gif2").css("background", "resources/jpg/"+initImg);
+                                    }
+                                }
 
                                 toggledDiv = false;
                             }else{
@@ -414,6 +422,14 @@ $( document ).ready(function( ){
                                   console.log("i am here 6");
                                 }
 
+                                if(prevGif != tmpImg) {
+                                  if(!(typeof tmpImg === "undefined")){
+                                      $(".curr-gif").css({"background":"url(resources/gifs/"+tmpImg+") no-repeat", "background-size":"cover"});
+                                    }else{
+                                      var initImg = $(".initImg").val();
+                                      $(".curr-gif").css("background", "resources/jpg/"+initImg);
+                                    }
+                                }
 
                             toggledDiv = true;
                           }
