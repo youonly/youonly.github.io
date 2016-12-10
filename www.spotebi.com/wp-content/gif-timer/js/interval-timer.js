@@ -393,16 +393,20 @@ $( document ).ready(function( ){
                                 if(!(typeof nextGif === "undefined")){
                                   $(".curr-gif").css({"background":"url(resources/gifs/"+nextGif+") no-repeat", "background-size":"cover"});
                                   console.log("<---IMG CACHED--->");
+                                  console.log("i am here 1");
                                 }else{
                                   var initImg = $(".initImg").val();
                                   $(".curr-gif").css("background", "resources/jpg/"+initImg);
+                                  console.log("i am here 2");
                                 }
                               }else {
                                 if(!(typeof tmpImg === "undefined")){
                                     $(".curr-gif2").css({"background":"url(resources/gifs/"+tmpImg+") no-repeat", "background-size":"cover"});
+                                    console.log("i am here 3");
                                   }else{
                                     var initImg = $(".initImg").val();
                                     $(".curr-gif2").css("background", "resources/jpg/"+initImg);
+                                    console.log("i am here 4");
                                   }
                               }
                                 toggledDiv = false;
@@ -414,17 +418,21 @@ $( document ).ready(function( ){
                               if(!(typeof nextGif === "undefined")){
                                   $(".curr-gif2").css({"background":"url(resources/gifs/"+nextGif+") no-repeat", "background-size":"cover"});
                                   console.log("<---IMG CACHED--->");
+                                  console.log("i am here 5");
                                 }else{
                                   var initImg = $(".initImg").val();
                                   $(".curr-gif2").css("background", "resources/jpg/"+initImg);
+                                  console.log("i am here 6");
                                 }
                                 toggledDiv = true;
                               }else {
                               if(!(typeof tmpImg === "undefined")){
                                   $(".curr-gif").css({"background":"url(resources/gifs/"+tmpImg+") no-repeat", "background-size":"cover"});
+                                  console.log("i am here 7");
                                 }else{
                                   var initImg = $(".initImg").val();
                                   $(".curr-gif").css("background", "resources/jpg/"+initImg);
+                                  console.log("i am here 8");
                                 }
                             }
                           }
