@@ -2,6 +2,7 @@ var inputIncrementTimer;
 var restartClicked = false;
 var sx = true;
 var tog = true;
+var newDispCreated = false;
 $( document ).ready(function( ){
         function IsAttrSupported(strTagName, strAttrName) {
             var blnVal = false;
@@ -355,6 +356,11 @@ $( document ).ready(function( ){
                         }
                         if( threeBeep )
                         {
+                            if(newDispCreated == false){
+                              $( ".curr-gif" ).after( "<div class='curr-gif2'></div>" );
+                              newDispCreated = true;
+                            }
+
                             console.log($( allIntervals[ thisInterval - 1 ] ));
                             var tmpImg = $("div.active").find(".gif").val();
                             $(".curr-gif").css("background", "none");
