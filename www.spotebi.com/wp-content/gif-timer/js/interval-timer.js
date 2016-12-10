@@ -422,6 +422,7 @@ $( document ).ready(function( ){
                                   $(".curr-gif").css("background", "resources/jpg/"+initImg);
                                 }
                             }
+                          }
 
                               prevGif = nextGif;
 
