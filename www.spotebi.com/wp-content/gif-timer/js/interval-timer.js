@@ -381,6 +381,7 @@ $( document ).ready(function( ){
 
                               var lmn = $(".curr-gif");
                               var nml = $(".curr-gif2");
+                              console.log(lmn);
                               nml.style.cssText = document.defaultView.getComputedStyle(lmn, "").cssText;
                             }
 
