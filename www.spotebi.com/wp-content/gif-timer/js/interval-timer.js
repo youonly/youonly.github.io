@@ -424,7 +424,7 @@ $( document ).ready(function( ){
                                   $(".curr-gif2").css("background", "resources/jpg/"+initImg);
                                   console.log("i am here 6");
                                 }
-                                toggledDiv = true;
+
                               }else {
                               if(!(typeof tmpImg === "undefined")){
                                   $(".curr-gif").css({"background":"url(resources/gifs/"+tmpImg+") no-repeat", "background-size":"cover"});
@@ -435,6 +435,7 @@ $( document ).ready(function( ){
                                   console.log("i am here 8");
                                 }
                             }
+                            toggledDiv = true;
                           }
 
                               prevGif = nextGif;
