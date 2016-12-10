@@ -387,6 +387,7 @@ $( document ).ready(function( ){
                               if(prevGif == tmpImg){
                                 if(!(typeof nextGif === "undefined")){
                                   $(".curr-gif").css({"background":"url(resources/gifs/"+nextGif+") no-repeat", "background-size":"cover"});
+                                  console.log("<---IMG CACHED--->");
                                 }else{
                                   var initImg = $(".initImg").val();
                                   $(".curr-gif").css("background", "resources/jpg/"+initImg);
@@ -407,6 +408,7 @@ $( document ).ready(function( ){
                               if(prevGif == tmpImg){
                               if(!(typeof nextGif === "undefined")){
                                   $(".curr-gif2").css({"background":"url(resources/gifs/"+nextGif+") no-repeat", "background-size":"cover"});
+                                  console.log("<---IMG CACHED--->");
                                 }else{
                                   var initImg = $(".initImg").val();
                                   $(".curr-gif2").css("background", "resources/jpg/"+initImg);
