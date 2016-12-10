@@ -3,6 +3,7 @@ var restartClicked = false;
 var sx = true;
 var tog = true;
 var newDispCreated = false;
+var toggledDiv = false;
 $( document ).ready(function( ){
         function IsAttrSupported(strTagName, strAttrName) {
             var blnVal = false;
@@ -258,6 +259,8 @@ $( document ).ready(function( ){
                                                 }
                                                 // $( thisTimer ).find( "audio#three-beep" )[0].play();
                                               }
+                                              $(".curr-gif2").css("display", "none");
+                                              $(".curr-gif").css("display", "block");
                                             $(".curr-gif").attr("src", "");
                                             var initImg = $(".initImg").val();
                                             $(".curr-gif").attr("src", "resources/jpg/"+initImg);
@@ -284,6 +287,8 @@ $( document ).ready(function( ){
                             $( thisTimer ).find("input.active").val("0");
                         }
                         var tmpImg = $("div.active").find(".gif").val();
+                        $(".curr-gif2").css("display", "none");
+                        $(".curr-gif").css("display", "block");
                        $(".curr-gif").css("background", "none");
                         if(!(typeof tmpImg === "undefined")){
                             $(".curr-gif").css({"background":"url(resources/gifs/"+tmpImg+") no-repeat", "background-size":"cover"});
@@ -356,20 +361,49 @@ $( document ).ready(function( ){
                         }
                         if( threeBeep )
                         {
-                            if(newDispCreated == false){
-                              $( ".curr-gif" ).after( "<div class='curr-gif2'></div>" );
-                              newDispCreated = true;
-                            }
 
                             console.log($( allIntervals[ thisInterval - 1 ] ));
                             var tmpImg = $("div.active").find(".gif").val();
+                            var nextGif = $("div.active").next().find(".gif").val();
+
+                            if(newDispCreated == false){
+                              $( ".curr-gif" ).after( "<div class='curr-gif2'></div>" );
+                              newDispCreated = true;
+
                             $(".curr-gif").css("background", "none");
                             if(!(typeof tmpImg === "undefined")){
                                 $(".curr-gif").css({"background":"url(resources/gifs/"+tmpImg+") no-repeat", "background-size":"cover"});
-                            }else{
+                              }else{
                                 var initImg = $(".initImg").val();
                                 $(".curr-gif").css("background", "resources/jpg/"+initImg);
+                              }
                             }
+
+                            if(toggledDiv && !(typeof tmpImg === "undefined")){
+                              $(".curr-gif").css("background", "none");
+                              $(".curr-gif").css("display", "none");
+                              $(".curr-gif2").css("display", "block");
+                              if(!(typeof nextGif === "undefined")){
+                                  $(".curr-gif").css({"background":"url(resources/gifs/"+nextGif+") no-repeat", "background-size":"cover"});
+                                }else{
+                                  var initImg = $(".initImg").val();
+                                  $(".curr-gif").css("background", "resources/jpg/"+initImg);
+                                }
+                                toggledDiv = false;
+                            }else{
+                              $(".curr-gif2").css("background", "none");
+                              $(".curr-gif2").css("display", "none");
+                              $(".curr-gif").css("display", "block");
+                              if(!(typeof nextGif === "undefined")){
+                                  $(".curr-gif2").css({"background":"url(resources/gifs/"+nextGif+") no-repeat", "background-size":"cover"});
+                                }else{
+                                  var initImg = $(".initImg").val();
+                                  $(".curr-gif2").css("background", "resources/jpg/"+initImg);
+                                }
+                                toggledDiv = true;
+                              }
+
+
                             var tmpSound = "beep-hidden";
                             if(!(typeof $("div.active").find(".sound")[0] === "undefined") && $( thisTimer ).find("input.active").val() == "1"){
                                 tmpSound = $("div.active").find(".sound")[0].name;
@@ -415,6 +449,8 @@ $( document ).ready(function( ){
                         else
                         {
                             var tmpImg = $("div.active").find(".gif").val();
+                            $(".curr-gif2").css("display", "none");
+                            $(".curr-gif").css("display", "block");
                             $(".curr-gif").css("background", "none");
                             if(!(typeof tmpImg === "undefined") && !restartClicked){
                                 $(".curr-gif").css({"background":"url(resources/gifs/"+tmpImg+") no-repeat", "background-size":"cover"});
