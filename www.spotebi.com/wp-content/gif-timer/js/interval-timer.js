@@ -4,6 +4,7 @@ var sx = true;
 var tog = true;
 var newDispCreated = false;
 var toggledDiv = false;
+var prevGif = "";
 $( document ).ready(function( ){
         function IsAttrSupported(strTagName, strAttrName) {
             var blnVal = false;
@@ -383,17 +384,27 @@ $( document ).ready(function( ){
                               $(".curr-gif").css("background", "none");
                               $(".curr-gif").css("display", "none");
                               $(".curr-gif2").css("display", "block");
-                              if(!(typeof nextGif === "undefined")){
+                              if(prevGif == tmpImg){
+                                if(!(typeof nextGif === "undefined")){
                                   $(".curr-gif").css({"background":"url(resources/gifs/"+nextGif+") no-repeat", "background-size":"cover"});
                                 }else{
                                   var initImg = $(".initImg").val();
                                   $(".curr-gif").css("background", "resources/jpg/"+initImg);
                                 }
+                              }else {
+                                if(!(typeof tmpImg === "undefined")){
+                                    $(".curr-gif2").css({"background":"url(resources/gifs/"+tmpImg+") no-repeat", "background-size":"cover"});
+                                  }else{
+                                    var initImg = $(".initImg").val();
+                                    $(".curr-gif2").css("background", "resources/jpg/"+initImg);
+                                  }
+                              }
                                 toggledDiv = false;
                             }else{
                               $(".curr-gif2").css("background", "none");
                               $(".curr-gif2").css("display", "none");
                               $(".curr-gif").css("display", "block");
+                              if(prevGif == tmpImg){
                               if(!(typeof nextGif === "undefined")){
                                   $(".curr-gif2").css({"background":"url(resources/gifs/"+nextGif+") no-repeat", "background-size":"cover"});
                                 }else{
@@ -402,7 +413,15 @@ $( document ).ready(function( ){
                                 }
                                 toggledDiv = true;
                               }
-
+                            }else {
+                              if(!(typeof tmpImg === "undefined")){
+                                  $(".curr-gif").css({"background":"url(resources/gifs/"+tmpImg+") no-repeat", "background-size":"cover"});
+                                }else{
+                                  var initImg = $(".initImg").val();
+                                  $(".curr-gif").css("background", "resources/jpg/"+initImg);
+                                }
+                            }
+                              prevGif = nextGif;
 
                             var tmpSound = "beep-hidden";
                             if(!(typeof $("div.active").find(".sound")[0] === "undefined") && $( thisTimer ).find("input.active").val() == "1"){
