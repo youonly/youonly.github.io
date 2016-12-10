@@ -260,6 +260,8 @@ $( document ).ready(function( ){
                                                 }
                                                 // $( thisTimer ).find( "audio#three-beep" )[0].play();
                                               }
+                                              $(".curr-gif2").css("display", "none");
+                                              $(".curr-gif").css("display", "block");
                                             $(".curr-gif").attr("src", "");
                                             var initImg = $(".initImg").val();
                                             $(".curr-gif").attr("src", "resources/jpg/"+initImg);
@@ -286,6 +288,8 @@ $( document ).ready(function( ){
                             $( thisTimer ).find("input.active").val("0");
                         }
                         var tmpImg = $("div.active").find(".gif").val();
+                        $(".curr-gif2").css("display", "none");
+                        $(".curr-gif").css("display", "block");
                        $(".curr-gif").css("background", "none");
                         if(!(typeof tmpImg === "undefined")){
                             $(".curr-gif").css({"background":"url(resources/gifs/"+tmpImg+") no-repeat", "background-size":"cover"});
@@ -410,8 +414,7 @@ $( document ).ready(function( ){
                                   $(".curr-gif2").css("background", "resources/jpg/"+initImg);
                                 }
                                 toggledDiv = true;
-                              }
-                            }else {
+                              }else {
                               if(!(typeof tmpImg === "undefined")){
                                   $(".curr-gif").css({"background":"url(resources/gifs/"+tmpImg+") no-repeat", "background-size":"cover"});
                                 }else{
@@ -419,6 +422,7 @@ $( document ).ready(function( ){
                                   $(".curr-gif").css("background", "resources/jpg/"+initImg);
                                 }
                             }
+
                               prevGif = nextGif;
 
                             var tmpSound = "beep-hidden";
@@ -466,6 +470,8 @@ $( document ).ready(function( ){
                         else
                         {
                             var tmpImg = $("div.active").find(".gif").val();
+                            $(".curr-gif2").css("display", "none");
+                            $(".curr-gif").css("display", "block");
                             $(".curr-gif").css("background", "none");
                             if(!(typeof tmpImg === "undefined") && !restartClicked){
                                 $(".curr-gif").css({"background":"url(resources/gifs/"+tmpImg+") no-repeat", "background-size":"cover"});
