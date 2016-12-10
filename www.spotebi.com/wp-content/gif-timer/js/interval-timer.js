@@ -385,7 +385,7 @@ $( document ).ready(function( ){
                               nml.style.cssText = document.defaultView.getComputedStyle(lmn, "").cssText;
                             }
 
-                            if(toggledDiv && !(typeof tmpImg === "undefined")){
+                            if(toggledDiv)){
                               $(".curr-gif").css("background", "none");
                               $(".curr-gif").css("display", "none");
                               $(".curr-gif2").css("display", "block");
