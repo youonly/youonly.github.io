@@ -379,8 +379,8 @@ $( document ).ready(function( ){
                                 $(".curr-gif").css("background", "resources/jpg/"+initImg);
                               }
 
-                              var lmn = $(".curr-gif").first();
-                              var nml = $(".curr-gif2").first();
+                              var lmn = document.getElementsByClassName("curr-gif")[0];
+                              var nml = document.getElementsByClassName("curr-gif2")[0];
                               console.log(lmn);
                               nml.style.cssText = document.defaultView.getComputedStyle(lmn, "").cssText;
                             }
