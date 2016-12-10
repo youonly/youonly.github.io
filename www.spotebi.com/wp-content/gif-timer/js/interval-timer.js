@@ -378,6 +378,10 @@ $( document ).ready(function( ){
                                 var initImg = $(".initImg").val();
                                 $(".curr-gif").css("background", "resources/jpg/"+initImg);
                               }
+
+                              var lmn = $(".curr-gif");
+                              var nml = $(".curr-gif2");
+                              nml.style.cssText = document.defaultView.getComputedStyle(lmn, "").cssText;
                             }
 
                             if(toggledDiv && !(typeof tmpImg === "undefined")){
@@ -444,7 +448,7 @@ $( document ).ready(function( ){
                             if(lorem.indexOf(ipsum) != -1) {
                               sx = false;
                               player.play();console.log("played from cache");
-                              togExtra();
+                              //togExtra();
                             } else {
                               sx = true;
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
