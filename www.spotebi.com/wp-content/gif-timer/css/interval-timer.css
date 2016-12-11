@@ -11,7 +11,13 @@ div.gif-contain{
 }
 div.curr-gif{
     margin: 0 auto;
-    height: 300px; 
+    height: 300px;
+    width:400px;
+    margin-bottom: 20px;
+}
+div.curr-gif2{
+    margin: 0 auto;
+    height: 300px;
     width:400px;
     margin-bottom: 20px;
 }
@@ -284,12 +290,16 @@ div.interval-timer div.timer-menu div.timer-next{
 @media screen and (max-width: 480px){
 
     div.curr-gif{
-        height: 240px; 
+        height: 240px;
+        width:320px;
+    }
+    div.curr-gif2{
+        height: 240px;
         width:320px;
     }
     div.interval-timer div.timer-countdown {
         font-size: 100px !important;
-    }    
+    }
     div.interval-timer div.timer-menu div.timer-list{
         width: 75%;
     }
@@ -316,7 +326,7 @@ div.interval-timer div.timer-menu div.timer-next{
 @media screen and (max-width: 240px){
     div.interval-timer div.timer-countdown {
         font-size: 50px !important;
-    }    
+    }
     div.interval-timer div.timer-totals > div div.timer-total-label{
         font-size: 8px;
     }
@@ -330,14 +340,22 @@ div.interval-timer div.timer-menu div.timer-next{
 
 @media screen and (max-width: 320px){
     div.curr-gif{
-        height: 200px; 
+        height: 200px;
+        width:250px;
+    }
+    div.curr-gif2{
+        height: 200px;
         width:250px;
     }
 }
 
 @media screen and (max-width: 250px){
     div.curr-gif{
-        height: 120px; 
+        height: 120px;
+        width:150px;
+    }
+    div.curr-gif2{
+        height: 120px;
         width:150px;
     }
 }
