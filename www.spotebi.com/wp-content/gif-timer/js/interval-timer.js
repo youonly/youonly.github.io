@@ -398,7 +398,8 @@ $( document ).ready(function( ){
                                   $(".curr-gif").css("background", "resources/jpg/"+initImg);
                                   console.log("i am here 2");
                                 }
-                                if(prevGif != tmpImg) {
+                                var prevGif = document.getElementsByClassName("curr-gif2")[0].style.background;
+                                if(prevGif.indexOf(tmpImg) != -1) {
                                   if(!(typeof tmpImg === "undefined")){
                                       $(".curr-gif2").css({"background":"url(resources/gifs/"+tmpImg+") no-repeat", "background-size":"cover"});
                                     }else{
@@ -421,8 +422,8 @@ $( document ).ready(function( ){
                                   $(".curr-gif2").css("background", "resources/jpg/"+initImg);
                                   console.log("i am here 6");
                                 }
-
-                                if(prevGif != tmpImg) {
+                                var prevGif = document.getElementsByClassName("curr-gif")[0].style.background;
+                                if(prevGif.indexOf(tmpImg) != -1) {
                                   if(!(typeof tmpImg === "undefined")){
                                       $(".curr-gif").css({"background":"url(resources/gifs/"+tmpImg+") no-repeat", "background-size":"cover"});
                                     }else{
@@ -434,7 +435,6 @@ $( document ).ready(function( ){
                             toggledDiv = true;
                           }
 
-                              prevGif = nextGif;
 
                             var tmpSound = "beep-hidden";
                             if(!(typeof $("div.active").find(".sound")[0] === "undefined") && $( thisTimer ).find("input.active").val() == "1"){
