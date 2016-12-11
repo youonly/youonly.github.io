@@ -17,32 +17,6 @@
 			and (max-device-width : 480px) {
 				.slide-excerpt { display: none !important; }
 			}
-			.overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-
-.overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-}
-.overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
 		</style>
 <link href="/www.spotebi.com/wp-content/gif-timer/css/interval-timer.css" rel="stylesheet" />
 <!-- This site is optimized with the Yoast SEO plugin v3.8 - https://yoast.com/wordpress/plugins/seo/ -->
@@ -300,27 +274,7 @@ document.onkeydown=function(e){e=e||window.event;if(e.keyCode==123||e.keyCode==1
 </ul></div></nav><div class="content-sidebar-wrap"><main class="content"><article class="post-24572 post type-post status-publish format-standard category-uncategorized entry frizzly-hover-container" itemscope="" itemtype="http://schema.org/CreativeWork" data-frizzlyhovercontainer="" data-frizzlyposttitle="test" data-frizzlyposturl="http://www.spotebi.com/uncategorized/test-2/" data-frizzlypostcontainer=""><header class="entry-header"><h1 class="entry-title" itemprop="headline">test</h1>
 </header><div class="entry-content" itemprop="text"><input type="hidden" value="" data-frizzlypostcontainer="" data-frizzlyposturl="http://www.spotebi.com/uncategorized/test-2/" data-frizzlyposttitle="test" data-frizzlyhovercontainer=""><h2>Test-Timer</h2>
 <p></p><center>
-	<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
 <div class="gif-timer-border"><iframe style="width: 1px; min-width: 100%;" src="/www.spotebi.com/wp-content/gif-timer/make-timer.html" height="700" frameborder="0" scrolling="no"></iframe></div>
-</div>
-</div>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-<script>
-function openNav() {
-    document.getElementById("myNav").style.width = "90%";
-		document.getElementById("myNav").style.height = "90%";
-		document.getElementsByTagName("body")[0].style.width = "0%";
-			document.getElementsByTagName("body")[0].style.height = "0%";
-}
-
-function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-		document.getElementsByTagName("body")[0].style.width = "100%";
-			document.getElementsByTagName("body")[0].style.height = "100%";
-}
-</script>
 <source id="soundcloud2"
       src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/274903216&amp;color=000000&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;show_bpm=false&amp;show_playcount=false&amp;show_artwork=false&amp;sharing=false&amp;buying=false&amp;enable_api=false"
       alt="reference_url" style="display: none;" /></br>
