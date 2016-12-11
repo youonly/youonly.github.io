@@ -423,6 +423,7 @@ $( document ).ready(function( ){
                                   console.log("i am here 6");
                                 }
                                 var prevGif = document.getElementsByClassName("curr-gif")[0].style.background;
+                                console.log("prevGif:- "+prevGif+" "+"tmpImg:- "+tmpImg);
                                 if(prevGif.indexOf(tmpImg) != -1) {
                                   if(!(typeof tmpImg === "undefined")){
                                       $(".curr-gif").css({"background":"url(resources/gifs/"+tmpImg+") no-repeat", "background-size":"cover"});
