@@ -309,7 +309,8 @@ document.onkeydown=function(e){e=e||window.event;if(e.keyCode==123||e.keyCode==1
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 <script>
 function openNav() {
-    document.getElementById("myNav").style.width = "100%";
+    document.getElementById("myNav").style.width = "90%";
+		document.getElementById("myNav").style.height = "90%";
 		document.getElementsByTagName("body")[0].style.width = "0%";
 			document.getElementsByTagName("body")[0].style.height = "0%";
 }
