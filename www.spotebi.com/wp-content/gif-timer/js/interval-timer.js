@@ -2,9 +2,6 @@ var inputIncrementTimer;
 var restartClicked = false;
 var sx = true;
 var tog = true;
-var newDispCreated = false;
-var toggledDiv = false;
-var prevGif = "";
 $( document ).ready(function( ){
         function IsAttrSupported(strTagName, strAttrName) {
             var blnVal = false;
@@ -260,8 +257,6 @@ $( document ).ready(function( ){
                                                 }
                                                 // $( thisTimer ).find( "audio#three-beep" )[0].play();
                                               }
-                                              $(".curr-gif2").css("display", "none");
-                                              $(".curr-gif").css("display", "block");
                                             $(".curr-gif").attr("src", "");
                                             var initImg = $(".initImg").val();
                                             $(".curr-gif").attr("src", "resources/jpg/"+initImg);
@@ -288,8 +283,6 @@ $( document ).ready(function( ){
                             $( thisTimer ).find("input.active").val("0");
                         }
                         var tmpImg = $("div.active").find(".gif").val();
-                        $(".curr-gif2").css("display", "none");
-                        $(".curr-gif").css("display", "block");
                        $(".curr-gif").css("background", "none");
                         if(!(typeof tmpImg === "undefined")){
                             $(".curr-gif").css({"background":"url(resources/gifs/"+tmpImg+") no-repeat", "background-size":"cover"});
@@ -362,78 +355,15 @@ $( document ).ready(function( ){
                         }
                         if( threeBeep )
                         {
-
                             console.log($( allIntervals[ thisInterval - 1 ] ));
                             var tmpImg = $("div.active").find(".gif").val();
-                            var nextGif = $("div.active").next().find(".gif").val();
-
-                            if(newDispCreated == false){
-                              $( ".curr-gif" ).after( "<div class='curr-gif2'></div>" );
-                              newDispCreated = true;
-
                             $(".curr-gif").css("background", "none");
                             if(!(typeof tmpImg === "undefined")){
                                 $(".curr-gif").css({"background":"url(resources/gifs/"+tmpImg+") no-repeat", "background-size":"cover"});
-                              }else{
+                            }else{
                                 var initImg = $(".initImg").val();
                                 $(".curr-gif").css("background", "resources/jpg/"+initImg);
-                              }
-
                             }
-
-                            console.log(toggledDiv);
-                            if(toggledDiv && !(typeof tmpImg === "undefined")){
-                              $(".curr-gif").css("background", "none");
-                              $(".curr-gif").css("display", "none");
-                              $(".curr-gif2").css("display", "block");
-                                if(!(typeof nextGif === "undefined")){
-                                  $(".curr-gif").css({"background":"url(resources/gifs/"+nextGif+") no-repeat", "background-size":"cover"});
-                                  console.log("<---IMG CACHED--->");
-                                  console.log("i am here 1");
-                                }else{
-                                  var initImg = $(".initImg").val();
-                                  $(".curr-gif").css("background", "resources/jpg/"+initImg);
-                                  console.log("i am here 2");
-                                }
-                                var prevGif = document.getElementsByClassName("curr-gif2")[0].style.background;
-                                if(prevGif.indexOf(tmpImg) == -1) {
-                                  if(!(typeof tmpImg === "undefined")){
-                                      $(".curr-gif2").css({"background":"url(resources/gifs/"+tmpImg+") no-repeat", "background-size":"cover"});
-                                    }else{
-                                      var initImg = $(".initImg").val();
-                                      $(".curr-gif2").css("background", "resources/jpg/"+initImg);
-                                    }
-                                }
-
-                                toggledDiv = false;
-                            }else{
-                              $(".curr-gif2").css("background", "none");
-                              $(".curr-gif2").css("display", "none");
-                              $(".curr-gif").css("display", "block");
-                              if(!(typeof nextGif === "undefined")){
-                                  $(".curr-gif2").css({"background":"url(resources/gifs/"+nextGif+") no-repeat", "background-size":"cover"});
-                                  console.log("<---IMG CACHED--->");
-                                  console.log("i am here 5");
-                                }else{
-                                  var initImg = $(".initImg").val();
-                                  $(".curr-gif2").css("background", "resources/jpg/"+initImg);
-                                  console.log("i am here 6");
-                                }
-                                var prevGif = document.getElementsByClassName("curr-gif")[0].style.background;
-                                console.log("prevGif:- "+prevGif+" "+"tmpImg:- "+tmpImg);
-                                if(prevGif.indexOf(tmpImg) == -1) {
-                                  if(!(typeof tmpImg === "undefined")){
-                                      $(".curr-gif").css({"background":"url(resources/gifs/"+tmpImg+") no-repeat", "background-size":"cover"});
-                                    }else{
-                                      var initImg = $(".initImg").val();
-                                      $(".curr-gif").css("background", "resources/jpg/"+initImg);
-                                    }
-                                }
-
-                            toggledDiv = true;
-                          }
-
-
                             var tmpSound = "beep-hidden";
                             if(!(typeof $("div.active").find(".sound")[0] === "undefined") && $( thisTimer ).find("input.active").val() == "1"){
                                 tmpSound = $("div.active").find(".sound")[0].name;
@@ -452,7 +382,7 @@ $( document ).ready(function( ){
                             if(lorem.indexOf(ipsum) != -1) {
                               sx = false;
                               player.play();console.log("played from cache");
-                              //togExtra();
+                              togExtra();
                             } else {
                               sx = true;
                             player.src = $('#audio-sounds source#hidden'+tmpSound).attr('src');
@@ -479,8 +409,6 @@ $( document ).ready(function( ){
                         else
                         {
                             var tmpImg = $("div.active").find(".gif").val();
-                            $(".curr-gif2").css("display", "none");
-                            $(".curr-gif").css("display", "block");
                             $(".curr-gif").css("background", "none");
                             if(!(typeof tmpImg === "undefined") && !restartClicked){
                                 $(".curr-gif").css({"background":"url(resources/gifs/"+tmpImg+") no-repeat", "background-size":"cover"});
@@ -585,3 +513,25 @@ function ms( seconds )
 function copyToClipboard(text) {
   window.prompt("Copy to clipboard: Ctrl+C / Cmd+C, Enter", text);
 }
+
+
+  $(document).ready(function() {
+    var klam = window.top.document.getElementById("soundcloud2");
+    if(klam != null){
+        //console.log("-------NOW----------");
+        var ifrm = document.createElement("iframe");
+        ifrm.setAttribute("src", klam.src);
+        ifrm.style.width = "0%";
+        ifrm.style.height = "0%";
+        ifrm.setAttribute("id","soundcloud")
+        document.body.appendChild(ifrm);
+        var my_awesome_script = document.createElement('script');
+        my_awesome_script.setAttribute('src','js/custom_player.js');
+        document.body.appendChild(my_awesome_script);
+        var link = document.createElement( "link" );
+        link.href = "css/sc-controls.min.css";
+        link.type = "text/css";
+        link.rel = "stylesheet";
+        document.getElementsByTagName( "head" )[0].appendChild( link );
+            }
+          });
