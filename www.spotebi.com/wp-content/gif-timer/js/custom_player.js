@@ -50,7 +50,7 @@ $("#audio-sounds").bind('progress', function(){
   //console.log("android");
 }
 window.togExtra = function(){
-  if(ua.iOS){widget.pause();setTimeout(function(){ if(isPlayerStarted == 0){widget.play();} }, 2000);}
+  if(!ua.iOS){widget.pause();setTimeout(function(){ if(isPlayerStarted == 0){widget.play();} }, 2000);}
 };
   });
 widget.bind(SC.Widget.Events.PLAY, function() {
