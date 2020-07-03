@@ -1,0 +1,762 @@
+@font-face {
+    font-family: 'Alte-Haas-Grotesk';
+    src:url('/fonts/Alte-Haas-Grotesk.ttf.woff') format('woff'),
+        url('/fonts/Alte-Haas-Grotesk.ttf.svg#Alte-Haas-Grotesk') format('svg'),
+        url('/fonts/Alte-Haas-Grotesk.ttf.eot'),
+        url('/fonts/Alte-Haas-Grotesk.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Berlingske Serif';
+    src: url('/fonts/BerlingskeSerif-Md.eot');
+    src: url('/fonts/BerlingskeSerif-Md.eot?#iefix') format('embedded-opentype'), url('/fonts/BerlingskeSerif-Md.woff2') format('woff2'), url('/fonts/BerlingskeSerif-Md.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Berlingske Serif';
+    src: url('/fonts/BerlingskeSerif-MdIt.eot');
+    src: url('/fonts/BerlingskeSerif-MdIt.eot?#iefix') format('embedded-opentype'), url('/fonts/BerlingskeSerif-MdIt.woff2') format('woff2'), url('/fonts/BerlingskeSerif-MdIt.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+
+body {
+  color: #192848;
+  font-family: 'Alte-Haas-Grotesk';
+  font-size: 18px;
+}
+
+.button-orange {
+  color: #fff;
+  text-shadow: -1px 0 #F18664, 0 1px #F18664, 1px 0 #F18664, 0 -1px #F18664;
+  font-family: 'Alte-Haas-Grotesk';
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+.button-orange:hover {
+  color: #F18664;
+  text-shadow: -1px 0 #F18664, 0 1px #F18664, 1px 0 #F18664, 0 -1px #F18664;
+  font-family: 'Alte-Haas-Grotesk';
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+.button-white {
+  color: #F18664;
+  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+  font-family: 'Alte-Haas-Grotesk';
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+h1 {
+  color: #E3E8EC;
+  font-family: 'Berlingske Serif';
+  font-size: 72px;
+}
+
+h2 {
+  color: #192848;
+  font-family: 'Berlingske Serif';
+  font-size: 38px;
+}
+
+.intro {
+  color: #192848;
+  font-family: 'Berlingske Serif';
+  font-size: 24px;
+  font-style: italic;
+}
+
+.footer h4 {
+  color: #E3E8EC;
+  font-family: 'Berlingske Serif';
+  font-size: 24px;
+}
+
+.footer a, .footer p {
+  color: #E3E8EC;
+  font-family: 'Alte-Haas-Grotesk';
+  font-size: 18px;
+}
+
+.footer .fa {
+  color: #E3E8EC;
+  font-size: 28px;
+}
+
+.quote {
+  color: #E3E8EC;
+  font-family: 'Alte-Haas-Grotesk';
+  font-size: 24px;
+}
+.navbar-toggler {
+  position: absolute;
+  right: 0;
+}
+
+.logo {
+  position: relative;
+  z-index: 2;
+}
+
+.display-non {
+  display: none !important;
+}
+
+@media (max-width: 1199px) {
+  .button-orange {
+    font-size: 36px;
+  }
+  .button-white {
+    font-size: 36px;
+  }
+  .logo {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-nav, .navbar-expand-md .navbar-collapse.mobile-nav {
+    display: none !important;
+  }
+  .footer-padding {
+    padding: 0 15px;
+  }
+  .pb-cust-h4 {
+    padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    color: #192848;
+    font-family: 'Alte-Haas-Grotesk';
+    font-size: 24px;
+  }
+
+  .button-orange {
+    color: #F18664;
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+    font-size: 36px;
+  }
+  .button-orange:hover {
+      color: #F18664;
+      text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+      font-size: 36px;
+    }
+
+  .button-white {
+    font-size: 28px;
+  }
+
+  h1 {
+    color: #192848;
+    font-family: 'Berlingske Serif';
+    font-size: 75px;
+  }
+
+  h2 {
+    color: #192848;
+    font-family: 'Berlingske Serif';
+    font-size: 38px;
+  }
+
+  .intro {
+    color: #192848;
+    font-family: 'Alte-Haas-Grotesk';
+    font-size: 30px;
+  }
+  .navbar {
+    padding: 0;
+  }
+  .mobile-nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #F18664;
+    z-index: 10;
+  }
+  .mobile-nav-list {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    position: relative;
+  }
+  .mobile-nav-list::before {
+   padding:0;margin:0;
+   content: "";
+   width:1px;
+   height:80px;
+   background-color: #E3E8EC;
+   position: absolute;
+   right:48%;
+   top:0;
+ }
+  .mobile-nav-list .nav-item {
+    display: inline-block;
+    width: 48%;
+    height: 100%;
+  }
+  .mobile-nav-list .nav-item .nav-link {
+    text-align: center;
+    line-height: 124px;
+  }
+  .pb-cust {
+    padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 575px) {
+  .button-orange {
+    font-size: 28px;
+  }
+  .footer h4 {
+    color: #E3E8EC;
+    font-family: 'Berlingske Serif';
+    font-size: 17px;
+    word-break: break-word;
+  }
+
+  .footer a, .footer p {
+    color: #E3E8EC;
+    font-family: 'Alte-Haas-Grotesk';
+    font-size: 12px;
+    word-break: break-word;
+  }
+}
+
+.w-42 {
+    width: 42%!important;
+}
+.w-29 {
+    width: 29%!important;
+}
+
+*:focus {
+    outline: none !important;
+}
+
+.navbar-toggler, .navbar-toggler:focus, .navbar-toggler:hover {
+    background-color: transparent !important;
+    border: 0;
+    z-index: 10;
+}
+.navbar-toggler .icon-bar {
+    display: block;
+    width: 24px;
+    height: 2px;
+    border-radius: 1px;
+}
+.navbar-toggler .icon-bar {
+    background-color: #F18664;
+    width: 16px;
+}
+.navbar-toggler .icon-bar+.icon-bar {
+    margin-top: 6px;
+}
+.navbar-toggler .icon-bar {
+    width: 24px;
+}
+.show + .navbar-toggler .icon-bar {
+    background-color: #fff;
+}
+
+.bar1, .bar3 {
+  transition: 0.4s;
+}
+
+.show + .navbar-toggler {
+  top: 61px;
+}
+
+.show + .navbar-toggler .bar2 {
+  display: none;
+}
+
+.show + .navbar-toggler .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-3px, 2px);
+  transform: rotate(-45deg) translate(-3px, 2px);
+}
+
+.show + .navbar-toggler .bar3 {
+  -webkit-transform: rotate(45deg) translate(-3px, -3px);
+  transform: rotate(45deg) translate(-3px, -3px);
+}
+.container-fluid {
+  max-width: 1450px;
+}
+footer {
+  background-color: #192848;
+}
+.align-self-end {
+    -webkit-align-self: flex-end!important;
+    -ms-flex-item-align: end!important;
+    align-self: flex-end!important;
+}
+.align-self-center {
+    -webkit-align-self: center!important;
+    -ms-flex-item-align: center!important;
+    -ms-grid-row-align: center!important;
+    align-self: center!important;
+}
+.over {
+    position: relative;
+}
+.over-margin {
+  margin: 0 15px;
+  position: relative;
+  z-index: 1
+}
+.over-margin::before {
+    content: "Over ons";
+    color: #192848;
+    position: absolute;
+    top: 80px;
+    left: -105px;
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    font-family: 'Berlingske Serif';
+    font-size: 50px;
+}
+.over-special-margin::before {
+    content: "Izegem";
+    left: -85px;
+}
+.over::after {
+    content: "";
+    background-color: #F18664;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+.over-image {
+    width: 50%;
+    display: inline-block;
+    padding: 0px 20px;
+}
+.over-image img {
+    display: block;
+    margin-left: auto;
+    margin-top: -86px;
+    width: 100%;
+    max-width: 465px;
+    z-index: -1;
+}
+.over-text {
+    width: 49%;
+    display: inline-block;
+    padding: 50px;
+}
+.over-text p {
+    max-width: 465px;
+    padding-bottom: 5%;
+    font-size: 22px;
+    margin-left: auto;
+}
+
+.over-text a {
+  display: block;
+  max-width: 465px;
+  margin-left: auto;
+}
+
+.color-spacer {
+  z-index: -1;
+}
+
+.skyblue {
+  background-color: #E3E8EC;
+}
+
+.text-skyblue {
+  color: #E3E8EC !important;
+}
+
+.text-midnightblue {
+  color: #192848;
+}
+
+.orange {
+  background-color: #F18664;
+}
+
+.midnightblue {
+  background-color: #192848;
+}
+
+.image-left, .image-two-right, .image-right {
+  height: 700px;
+  margin-top: -350px;
+}
+
+.image-left .text-area, .image-right .text-area {
+  width: 70%;
+  max-height: 700px;
+  position: relative;
+  min-height: 200px;
+}
+.image-right .text-area {
+  margin-left: auto;
+}
+.image-two-right .image-area {
+  width: 50%;
+  max-height: 350px;
+  position: relative;
+  min-height: 200px;
+  display: inline-block;
+  margin-bottom: 160px;
+}
+
+.image-two-right .image-area img {
+  width: 50%;
+  max-height: 350px;
+  margin: 0 auto;
+  display: block;
+}
+
+.image-two-right .text-area {
+  width: 49%;
+  max-height: 700px;
+  position: relative;
+  min-height: 200px;
+  display: inline-block;
+}
+
+.image-two-right .text-area img {
+  width: 68%;
+  max-height: 700px;
+  margin: 0 auto;
+  display: block;
+}
+
+.image-left img, .image-right img {
+  width: 100%;
+  max-height: 700px;
+  object-fit: cover;
+}
+
+.tilt-heading {
+    color: #192848;
+    position: absolute;
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    font-family: 'Berlingske Serif';
+    font-size: 50px;
+}
+
+.image-left .tilt-heading {
+    right: -82px;
+    left: auto;
+}
+.image-right .tilt-heading {
+    left: -98px;
+    right: auto;
+}
+
+.tilt-text {
+    color: #192848;
+    position: absolute;
+    font-family: 'Alte-Haas-Grotesk';
+    font-size: 16px;
+}
+.about-box {
+    width: 100%;
+    padding: 50px;
+    padding-top: 100px;
+    background-color: #f18564;
+}
+.about-box::before {
+  content: "Gerelateerde projecten";
+  color: #E3E8EC;
+  position: absolute;
+  top: -40px;
+  left: calc( 50% - 260px);
+  font-family: 'Berlingske Serif';
+  font-size: 50px;
+}
+
+
+.about-box.about::before {
+  content: "Meet the team";
+  color: #192848;
+  position: absolute;
+  top: -40px;
+  left: calc( 50% - 163px);
+  font-family: 'Berlingske Serif';
+  font-size: 50px;
+}
+
+.about-box .row {
+  margin-bottom: -115px;
+}
+
+.about-box .row div {
+  padding: 0 30px;
+}
+
+.gent::before {
+  content: "Gent";
+  color: #192848;
+  position: absolute;
+  top: 80px;
+  left: -30px;
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  font-family: 'Berlingske Serif';
+  font-size: 50px;
+}
+
+.jonas::before {
+  content: "Jonas Hoste";
+  color: #192848;
+  position: absolute;
+  top: 100px;
+  left: -53px;
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  font-family: 'Berlingske Serif';
+  font-size: 30px;
+}
+
+.valentijn::before {
+  content: "Valentijn Vanhee";
+    color: #192848;
+    position: absolute;
+    top: 100px;
+    left: -88px;
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    font-family: 'Berlingske Serif';
+    font-size: 30px;
+}
+
+.tielt::before {
+  content: "Tielt";
+  color: #192848;
+  position: absolute;
+  top: 80px;
+  left: -25px;
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  font-family: 'Berlingske Serif';
+  font-size: 50px;
+}
+
+
+@media (max-width: 1199px) {
+  .over-text p {
+      font-size: 1.7vw;
+  }
+}
+
+@media (max-width: 991px) {
+  .over-text p {
+      font-size: 1.8vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .no-mobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .no-desktop {
+    display: none !important;
+  }
+  .over-image img {
+      margin-top: -8%;
+      width: 100%;
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .over-image {
+      width: 100%;
+      padding-left: 40px;
+      padding-right: 0
+  }
+  .over-text p {
+      font-size: 18px;
+      margin: 0 auto;
+  }
+  .over-text {
+      width: 100%;
+      padding: 50px 25px 50px 50px;
+  }
+  .over-text a {
+      margin: 0 auto;
+  }
+  .image-left .text-area, .image-right .text-area {
+    width: 90%;
+  }
+  .hybrid-skyblue {
+    background-color: #E3E8EC;
+  }
+  .hybrid-midnightblue {
+    background-color: #192848;
+  }
+  .hybrid-text-skyblue {
+    color: #E3E8EC;
+  }
+  .hybrid-text-midnightblue {
+    color: #192848 !important;
+  }
+  .tilt-heading {
+      font-size: 40px;
+  }
+  .tilt-text {
+    font-size: 14px;
+  }
+  .image-left .tilt-text {
+    bottom: -100px;
+    left: 40px;
+    top: initial;
+    right: initial;
+  }
+  .image-right .tilt-text {
+    bottom: -100px;
+    right: 40px;
+    top: initial;
+    left: initial;
+  }
+  .mobile-height-fixer {
+    max-height: 700px;
+  }
+
+  .image-two-right .image-area {
+    width: 100%;
+    max-height: 350px;
+    position: relative;
+    min-height: 200px;
+    display: inline-block;
+    margin-bottom: 160px;
+  }
+
+  .image-two-right .image-area img {
+    width: 50%;
+    max-height: 350px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .image-two-right .left-img {
+    margin-bottom: 160px;
+  }
+
+  .image-two-right .right-img {
+    margin-bottom: 0;
+  }
+
+  .image-two-right .text-area {
+    width: 100%;
+    max-height: 700px;
+    position: relative;
+    min-height: 200px;
+    display: inline-block;
+  }
+
+  .image-two-right .text-area img {
+    width: 68%;
+    max-height: 700px;
+    margin: 0 auto;
+    display: block;
+  }
+
+
+  .image-left .tilt-heading {
+      right: -65px;
+      left: auto;
+  }
+  .image-right .tilt-heading {
+      left: -78px;
+      right: auto;
+  }
+  .about-box::before {
+    content: "Gerelateerde projecten";
+    color: #E3E8EC;
+    position: absolute;
+    top: -23px;
+    left: calc( 50% - 156px);
+    font-family: 'Berlingske Serif';
+    font-size: 30px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 100vw;
+  position: fixed; /* Stay in place */
+  z-index: 999; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: #fff; /* Black fallback color */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  display: none;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+.overlay-content img {
+  width: 100%;
+  max-width: 600px;
+}
