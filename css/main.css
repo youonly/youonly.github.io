@@ -551,10 +551,106 @@ footer {
   font-size: 50px;
 }
 
+.about-box-left {
+  margin-top: -300px !important;
+}
+.about-box-left .text-area {
+  width: 100%;
+  padding: 0 30px;
+}
+.about-box-left .row {
+  width: 90%;
+  min-width: 650px;
+}
+.about-box-left .row div {
+  padding-bottom: 60px;
+}
+.about-box-left .row div h2 {
+    padding-bottom: 15px
+}
+.about-box-left .row div p {
+    padding-bottom: 60px;
+    max-width: 350px;
+}
+
+
+.about-box-right {
+  height: 700px !important;
+  margin-top: -300px !important;
+  position: relative;
+}
+.about-box-right::before {
+  content: "";
+  height: 2px;
+  background-color: #192848;
+  width: calc( 90% - 60px );
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  top: 120px;
+}
+.about-box-right::after {
+  content: "";
+  height: 2px;
+  background-color: #192848;
+  width: calc( 90% - 60px );
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 425px;
+}
+.about-box-right .text-area {
+  width: 90%;
+  background-color: #F18664;
+  margin-left: auto;
+  margin-right: 0;
+  padding: 60px 10% 60px 60px;
+  max-width: none;
+}
+.about-box-right .row div h2{
+  padding-bottom: 30px;
+}
+.about-box-right .row div p{
+  padding-bottom: 60px;
+  max-width: 225px;
+}
+
+.floating-menu {
+  display: none;
+}
+.float-enable:hover + .floating-menu, .floating-menu:hover {
+  display: block;
+  position: absolute;
+  z-index: 100;
+  top: 140px;
+}
+
+.floating-menu a {
+  color: #fff;
+  text-shadow: -1px 0 #192848, 0 1px #192848, 1px 0 #192848, 0 -1px #192848;
+  font-size: 26px;
+  display: inline-block;
+  letter-spacing: 2px;
+}
+
+.floating-menu a:hover {
+  color: #192848;
+  text-shadow: -1px 0 #192848, 0 1px #192848, 1px 0 #192848, 0 -1px #192848;
+  font-size: 26px;
+  display: inline-block;
+  letter-spacing: 2px;
+}
+
 
 @media (max-width: 1199px) {
   .over-text p {
       font-size: 1.7vw;
+  }
+  .float-enable:hover + .floating-menu, .floating-menu:hover {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    top: 125px;
   }
 }
 
@@ -562,16 +658,26 @@ footer {
   .over-text p {
       font-size: 1.8vw;
   }
+  .about-box-right .text-area {
+    padding: 60px 60px 60px 60px;
+  }
+  .about-box-left .row div h2,.about-box-right .row div h2{
+    font-size: 28px;
+  }
+
+  .about-box-right .row div p{
+    font-size: 17px;
+  }
 }
 
 @media (min-width: 768px) {
-  .no-mobile {
+  .no-desktop {
     display: none !important;
   }
 }
 
 @media (max-width: 767px) {
-  .no-desktop {
+  .no-mobile {
     display: none !important;
   }
   .over-image img {
@@ -690,6 +796,35 @@ footer {
     left: calc( 50% - 156px);
     font-family: 'Berlingske Serif';
     font-size: 30px;
+}
+
+.about-box-left {
+  margin-top: -100px !important;
+  height: 1200px;
+}
+.about-box-left .text-area {
+  width: 100%;
+  padding: 0 30px;
+  max-height: auto;
+}
+.about-box-left .row {
+  width: 100%;
+  min-width: auto;
+}
+.about-box-left .row div {
+  width: 90%;
+  padding-bottom: 60px;
+}
+
+.about-box-left .row div:nth-of-type(even) {
+  margin-left: auto;
+}
+
+.about-box-left .row div p {
+  font-size: 18px;
+}
+.about-box-left .row div h2 {
+  font-size: 26px;
 }
 
 }
