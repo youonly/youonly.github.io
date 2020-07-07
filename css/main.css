@@ -114,6 +114,9 @@ h2 {
   .button-orange {
     font-size: 36px;
   }
+  .button-orange:hover {
+    font-size: 36px;
+  }
   .button-white {
     font-size: 36px;
   }
@@ -215,6 +218,9 @@ h2 {
 
 @media (max-width: 575px) {
   .button-orange {
+    font-size: 28px;
+  }
+  .button-orange:hover {
     font-size: 28px;
   }
   .footer h4 {
@@ -409,7 +415,7 @@ footer {
 }
 .image-two-right .image-area {
   width: 50%;
-  max-height: 350px;
+  max-height: 400px;
   position: relative;
   min-height: 200px;
   display: inline-block;
@@ -417,23 +423,23 @@ footer {
 }
 
 .image-two-right .image-area img {
-  width: 50%;
-  max-height: 350px;
+  width: 58%;
+  max-height: 400px;
   margin: 0 auto;
   display: block;
 }
 
 .image-two-right .text-area {
   width: 49%;
-  max-height: 700px;
+  max-height: 800px;
   position: relative;
   min-height: 200px;
   display: inline-block;
 }
 
 .image-two-right .text-area img {
-  width: 68%;
-  max-height: 700px;
+  width: 75%;
+  max-height: 800px;
   margin: 0 auto;
   display: block;
 }
@@ -467,6 +473,17 @@ footer {
     position: absolute;
     font-family: 'Alte-Haas-Grotesk';
     font-size: 16px;
+}
+
+.image-right .tilt-text {
+  top: 25px;
+  left: -120px;
+  right: auto;
+}
+.image-left .tilt-text {
+  top: 25px;
+  right: -120px;
+  left: auto;
 }
 .about-box {
     width: 100%;
@@ -725,15 +742,25 @@ footer {
     font-size: 14px;
   }
   .image-left .tilt-text {
-    bottom: -100px;
+    bottom: -60px;
     left: 40px;
     top: initial;
     right: initial;
   }
   .image-right .tilt-text {
-    bottom: -100px;
+    bottom: -60px;
     right: 40px;
     top: initial;
+    left: initial;
+  }
+  .image-two-right .tilt-text {
+    bottom: -80px;
+    left: 16%;
+    top: initial;
+    right: initial;
+  }
+  .text-wrapper .tilt-text {
+    right: 16%;
     left: initial;
   }
   .mobile-height-fixer {
@@ -742,7 +769,7 @@ footer {
 
   .image-two-right .image-area {
     width: 100%;
-    max-height: 350px;
+    max-height: 400px;
     position: relative;
     min-height: 200px;
     display: inline-block;
@@ -751,7 +778,7 @@ footer {
 
   .image-two-right .image-area img {
     width: 50%;
-    max-height: 350px;
+    max-height: 400px;
     margin: 0 auto;
     display: block;
   }
