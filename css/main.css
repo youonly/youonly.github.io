@@ -671,6 +671,12 @@ footer {
   }
 }
 
+@media (max-width: 991px) and (min-width: 879px) {
+  .about-box-right::after {
+    top: 56%;
+  }
+}
+
 @media (max-width: 991px) {
   .over-text p {
       font-size: 1.8vw;
@@ -815,6 +821,18 @@ footer {
       left: -78px;
       right: auto;
   }
+
+  .bottom-box {
+    height: auto !important;
+  }
+  .bottom-box .text-area {
+    max-height: none !important;
+  }
+
+  .about-box {
+    padding: 40px;
+    padding-top: 40px;
+  }
   .about-box::before {
     content: "Gerelateerde projecten";
     color: #E3E8EC;
@@ -823,36 +841,102 @@ footer {
     left: calc( 50% - 156px);
     font-family: 'Berlingske Serif';
     font-size: 30px;
-}
+  }
+  .about-box.about::before {
+      content: "Meet the team";
+      color: #192848;
+      position: absolute;
+      top: -30px;
+      left: calc( 50% - 131px);
+      font-family: 'Berlingske Serif';
+      font-size: 40px;
+  }
+  .about-box .row {
+      margin-bottom: 0;
+  }
+  .jonas, .gent {
+    padding-bottom: 40px !important;
+  }
+    .jonas::before {
+      content: "Jonas Hoste";
+      color: #192848;
+      position: absolute;
+      top: 60px;
+      left: -35px;
+      -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      font-family: 'Berlingske Serif';
+      font-size: 24px;
+  }
+  .valentijn::before {
+      content: "Valentijn Vanhee";
+      color: #192848;
+      position: absolute;
+      top: 90px;
+      left: -64px;
+      -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      font-family: 'Berlingske Serif';
+      font-size: 24px;
+  }
+  .gent::before {
+      content: "Gent";
+      color: #192848;
+      position: absolute;
+      top: 36px;
+      left: 3px;
+      -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      font-family: 'Berlingske Serif';
+      font-size: 24px;
+  }
+  .tielt::before {
+      content: "Tielt";
+      color: #192848;
+      position: absolute;
+      top: 40px;
+      left: 4px;
+      -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      font-family: 'Berlingske Serif';
+      font-size: 24px;
+  }
 
-.about-box-left {
-  margin-top: -100px !important;
-  height: 1200px;
-}
-.about-box-left .text-area {
-  width: 100%;
-  padding: 0 30px;
-  max-height: auto;
-}
-.about-box-left .row {
-  width: 100%;
-  min-width: auto;
-}
-.about-box-left .row div {
-  width: 90%;
-  padding-bottom: 60px;
-}
+  .about-box-left {
+    margin-top: -100px !important;
+    height: 1200px;
+  }
+  .about-box-left .text-area {
+    width: 100%;
+    padding: 0 30px;
+    max-height: auto;
+  }
+  .about-box-left .row {
+    width: 100%;
+    min-width: auto;
+  }
+  .about-box-left .row div {
+    width: 65%;
+    min-width: 225px;
+    padding-bottom: 60px;
+  }
 
-.about-box-left .row div:nth-of-type(even) {
-  margin-left: auto;
-}
+  .about-box-left .row div:nth-of-type(even) {
+    margin-left: auto;
+  }
 
-.about-box-left .row div p {
-  font-size: 18px;
-}
-.about-box-left .row div h2 {
-  font-size: 26px;
-}
+  .about-box-left .row div p {
+    font-size: 18px;
+  }
+  .about-box-left .row div h2 {
+    font-size: 26px;
+  }
+  .for-abtbx {
+    min-height: 125vw !important;
+  }
+  .for-abtbx2 {
+    min-height: 265vw !important;
+  }
 
 }
 

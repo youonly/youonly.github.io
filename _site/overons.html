@@ -85,6 +85,7 @@
   .case2 {
     right: auto;
     left: 55px;
+    top: 120px !important;
   }
   .case3 {
     right: auto;
@@ -99,8 +100,14 @@
       right: -65px;
     }
     .case2 {
-      right: auto;
-      left: 20px;
+      content: "";
+      position: absolute;
+      top: -33px !important;
+      left: 30px !important;
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+      font-family: 'Berlingske Serif';
+      font-size: 40px;
     }
     .case3 {
       right: auto;
@@ -108,6 +115,29 @@
     }
     .skyblue {
       width: 100%;
+    }
+    .about-box-right .row div h2 {
+        right: 0;
+        padding-bottom: 30px;
+        position: absolute;
+        left: 0;
+        top: 117px;
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        vertical-align: bottom;
+    }
+    .about-box-right::after {
+        height: 0;
+    }
+    .about-box-right::before {
+        content: "";
+        height: 90%;
+        background-color: #192848;
+        width: 2px;
+        position: absolute;
+        z-index: 10;
+        right: 70vw;
+        top: 30px;
     }
   }
 </style>
@@ -130,7 +160,7 @@
 
 <div class="color-spacer skyblue"></div>
 
-<div class="image-left about-box-left">
+<div class="image-left about-box-left bottom-box">
   <div class="text-area container-fluid">
     <div class="row">
       <div class="col-md-6">
@@ -155,7 +185,7 @@
 
 <div class="color-spacer skyblue"></div>
 
-<div class="image-right about-box-right">
+<div class="image-right about-box-right bottom-box no-mobile">
   <div class="text-area container-fluid">
     <div class="row">
       <div class="col-md-4">
@@ -183,13 +213,68 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
       </div>
     </div>
+    <span class="tilt-heading case2">Aanpak</span>
   </div>
 </div>
 
-<div class="color-spacer skyblue"></div>
+<div class="image-right about-box-right bottom-box no-desktop">
+  <div class="text-area container-fluid">
+    <div class="row">
+      <div class="col-2">
+        <h2>Kennismaking</h2>
+      </div>
+      <div class="col-8">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <h2>Studie</h2>
+      </div>
+      <div class="col-8">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <h2>Voorontwerp</h2>
+      </div>
+      <div class="col-8">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <h2>Conceptplan</h2>
+      </div>
+      <div class="col-8">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <h2>Uitwerking</h2>
+      </div>
+      <div class="col-8">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <h2>Oplevering</h2>
+      </div>
+      <div class="col-8">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+      </div>
+    </div>
+    <span class="tilt-heading case2">Aanpak</span>
+  </div>
+</div>
+
+<div class="color-spacer skyblue for-abtbx2"></div>
 
 
-<div class="image-right">
+<div class="image-right bottom-box">
   <div class="text-area mx-auto">
     <div class="about-box about">
       <div class="row">
