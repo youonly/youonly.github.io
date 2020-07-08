@@ -60,9 +60,9 @@ function heightAdj() {
       }var a = $('.image-two-right').find('.text-area').width();
       var b = $('.image-two-right').find('.text-area img').width();
       if ($(this).hasClass('text-wrapper')) {
-        $(this).find('.tilt-heading').css('right',(((a-b)/2)-75+30-10)+'px');
+        $(this).find('.tilt-heading').css('right',(((a-b)/2)-79+30-10)+'px');
       } else {
-        $(this).find('.tilt-heading').css('left',(((a-b)/2)-75+30-10)+'px');
+        $(this).find('.tilt-heading').css('left',(((a-b)/2)-79+30-10)+'px');
       }
       $(this).find('.image-area').css('margin-bottom',(ht-hti)/2+'px');
       $(this).css('height',ht+'px');
@@ -93,9 +93,9 @@ function heightAdj() {
         $(this).css('height','800px');
         $(this).css('margin-top','-400px');
         if ($(this).hasClass('text-wrapper')) {
-          $(this).find('.tilt-heading').css('right','32px');
+          $(this).find('.tilt-heading').css('right','29px');
         } else {
-          $(this).find('.tilt-heading').css('left','32px');
+          $(this).find('.tilt-heading').css('left','29px');
         }
       });
     }

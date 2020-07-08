@@ -456,15 +456,15 @@ footer {
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
     font-family: 'Berlingske Serif';
-    font-size: 50px;
+    font-size: 53px;
 }
 
 .image-left .tilt-heading {
-    right: -82px;
+    right: -85px;
     left: auto;
 }
 .image-right .tilt-heading {
-    left: -98px;
+    left: -104px;
     right: auto;
 }
 
@@ -472,7 +472,7 @@ footer {
     color: #192848;
     position: absolute;
     font-family: 'Alte-Haas-Grotesk';
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .image-right .tilt-text {
@@ -657,7 +657,15 @@ footer {
   display: inline-block;
   letter-spacing: 2px;
 }
+.navbar-collapse {
+  z-index: 10
+}
 
+@media (max-width: 1600px) {
+  .over .container-fluid {
+    max-width: 1200px;
+  }
+}
 
 @media (max-width: 1199px) {
   .over-text p {
