@@ -155,7 +155,7 @@ h2 {
   }
   .button-orange:hover {
       color: #F18664;
-      text-shadow: none;
+      text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
       font-size: 36px;
     }
 
