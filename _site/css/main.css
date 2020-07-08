@@ -41,7 +41,7 @@ body {
 }
 .button-orange:hover {
   color: #F18664;
-  text-shadow: -1px 0 #F18664, 0 1px #F18664, 1px 0 #F18664, 0 -1px #F18664;
+  text-shadow: none;
   font-family: 'Alte-Haas-Grotesk';
   font-size: 40px;
   letter-spacing: 1px;
@@ -53,6 +53,10 @@ body {
   font-family: 'Alte-Haas-Grotesk';
   font-size: 40px;
   letter-spacing: 1px;
+}
+.button-white:hover {
+  color: #fff;
+  text-shadow: none;
 }
 
 h1 {
@@ -151,7 +155,7 @@ h2 {
   }
   .button-orange:hover {
       color: #F18664;
-      text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+      text-shadow: none;
       font-size: 36px;
     }
 
@@ -415,31 +419,31 @@ footer {
 }
 .image-two-right .image-area {
   width: 50%;
-  max-height: 400px;
+  max-height: 480px;
   position: relative;
   min-height: 200px;
   display: inline-block;
-  margin-bottom: 160px;
+  margin-bottom: 240px;
 }
 
 .image-two-right .image-area img {
-  width: 58%;
-  max-height: 400px;
+  width: 69%;
+  max-height: 480px;
   margin: 0 auto;
   display: block;
 }
 
 .image-two-right .text-area {
   width: 49%;
-  max-height: 800px;
+  max-height: 960px;
   position: relative;
   min-height: 200px;
   display: inline-block;
 }
 
 .image-two-right .text-area img {
-  width: 75%;
-  max-height: 800px;
+  width: 90%;
+  max-height: 960px;
   margin: 0 auto;
   display: block;
 }
@@ -473,6 +477,7 @@ footer {
     position: absolute;
     font-family: 'Alte-Haas-Grotesk';
     font-size: 18px;
+    line-height: 2
 }
 
 .image-right .tilt-text {
@@ -652,13 +657,16 @@ footer {
 
 .floating-menu a:hover {
   color: #192848;
-  text-shadow: -1px 0 #192848, 0 1px #192848, 1px 0 #192848, 0 -1px #192848;
+  text-shadow: none;
   font-size: 26px;
   display: inline-block;
   letter-spacing: 2px;
 }
 .navbar-collapse {
   z-index: 10
+}
+.just-text {
+  padding-top: 125px;
 }
 
 @media (max-width: 1600px) {
@@ -944,6 +952,9 @@ footer {
   }
   .for-abtbx2 {
     min-height: 265vw !important;
+  }
+  .just-text {
+    padding-top: 60px;
   }
 
 }

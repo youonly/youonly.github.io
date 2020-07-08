@@ -90,12 +90,12 @@ function heightAdj() {
       });
     } else {
       $.each( $('.image-two-right'), function( key, value ) {
-        $(this).css('height','800px');
-        $(this).css('margin-top','-400px');
+        $(this).css('height','960px');
+        $(this).css('margin-top','-480px');
         if ($(this).hasClass('text-wrapper')) {
-          $(this).find('.tilt-heading').css('right','29px');
+          $(this).find('.tilt-heading').css('right','-22px');
         } else {
-          $(this).find('.tilt-heading').css('left','29px');
+          $(this).find('.tilt-heading').css('left','-22px');
         }
       });
     }
@@ -116,6 +116,13 @@ function heightAdj() {
     }
     if ($(this).next().hasClass('page-footer')) {
       var bottomPadding = 0;
+    }
+    if ($(this).next().hasClass('image-two-right')) {
+      if ($(window).width() > 767) {
+        var bottomPadding = 300;
+      } else {
+        var bottomPadding = 200;
+      }
     }
     var hBottom = $(this).next().outerHeight();
     var hSmall = (hTop > hBottom) ? hBottom : hTop;
