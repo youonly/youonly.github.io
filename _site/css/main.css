@@ -489,7 +489,7 @@ footer {
 }
 .image-left .tilt-text {
   top: 25px;
-  right: -120px;
+  right: -140px;
   left: auto;
 }
 .about-box {
@@ -714,6 +714,9 @@ footer {
 @media (min-width: 768px) {
   .no-desktop {
     display: none !important;
+  }
+  .last-index {
+    max-height: 750px;
   }
 }
 
@@ -957,6 +960,9 @@ footer {
   }
   .just-text {
     padding-top: 60px;
+  }
+  .last-index {
+    max-height: 170vw;
   }
 
 }
