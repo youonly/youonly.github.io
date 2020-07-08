@@ -461,14 +461,15 @@ footer {
     transform: rotate(-90deg);
     font-family: 'Berlingske Serif';
     font-size: 53px;
+    letter-spacing: 1px;
 }
 
 .image-left .tilt-heading {
-    right: -85px;
+    right: -89px;
     left: auto;
 }
 .image-right .tilt-heading {
-    left: -104px;
+    left: -108px;
     right: auto;
 }
 
@@ -477,7 +478,8 @@ footer {
     position: absolute;
     font-family: 'Alte-Haas-Grotesk';
     font-size: 18px;
-    line-height: 2
+    line-height: 2;
+    letter-spacing: 1px;
 }
 
 .image-right .tilt-text {
@@ -830,7 +832,7 @@ footer {
 
 
   .image-left .tilt-heading {
-      right: -65px;
+      right: -68px;
       left: auto;
   }
   .image-right .tilt-heading {
