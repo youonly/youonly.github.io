@@ -35,7 +35,7 @@
           <div class="navbar-collapse collapse dual-nav w-29 order-1 order-md-0">
               <ul class="navbar-nav mr-auto">
                   <li class="nav-item">
-                      <a class="nav-link button-orange float-enable" href="/projecten.html">Projecten</a>
+                      <a class="nav-link button-orange float-enable " href="/projecten.html">Projecten</a>
                       <div class="floating-menu no-mobile">
                         <a class="nav-link button-orange" href="/projecten.html">commercieel</a>
                         <a class="nav-link button-orange" href="/residentieel.html">residentieel</a>
@@ -47,7 +47,7 @@
           <div class="navbar-collapse collapse dual-nav w-29 order-2">
               <ul class="nav navbar-nav ml-auto">
                   <li class="nav-item">
-                    <a class="nav-link button-orange" href="/overons.html">Over ons</a>
+                    <a class="nav-link button-orange " href="/overons.html">Over ons</a>
                   </li>
               </ul>
           </div>
@@ -74,6 +74,10 @@
 
 
     <style media="screen">
+  .over-special-margin::before {
+      content: "Izegem";
+      left: -94px;
+  }
   .tilt-heading {
       top: 70px;
       right: -82px;
@@ -88,19 +92,69 @@
   }
   .case2a {
     right: auto;
-    left: -70%;
+    left: -90%;
     top: 30px;
   }
   .case3a {
     right: auto;
-    left: -70%;
-    top: 82%;
-    max-width: 200px;
+    left: -94%;
+    top: 90%;
+    max-width: 210px;
     line-height: 1.5;
+    font-family: 'Berlingske Serif';
   }
   .case3 {
     right: auto;
     left: 53px;
+  }
+  @media (min-width: 768px) {
+    .image-two-right .container-fluid {
+      padding: 0
+    }
+    .image-right .text-area.mx-auto, .image-left .text-area.mx-auto {
+      width: 100%;
+      max-width: 1450px;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+    .image-two-right .image-area img {
+      margin-left: 0;
+      margin-right: auto;
+      padding-left: 15px
+    }
+    .image-two-right .text-area img {
+      margin-left: auto;
+      margin-right: 0;
+    }
+    .image-two-right .right-img img {
+      margin-left: auto;
+      margin-right: 0;
+    }
+    .image-two-right .left-img img {
+      margin-left: 0;
+      margin-right: auto;
+      padding-left: 15px
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1500px) {
+    .image-right .text-area.mx-auto, .image-left .text-area.mx-auto {
+      padding-right: 60px;
+      padding-left: 60px;
+    }
+    .image-two-right .image-area img {
+      padding-left: 60px
+    }
+    .image-two-right .text-area img {
+      padding-right: 60px
+    }
+    .image-two-right .right-img img {
+      padding-right: 60px
+    }
+    .image-two-right .left-img img {
+      padding-left: 60px
+    }
   }
   @media (max-width: 767px) {
     .tilt-heading {
@@ -151,7 +205,7 @@
 
 <div class="color-spacer skyblue"></div>
 
-<div class="image-two-right">
+<div class="image-two-right showcase">
   <div class="container-fluid">
     <div class="image-area">
       <img src="/img/project1.jpg" alt="over ons">
@@ -175,7 +229,7 @@
 <div class="color-spacer orange"></div>
 
 
-<div class="image-two-right">
+<div class="image-two-right showcase">
   <div class="container-fluid">
     <div class="text-area left-img">
       <img src="/img/08282019 Hoste Vanhee Izegem ©Annick Vernimmen 061 website@2x.png" alt="over ons">
@@ -202,10 +256,10 @@
     <div class="about-box">
       <div class="row">
         <div class="col-md-6 gent">
-          <img src="/img/about1.jpg" alt="over ons">
+          <img src="/img/about1.jpg" alt="over ons" data-url="gent.html">
         </div>
         <div class="col-md-6 tielt">
-          <img src="/img/two-left.jpg" alt="over ons">
+          <img src="/img/two-left.jpg" alt="over ons" data-url="tielt.html">
         </div>
       </div>
     </div>
@@ -213,7 +267,7 @@
 </div>
 
 
-<div class="color-spacer midnightblue"></div>
+<div class="color-spacer midnightblue last-index2"></div>
 
 
 

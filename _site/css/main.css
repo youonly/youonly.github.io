@@ -47,6 +47,11 @@ body {
   letter-spacing: 1px;
 }
 
+.aktiv {
+  color: #F18664;
+  text-shadow: none;
+}
+
 .button-white {
   color: #F18664;
   text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
@@ -329,15 +334,11 @@ footer {
     color: #192848;
     position: absolute;
     top: 80px;
-    left: -105px;
+    left: -117px;
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
     font-family: 'Berlingske Serif';
-    font-size: 50px;
-}
-.over-special-margin::before {
-    content: "Izegem";
-    left: -85px;
+    font-size: 56px;
 }
 .over::after {
     content: "";
@@ -460,16 +461,16 @@ footer {
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
     font-family: 'Berlingske Serif';
-    font-size: 53px;
+    font-size: 56px;
     letter-spacing: 1px;
 }
 
 .image-left .tilt-heading {
-    right: -89px;
+    right: -92px;
     left: auto;
 }
 .image-right .tilt-heading {
-    left: -108px;
+    left: -112px;
     right: auto;
 }
 
@@ -499,13 +500,13 @@ footer {
     background-color: #f18564;
 }
 .about-box::before {
-  content: "Gerelateerde projecten";
-  color: #E3E8EC;
-  position: absolute;
-  top: -40px;
-  left: calc( 50% - 260px);
-  font-family: 'Berlingske Serif';
-  font-size: 50px;
+    content: "Gerelateerde projecten";
+    color: #E3E8EC;
+    position: absolute;
+    top: -50px;
+    left: calc( 50% - 339px);
+    font-family: 'Berlingske Serif';
+    font-size: 65px;
 }
 
 
@@ -513,10 +514,10 @@ footer {
   content: "Meet the team";
   color: #192848;
   position: absolute;
-  top: -40px;
-  left: calc( 50% - 163px);
+  top: -51px;
+  left: calc( 50% - 213px);
   font-family: 'Berlingske Serif';
-  font-size: 50px;
+  font-size: 65px;
 }
 
 .about-box .row {
@@ -529,14 +530,14 @@ footer {
 
 .gent::before {
   content: "Gent";
-  color: #192848;
-  position: absolute;
-  top: 80px;
-  left: -30px;
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  font-family: 'Berlingske Serif';
-  font-size: 50px;
+    color: #192848;
+    position: absolute;
+    top: 80px;
+    left: -35px;
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    font-family: 'Berlingske Serif';
+    font-size: 56px;
 }
 
 .jonas::before {
@@ -564,15 +565,15 @@ footer {
 }
 
 .tielt::before {
-  content: "Tielt";
-  color: #192848;
-  position: absolute;
-  top: 80px;
-  left: -25px;
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  font-family: 'Berlingske Serif';
-  font-size: 50px;
+    content: "Tielt";
+    color: #192848;
+    position: absolute;
+    top: 80px;
+    left: -30px;
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    font-family: 'Berlingske Serif';
+    font-size: 56px;
 }
 
 .about-box-left {
@@ -672,7 +673,7 @@ footer {
 }
 
 @media (max-width: 1600px) {
-  .over .container-fluid {
+  .over .container-fluid, .about-box-left .container-fluid {
     max-width: 1200px;
   }
 }
@@ -963,6 +964,9 @@ footer {
   }
   .last-index {
     max-height: 170vw;
+  }
+  .last-index2 {
+    max-height: 100vw;
   }
 
 }
