@@ -540,8 +540,8 @@ footer {
     font-size: 56px;
 }
 
-.jonas::before {
-  content: "Jonas Hoste";
+.jonas {
+  content: "";
   color: #192848;
   position: absolute;
   top: 100px;
@@ -552,8 +552,8 @@ footer {
   font-size: 30px;
 }
 
-.valentijn::before {
-  content: "Valentijn Vanhee";
+.valentijn {
+  content: "";
     color: #192848;
     position: absolute;
     top: 100px;
@@ -993,11 +993,11 @@ footer {
   .about-box .row {
       margin-bottom: 0;
   }
-  .jonas, .gent {
+  .about-box.about .col-md-6 {
     padding-bottom: 40px !important;
   }
-    .jonas::before {
-      content: "Jonas Hoste";
+    .jonas {
+      content: "";
       color: #192848;
       position: absolute;
       top: 60px;
@@ -1007,8 +1007,8 @@ footer {
       font-family: 'Berlingske Serif';
       font-size: 24px;
   }
-  .valentijn::before {
-      content: "Valentijn Vanhee";
+  .valentijn {
+      content: "";
       color: #192848;
       position: absolute;
       top: 90px;
