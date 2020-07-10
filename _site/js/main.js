@@ -1,7 +1,9 @@
 function heightAdj() {
-  if ($(window).width() < 768) {
+  if ($(window).width() < 1200) {
     $.each( $('.image-left'), function( key, value ) {
       var ht = $(this).children('.text-area').height();
+      var name = $(this).find('.tilt-heading').height();
+      $(this).find('.tilt-heading').css('top','calc(50% - '+ name/2 +'px)');
       if (ht < 100) {
         ht = (46.6*$(window).width())/100;
       }
@@ -14,6 +16,8 @@ function heightAdj() {
     });
     $.each( $('.image-right'), function( key, value ) {
       var ht = $(this).children('.text-area').height();
+      var name = $(this).find('.tilt-heading').height();
+      $(this).find('.tilt-heading').css('top','calc(50% - '+ name/2 +'px)');
       if (ht < 100) {
         ht = (46.6*$(window).width())/100;
       }
@@ -27,6 +31,7 @@ function heightAdj() {
   } else {
       $.each( $('.image-left'), function( key, value ) {
         var ht = $(this).children('.text-area').height();
+        $(this).find('.tilt-heading').css('top','70px');
         if (ht < 100) {
           ht = (46.6*$(window).width())/100;
         }
@@ -39,6 +44,7 @@ function heightAdj() {
       });
       $.each( $('.image-right'), function( key, value ) {
         var ht = $(this).children('.text-area').height();
+        $(this).find('.tilt-heading').css('top','70px');
         if (ht < 100) {
           ht = (46.6*$(window).width())/100;
         }
@@ -51,10 +57,16 @@ function heightAdj() {
       });
   }
 
-  if ($(window).width() < 1440 && $(window).width() > 767) {
+  if ($(window).width() < 1440 && $(window).width() > 1199) {
     $.each( $('.image-two-right'), function( key, value ) {
       var ht = $(this).find('.text-area img').height();
       var hti = $(this).find('.image-area').height();
+      if ($(this).hasClass('toggle-image')) {
+        $(this).find('.container-fluid').append( $(this).find('.container-fluid').children().first() );
+        $(this).find('.container-fluid').children().removeClass('left-img');
+        $(this).find('.container-fluid').children().removeClass('right-img');
+        $(this).removeClass('toggle-image');
+      }
       if (ht < 100) {
         ht = (46.6*$(window).width())/100;
       }var a = $('.image-two-right').find('.text-area').width();
@@ -69,10 +81,16 @@ function heightAdj() {
       $(this).css('margin-top','-'+(ht/2)+'px');
     });
   } else {
-    if ($(window).width() < 768) {
+    if ($(window).width() < 1200) {
       $.each( $('.image-two-right'), function( key, value ) {
         var ht = $(this).find('.container-fluid').height();
         var hti = $(this).find('.image-area img').height();
+        if ($(this).find('.container-fluid').children().first().hasClass('image-area')) {
+          $(this).find('.container-fluid').append( $(this).find('.container-fluid').children().first() );
+          $(this).find('.container-fluid').children().first().addClass('left-img');
+          $(this).find('.container-fluid').children().last().addClass('right-img');
+          $(this).addClass('toggle-image');
+        }
         var firstImage = $(this).find('img').first().height();
         if (ht < 100) {
           ht = (46.6*$(window).width())/100;
@@ -90,6 +108,12 @@ function heightAdj() {
       });
     } else {
       $.each( $('.image-two-right'), function( key, value ) {
+        if ($(this).hasClass('toggle-image')) {
+          $(this).find('.container-fluid').append( $(this).find('.container-fluid').children().first() );
+          $(this).find('.container-fluid').children().removeClass('left-img');
+          $(this).find('.container-fluid').children().removeClass('right-img');
+          $(this).removeClass('toggle-image');
+        }
         $(this).css('height','960px');
         $(this).css('margin-top','-480px');
         if ($(this).hasClass('text-wrapper')) {
@@ -115,13 +139,18 @@ function heightAdj() {
       $(this).addClass('mobile-height-fixer');
     }
     if ($(this).next().hasClass('page-footer')) {
-      var bottomPadding = 0;
+      bottomPadding = 0;
+    }
+    if ($(this).hasClass('more-padding')) {
+      if ($(window).width() < 1200) {
+        bottomPadding = 400
+      }
     }
     if ($(this).next().hasClass('image-two-right')) {
-      if ($(window).width() > 767) {
-        var bottomPadding = 300;
+      if ($(window).width() > 1199) {
+        bottomPadding = 300;
       } else {
-        var bottomPadding = 200;
+        bottomPadding = 200;
       }
     }
     var hBottom = $(this).next().outerHeight();
