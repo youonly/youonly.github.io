@@ -3,6 +3,9 @@ function heightAdj() {
     $.each( $('.image-left'), function( key, value ) {
       var ht = $(this).children('.text-area').height();
       var name = $(this).find('.tilt-heading').height();
+      var tiltHeight = $(this).find('.tilt-heading').height();
+      var tiltWidth = $(this).find('.tilt-heading').width();
+      $(this).find('.tilt-heading').css('right',-(tiltWidth/2)+'px');
       $(this).find('.tilt-heading').css('top','calc(50% - '+ name/2 +'px)');
       if (ht < 100) {
         ht = (46.6*$(window).width())/100;
@@ -17,6 +20,9 @@ function heightAdj() {
     $.each( $('.image-right'), function( key, value ) {
       var ht = $(this).children('.text-area').height();
       var name = $(this).find('.tilt-heading').height();
+      var tiltHeight = $(this).find('.tilt-heading').height();
+      var tiltWidth = $(this).find('.tilt-heading').width();
+      $(this).find('.tilt-heading').css('left',-(tiltWidth/2)+'px');
       $(this).find('.tilt-heading').css('top','calc(50% - '+ name/2 +'px)');
       if (ht < 100) {
         ht = (46.6*$(window).width())/100;
@@ -31,7 +37,10 @@ function heightAdj() {
   } else {
       $.each( $('.image-left'), function( key, value ) {
         var ht = $(this).children('.text-area').height();
-        $(this).find('.tilt-heading').css('top','70px');
+        var tiltHeight = $(this).find('.tilt-heading').height();
+        var tiltWidth = $(this).find('.tilt-heading').width();
+        $(this).find('.tilt-heading').css('right',-(tiltWidth/2)+'px');
+        $(this).find('.tilt-heading').css('top',tiltWidth/2+'px');
         if (ht < 100) {
           ht = (46.6*$(window).width())/100;
         }
@@ -44,7 +53,10 @@ function heightAdj() {
       });
       $.each( $('.image-right'), function( key, value ) {
         var ht = $(this).children('.text-area').height();
-        $(this).find('.tilt-heading').css('top','70px');
+        var tiltHeight = $(this).find('.tilt-heading').height();
+        var tiltWidth = $(this).find('.tilt-heading').width();
+        $(this).find('.tilt-heading').css('left',-(tiltWidth/2)+'px');
+        $(this).find('.tilt-heading').css('top',tiltWidth/2+'px');
         if (ht < 100) {
           ht = (46.6*$(window).width())/100;
         }
@@ -128,9 +140,14 @@ function heightAdj() {
   $.each( $('.color-spacer'), function( key, value ) {
     var hTop = $(this).prev().outerHeight();
     var hTopMargin = parseInt($(this).prev().css('margin-top').replace('px',''));
+    var hBotMargin = parseInt($(this).next().css('margin-top').replace('px',''));
     var bottomPadding = 150;
+    var defaultx = 0;
     if (hTopMargin == 0) {
       hTopMargin = -(hTop/2);
+    }
+    if (hBotMargin == 0) {
+      hBotMargin = -($(this).next().outerHeight()/2);
     }
     if ($(this).prev().hasClass('first-div')) {
       hTopMargin = -((hTop/2)+hTopMargin/2);
@@ -139,24 +156,27 @@ function heightAdj() {
       $(this).addClass('mobile-height-fixer');
     }
     if ($(this).next().hasClass('page-footer')) {
-      bottomPadding = 0;
+      bottomPadding = 100;
     }
     if ($(this).hasClass('more-padding')) {
       if ($(window).width() < 1200) {
         bottomPadding = 400
       }
     }
+    if ($(this).hasClass('default')) {
+        defaultx = hBotMargin-hTopMargin;
+    }
     if ($(this).next().hasClass('image-two-right')) {
       if ($(window).width() > 1199) {
-        bottomPadding = 300;
+        //bottomPadding = 300;
       } else {
-        bottomPadding = 200;
+        //bottomPadding = 200;
       }
     }
     var hBottom = $(this).next().outerHeight();
     var hSmall = (hTop > hBottom) ? hBottom : hTop;
     var hLarge = (hTop > hBottom) ? hTop : hBottom;
-    $(this).css('height',(hTop+(bottomPadding))+'px');
+    $(this).css('height',(hTop+hTopMargin-hBotMargin+bottomPadding+defaultx)+'px');
     $(this).css('margin-top','-'+(hTop+hTopMargin)+'px');
   });
 }
@@ -172,6 +192,11 @@ $( document ).ready(function() {
     $('[data-url]').css('cursor', 'pointer');
     $( "[data-url]" ).click(function() {
       window.location.href = $(this).data('url');
+    });
+    $(".button-white.text-midnightblue").click(function() {
+      $(this).parent().css('display','none');
+      $('.more').removeClass('more');
+      heightAdj();
     });
 });
 

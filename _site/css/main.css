@@ -24,7 +24,9 @@
     font-style: italic;
 }
 
-
+html {
+	scroll-behavior: smooth;
+}
 
 body {
   color: #192848;
@@ -115,7 +117,7 @@ h2 {
   z-index: 2;
 }
 
-.display-non {
+.display-non, .more {
   display: none !important;
 }
 
@@ -402,6 +404,10 @@ footer {
   color: #192848;
 }
 
+.text-orange {
+  color: #F18664 !important;
+}
+
 .orange {
   background-color: #F18664;
 }
@@ -491,12 +497,12 @@ footer {
 
 .image-right .tilt-text {
   top: 25px;
-  left: -120px;
+  left: -150px;
   right: auto;
 }
 .image-left .tilt-text {
   top: 25px;
-  right: -140px;
+  right: -150px;
   left: auto;
 }
 .about-box {
@@ -675,7 +681,7 @@ footer {
   z-index: 10
 }
 .just-text {
-  padding-top: 125px;
+  padding-top: 200px;
 }
 
 @media (max-width: 1600px) {
@@ -892,6 +898,9 @@ footer {
   .hybrid-text-midnightblue {
     color: #192848 !important;
   }
+  .hybrid-text-orange {
+    color: #F18664 !important;
+  }
   .tilt-heading {
       font-size: 40px;
   }
@@ -945,11 +954,11 @@ footer {
   }
 
   .image-two-right .left-img {
-    margin-bottom: 160px;
+    margin-bottom: 150px;
   }
 
   .image-two-right .right-img {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
   }
 
   .image-two-right .text-area {
@@ -1075,6 +1084,9 @@ footer {
     min-width: 225px;
     padding-bottom: 60px;
   }
+  .about-box-left .row div:last-child, .about-box-left .row div:last-child p:last-child {
+    padding-bottom: 0;
+  }
 
   .about-box-left .row div:nth-of-type(even) {
     margin-left: auto;
@@ -1093,7 +1105,7 @@ footer {
     min-height: 265vw !important;
   }
   .just-text {
-    padding-top: 60px;
+    padding-top: 125px;
   }
   .last-index {
     max-height: 170vw;
