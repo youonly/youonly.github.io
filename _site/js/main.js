@@ -198,6 +198,11 @@ $( document ).ready(function() {
       $('.more').removeClass('more');
       heightAdj();
     });
+    var myVar = setInterval(heightAdj, 200);
+
+    setTimeout(function(){
+      clearInterval(myVar);
+    }, 3000);
 });
 
 $( window ).resize(function() {
