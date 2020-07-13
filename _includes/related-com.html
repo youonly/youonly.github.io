@@ -1,0 +1,37 @@
+<div class="image-right bottom-box">
+  <div class="text-area mx-auto">
+    <div class="about-box">
+      <div class="row">
+        {% assign start = page.index %}
+        {% if site.data.residential.size == page.index %}
+          {% assign start = 0 %}
+        {% endif %}
+        {% assign secondLast = site.data.commercial.size | minus: 1 %}
+        {% if page.index == secondLast %}
+          {% for rel in site.data.residential %}
+          {% unless forloop.last %}
+            {% continue %}
+          {% endunless %}
+            <div class="col-xl-6">
+              <span class="firstName" data-url="{{ rel.url }}">{{ rel.title }}</span>
+              <img src="/img/{{ rel.image }}" alt="{{ rel.image }}" data-url="{{ rel.url }}">
+            </div>
+          {% endfor %}
+          {% for rel in site.data.residential limit:1 %}
+            <div class="col-xl-6">
+              <span class="firstName" data-url="{{ rel.url }}">{{ rel.title }}</span>
+              <img src="/img/{{ rel.image }}" alt="{{ rel.image }}" data-url="{{ rel.url }}">
+            </div>
+          {% endfor %}
+        {% else %}
+          {% for rel in site.data.residential limit:2 offset:start %}
+            <div class="col-xl-6">
+              <span class="firstName" data-url="{{ rel.url }}">{{ rel.title }}</span>
+              <img src="/img/{{ rel.image }}" alt="{{ rel.image }}" data-url="{{ rel.url }}">
+            </div>
+          {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

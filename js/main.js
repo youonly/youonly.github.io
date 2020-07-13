@@ -179,6 +179,19 @@ function heightAdj() {
     $(this).css('height',(hTop+hTopMargin-hBotMargin+bottomPadding+defaultx)+'px');
     $(this).css('margin-top','-'+(hTop+hTopMargin)+'px');
   });
+  $.each( $('.firstName'), function( key, value ) {
+    if ($(window).width() < 1200) {
+      var xxHeight = $(this).height();
+      var xxWidth = $(this).width();
+      $(this).css('left',-(xxWidth/2-30)+'px');
+      $(this).css('top','calc(40% - '+ xxHeight/2 +'px)');
+    } else {
+      var xxHeight = $(this).height();
+      var xxWidth = $(this).width();
+      $(this).css('left',-(xxWidth/2-30)+'px');
+      $(this).css('top','80px');
+    }
+  });
 }
 
 $( document ).ready(function() {

@@ -499,6 +499,7 @@ footer {
   top: 25px;
   left: -150px;
   right: auto;
+  max-width: 115px;
 }
 .image-left .tilt-text {
   top: 25px;
@@ -540,18 +541,6 @@ footer {
   padding: 0 30px;
 }
 
-.gent::before {
-  content: "Gent";
-    color: #192848;
-    position: absolute;
-    top: 80px;
-    left: -35px;
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    font-family: 'Berlingske Serif';
-    font-size: 56px;
-}
-
 .jonas {
   content: "";
   color: #192848;
@@ -576,12 +565,21 @@ footer {
     font-size: 30px;
 }
 
-.tielt::before {
-    content: "Tielt";
+.firstName {
     color: #192848;
     position: absolute;
     top: 80px;
-    left: -30px;
+    left: -35px;
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    font-family: 'Berlingske Serif';
+    font-size: 56px;
+}
+.secondName {
+    color: #192848;
+    position: absolute;
+    top: 80px;
+    left: -35px;
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
     font-family: 'Berlingske Serif';
@@ -908,13 +906,13 @@ footer {
     font-size: 14px;
   }
   .image-left .tilt-text {
-    bottom: -75px;
+    bottom: -85px;
     left: 40px;
     top: initial;
     right: initial;
   }
   .image-right .tilt-text {
-    bottom: -75px;
+    bottom: -85px;
     right: 40px;
     top: initial;
     left: initial;
@@ -1043,19 +1041,18 @@ footer {
       font-family: 'Berlingske Serif';
       font-size: 24px;
   }
-  .gent::before {
-      content: "Gent";
+  .firstName {
       color: #192848;
       position: absolute;
-      top: 36px;
-      left: 3px;
+      top: 40px;
+      left: 4px;
       -ms-transform: rotate(-90deg);
       transform: rotate(-90deg);
       font-family: 'Berlingske Serif';
       font-size: 24px;
+      display: inline-table;
   }
-  .tielt::before {
-      content: "Tielt";
+  .secondName {
       color: #192848;
       position: absolute;
       top: 40px;

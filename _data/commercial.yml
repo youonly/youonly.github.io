@@ -1,0 +1,16 @@
+- name: gent
+  title: Gent
+  url: gent.html
+  image: "about1.jpg"
+- name: tielt
+  title: Tielt
+  url: tielt.html
+  image: "two-left.jpg"
+- name: loppem
+  title: Loppem
+  url: loppem.html
+  image: "two-left.jpg"
+- name: izegem
+  title: Izegem
+  url: izegem.html
+  image: "two-left.jpg"
