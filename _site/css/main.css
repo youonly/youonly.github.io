@@ -125,6 +125,10 @@ h2 {
   font-style: italic;
 }
 
+sub, sup {
+  font-size: 80%;
+}
+
 @media (max-width: 1199px) {
   .button-orange {
     font-size: 36px;
