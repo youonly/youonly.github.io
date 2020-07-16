@@ -43,6 +43,47 @@ layout: default
       left: auto;
       right: 20px;
     }
+    .hover-cta {
+      display: none;
+    }
+  }
+  @media (min-width: 1200px) {
+    .image-left .hover-cta {
+      max-height: 700px;
+      object-fit: cover;
+      position: absolute;
+      left: 11%;
+      bottom: 5%;
+      cursor: pointer;
+      z-index: -1;
+    }
+    .image-right .hover-cta {
+      max-height: 700px;
+      object-fit: cover;
+      position: absolute;
+      right: 11%;
+      bottom: 5%;
+      cursor: pointer;
+      z-index: -1;
+    }
+    .hover-cta:hover ~ img {
+      padding-left: 11%;
+      padding-bottom: 11%;
+      background-color: #f18564;
+    }
+    .image-left .text-area:hover img {
+      padding-left: 11%;
+      padding-bottom: 11%;
+      background-color: #f18564;
+    }
+    .image-right .text-area:hover img {
+      padding-right: 11%;
+      padding-bottom: 11%;
+      background-color: #f18564;
+    }
+    .text-area:hover .hover-cta {
+      z-index: 1;
+    }
   }
 </style>
 
@@ -117,6 +158,7 @@ layout: default
 <div class="image-left">
   <div class="text-area">
     <img src="/img/08282019 Hoste Vanhee Izegem ©Annick Vernimmen 037 website.png" alt="over ons" data-url="izegem.html">
+    <span class="hover-cta button-white" data-url="izegem.html">Lees meer</span>
     <span class="tilt-heading" data-url="izegem.html">Izegem</span>
     <span class="tilt-text" data-url="izegem.html">Particulier <br>92 m2</span>
   </div>
@@ -142,6 +184,7 @@ layout: default
 <div class="image-right">
   <div class="text-area">
     <img src="/img/Hoste Van Hee - Apotheek Meulemeester - Zedelgem' - fotografie  Valerie Clarysse - 01.png" alt="over ons" data-url="loppem.html">
+    <span class="hover-cta button-white" data-url="loppem.html">Lees meer</span>
     <span class="tilt-heading" data-url="loppem.html">Loppem</span>
     <span class="tilt-text" data-url="loppem.html">Apotheek <br> 123 m2</span>
   </div>
