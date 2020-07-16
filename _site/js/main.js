@@ -192,6 +192,11 @@ function heightAdj() {
       $(this).css('top','80px');
     }
   });
+  $.each( $('.over-special-margin'), function( key, value ) {
+      var xxHeight = $(this).height();
+      var xxWidth = $(this).width();
+      $(this).css('left',-(xxWidth/2)+'px');
+  });
 }
 
 $( document ).ready(function() {

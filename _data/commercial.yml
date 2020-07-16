@@ -1,16 +1,8 @@
-- name: gent
-  title: Gent
-  url: gent.html
+- name: waarschoot
+  title: Waarschoot
+  url: /project/apotheek-waarschoot/
   image: "about1.jpg"
-- name: tielt
-  title: Tielt
-  url: tielt.html
-  image: "two-left.jpg"
-- name: loppem
-  title: Loppem
-  url: loppem.html
-  image: "two-left.jpg"
-- name: izegem
-  title: Izegem
-  url: izegem.html
+- name: ieper
+  title: Ieper
+  url: /project/apotheek-ieper/
   image: "two-left.jpg"
