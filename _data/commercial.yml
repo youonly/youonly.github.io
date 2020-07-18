@@ -1,8 +1,28 @@
 - name: waarschoot
   title: Waarschoot
   url: /project/apotheek-waarschoot/
-  image: "about1.jpg"
+  image: "waarschoot-apotheek.jpg"
 - name: ieper
   title: Ieper
   url: /project/apotheek-ieper/
-  image: "two-left.jpg"
+  image: "IEPER-COMMERCIEEL.jpg"
+- name: Sinaai
+  title: Sinaai
+  url: /project/apotheek-sinaai/
+  image: "sinaai-apotheek.jpg"
+- name: Edegem
+  title: Edegem
+  url: /project/apotheek-edegem/
+  image: "edegem-apotheek.jpg"
+- name: Loppem
+  title: Loppem
+  url: /project/apotheek-loppem/
+  image: "loppem-apotheek.jpg"
+- name: Gent
+  title: Gent
+  url: /project/gym-gent/
+  image: "fourward-gym-gent.jpg"
+- name: Damme
+  title: Damme
+  url: /project/gym-damme/
+  image: "studio-sam-damme.jpg"
