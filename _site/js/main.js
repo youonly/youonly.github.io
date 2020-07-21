@@ -196,6 +196,7 @@ function heightAdj() {
       var xxHeight = $(this).height();
       var xxWidth = $(this).width();
       $(this).css('left',-(xxWidth/2)+'px');
+      $(this).css('top',xxWidth/2 +'px');
   });
 }
 

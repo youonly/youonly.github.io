@@ -690,6 +690,13 @@ footer {
 .just-text {
   padding-top: 200px;
 }
+.color-spacer {
+    height: 950px;
+    margin-top: -350px;
+}
+.first-div {
+margin-top: -80px
+}
 
 @media (max-width: 1600px) {
   .over .container-fluid, .about-box-left .container-fluid {
