@@ -89,15 +89,17 @@ layout: default
         <form action="http://formspree.io/you@email.com" method="post">
           <label for="Naam">Naam</label>
           <input id="Naam" type="text" name="Naam" required>
-          <label for="project">Commercieel or residentieel project?</label>
+          <label for="project">Commercieel of residentieel project?</label>
           <select id="project" name="project">
             <option value="Commercieel" selected>Commercieel</option>
             <option value="Residentieel">Residentieel</option>
+            <option value="Niet van toepassing">Niet van toepassing</option>
           </select>
           <label for="type">Nieuwbouw of renovatie project?</label>
           <select id="type" type="text" name="type">
             <option value="Nieuwbouw" selected>Nieuwbouw</option>
             <option value="Renovatie">Renovatie</option>
+            <option value="Niet van toepassing">Niet van toepassing</option>
           </select>
           <label for="info">Geef meer informatie over het project</label>
           <input id="info" type="text" name="info">
@@ -105,7 +107,7 @@ layout: default
           <input id="number" type="tel" name="number" pattern="[0-9]+">
           <label for="mail">Email</label>
           <input id="mail" type="email" name="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-          <button type="submit" class="button-white">Submit</button>
+          <button type="submit" class="button-white">Versturen</button>
         </form>
       </div>
     </div>
