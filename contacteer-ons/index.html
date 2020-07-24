@@ -1,0 +1,115 @@
+---
+layout: default
+---
+
+
+<style media="screen">
+  .over-margin::before {
+    content: "Contacteer Ons";
+    top: 165px;
+    left: -201px;
+  }
+  .tilt-heading {
+      top: 70px;
+      right: -82px;
+  }
+  .tilt-text {
+      top: 25px;
+      right: -120px;
+  }
+  .case2 {
+    right: auto;
+    left: -107px !important;
+    top: 120px !important;
+  }
+  .case3 {
+    right: auto;
+    left: 53px;
+  }
+  .skyblue {
+    width: 90%;
+  }
+  @media (max-width: 1199px) {
+    .tilt-heading {
+      top: 50px;
+      right: -65px;
+    }
+    .case2 {
+      content: "";
+      position: absolute;
+      top: -33px !important;
+      left: 30px !important;
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+      font-family: 'Berlingske Serif';
+      font-size: 40px;
+    }
+    .case3 {
+      right: auto;
+      left: 20px;
+    }
+    .skyblue {
+      width: 100%;
+    }
+    .about-box-right .row div h2 {
+        right: 0;
+        padding-bottom: 30px;
+        position: absolute;
+        left: 0;
+        top: 117px;
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        vertical-align: bottom;
+    }
+    .about-box-right::after {
+        height: 0;
+    }
+    .about-box-right::before {
+        content: "";
+        height: 90%;
+        background-color: #192848;
+        width: 2px;
+        position: absolute;
+        z-index: 10;
+        right: 70vw;
+        top: 30px;
+    }
+  }
+</style>
+
+
+
+<div class="over">
+  <div class="container-fluid">
+    <div class="over-margin" style="background-color: #F18664;">
+      <div class="over-image">
+        <img src="/img/200609_DIFT_Hoste_Vanhee_Web-1.jpeg" alt="over ons">
+      </div>
+      <div class="over-text">
+        <form action="http://formspree.io/you@email.com" method="post">
+          <label for="Naam">Naam</label>
+          <input id="Naam" type="text" name="Naam" required>
+          <label for="project">Commercieel or residentieel project?</label>
+          <select id="project" name="project">
+            <option value="Commercieel" selected>Commercieel</option>
+            <option value="Residentieel">Residentieel</option>
+          </select>
+          <label for="type">Nieuwbouw of renovatie project?</label>
+          <select id="type" type="text" name="type">
+            <option value="Nieuwbouw" selected>Nieuwbouw</option>
+            <option value="Renovatie">Renovatie</option>
+          </select>
+          <label for="info">Geef meer informatie over het project</label>
+          <input id="info" type="text" name="info">
+          <label for="number">Telefoon nummer</label>
+          <input id="number" type="tel" name="number" pattern="[0-9]+">
+          <label for="mail">Email</label>
+          <input id="mail" type="email" name="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+          <button type="submit" class="button-white">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="color-spacer skyblue"></div>

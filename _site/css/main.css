@@ -390,10 +390,41 @@ footer {
     margin-left: auto;
 }
 
+.over-text label {
+    max-width: 465px;
+    font-size: 22px;
+    margin-left: auto;
+    display: block;
+}
+
+.over-text input, .over-text select {
+    width: 100%;
+    max-width: 465px;
+    margin-bottom: 2% !important;
+    font-size: 22px;
+    margin-left: auto;
+    display: block;
+    border: none;
+    background-color: #fff;
+    height: 35px;
+}
+
 .over-text a {
   display: block;
   max-width: 465px;
   margin-left: auto;
+}
+
+.over-text button {
+  display: block;
+    width: 100%;
+    max-width: 465px;
+    margin-left: auto;
+    background: transparent;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    padding: 0;
 }
 
 .color-spacer {
@@ -705,7 +736,7 @@ margin-top: -80px
 }
 
 @media (max-width: 1199px) {
-  .over-text p {
+  .over-text p, .over-text label, .over-text input, .over-text select {
       font-size: 1.7vw;
   }
   .float-enable:hover + .floating-menu, .floating-menu:hover {
@@ -723,7 +754,7 @@ margin-top: -80px
 }
 
 @media (max-width: 991px) {
-  .over-text p {
+  .over-text p, .over-text label, .over-text input, .over-text select {
       font-size: 1.8vw;
   }
   .about-box-right .text-area {
@@ -886,7 +917,7 @@ margin-top: -80px
       padding-left: 40px;
       padding-right: 0
   }
-  .over-text p {
+  .over-text p, .over-text label, .over-text input, .over-text select {
       font-size: 18px;
       margin: 0 auto;
   }
@@ -894,7 +925,7 @@ margin-top: -80px
       width: 100%;
       padding: 50px 25px 50px 50px;
   }
-  .over-text a {
+  .over-text a, .over-text button {
       margin: 0 auto;
   }
   .image-left .text-area, .image-right .text-area {

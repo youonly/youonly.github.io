@@ -76,9 +76,14 @@
 
 
     <style media="screen">
+  .over-margin::before {
+    content: "Contacteer Ons";
+    top: 165px;
+    left: -201px;
+  }
   .tilt-heading {
       top: 70px;
-      right: -85px;
+      right: -82px;
   }
   .tilt-text {
       top: 25px;
@@ -86,21 +91,15 @@
   }
   .case2 {
     right: auto;
-    left: 55px;
-  }
-  .case2a {
-    right: auto;
-    left: -92px;
-    top: 50px;
+    left: -107px !important;
+    top: 120px !important;
   }
   .case3 {
-    left: auto;
-    right: 53px;
+    right: auto;
+    left: 53px;
   }
-  .case3a {
-    left: auto;
-    right: -70px;
-    top: 50px;
+  .skyblue {
+    width: 90%;
   }
   @media (max-width: 1199px) {
     .tilt-heading {
@@ -108,178 +107,84 @@
       right: -65px;
     }
     .case2 {
+      content: "";
+      position: absolute;
+      top: -33px !important;
+      left: 30px !important;
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+      font-family: 'Berlingske Serif';
+      font-size: 40px;
+    }
+    .case3 {
       right: auto;
       left: 20px;
     }
-    .case3 {
-      left: auto;
-      right: 20px;
+    .skyblue {
+      width: 100%;
     }
-    .hover-cta {
-      display: none;
+    .about-box-right .row div h2 {
+        right: 0;
+        padding-bottom: 30px;
+        position: absolute;
+        left: 0;
+        top: 117px;
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        vertical-align: bottom;
     }
-  }
-  @media (min-width: 1200px) {
-    .image-left .hover-cta {
-      max-height: 700px;
-      object-fit: cover;
-      position: absolute;
-      left: 11%;
-      bottom: 5%;
-      cursor: pointer;
-      z-index: -1;
+    .about-box-right::after {
+        height: 0;
     }
-    .image-right .hover-cta {
-      max-height: 700px;
-      object-fit: cover;
-      position: absolute;
-      right: 11%;
-      bottom: 5%;
-      cursor: pointer;
-      z-index: -1;
-    }
-    .hover-cta:hover ~ img {
-      padding-left: 11%;
-      padding-bottom: 11%;
-      background-color: #f18564;
-    }
-    .image-left .text-area:hover img {
-      padding-left: 11%;
-      padding-bottom: 11%;
-      background-color: #f18564;
-    }
-    .image-right .text-area:hover img {
-      padding-right: 11%;
-      padding-bottom: 11%;
-      background-color: #f18564;
-    }
-    .text-area:hover .hover-cta {
-      z-index: 1;
+    .about-box-right::before {
+        content: "";
+        height: 90%;
+        background-color: #192848;
+        width: 2px;
+        position: absolute;
+        z-index: 10;
+        right: 70vw;
+        top: 30px;
     }
   }
 </style>
 
-
-<!-- The overlay -->
-<div id="myNav" class="overlay">
-
-  <!-- Overlay content -->
-  <div class="overlay-content">
-    <img src="/img/custom-speed-splash.gif" alt="splash">
-  </div>
-
-</div>
-
-<script type="text/javascript">
-
-  function setCookie(cname, cvalue, exmin) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exmin*60*1000));
-    var expires = "expires="+ d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-  }
-
-  function getCookie(cname) {
-    var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for(var i = 0; i <ca.length; i++) {
-      var c = ca[i];
-      while (c.charAt(0) == ' ') {
-        c = c.substring(1);
-      }
-      if (c.indexOf(name) == 0) {
-        return c.substring(name.length, c.length);
-      }
-    }
-    return "";
-  }
-
-  if(getCookie('splash') == '') {
-    document.getElementById("myNav").style.display = "block";
-    setTimeout(function(){
-      document.getElementById("myNav").style.height = "0";
-      heightAdj();
-      setCookie('splash', 'true', 60);
-    }, 5000);
-  }
-
-
-</script>
 
 
 <div class="over">
   <div class="container-fluid">
     <div class="over-margin" style="background-color: #F18664;">
       <div class="over-image">
-        <img class="no-mobile" src="/img/overons.jpg" alt="over ons">
-        <img class="no-desktop" src="/img/overons1.jpg" alt="over ons">
+        <img src="/img/200609_DIFT_Hoste_Vanhee_Web-1.jpeg" alt="over ons">
       </div>
       <div class="over-text">
-        <p>Karakters. Jonas en Valentijn, Hoste Vanhee, zijn zowel doorwinterd als inspi-rerend: als een zwartwit beeld dat je bij de keel grijpt. Onze kennis en ideeën delen we in jouw interieurproject.</p>
-        <p>Van bij de brainstorm tot het definitieve ont-werp, het bestek tot het laatste polijsten: we zetten onze tanden in jouw project zodat jij van elke stap kunt genieten.</p>
-        <p>Zo kan je zeker zijn van een exclusief resultaat, dankzij creativiteit en volharding.</p>
-        <a class="button-white" href="/contacteer-ons">Maak een afspraak </a>
+        <form action="http://formspree.io/you@email.com" method="post">
+          <label for="Naam">Naam</label>
+          <input id="Naam" type="text" name="Naam" required>
+          <label for="project">Commercieel or residentieel project?</label>
+          <select id="project" name="project">
+            <option value="Commercieel" selected>Commercieel</option>
+            <option value="Residentieel">Residentieel</option>
+          </select>
+          <label for="type">Nieuwbouw of renovatie project?</label>
+          <select id="type" type="text" name="type">
+            <option value="Nieuwbouw" selected>Nieuwbouw</option>
+            <option value="Renovatie">Renovatie</option>
+          </select>
+          <label for="info">Geef meer informatie over het project</label>
+          <input id="info" type="text" name="info">
+          <label for="number">Telefoon nummer</label>
+          <input id="number" type="tel" name="number" pattern="[0-9]+">
+          <label for="mail">Email</label>
+          <input id="mail" type="email" name="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+          <button type="submit" class="button-white">Submit</button>
+        </form>
       </div>
     </div>
   </div>
 </div>
 
 <div class="color-spacer skyblue"></div>
-
-<div class="image-left">
-  <div class="text-area">
-    <img src="/img/image12-52 copy.jpeg" alt="over ons" data-url="/project/residentieel-izegem">
-    <span class="hover-cta button-white" data-url="/project/residentieel-izegem">Lees meer</span>
-    <span class="tilt-heading" data-url="/project/residentieel-izegem">Izegem</span>
-    <span class="tilt-text" data-url="/project/residentieel-izegem">Renovatie <br>280 m<sup>2</sup></span>
-  </div>
-</div>
-
-<div class="color-spacer midnightblue hybrid-skyblue"></div>
-
-<div class="image-two-right">
-  <div class="container-fluid">
-    <div class="image-area">
-      <img src="/img/two-left.jpg" alt="over ons" data-url="/project/residentieel-tielt">
-    </div>
-    <div class="text-area">
-      <img src="/img/two-right.jpg" alt="over ons" data-url="/project/residentieel-tielt">
-      <span class="tilt-heading case2 text-skyblue hybrid-text-midnightblue" data-url="/project/residentieel-tielt">Tielt</span>
-      <span class="tilt-text case2a text-skyblue" data-url="/project/residentieel-tielt">Renovatie <br> 150 m<sup>2</sup></span>
-    </div>
-  </div>
-</div>
-
-<div class="color-spacer orange"></div>
-
-<div class="image-right">
-  <div class="text-area">
-    <img src="/img/Hoste Van Hee - Apotheek Meulemeester - Zedelgem' - fotografie  Valerie Clarysse - 01.png" alt="over ons" data-url="/project/apotheek-loppem">
-    <span class="hover-cta button-white" data-url="/project/apotheek-loppem">Lees meer</span>
-    <span class="tilt-heading" data-url="/project/apotheek-loppem">Loppem</span>
-    <span class="tilt-text" data-url="/project/apotheek-loppem">Apotheek <br> 160 m<sup>2</sup></span>
-  </div>
-</div>
-
-<div class="color-spacer skyblue"></div>
-
-
-<div class="image-two-right text-wrapper">
-  <div class="container-fluid">
-    <div class="text-area left-img">
-      <img src="/img/20160907_Hoste Vanhee Gent Charles de Kerkhovelaan_0077.png" alt="over ons" data-url="/project/appartement-gent/">
-      <span class="tilt-heading case3 text-midnightblue" data-url="/project/appartement-gent/">Gent</span>
-      <span class="tilt-text case3a text-midnightblue hybrid-text-skyblue" data-url="/project/appartement-gent/">Studio <br> 97 m<sup>2</sup></span>
-    </div>
-      <div class="image-area right-img">
-        <img src="/img/20160907_Hoste Vanhee Gent Charles de Kerkhovelaan B.png" alt="over ons" data-url="/project/appartement-gent/">
-      </div>
-  </div>
-</div>
-
-
-<div class="color-spacer midnightblue last-index"></div>
 
 
 
