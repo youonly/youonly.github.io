@@ -5,7 +5,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Hostevanhee</title>
-<meta name="description" content="">
+<meta name="description" content="Total approach for your interior">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
@@ -111,20 +111,25 @@
   }
   .case2a {
     right: auto;
-    left: -90%;
+    left: calc(-100% + 15px);
     top: 30px;
   }
   .case3a {
     right: auto;
-    left: -94%;
+    left: calc(-100% + 15px);
     top: 90%;
-    max-width: 210px;
+    max-width: 250px;
     line-height: 1.5;
     font-family: 'Berlingske Serif';
   }
   .case3 {
     right: auto;
     left: 53px;
+  }
+  @media (max-width: 1600px) {
+    .over .container-fluid, .about-box-left .container-fluid {
+      max-width: 1450px;
+    }
   }
   @media (min-width: 1200px) {
     .image-two-right .container-fluid {
@@ -133,48 +138,32 @@
     .image-right .text-area.mx-auto, .image-left .text-area.mx-auto {
       width: 100%;
       max-width: 1450px;
-      padding-right: 15px;
-      padding-left: 15px;
+      padding-right: 30px;
+      padding-left: 30px;
     }
 
     .image-two-right .image-area img {
       margin-left: 0;
       margin-right: auto;
-      padding-left: 15px
+      padding-left: 30px
     }
     .image-two-right .text-area img {
       margin-left: auto;
       margin-right: 0;
+      padding-right: 20px;
     }
     .image-two-right .right-img img {
       margin-left: auto;
       margin-right: 0;
+      padding-right: 20px;
     }
     .image-two-right .left-img img {
       margin-left: 0;
       margin-right: auto;
-      padding-left: 15px
+      padding-left: 30px
     }
   }
 
-  @media (min-width: 1200px) and (max-width: 1500px) {
-    .image-right .text-area.mx-auto, .image-left .text-area.mx-auto {
-      padding-right: 60px;
-      padding-left: 60px;
-    }
-    .image-two-right .image-area img {
-      padding-left: 60px
-    }
-    .image-two-right .text-area img {
-      padding-right: 60px
-    }
-    .image-two-right .right-img img {
-      padding-right: 60px
-    }
-    .image-two-right .left-img img {
-      padding-left: 60px
-    }
-  }
   @media (max-width: 1199px) {
     .tilt-heading {
       top: 50px;
@@ -208,6 +197,7 @@
 </style>
 
 
+
 <div class="over">
   <div class="container-fluid">
     <div class="over-margin" style="background-color: #F18664;">
@@ -235,7 +225,7 @@
     <div class="text-area">
       <img src="/img/Tielt De Grande/tielt-tuin-degrande.jpg" alt="over ons">
       <span class="tilt-text case2a">Tielt <br> 32 m<sup>2</sup></span>
-      <span class="tilt-text itl case3a text-skyblue hybrid-text-midnightblue no-mobile">Onze keuken is een leefkeuken geworden. Architectuur, interieur en tuin zijn echt één geheel geworden</span>
+      <span class="tilt-text itl case3a text-skyblue hybrid-text-midnightblue no-mobile">"Onze keuken is een leefkeuken geworden. Architectuur, interieur en tuin zijn echt één geheel geworden."</span>
     </div>
   </div>
 </div>

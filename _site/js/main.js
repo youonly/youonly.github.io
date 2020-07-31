@@ -189,7 +189,7 @@ function heightAdj() {
       var xxHeight = $(this).height();
       var xxWidth = $(this).width();
       $(this).css('left',-(xxWidth/2-30)+'px');
-      $(this).css('top','80px');
+      $(this).css('top',(xxWidth/2-20) +'px');
     }
   });
   $.each( $('.over-special-margin'), function( key, value ) {

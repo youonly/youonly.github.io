@@ -1,0 +1,120 @@
+<style media="screen">
+  .over-margin::before {
+    content: "";
+    color: #192848;
+    position: absolute;
+    top: 80px;
+    left: -117px;
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    font-family: 'Berlingske Serif';
+    font-size: 56px;
+}
+  .over-special-margin {
+      color: #192848;
+      position: absolute;
+      top: 80px;
+      left: -117px;
+      -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      font-family: 'Berlingske Serif';
+      font-size: 56px;
+  }
+  .tilt-heading {
+      top: 70px;
+      right: -82px;
+  }
+  .tilt-text {
+      top: 25px;
+      right: -120px;
+  }
+  .case2 {
+    right: auto;
+    left: 55px;
+  }
+  .case2a {
+    right: auto;
+    left: calc(-100% + 15px);
+    top: 30px;
+  }
+  .case3a {
+    right: auto;
+    left: calc(-100% + 15px);
+    top: 90%;
+    max-width: 250px;
+    line-height: 1.5;
+    font-family: 'Berlingske Serif';
+  }
+  .case3 {
+    right: auto;
+    left: 53px;
+  }
+  @media (max-width: 1600px) {
+    .over .container-fluid, .about-box-left .container-fluid {
+      max-width: 1450px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .image-two-right .container-fluid {
+      padding: 0
+    }
+    .image-right .text-area.mx-auto, .image-left .text-area.mx-auto {
+      width: 100%;
+      max-width: 1450px;
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+
+    .image-two-right .image-area img {
+      margin-left: 0;
+      margin-right: auto;
+      padding-left: 30px
+    }
+    .image-two-right .text-area img {
+      margin-left: auto;
+      margin-right: 0;
+      padding-right: 20px;
+    }
+    .image-two-right .right-img img {
+      margin-left: auto;
+      margin-right: 0;
+      padding-right: 20px;
+    }
+    .image-two-right .left-img img {
+      margin-left: 0;
+      margin-right: auto;
+      padding-left: 30px
+    }
+  }
+
+  @media (max-width: 1199px) {
+    .tilt-heading {
+      top: 50px;
+      right: -65px;
+    }
+    .case2 {
+      right: auto;
+      left: 20px;
+    }
+    .case3 {
+      right: auto;
+      left: 20px;
+    }
+    .case3a {
+        right: -12px !important;
+        left: auto !important;
+        top: -20% !important;
+        max-width: 180px;
+        bottom: auto !important;
+    }
+    .about-box::before {
+        content: "Gerelateerde projecten";
+        color: #E3E8EC;
+        position: absolute;
+        top: -20px;
+        left: calc( 50% - 140px);
+        font-family: 'Berlingske Serif';
+        font-size: 27px;
+    }
+  }
+</style>
