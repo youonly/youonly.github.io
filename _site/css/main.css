@@ -613,7 +613,7 @@ footer {
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
     font-family: 'Berlingske Serif';
-    font-size: 56px;
+    font-size: 36px;
 }
 .secondName {
     color: #192848;
@@ -623,7 +623,7 @@ footer {
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
     font-family: 'Berlingske Serif';
-    font-size: 56px;
+    font-size: 36px;
 }
 
 .about-box-left {
