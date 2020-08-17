@@ -3,12 +3,20 @@
 <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- open graph data -->
 
-<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-<meta property="og:url" content="https://www.hostevanhee.eu{{page.url}}" />
-<meta property="og:image" content="https://www.hostevanhee.eu/img/Logo_HosteVanhee_xxl_crop.jpg" />
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://www.hostevanhee.eu{{page.url}}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:image" content="https://www.hostevanhee.eu/img/Logo_HosteVanhee_xxl_crop.jpg">
+
+<!-- Twitter Meta Tags -->
+<meta property="twitter:url" content="https://www.hostevanhee.eu{{page.url}}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta name="twitter:image" content="https://www.hostevanhee.eu/img/Logo_HosteVanhee_xxl_crop.jpg">
 
 
 <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
