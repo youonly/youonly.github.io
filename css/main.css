@@ -415,6 +415,13 @@ footer {
   margin-left: auto;
 }
 
+.over-text .normal-link {
+  display: initial;
+  max-width: none;
+  font-weight: 600;
+  color: #192848;
+}
+
 .over-text button {
   display: block;
     width: 100%;
