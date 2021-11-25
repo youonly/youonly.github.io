@@ -1256,3 +1256,4 @@ margin-top: -80px
 	    color: #192848;
     font-family: 'Alte-Haas-Grotesk';
 }
+h1, h2, h3, h4, h5, h6 { line-height: inherit; margin-bottom: 0; }
