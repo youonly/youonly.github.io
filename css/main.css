@@ -1248,3 +1248,9 @@ margin-top: -80px
   width: 100%;
   max-width: 600px;
 }
+.top-heading {
+	max-width: 465px;
+	padding-bottom: 5%;
+	font-size: 22px;
+	margin-left: auto;
+}
